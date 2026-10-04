@@ -1,0 +1,21 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "status": "planned_before_start",
+  "purpose": "Controlled development extension: one nominal epoch instead of 600 updates, same base, representation, data, seed and frozen 48-note dev selection.",
+  "base": "llm/base_models/qwen3_06b_official_20261004/mlx_int4",
+  "data": "llm/sft_runs/20261004_selection_v01",
+  "output": "llm/training_runs/20261004_qwen3_06b_selection_epoch01",
+  "reference_run": "llm/training_runs/20261004_qwen3_06b_selection_v01",
+  "iterations": 1500,
+  "batch_size": 2,
+  "training_rows": 3000,
+  "training_seed": 7072,
+  "evaluation_seed": 7070,
+  "eval_count": 48,
+  "starts_from_base": true,
+  "changes_to_app": false,
+  "changes_to_dataset_or_gold": false,
+  "sweep": false,
+  "decision": "Compare format acceptance, found terms, status, extras, exact source/duration. Do not integrate into app or call it qualified merely because loss decreases.",
+  "limits": ["Same known synthetic dev subset; no independent quality claim.", "One bounded 1500-update run, no automatic hyperparameter search.", "Mac MLX allocation does not prove phone compatibility or process-RAM usage.", "If resource or validity errors occur, retain logs and stop this run."]
+}

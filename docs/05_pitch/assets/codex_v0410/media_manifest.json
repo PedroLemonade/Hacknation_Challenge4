@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-10-04T00:26:29.100944+00:00",
+  "version": "afyanote-v0.4.10",
+  "mp4": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "format": {
+      "duration": "74.880000",
+      "size": "1435771"
+    }
+  },
+  "visual_qa": {
+    "video_frames_seconds": [
+      7,
+      46,
+      72
+    ],
+    "desktop_review_screenshot": true,
+    "current_export_pdf": true
+  },
+  "files": [
+    {
+      "file": "01_note_mobile.png",
+      "bytes": 100458,
+      "sha256": "92eabba8000441fc4e3408a98bea342d9c63d5726e99ce332a787bc859bf5d63"
+    },
+    {
+      "file": "02_review_mobile.png",
+      "bytes": 69942,
+      "sha256": "ba793f0a12350d674ae5c9404423ddb2efd70225a7d2e2e0b9891dafac2ec70f"
+    },
+    {
+      "file": "03_handover_mobile.png",
+      "bytes": 59088,
+      "sha256": "9cd332f82dc7bcdbbb39126dfd6cc059acbf1976ced0bfbb9333aaf316ad9fbb"
+    },
+    {
+      "file": "04_qr_mobile.png",
+      "bytes": 53421,
+      "sha256": "90e3e35be3b5ce8273870bfb0a297bf6144f12d567fcd10d445ecd7248465123"
+    },
+    {
+      "file": "05_conflict_mobile.png",
+      "bytes": 69933,
+      "sha256": "a3480091d66967564501580827dca305403c8451ce56a47a738d67ffeba8f81a"
+    },
+    {
+      "file": "06_note_desktop.png",
+      "bytes": 174594,
+      "sha256": "16632f8a82d0a3dcdafdf7f9bec1b6e23f9de8551d4ef8982cfc9703b649d449"
+    },
+    {
+      "file": "07_review_desktop.png",
+      "bytes": 138367,
+      "sha256": "1c373c7520bd6810432d4371c015b4cea8f2c8b65d5f1c3f63042f34412838bc"
+    },
+    {
+      "file": "08_handover_desktop.png",
+      "bytes": 120101,
+      "sha256": "a1ea884ea13804c30c6153582cc942765ef52504269db469fdd8238d18ec1527"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3727,
+      "sha256": "9a52283daaa5288adb45589c0c2fd6b341c7142aa44f0590024a717c4d44bf85"
+    },
+    {
+      "file": "demo_mobile.mp4",
+      "bytes": 1435771,
+      "sha256": "419c3ec59e9aa4fdb5c040b1f2b300d2be5355b2810d1e3ab9455ff1f96c6328"
+    },
+    {
+      "file": "demo_mobile.webm",
+      "bytes": 2278687,
+      "sha256": "2f63891fc5011ee472d01c3463eea427df7692f5472bfd5aeafa4ab4c18bf6f6"
+    },
+    {
+      "file": "fictional-video-draft.md",
+      "bytes": 1155,
+      "sha256": "837635f83610108573a7b96b919f22db6c94dd85cbf87342b24a5fd62daa9036"
+    }
+  ],
+  "caveat": "Actual desktop Chrome browser recording of fictional cases; simulated network loss, no physical-phone, native-speaker or clinical validation."
+}

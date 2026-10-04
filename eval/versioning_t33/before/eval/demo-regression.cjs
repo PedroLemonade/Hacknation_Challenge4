@@ -1,0 +1,121 @@
+/* Fictional local demo checks. No training/model tuning. */
+const fs = require('node:fs'), path = require('node:path'), assert = require('node:assert/strict'), crypto = require('node:crypto');
+let pw; try { pw = require('playwright'); } catch { pw = require(process.env.AFYANOTE_PLAYWRIGHT || '/Users/peter/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'); }
+const root = path.resolve(__dirname, '..'), base = process.env.AFYANOTE_TEST_URL || 'http://localhost:8000/';
+const out = path.join(root, 'eval/demo_artifacts'); fs.mkdirSync(out, { recursive: true });
+const checks = [], requests = [], errors = []; let browser;
+const snapshot = () => Object.fromEntries(['app.js','i18n.js','index.html','sw.js','rules.js','classify.js','model.json'].map(name => [name, crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'app',name))).digest('hex')]));
+const before = snapshot();
+function record(name, ok = true, detail) { checks.push({ name, status: ok ? 'passed' : 'failed', ...(detail === undefined ? {} : { detail }) }); }
+async function reviewed(page) {
+  const labels = await page.locator('[data-ok]').evaluateAll(buttons => buttons.map(b => b.dataset.ok));
+  for (const label of labels) { assert.equal(await page.locator(`[data-ok="${label}"]`).isEnabled(), true); await page.locator(`[data-ok="${label}"]`).click(); }
+  if (await page.locator('#ageOk').count()) await page.locator('#ageOk').click();
+}
+async function context(options = {}) {
+  const c = await browser.newContext({ viewport: { width: 390, height: 844 }, acceptDownloads: true, ...options });
+  c.setDefaultTimeout(6000);
+  c.on('request', r => requests.push({ method: r.method(), url: r.url(), body: r.postData() }));
+  c.on('page', p => { p.on('pageerror', e => errors.push(e.message)); p.on('dialog', d => d.accept()); }); return c;
+}
+async function download(page, button, name) { const promise = page.waitForEvent('download'); await page.locator(button).click(); await (await promise).saveAs(path.join(out,name)); return fs.readFileSync(path.join(out,name),'utf8'); }
+(async () => {
+  const executablePath = process.env.AFYANOTE_BROWSER_PATH || (process.platform === 'darwin' ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' : undefined);
+  browser = await pw.chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}) });
+  const c = await context(), page = await c.newPage(); await page.goto(base);
+  await page.waitForFunction(() => document.querySelector('#offlinePill').textContent.includes('Ready offline'));
+  record('Local model and complete offline package');
+  await page.locator('#goAnalyse').click(); assert.ok(/note first/i.test(await page.locator('#view').innerText()));
+  await page.locator('#note').fill('x'.repeat(601)); await page.locator('#goAnalyse').click(); assert.ok((await page.locator('#view').innerText()).includes('600'));
+  record('Empty and oversized input errors');
+  await page.locator('[data-ex="2"]').click(); await page.locator('#goAnalyse').click(); assert.equal(await page.locator('#next').isDisabled(),true);
+  await page.locator('[data-ok="cough"]').click(); assert.equal(await page.evaluate(() => document.activeElement.dataset.ok),'cough');
+  await page.locator('input[data-as="cough"][value="past"]').locator('..').click(); assert.equal(await page.locator('[data-ok="cough"]').innerText(),'Confirm');
+  await page.locator('input[data-as="cough"][value="stated"]').locator('..').click(); await reviewed(page); await page.locator('#next').click();
+  record('Review gate, focus preservation and changed status needs new confirmation');
+  await page.locator('#f_caseId').fill('OLD-FICTIONAL-CASE'); await page.locator('#f_treatment').fill('OLD-FICTIONAL-TREATMENT'); await page.locator('#consent').check();
+  await page.locator('#back').click(); await page.locator('#back').click(); await page.locator('#note').fill('Child has a cough for two days. No fever.');
+  await page.locator('#goAnalyse').click(); await reviewed(page); await page.locator('#next').click();
+  assert.equal(await page.locator('#f_caseId').inputValue(),''); assert.equal(await page.locator('#f_treatment').inputValue(),''); assert.equal(await page.locator('#consent').isChecked(),false);
+  record('New source clears previous case fields and consent');
+  await page.locator('#f_ageValue').fill('not-a-number'); assert.equal(await page.locator('#next').isDisabled(),true);
+  await page.locator('#next').evaluate(b => b.disabled=false); await page.locator('#next').click(); assert.equal(await page.locator('#f_ageValue').isVisible(),true);
+  await page.locator('#f_ageValue').fill('2.5'); assert.equal(await page.locator('#next').isEnabled(),true);
+  record('Invalid age rejected by UI and handler; manual decimal accepted');
+  await page.locator('#f_caseId').fill('DEMO-CODEX-02'); await page.locator('#f_sex').selectOption('female'); await page.locator('#pickFac').click(); await page.locator('button.fitem').nth(2).click();
+  assert.equal(await page.locator('#useFac').evaluate(e => e===document.activeElement),true); await page.keyboard.press('Shift+Tab'); assert.equal(await page.locator('[role="dialog"] button').last().evaluate(e => e===document.activeElement),true);
+  await page.locator('#useFac').click(); assert.notEqual(await page.locator('#f_facility').inputValue(),''); record('Facility dialog selection and keyboard focus wrap');
+  await page.locator('#next').click(); assert.equal(await page.locator('#jsonBtn').isDisabled(),true);
+  let downloads=0; page.on('download',()=>downloads++); await page.locator('#jsonBtn').evaluate(b=>b.disabled=false); await page.locator('#jsonBtn').click(); await page.waitForTimeout(150); assert.equal(downloads,0);
+  await page.locator('#back').click(); await page.locator('#consent').check(); await page.locator('#next').click(); record('Consent guard survives re-enabled export button');
+  const d=JSON.parse(await download(page,'#jsonBtn','fictional-draft.json')); assert.equal(d.schema,'afyanote.referral-draft/0.3'); assert.equal(d.age.value,2.5); assert.equal(d.treatment_given,null); assert.equal(d.case_id,'DEMO-CODEX-02');
+  for(const row of d.review_log) for(const e of row.evidence) assert.equal(d.original_note.slice(e.start,e.end),e.text);
+  assert.ok(d.documented_absent.some(p=>p.label==='fever')); record('JSON: blanks, reviewed negation and exact original source offsets');
+  assert.ok((await download(page,'#mdBtn','fictional-draft.md')).includes(d.original_note)); record('Readable Markdown contains original and review log');
+  await page.locator('#qrBtn').click(); assert.equal(await page.locator('#sheetRoot svg').count(),1); assert.equal(await page.locator('#sheetRoot button').evaluate(e=>e===document.activeElement),true);
+  await page.keyboard.press('Tab'); assert.equal(await page.locator('#sheetRoot button').evaluate(e=>e===document.activeElement),true); await page.keyboard.press('Escape'); assert.equal(await page.locator('#qrBtn').evaluate(e=>e===document.activeElement),true);
+  record('Local QR generation; focus contained and restored (no camera scan test)');
+  await page.evaluate(()=>{window.originalURL=URL.createObjectURL;URL.createObjectURL=()=>{throw Error('Injected download failure')}}); await page.locator('#jsonBtn').click(); assert.ok(/could not start/i.test(await page.locator('#exportStatus').innerText())); await page.evaluate(()=>{URL.createObjectURL=window.originalURL});
+  await page.evaluate(()=>{navigator.clipboard.writeText=()=>Promise.reject(Error('Injected denial'));document.execCommand=()=>false}); await page.locator('#copyBtn').click(); await page.waitForFunction(()=>document.querySelector('#exportStatus').textContent.includes('Copy failed'));
+  record('Download / clipboard failures shown without false success');
+  await page.setViewportSize({width:320,height:844}); record('320 px handover fits',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  await page.setViewportSize({width:390,height:844}); await page.screenshot({path:path.join(out,'handover-mobile.png'),fullPage:true}); await page.setViewportSize({width:1280,height:900}); await page.screenshot({path:path.join(out,'handover-desktop.png'),fullPage:true});
+  await page.emulateMedia({media:'print'}); assert.equal(await page.locator('#actions').isVisible(),false); assert.equal(await page.locator('.form').isVisible(),true); assert.ok((await page.locator('#view').innerText()).includes('Fictional demonstration only')); await page.pdf({path:path.join(out,'fictional-draft.pdf'),format:'A4',printBackground:true}); await page.emulateMedia({media:'screen'}); record('Printable draft excludes controls and retains the fictional/not-approved notice');
+  await page.locator('.side [data-newcase]').click(); await page.locator('#note').fill('<img src=x onerror="window.injected=true"> ``` No fever.'); await page.locator('#goAnalyse').click(); assert.equal(await page.locator('#view img').count(),0); assert.equal(await page.evaluate(()=>window.injected),undefined); record('Note markup inert');
+  await reviewed(page); await page.locator('#next').click(); await page.locator('#f_caseId').fill('<script>window.injected=true</script>'); await page.locator('#consent').check(); await page.locator('#next').click(); assert.equal(await page.locator('#view script').count(),0);
+  assert.ok((await download(page,'#mdBtn','markdown-fence-fixture.md')).includes('````text')); record('Metadata markup inert and Markdown fence protected');
+  await c.setOffline(true); await page.reload(); await page.waitForFunction(()=>document.querySelector('#offlinePill').textContent.includes('package ready')); assert.equal(await page.locator('#note').inputValue(),''); await page.locator('[data-ex="0"]').click(); await page.locator('#goAnalyse').click(); assert.ok((await page.locator('#view').innerText()).includes('Hana kuhara')); record('Simulated offline reload clears case and processes a new Swahili note');
+  const second=await c.newPage(); await second.goto(base); await second.waitForFunction(()=>document.querySelector('#offlinePill').textContent.includes('package ready')); assert.equal(await second.locator('#note').inputValue(),''); await second.locator('[data-ex="3"]').click(); await second.locator('#goAnalyse').click(); assert.equal(await second.locator('[data-ok="fever"]').isDisabled(),true);
+  await second.locator('input[data-as="fever"][value="denied"]').locator('..').click(); assert.equal(await second.locator('[data-ok="fever"]').isEnabled(),true); await second.locator('.topbar [data-lang]').click(); assert.equal(await second.locator('html').getAttribute('lang'),'sw'); assert.ok((await second.locator('#view').innerText()).includes('Hana homa')); await second.screenshot({path:path.join(out,'hardcase-swahili-mobile.png'),fullPage:true}); record('New offline tab, conflict choice and Swahili evidence preservation'); await second.locator('.topbar [data-lang]').click();
+  await c.setOffline(false); await second.locator('.topbar [data-newcase]').click(); await second.locator('#note').fill('Child has a cough.'); await second.goto(new URL('icon.svg',base).href); await second.goBack(); assert.equal(await second.locator('#note').inputValue(),''); record('Actual browser back navigation has no previous note (reload or bfcache)');
+  await page.bringToFront(); await page.evaluate(async()=>{await caches.open('other-app-cache').then(c=>c.put('/unrelated',new Response('keep')));const key=(await caches.keys()).find(k=>/^afyanote-v.*:http/.test(k));const cache=await caches.open(key);await cache.delete(new URL('model.json',location.href).href);await cache.delete(new URL('icon-512.png',location.href).href)});
+  await c.setOffline(true); await page.reload(); await page.waitForFunction(()=>document.querySelector('#offlinePill').textContent.includes('incomplete')); record('Evicted required assets cannot produce a ready offline badge');
+  await c.setOffline(false); await page.locator('#retryResources').click(); await page.waitForTimeout(1500);
+  record('Explicit retry restores all evicted required assets', (await page.locator('#offlinePill').innerText()).includes('Ready offline'), await page.locator('#offlinePill').innerText());
+  record('Unrelated cache preserved',(await page.evaluate(async()=>await caches.keys())).includes('other-app-cache'));
+  await page.setViewportSize({width:390,height:844}); await page.locator('[data-ex="0"]').click(); record('390 px note screen fits',await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)); await page.screenshot({path:path.join(out,'start-mobile.png'),fullPage:true}); await page.setViewportSize({width:1280,height:900}); await page.screenshot({path:path.join(out,'start-desktop.png')});
+  await page.locator('.side [data-tab="about"]').click(); assert.ok((await page.locator('.llm').innerText()).includes('running in this browser')); for(const verdict of await page.locator('.lrow:not(.me) .lv').allTextContents()) assert.equal(verdict,'not tested on this device'); record('LLM reference comparison makes no unmeasured hardware compatibility claim');
+  // T31, ChatGPT/Codex: real UI gates for known context cases; no model tuning.
+  async function contextNote(note) {
+    await page.locator('.side [data-newcase]').click();
+    await page.locator('#note').fill(note); await page.locator('#goAnalyse').click();
+  }
+  await contextNote('Child has fever in front of the mother.');
+  assert.equal(await page.locator('input[data-as="fever"][value="stated"]').isChecked(),true);
+  assert.equal(await page.locator('input[data-as="fever"][value="other_person"]').isChecked(),false);
+  record('T31: English witness mention preserves explicit child subject');
+  await contextNote('Mtoto alipata degedege mbele ya mama leo.');
+  assert.equal(await page.locator('input[data-as="ds_convulsions"][value="stated"]').isChecked(),true);
+  assert.equal(await page.locator('[data-ok="ds_convulsions"]').isEnabled(),true);
+  record('T31: known Swahili witness case uses child finding (unreviewed language)');
+  await contextNote('Mother has fever. Cough today.');
+  assert.equal(await page.locator('input[data-as="fever"][value="other_person"]').isChecked(),true);
+  assert.equal(await page.locator('[data-ok="cough"]').isDisabled(),true);
+  assert.equal(await page.locator('input[data-as="cough"]:checked').count(),0);
+  assert.equal(await page.locator('#next').isDisabled(),true);
+  await page.locator('input[data-as="cough"][value="other_person"]').locator('..').click();
+  assert.equal(await page.locator('[data-ok="cough"]').isEnabled(),true);
+  record('T31: orphan sentence requires explicit human person choice');
+  await contextNote('Mother has no fever.');
+  assert.equal(await page.locator('[data-ok="fever"]').isDisabled(),true);
+  assert.equal(await page.locator('input[data-as="fever"]:checked').count(),0);
+  await page.locator('input[data-as="fever"][value="other_person"]').locator('..').click();
+  await reviewed(page); await page.locator('#next').click();
+  await page.locator('#f_caseId').fill('DEMO-CONTEXT-T31'); await page.locator('#consent').check(); await page.locator('#next').click();
+  const contextDraft=JSON.parse(await download(page,'#jsonBtn','fictional-context-draft.json'));
+  assert.equal(contextDraft.schema,'afyanote.referral-draft/0.3');
+  assert.equal(contextDraft.original_note,'Mother has no fever.');
+  assert.equal(contextDraft.documented_absent.length,0);
+  assert.equal(contextDraft.mentioned_other_person_or_past.find(x=>x.label==='fever').status,'other_person');
+  const contextReview=contextDraft.review_log.find(x=>x.label==='fever');
+  assert.equal(contextReview.original_rule_status,'conflict');assert.equal(contextReview.selected_status,'other_person');
+  assert.equal(contextReview.edited_by_user,true);
+  for(const evidence of contextReview.evidence)assert.equal(contextDraft.original_note.slice(evidence.start,evidence.end),evidence.text);
+  record('T31: negated other-person finding requires choice and retains original evidence in unchanged export schema');
+  const badContext=await context({serviceWorkers:'block'}); await badContext.route('**/model.json',r=>r.fulfill({contentType:'application/json',body:JSON.stringify({vocab:['a'],labels:['fever'],W:[[null]]})}));const bad=await badContext.newPage(); await bad.goto(base); await bad.waitForFunction(()=>document.querySelector('#view .notice.err')); await bad.locator('#note').fill('Child has fever.'); await bad.locator('#goAnalyse').click(); assert.equal(await bad.locator('[data-ok]').count(),0); record('Malformed model explicitly rejected');
+  const missingContext=await context();await missingContext.route('**/icon-512.png',r=>r.fulfill({status:404,body:'Missing test asset'}));const missing=await missingContext.newPage();await missing.goto(base);await missing.waitForFunction(()=>document.querySelector('#offlinePill').textContent.includes('incomplete'),null,{timeout:15000});assert.equal(await missing.locator('#retryResources').isVisible(),true);record('Missing install asset has bounded failure and retry');
+  const storage=await page.evaluate(async()=>({local:Object.keys(localStorage),session:Object.keys(sessionStorage),dbs:await indexedDB.databases(),cookies:document.cookie}));assert.ok(storage.local.every(k=>k==='afya_lang'));assert.deepEqual(storage.session,[]);assert.deepEqual(storage.dbs,[]);assert.equal(storage.cookies,'');assert.equal(errors.length,0);assert.ok(requests.every(r=>r.method==='GET'&&new URL(r.url).origin===new URL(base).origin&&r.body===null));record('Across contexts: no external requests, note uploads, case databases, cookies or page exceptions');
+  const after=snapshot();record('App files unchanged throughout the browser run',JSON.stringify(before)===JSON.stringify(after));
+  const failed=checks.filter(c=>c.status==='failed');const report={status:failed.length?'failed':'passed',created_at:new Date().toISOString(),browser:await browser.version(),checks,source_before:before,source_after:after,physical_phone:false,native_swahili_review:false,caveats:['Desktop Chrome; simulated network loss and narrow viewport.','No camera interoperability, OS restart, native speaker or WCAG conformance validation.'],storage,requests,pageErrors:errors};
+  fs.writeFileSync(path.join(root,'eval/demo_regression_results.json'),JSON.stringify(report,null,2));console.log(JSON.stringify({status:report.status,checks:checks.length,failed},null,2));await browser.close();process.exitCode=failed.length?1:0;
+})().catch(async e=>{fs.writeFileSync(path.join(root,'eval/demo_regression_results.json'),JSON.stringify({status:'failed',checks,error:e.stack,requests,pageErrors:errors},null,2));console.error(e);if(browser)await browser.close();process.exit(1)});

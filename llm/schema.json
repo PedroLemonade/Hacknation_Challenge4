@@ -1,0 +1,62 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "items"
+ ],
+ "properties": {
+  "items": {
+   "type": "array",
+   "maxItems": 10,
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "term",
+     "status",
+     "evidence",
+     "duration_days"
+    ],
+    "properties": {
+     "term": {
+      "type": "string",
+      "enum": [
+       "fever",
+       "cough",
+       "diarrhoea",
+       "vomiting",
+       "pain",
+       "weakness",
+       "ds_cannot_drink",
+       "ds_vomits_everything",
+       "ds_convulsions",
+       "ds_lethargic"
+      ]
+     },
+     "status": {
+      "type": "string",
+      "enum": [
+       "stated",
+       "denied",
+       "other_person",
+       "past"
+      ]
+     },
+     "evidence": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 200
+     },
+     "duration_days": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "minimum": 1,
+      "maximum": 365
+     }
+    }
+   }
+  }
+ }
+}

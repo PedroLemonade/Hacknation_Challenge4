@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "manifest_sha256": "58b617a51a42dfe0f28800cebaa620fb091e347b4acec1f730eaf378b7ac313a",
+  "meaning": "All selected targets resolve exactly to original targets that passed strict guard; original split overlaps zero",
+  "source_audit_sha256": "c609b0c37f947088b683301cbb316b19307b6dd26e0d585a67a3966a9b330096"
+}

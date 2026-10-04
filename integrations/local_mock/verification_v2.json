@@ -1,0 +1,17 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T08:04:18.456433+00:00",
+  "status": "passed",
+  "tests_passed": 21,
+  "network_calls": 0,
+  "clinical_validation": false,
+  "source_hashes": {
+    "integrations/local_mock/adapter.py": "ca320d19d40baee3a994c24d3684c449cb66b12e96c50a384c533fb55ced222b",
+    "integrations/local_mock/test_adapter.py": "44543772c14085918f956a0b6617859c7fd2f0b253cf342aa83e67043bc41754",
+    "integrations/local_mock/test_report_v2.log": "1b0758f5588f57e24176be20d6aa1bf00cce11945f64fff26a58ecd826188e85",
+    "integrations/local_mock/fictional_envelope_v0417.json": "4b6ed77ba5f5d65e728101a8fa8dfdd7b85196002e0108f2ae1a9b0546248821",
+    "eval/browser_runs/20261004_final_v0417/artifacts/fictional-scope-draft.json": "d18047264bd729845a26a39c46129f6ac761794ce4e39feb01bc4808cb47f789",
+    "eval/browser_runs/20261004_final_v0417/artifacts/fictional-context-draft.json": "297664f6efb19b44f04cb2c30563f2086baeff84f96600fc9e87eda55f4e4429"
+  },
+  "older_verification_retained": "verification.json"
+}

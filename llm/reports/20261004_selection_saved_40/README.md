@@ -1,0 +1,9 @@
+# Tatsächliches gespeichertes LLM: vollständige bekannte 40er-Regression
+
+**ChatGPT/Codex** lud den tatsächlich gespeicherten Qwen-basierten Passage-ID-Adapter neu, prüfte Basis-/Adapterhashes und erzeugte je 40 Antworten des Basismodells und des Adapters. Diese Zeilen stammen von echten lokalen MLX-Modellen. Die generische Referenzfußnote im automatisch erzeugten [results.md](results.md) gilt hier für keine Zeile; es gibt keine Klassifikator-/Adversarialreferenz in diesem Run. Auch die generische Ollama-Speicherfußnote ist kein hier erhobener Messwert.
+
+[results.json](results.json) enthält vollständige Nenner, 0 fehlende/Transportfehler, Daten-/Rohantwort-/Quellhashes. Basis 0/63 Begriffe. Gespeicherter Adapter: 54/63 Begriffe, 40/54 passende Status, 13 zusätzliche Begriffe, 18/40 exakt nach Term/Status. 31 unklare Hybridkarten. Alle Fälle synthetisch, fachlich/sprachlich unreviewt und bekannt; `set: independent` ist der historische Dateibezeichner, kein aktueller Unabhängigkeitsclaim.
+
+Diese alte exakte-Notizmetrik berücksichtigt keine Dauer und keine semantisch korrekte Quellenpassage. Nicht mit 10/48 vollständig passenden Devnotizen inkl. Quelle/Dauer gleichsetzen. Keine klinische Genauigkeit. Kein App-Einbau. Eingaben wurden nicht ins Training übernommen; nachgelagerter Overlapcheck 0/40 gleiche kanonische Notizen.
+
+Originalcaptures: [Basis](../../outputs/20261004_selection_40/base/base__independent.jsonl), [gespeicherter Adapter](../../outputs/20261004_selection_40/adapter/saved_adapter__independent.jsonl). Begleitende `.meta.json` prüfen Basiscommit, Adapterdigest, tatsächlich verwendeten Systemprompt, lokale Maschine und Antwort-SHA. [Bundle](../../outputs/20261004_selection_40/bundle/bundle_manifest.json) kopiert beide bytegleich für den vorhandenen gemeinsamen Scorer; keine zweite Messung.

@@ -1,0 +1,93 @@
+{
+  "schema": "afyanote.referral-draft/0.3",
+  "form_reference": "Oriented on MOH 100 Community Referral Form, section A (historical template). Not an official or validated form.",
+  "status": "reviewed_by_user",
+  "created_device_time": "2026-10-04T07:16:07.783Z",
+  "referral_time": null,
+  "case_id": "DEMO-CODEX-02",
+  "sex": "female",
+  "age": {
+    "value": 2.5,
+    "unit": "years"
+  },
+  "community_health_unit": "Kiharu Demo CHU (fictional)",
+  "link_health_facility": {
+    "id": "demo-03",
+    "name": "Demo Dispensary Sokoni",
+    "type": "dispensary",
+    "keph_level": 2,
+    "straight_line_km": 3.4,
+    "demo_data": true
+  },
+  "community_health_promoter": "CHP Demo 014 (fictional)",
+  "main_problems": [
+    {
+      "term_en": "Cough",
+      "term_sw": "Kikohozi",
+      "label": "cough",
+      "evidence": "Child has a cough for two days",
+      "duration_days": 2,
+      "duration_source": "note",
+      "status": "stated",
+      "edited_by_user": false
+    }
+  ],
+  "documented_absent": [
+    {
+      "term_en": "Fever",
+      "term_sw": "Homa",
+      "label": "fever",
+      "evidence": "No fever",
+      "duration_days": null,
+      "duration_source": null,
+      "status": "denied",
+      "edited_by_user": false
+    }
+  ],
+  "mentioned_other_person_or_past": [],
+  "who_imci_general_danger_signs_confirmed": [],
+  "treatment_given": null,
+  "original_note": "Child has a cough for two days. No fever.",
+  "consent_recorded": true,
+  "model": {
+    "name": "afyanote-passage-classifier",
+    "version": "0.1.0",
+    "thresholds": {
+      "suggest": 0.5,
+      "unclear": 0.25,
+      "dev_precision_at_suggest": 1,
+      "dev_recall_at_suggest": 0.983
+    }
+  },
+  "review_log": [
+    {
+      "label": "cough",
+      "decision": "confirmed",
+      "selected_status": "stated",
+      "original_rule_status": "stated",
+      "edited_by_user": false,
+      "evidence": [
+        {
+          "text": "Child has a cough for two days",
+          "start": 0,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "label": "fever",
+      "decision": "confirmed",
+      "selected_status": "denied",
+      "original_rule_status": "denied",
+      "edited_by_user": false,
+      "evidence": [
+        {
+          "text": "No fever",
+          "start": 32,
+          "end": 40
+        }
+      ]
+    }
+  ],
+  "demo_data_fictional": true
+}

@@ -1,0 +1,74 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T08:04:18.454922+00:00",
+  "version": "afyanote-v0.4.17",
+  "duration_seconds": 75.56,
+  "voiceover": false,
+  "physical_phone": false,
+  "visual_checks": [
+    "01_note_mobile.png",
+    "07_review_desktop.png"
+  ],
+  "mp4_bytes": 856421,
+  "source_coverage_files": 15,
+  "source_hashes_match": true,
+  "streams": [
+    {
+      "codec_type": "video"
+    }
+  ],
+  "files": {
+    "01_note_mobile.png": {
+      "bytes": 100458,
+      "sha256": "92eabba8000441fc4e3408a98bea342d9c63d5726e99ce332a787bc859bf5d63"
+    },
+    "02_review_mobile.png": {
+      "bytes": 69942,
+      "sha256": "ba793f0a12350d674ae5c9404423ddb2efd70225a7d2e2e0b9891dafac2ec70f"
+    },
+    "03_handover_mobile.png": {
+      "bytes": 59313,
+      "sha256": "4f349e76aa37fe27b944869666bb567d64afc8eb68840dc57646bb805b3fb78f"
+    },
+    "04_qr_mobile.png": {
+      "bytes": 53012,
+      "sha256": "561265e2d9ff4d1e93b76155ffdfb01655c59164452f40a291049fb2792730b8"
+    },
+    "05_conflict_mobile.png": {
+      "bytes": 69933,
+      "sha256": "a3480091d66967564501580827dca305403c8451ce56a47a738d67ffeba8f81a"
+    },
+    "06_note_desktop.png": {
+      "bytes": 174594,
+      "sha256": "16632f8a82d0a3dcdafdf7f9bec1b6e23f9de8551d4ef8982cfc9703b649d449"
+    },
+    "07_review_desktop.png": {
+      "bytes": 138151,
+      "sha256": "2e4a93bc0373b8fad4908095c3ab1fd6c642b1f6c8c74161ae7691d1cebf7a87"
+    },
+    "08_handover_desktop.png": {
+      "bytes": 120370,
+      "sha256": "ffd8fc24154d1192c43b20e813a29d6030fa5ef4cb617482b700c9a1465e563b"
+    },
+    "README.md": {
+      "bytes": 1220,
+      "sha256": "dd24586c9b189edc60786dd35877e3aecbab34ff5724b2c20db9a6eebb0e5c80"
+    },
+    "capture_manifest.json": {
+      "bytes": 4388,
+      "sha256": "0aba8c179ee4374d0c3207a4d7086abf1eb91487417116d083d266d711bdc417"
+    },
+    "demo_mobile.mp4": {
+      "bytes": 856421,
+      "sha256": "50ef3380bf847380f9a63223f4de8253318a27e395c499c79ad33d0ae22be15f"
+    },
+    "demo_mobile.webm": {
+      "bytes": 2270371,
+      "sha256": "6e98698a40f363486722a92ae5ea349906426d114f8592b5e321dc8b1c099055"
+    },
+    "fictional-video-draft.md": {
+      "bytes": 1155,
+      "sha256": "b001206507383527b45b9b27be55b620ed1b09c07a42d6435371a70142116385"
+    }
+  }
+}

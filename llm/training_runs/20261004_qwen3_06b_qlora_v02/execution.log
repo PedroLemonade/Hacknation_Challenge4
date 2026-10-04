@@ -1,0 +1,155 @@
+Loading verified local base; offline mode; remote code disabled
+Preflight: longest 573 max_seq 576 no truncation; evaluation frozen 48
+base 1/48 517 ms
+base 2/48 909 ms
+base 3/48 798 ms
+base 4/48 1081 ms
+base 5/48 601 ms
+base 6/48 509 ms
+base 7/48 496 ms
+base 8/48 549 ms
+base 9/48 618 ms
+base 10/48 521 ms
+base 11/48 1047 ms
+base 12/48 512 ms
+base 13/48 558 ms
+base 14/48 551 ms
+base 15/48 526 ms
+base 16/48 483 ms
+base 17/48 621 ms
+base 18/48 496 ms
+base 19/48 519 ms
+base 20/48 623 ms
+base 21/48 584 ms
+base 22/48 511 ms
+base 23/48 464 ms
+base 24/48 497 ms
+base 25/48 857 ms
+base 26/48 481 ms
+base 27/48 511 ms
+base 28/48 827 ms
+base 29/48 888 ms
+base 30/48 705 ms
+base 31/48 998 ms
+base 32/48 493 ms
+base 33/48 532 ms
+base 34/48 553 ms
+base 35/48 497 ms
+base 36/48 506 ms
+base 37/48 452 ms
+base 38/48 539 ms
+base 39/48 534 ms
+base 40/48 850 ms
+base 41/48 507 ms
+base 42/48 460 ms
+base 43/48 428 ms
+base 44/48 550 ms
+base 45/48 1341 ms
+base 46/48 501 ms
+base 47/48 645 ms
+base 48/48 635 ms
+Starting training..., iters: 400
+Calculating loss...:   0%|          | 0/16 [00:00<?, ?it/s]Calculating loss...:   6%|▋         | 1/16 [00:00<00:05,  2.83it/s]Calculating loss...:  12%|█▎        | 2/16 [00:00<00:06,  2.26it/s]Calculating loss...:  19%|█▉        | 3/16 [00:01<00:05,  2.32it/s]Calculating loss...:  25%|██▌       | 4/16 [00:01<00:05,  2.33it/s]Calculating loss...:  31%|███▏      | 5/16 [00:02<00:04,  2.34it/s]Calculating loss...:  38%|███▊      | 6/16 [00:02<00:04,  2.25it/s]Calculating loss...:  44%|████▍     | 7/16 [00:03<00:04,  2.24it/s]Calculating loss...:  50%|█████     | 8/16 [00:03<00:03,  2.38it/s]Calculating loss...:  56%|█████▋    | 9/16 [00:03<00:02,  2.40it/s]Calculating loss...:  62%|██████▎   | 10/16 [00:04<00:02,  2.44it/s]Calculating loss...:  69%|██████▉   | 11/16 [00:04<00:02,  2.42it/s]Calculating loss...:  75%|███████▌  | 12/16 [00:05<00:01,  2.47it/s]Calculating loss...:  81%|████████▏ | 13/16 [00:05<00:01,  2.43it/s]Calculating loss...:  88%|████████▊ | 14/16 [00:05<00:00,  2.47it/s]Calculating loss...:  94%|█████████▍| 15/16 [00:06<00:00,  2.49it/s]Calculating loss...: 100%|██████████| 16/16 [00:06<00:00,  2.46it/s]Calculating loss...: 100%|██████████| 16/16 [00:06<00:00,  2.40it/s]
+Iter 1: Val loss 0.559, Val took 6.674s
+Iter 10: Train loss 1.301, Learning Rate 2.000e-04, It/sec 1.052, Tokens/sec 69.042, Trained Tokens 656, Peak mem 1.182 GB
+Iter 20: Train loss 4.704, Learning Rate 2.000e-04, It/sec 1.150, Tokens/sec 60.953, Trained Tokens 1186, Peak mem 1.265 GB
+Iter 30: Train loss 3.855, Learning Rate 2.000e-04, It/sec 1.109, Tokens/sec 73.641, Trained Tokens 1850, Peak mem 1.265 GB
+Iter 40: Train loss 2.476, Learning Rate 2.000e-04, It/sec 1.167, Tokens/sec 63.707, Trained Tokens 2396, Peak mem 1.265 GB
+Iter 50: Train loss 1.932, Learning Rate 2.000e-04, It/sec 1.148, Tokens/sec 60.132, Trained Tokens 2920, Peak mem 1.265 GB
+Iter 60: Train loss 1.521, Learning Rate 2.000e-04, It/sec 1.190, Tokens/sec 47.613, Trained Tokens 3320, Peak mem 1.265 GB
+Iter 70: Train loss 1.436, Learning Rate 2.000e-04, It/sec 1.167, Tokens/sec 55.414, Trained Tokens 3795, Peak mem 1.265 GB
+Iter 80: Train loss 1.687, Learning Rate 2.000e-04, It/sec 1.157, Tokens/sec 69.625, Trained Tokens 4397, Peak mem 1.265 GB
+Iter 90: Train loss 1.533, Learning Rate 2.000e-04, It/sec 1.176, Tokens/sec 57.525, Trained Tokens 4886, Peak mem 1.265 GB
+Calculating loss...:   0%|          | 0/16 [00:00<?, ?it/s]Calculating loss...:   6%|▋         | 1/16 [00:00<00:07,  2.06it/s]Calculating loss...:  12%|█▎        | 2/16 [00:01<00:07,  1.93it/s]Calculating loss...:  19%|█▉        | 3/16 [00:01<00:06,  2.11it/s]Calculating loss...:  25%|██▌       | 4/16 [00:01<00:05,  2.21it/s]Calculating loss...:  31%|███▏      | 5/16 [00:02<00:05,  2.16it/s]Calculating loss...:  38%|███▊      | 6/16 [00:02<00:04,  2.34it/s]Calculating loss...:  44%|████▍     | 7/16 [00:03<00:03,  2.46it/s]Calculating loss...:  50%|█████     | 8/16 [00:03<00:03,  2.49it/s]Calculating loss...:  56%|█████▋    | 9/16 [00:03<00:02,  2.40it/s]Calculating loss...:  62%|██████▎   | 10/16 [00:04<00:02,  2.30it/s]Calculating loss...:  69%|██████▉   | 11/16 [00:04<00:02,  2.32it/s]Calculating loss...:  75%|███████▌  | 12/16 [00:05<00:01,  2.33it/s]Calculating loss...:  81%|████████▏ | 13/16 [00:05<00:01,  2.28it/s]Calculating loss...:  88%|████████▊ | 14/16 [00:06<00:00,  2.32it/s]Calculating loss...:  94%|█████████▍| 15/16 [00:06<00:00,  2.22it/s]Calculating loss...: 100%|██████████| 16/16 [00:07<00:00,  2.27it/s]Calculating loss...: 100%|██████████| 16/16 [00:07<00:00,  2.28it/s]
+Iter 100: Val loss 2.670, Val took 7.037s
+Iter 100: Train loss 2.337, Learning Rate 2.000e-04, It/sec 1.129, Tokens/sec 70.433, Trained Tokens 5510, Peak mem 1.265 GB
+Iter 100: Saved adapter weights to /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/adapters.safetensors and /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/0000100_adapters.safetensors.
+Iter 110: Train loss 1.691, Learning Rate 2.000e-04, It/sec 1.119, Tokens/sec 80.774, Trained Tokens 6232, Peak mem 1.265 GB
+Iter 120: Train loss 1.504, Learning Rate 2.000e-04, It/sec 1.141, Tokens/sec 68.685, Trained Tokens 6834, Peak mem 1.265 GB
+Iter 130: Train loss 1.507, Learning Rate 2.000e-04, It/sec 1.140, Tokens/sec 69.896, Trained Tokens 7447, Peak mem 1.265 GB
+Iter 140: Train loss 1.182, Learning Rate 2.000e-04, It/sec 1.050, Tokens/sec 94.565, Trained Tokens 8348, Peak mem 1.274 GB
+Iter 150: Train loss 0.853, Learning Rate 2.000e-04, It/sec 1.118, Tokens/sec 71.005, Trained Tokens 8983, Peak mem 1.274 GB
+Iter 160: Train loss 0.973, Learning Rate 2.000e-04, It/sec 1.104, Tokens/sec 80.019, Trained Tokens 9708, Peak mem 1.274 GB
+Iter 170: Train loss 1.028, Learning Rate 2.000e-04, It/sec 1.122, Tokens/sec 73.042, Trained Tokens 10359, Peak mem 1.274 GB
+Iter 180: Train loss 0.865, Learning Rate 2.000e-04, It/sec 1.132, Tokens/sec 76.391, Trained Tokens 11034, Peak mem 1.274 GB
+Iter 190: Train loss 0.814, Learning Rate 2.000e-04, It/sec 1.145, Tokens/sec 71.762, Trained Tokens 11661, Peak mem 1.274 GB
+Calculating loss...:   0%|          | 0/16 [00:00<?, ?it/s]Calculating loss...:   6%|▋         | 1/16 [00:00<00:06,  2.33it/s]Calculating loss...:  12%|█▎        | 2/16 [00:00<00:05,  2.57it/s]Calculating loss...:  19%|█▉        | 3/16 [00:01<00:04,  2.65it/s]Calculating loss...:  25%|██▌       | 4/16 [00:01<00:04,  2.54it/s]Calculating loss...:  31%|███▏      | 5/16 [00:02<00:04,  2.41it/s]Calculating loss...:  38%|███▊      | 6/16 [00:02<00:04,  2.38it/s]Calculating loss...:  44%|████▍     | 7/16 [00:02<00:03,  2.41it/s]Calculating loss...:  50%|█████     | 8/16 [00:03<00:03,  2.51it/s]Calculating loss...:  56%|█████▋    | 9/16 [00:03<00:02,  2.35it/s]Calculating loss...:  62%|██████▎   | 10/16 [00:04<00:02,  2.36it/s]Calculating loss...:  69%|██████▉   | 11/16 [00:04<00:02,  2.41it/s]Calculating loss...:  75%|███████▌  | 12/16 [00:04<00:01,  2.40it/s]Calculating loss...:  81%|████████▏ | 13/16 [00:05<00:01,  2.34it/s]Calculating loss...:  88%|████████▊ | 14/16 [00:05<00:00,  2.30it/s]Calculating loss...:  94%|█████████▍| 15/16 [00:06<00:00,  2.32it/s]Calculating loss...: 100%|██████████| 16/16 [00:06<00:00,  2.30it/s]Calculating loss...: 100%|██████████| 16/16 [00:06<00:00,  2.38it/s]
+Iter 200: Val loss 1.998, Val took 6.727s
+Iter 200: Train loss 0.532, Learning Rate 2.000e-04, It/sec 1.194, Tokens/sec 55.273, Trained Tokens 12124, Peak mem 1.274 GB
+Iter 200: Saved adapter weights to /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/adapters.safetensors and /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/0000200_adapters.safetensors.
+Iter 210: Train loss 0.576, Learning Rate 2.000e-04, It/sec 1.157, Tokens/sec 71.607, Trained Tokens 12743, Peak mem 1.274 GB
+Iter 220: Train loss 0.477, Learning Rate 2.000e-04, It/sec 1.212, Tokens/sec 54.554, Trained Tokens 13193, Peak mem 1.274 GB
+Iter 230: Train loss 0.447, Learning Rate 2.000e-04, It/sec 1.178, Tokens/sec 57.155, Trained Tokens 13678, Peak mem 1.274 GB
+Iter 240: Train loss 0.504, Learning Rate 2.000e-04, It/sec 1.149, Tokens/sec 67.795, Trained Tokens 14268, Peak mem 1.274 GB
+Iter 250: Train loss 0.423, Learning Rate 2.000e-04, It/sec 1.180, Tokens/sec 59.461, Trained Tokens 14772, Peak mem 1.274 GB
+Iter 260: Train loss 0.534, Learning Rate 2.000e-04, It/sec 1.163, Tokens/sec 68.036, Trained Tokens 15357, Peak mem 1.274 GB
+Iter 270: Train loss 0.399, Learning Rate 2.000e-04, It/sec 1.140, Tokens/sec 68.029, Trained Tokens 15954, Peak mem 1.274 GB
+Iter 280: Train loss 0.411, Learning Rate 2.000e-04, It/sec 1.115, Tokens/sec 71.246, Trained Tokens 16593, Peak mem 1.274 GB
+Iter 290: Train loss 0.401, Learning Rate 2.000e-04, It/sec 1.197, Tokens/sec 58.516, Trained Tokens 17082, Peak mem 1.274 GB
+Calculating loss...:   0%|          | 0/16 [00:00<?, ?it/s]Calculating loss...:   6%|▋         | 1/16 [00:00<00:05,  2.58it/s]Calculating loss...:  12%|█▎        | 2/16 [00:00<00:06,  2.10it/s]Calculating loss...:  19%|█▉        | 3/16 [00:01<00:06,  2.06it/s]Calculating loss...:  25%|██▌       | 4/16 [00:01<00:05,  2.21it/s]Calculating loss...:  31%|███▏      | 5/16 [00:02<00:04,  2.26it/s]Calculating loss...:  38%|███▊      | 6/16 [00:02<00:04,  2.30it/s]Calculating loss...:  44%|████▍     | 7/16 [00:03<00:04,  2.18it/s]Calculating loss...:  50%|█████     | 8/16 [00:03<00:03,  2.10it/s]Calculating loss...:  56%|█████▋    | 9/16 [00:04<00:03,  2.06it/s]Calculating loss...:  62%|██████▎   | 10/16 [00:04<00:03,  1.99it/s]Calculating loss...:  69%|██████▉   | 11/16 [00:05<00:02,  2.13it/s]Calculating loss...:  75%|███████▌  | 12/16 [00:05<00:01,  2.26it/s]Calculating loss...:  81%|████████▏ | 13/16 [00:05<00:01,  2.29it/s]Calculating loss...:  88%|████████▊ | 14/16 [00:06<00:00,  2.36it/s]Calculating loss...:  94%|█████████▍| 15/16 [00:06<00:00,  2.31it/s]Calculating loss...: 100%|██████████| 16/16 [00:07<00:00,  2.19it/s]Calculating loss...: 100%|██████████| 16/16 [00:07<00:00,  2.19it/s]
+Iter 300: Val loss 1.717, Val took 7.302s
+Iter 300: Train loss 0.346, Learning Rate 2.000e-04, It/sec 1.135, Tokens/sec 73.180, Trained Tokens 17727, Peak mem 1.274 GB
+Iter 300: Saved adapter weights to /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/adapters.safetensors and /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/0000300_adapters.safetensors.
+Iter 310: Train loss 0.304, Learning Rate 2.000e-04, It/sec 1.165, Tokens/sec 49.383, Trained Tokens 18151, Peak mem 1.274 GB
+Iter 320: Train loss 0.445, Learning Rate 2.000e-04, It/sec 1.178, Tokens/sec 55.579, Trained Tokens 18623, Peak mem 1.274 GB
+Iter 330: Train loss 0.259, Learning Rate 2.000e-04, It/sec 1.205, Tokens/sec 46.023, Trained Tokens 19005, Peak mem 1.274 GB
+Iter 340: Train loss 0.302, Learning Rate 2.000e-04, It/sec 1.176, Tokens/sec 65.169, Trained Tokens 19559, Peak mem 1.274 GB
+Iter 350: Train loss 0.314, Learning Rate 2.000e-04, It/sec 1.105, Tokens/sec 88.153, Trained Tokens 20357, Peak mem 1.274 GB
+Iter 360: Train loss 0.237, Learning Rate 2.000e-04, It/sec 1.122, Tokens/sec 70.940, Trained Tokens 20989, Peak mem 1.274 GB
+Iter 370: Train loss 0.257, Learning Rate 2.000e-04, It/sec 1.168, Tokens/sec 66.797, Trained Tokens 21561, Peak mem 1.274 GB
+Iter 380: Train loss 0.272, Learning Rate 2.000e-04, It/sec 1.145, Tokens/sec 68.445, Trained Tokens 22159, Peak mem 1.274 GB
+Iter 390: Train loss 0.263, Learning Rate 2.000e-04, It/sec 1.113, Tokens/sec 80.339, Trained Tokens 22881, Peak mem 1.274 GB
+Calculating loss...:   0%|          | 0/16 [00:00<?, ?it/s]Calculating loss...:   6%|▋         | 1/16 [00:00<00:05,  2.51it/s]Calculating loss...:  12%|█▎        | 2/16 [00:00<00:05,  2.43it/s]Calculating loss...:  19%|█▉        | 3/16 [00:01<00:05,  2.48it/s]Calculating loss...:  25%|██▌       | 4/16 [00:01<00:04,  2.51it/s]Calculating loss...:  31%|███▏      | 5/16 [00:02<00:04,  2.46it/s]Calculating loss...:  38%|███▊      | 6/16 [00:02<00:04,  2.38it/s]Calculating loss...:  44%|████▍     | 7/16 [00:02<00:03,  2.37it/s]Calculating loss...:  50%|█████     | 8/16 [00:03<00:03,  2.50it/s]Calculating loss...:  56%|█████▋    | 9/16 [00:03<00:02,  2.37it/s]Calculating loss...:  62%|██████▎   | 10/16 [00:04<00:02,  2.37it/s]Calculating loss...:  69%|██████▉   | 11/16 [00:04<00:02,  2.37it/s]Calculating loss...:  75%|███████▌  | 12/16 [00:05<00:01,  2.33it/s]Calculating loss...:  81%|████████▏ | 13/16 [00:05<00:01,  2.40it/s]Calculating loss...:  88%|████████▊ | 14/16 [00:05<00:00,  2.35it/s]Calculating loss...:  94%|█████████▍| 15/16 [00:06<00:00,  2.46it/s]Calculating loss...: 100%|██████████| 16/16 [00:06<00:00,  2.48it/s]Calculating loss...: 100%|██████████| 16/16 [00:06<00:00,  2.42it/s]
+Iter 400: Val loss 1.202, Val took 6.609s
+Iter 400: Train loss 0.276, Learning Rate 2.000e-04, It/sec 1.083, Tokens/sec 87.250, Trained Tokens 23687, Peak mem 1.274 GB
+Iter 400: Saved adapter weights to /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/adapters.safetensors and /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/0000400_adapters.safetensors.
+Saved final weights to /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02/adapter/adapters.safetensors.
+adapter 1/48 5362 ms
+adapter 2/48 725 ms
+adapter 3/48 4706 ms
+adapter 4/48 1085 ms
+adapter 5/48 929 ms
+adapter 6/48 930 ms
+adapter 7/48 1014 ms
+adapter 8/48 959 ms
+adapter 9/48 5417 ms
+adapter 10/48 897 ms
+adapter 11/48 1110 ms
+adapter 12/48 1004 ms
+adapter 13/48 999 ms
+adapter 14/48 990 ms
+adapter 15/48 5372 ms
+adapter 16/48 1146 ms
+adapter 17/48 1065 ms
+adapter 18/48 5311 ms
+adapter 19/48 991 ms
+adapter 20/48 950 ms
+adapter 21/48 1119 ms
+adapter 22/48 5322 ms
+adapter 23/48 870 ms
+adapter 24/48 5369 ms
+adapter 25/48 1096 ms
+adapter 26/48 960 ms
+adapter 27/48 1091 ms
+adapter 28/48 1034 ms
+adapter 29/48 1454 ms
+adapter 30/48 1137 ms
+adapter 31/48 1341 ms
+adapter 32/48 919 ms
+adapter 33/48 1010 ms
+adapter 34/48 994 ms
+adapter 35/48 5338 ms
+adapter 36/48 1183 ms
+adapter 37/48 1047 ms
+adapter 38/48 974 ms
+adapter 39/48 5287 ms
+adapter 40/48 1140 ms
+adapter 41/48 935 ms
+adapter 42/48 921 ms
+adapter 43/48 1126 ms
+adapter 44/48 1005 ms
+adapter 45/48 1134 ms
+adapter 46/48 1037 ms
+adapter 47/48 945 ms
+adapter 48/48 958 ms
+Completed run /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v02

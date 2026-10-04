@@ -1,0 +1,38 @@
+# Runs on every push: model parity Python vs browser code, evaluation incl. contrast tests,
+# syntax check of the app scripts. Training is not rerun here (model.json is committed).
+name: check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Syntax check app scripts
+        run: for f in app/*.js app/vendor/*.js; do node --check "$f"; done
+      - name: Parity Python vs JavaScript
+        run: node eval/parity.mjs
+      - name: Evaluation and contrast tests
+        run: node eval/eval.mjs
+      - name: Versioning and bounded context contracts
+        run: |
+          node eval/test_benchmark_t33.mjs
+          node eval/test_scope_t37.mjs
+          python3 tools/test_current_evidence.py
+          python3 integrations/local_mock/test_adapter.py
+      - name: LLM contract regressions (no model needed)
+        run: |
+          python3 llm/training_codex/test_sft.py
+          python3 llm/training_codex/test_selection.py
+          node llm/training_codex/test_score_run.mjs
+          node llm/test_guard_codex.mjs
+          node llm/test_eval_codex.mjs
+          node llm/test_report_cli_codex.mjs
+          python3 llm/test_runner_codex.py
+          node llm/eval_llm.mjs --selftest --input-dir "$RUNNER_TEMP/afya-reference-outputs" --report-dir "$RUNNER_TEMP/afya-reference-report"
+      - name: No case data storage in app code
+        run: |
+          ! grep -nE "indexedDB|sessionStorage|document\.cookie|sendBeacon" app/*.js
+          test "$(grep -o 'localStorage\.[a-zA-Z]*("[a-z_]*' app/app.js | grep -v afya_lang | wc -l)" = "0"

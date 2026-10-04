@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-04T07:14:52.042Z",
+  "created_by": "ChatGPT / Codex",
+  "synthetic": true,
+  "native_swahili_review": false,
+  "clinical_review": false,
+  "purpose": "Known AI-authored negation/context regression; cases frozen before code repair; no field validation.",
+  "source_hashes": {
+    "app/rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "app/classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "app/model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "data/dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "eval/context_t37/run.mjs": "b36c83e8ad222630d60c5238007aa7c57e6a463864b0db36d90a79f0619002d8",
+    "eval/benchmark_lib.mjs": "444a4020af05312b5f3ffd6dade7db48200c7e92373e9eced2dbfb6372141508",
+    "eval/context_t37/cases.json": "1d81cb09f86f4b789ea63a5f2b15f149494495d30f57f8d34d0cbb9989ca19fa",
+    "eval/context_t31/cases.json": "280ff516c8bcd3762441858502a796a097c51d3edec211834a03464eda37fd8b",
+    "eval/independent_notes.jsonl": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+    "data/notes_test.jsonl": "5a4ce9c376ddfcd1911cc57355c93fb259cc12d350c001dd18e568fa8b12cbd6"
+  },
+  "rules_before_sha256": "0a0733a55a9dad4731898072d598180bb4e399edc0b28e91fe558a52afb88ebd",
+  "protected_changed": []
+}

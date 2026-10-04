@@ -1,0 +1,153 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T02:10:12.403Z",
+  "module": "/Users/peter/Desktop/Challenge%204/01_Working_Demo_AfyaNote/llm/review_codex/baseline_guard.mjs",
+  "source_sha256": "cd542a24cfd6c734f2e549f4dd3f88536bc814793b37f6ef0e8dc25e3a784f08",
+  "test_sha256": "b6d07a7decb89fbfefd9763d28bbc25d3e3b9631efdb7490ecfa480c3b4ab438",
+  "passed": 13,
+  "total": 31,
+  "tests": [
+    {
+      "name": "Valid exact quote survives unchanged",
+      "pass": true
+    },
+    {
+      "name": "Case-changed quote rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Whitespace-changed quote rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Punctuation-changed quote rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Quote marks cannot be silently removed",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Unicode quote preserved",
+      "pass": true
+    },
+    {
+      "name": "Known exact quote receives original offsets",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'The child has fever for two days. Mother has cough.'\n- 'The child has fever for two days'\n"
+    },
+    {
+      "name": "Repeated quote exposes ambiguity",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- null\n"
+    },
+    {
+      "name": "Evidence must be a string",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Evidence cannot exceed schema maximum",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Unknown term rejected",
+      "pass": true
+    },
+    {
+      "name": "Unknown status rejected",
+      "pass": true
+    },
+    {
+      "name": "Extra clinical text property rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Extra root property rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Missing required duration rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "String duration rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Fractional duration rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Out-of-range duration rejected",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Unsupported duration dropped with warning",
+      "pass": true
+    },
+    {
+      "name": "Denied term cannot retain duration",
+      "pass": true
+    },
+    {
+      "name": "Conflicting duplicate term is never first-wins",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Items above schema limit reject whole response",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "Markdown JSON fence accepted explicitly",
+      "pass": true
+    },
+    {
+      "name": "Prose around JSON rejected",
+      "pass": true
+    },
+    {
+      "name": "Empty term list valid",
+      "pass": true
+    },
+    {
+      "name": "Invalid note type rejected",
+      "pass": true
+    },
+    {
+      "name": "LLM-only term requires status choice",
+      "pass": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'stated'\n- 'conflict'\n"
+    },
+    {
+      "name": "Hybrid retains both original quotes",
+      "pass": false,
+      "error": "Cannot read properties of undefined (reading 'classifier')"
+    },
+    {
+      "name": "Hybrid agreement never resolves existing uncertainty",
+      "pass": true
+    },
+    {
+      "name": "Hybrid disagreement requires choice",
+      "pass": true
+    },
+    {
+      "name": "Exact unrelated quote is structurally accepted (semantic limit)",
+      "pass": true
+    }
+  ]
+}

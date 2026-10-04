@@ -1,0 +1,223 @@
+PAGE 1
+7THGLOBAL AI HACKATHONin collaboration with MIT Club of Northern California and MIT Club of GermanyOct 3-4, 2026
+Sponsored and presented by
+MIT Sloan AI Club
+
+
+PAGE 2
+22
+Your hosts today
+Kai N. WiederholdMIT Sloan, MBACEO Hack-NationLead Start-ups & AI MIT Club of GermanyMunich, Germany
+Linn BieskeMIT, MS CS + MBA (LGO)Lead AI & Tech Track MIT Club of Northern CaliforniaSan Franscisco, CA, USA
+
+
+PAGE 3
+33
+Our mission:We give builders a starting line to tackle real problems and ship real solutions
+Work on real problems, not toy promptsBuild on live challenges from companies and investors
+What you'll do here
+Build fast, learn by shippingLearn AI by executing, iterating, and owning outcomes
+Turn projects into your next career stepStrong work doesn’t end on Sunday: Turn your solution into a venture, or secure a follow-up with our partners
+
+
+PAGE 4
+4
+You’re here because you’ve earned it.Welcome to a global cohort of builders who don’t just talk — but ship>600Top universities represented by our participants 
+>125Countries represented by our participants 
+>8.500Applications for this hackathon
+You’re part of a select global cohort
+
+
+PAGE 5
+55
+ 5
+…and then incubate the top teams in our venture lab
+In cooperation with:
+WE.ARE. HACK-NATION.We host hackathons with 2k+ people to find the best talent…
+Global AI Hackathon
+TODAY
+
+
+PAGE 6
+MBA coach per team
+Dedicated senior mentor
+1M EUR per team: Compute & tooling credits
+How we incubate: Top teams go through a 3-month incubation, with hands-on support, mentorship, and investor access Founder-led workshops & online-tool
+Demo & Investor Day
+What we provide
+
+
+PAGE 7
+POWERED BY HACK-NATION
+HN12OUR OWN FUND FOR THE TOP TEAMSBeyond the prizes, we invest in the best teams from our hackathons through HN12.hn12.hack-nation.ai
+FUND SIZE
+€30MTICKETS
+€100–500kplus smaller angel ticketsSTAGE
+Early stage
+
+
+PAGE 8
+8
+https://tinyurl.com/7-HN-Discord
+Join our Discord Channel for questions and announcements:General question: Ask our bot in FAQ /FAQ queryHub updates: Click on your hub in #pick-your-hubPics: Send your best pictures and quotes in here #pictures-and-quotes
+First things first: Join our Discord
+USE OUR FAQ BOT with /FAQ
+
+PAGE 9
+We have 15 official hubs participating  
+Stanford, USStanford GSAC
+ Boston, USMIT
+Vienna, ATHome of Innovation Vienna
+Berkeley, USUC Berkeley
+Dresden, DEYETI, BoostZurich, CHJfloor | ETH AI Club
+NYC, USColumbia University
+London, UKHalkin | CoAI
+Los Angeles, USUCLA
+Munich, DEStart2GroupManage&More
+Bombay, INIITB
+Princeton, USPrinceton University
+Pittsburgh, USCarnegie Mellon 
+Toluca (CDMX), MXTechnológico de Monterrey
+ Stockholm, SEPress Start Game Tech Hub
+
+PAGE 10
+1010
+What you can expect during the next two days
+Kick-off & speaker session12:00 PM – 12:50 PMSaturday, Oct 3
+Hacking begins1:00 PM
+Submission deadline9:00 AMSunday, Oct 4
+Awards Ceremony1:15 PM
+Reveal of challenges12:50 PM – 1:00 PM
+Time (ET)
+Finalist Pitches (3 Mins)1st – 2nd place of each challenge will pitch for the grand prize 12:00 PM – 1:00 PMSuper important: Please come back and be ready to pitch. Top 2 teams by challenge pitch live for prizesNeeded: 1-2 Slides + Demo
+Saturday, Oct 10
+
+PAGE 11
+Our speakers for today
+Anindita MahapatraDatabricksPrincipal Solutions Architect
+
+
+PAGE 12
+Main prizes: $45k+ across all challengesCHALLENGE
+1st place
+2nd place
+3rd placeElevenLabsPlans for a team of 4$500cash$7,176Scale plan (6 mo)$200cash$3,588Scale plan (3 mo)$100cash$1,188Pro plan (3 mo)
+RealPage$500cash$2,000Anthropic credits$200cash$1,000Anthropic credits$100cash$250Anthropic credits
+Databricks$500cash$2,000Anthropic credits$200cash$1,000Anthropic credits$100cash$250Anthropic creditsWorld Bank3× trip to Seoulworth $6,000 · one per track winner · Oct 19–22 · visa and passport requiredBuffalo × OpenAI$10,000OpenAI credits$5,000OpenAI credits$2,000OpenAI credits
+GRAND PRIZE · OVERALL 1stVenture Lab Fast Track + $2,000 Anthropic creditsThe top 2 teams of each challengepitch live for it on Sat, Oct 10
+Important: you need to attend the prize ceremony on Sat, Oct 10. If you’re shortlisted, we’ll reach out by Thu, Oct 8.
+
+PAGE 13
+Community prizes: three more ways to win
+01
+Creativity awardThe most out-of-the-box submission.
+02
+Best Quote awardWe loved your quotes last time. Keep the engagement high.
+03
+Go Viral awardThe team with the most reactions on LinkedIn. Tag us by Sun, Oct 4, 9 am ET.
+$500 in Anthropic credits for each winner
+
+PAGE 14
+14
+We have mentors who are here to help you with your projectSign-up for a 15-30 mins slot online on app.hack-nation.ai
+Come prepared with concrete questions
+Book your slot via the mentor’s calendly link
+
+
+PAGE 15
+15
+Our >170 judges come from world class organizations and are experts in AI…Technical depthComplexity, implementation and engineering quality 
+CommunicationDocumentation and presentation (incl. video)
+Innovation & creativityOriginality and creative approach of solution 
+...judging 3 criteria
+
+
+PAGE 16
+Challenge Sponsors
+THANK YOU to our sponsors!
+Hub sponsors & collaborators 
+Community and in-kind sponsors
+API sponsors
+MIT Sloan AI Club
+
+
+PAGE 17
+A little sneak peak from ElevenLabs
+
+
+PAGE 18
+Please welcome our speaker
+Anindita MahapatraDatabricksPrincipal Solutions Architect
+
+
+PAGE 19
+Rules (1/2): Create an account, choose any challenge and submit on website
+Be sure to submit on time (9am ET) – no late submissions are accepted to win prizes
+Submissions must have follow the submission guideline (next page)
+Choose a challenge and let us know in Discord which one you will be tackling 
+If not done yet: Create an account on app.hack-nation.ai – you have received a personalized login code
+Submissions need to be on app.hack-nation.ai AND in our Google formTeam members: Add them on our platform - Every member needs an account on app.hack-nation.ai and needs to be added under “team & submission”
+
+PAGE 20
+Check-list – Upload to app.hack-nation.ai AND our Google form
+Item FormatPurposeDemo VideoVideoShow projectTech VideoVideoExplain buildTeam VideoVideoIntroduce teamGitHub RepoPublic linkCode and docsLive DemoVercel, Replit or LovableShow your product
+Rules (2/2): Create an account, choose any challenge and submit on website
+Important: Please upload a backup of your submission in our Google form
+
+
+PAGE 21
+212121
+Free stuff? Free stuff!
+Over $950k+ in creditsRequest them online via projects.hack-nation.com
+2,500 x Pro Plan$62.5k total 
+Creator Tier for everyone$130k total 
+600 x 25 USD$15k total 
+2,500 x 300USD$750k total 
+
+
+PAGE 22
+22
+Here come the challenges!
+
+
+PAGE 23
+23
+Challenge 1:The AI ApprenticeCapture the knowledge that disappears when experienced employees leave.Build a voice-powered AI apprentice that watches experts work, asks why at the right moments, maps their decisions and guardrails, and teaches the workflow to the next generation.
+Sponsored by
+
+
+PAGE 24
+24
+Challenge 2:Rental Housing Law NavigatorTurn complex state and local housing laws into accurate, address-level answers.Given any apartment address, your AI system should identify which rules apply today, explain them in plain language with citations, and show how pending or new laws would change the result.
+Sponsored by
+
+
+PAGE 25
+25
+Challenge 3:Agentic Scientific DiscoveryBuild an AI lab for the next breakthrough and make scientific discovery 10× faster.Use multiple AI agents to research, form hypotheses, plan and run experiments, learn from the results, and decide what experiment should happen next.
+Sponsored by
+
+
+PAGE 26
+26
+Challenge 4:Small AI for DevelopmentBuild AI that works where connectivity, devices and infrastructure are constrained.Create a targeted, offline-capable solution for health, agriculture or tourism, designed around local languages, real-world data and the devices people already have.
+Sponsored by
+Who can enter: Ages 18–35 with a valid passport. Managed in partnership with Hack-Nation.How it works: Compete Oct3–4 → winners announced Oct6 → travel to Seoul by Oct18 → Ignite Talks Oct21What you can win (one rep per winning team, one team per sector, three in total)•Flight and accommodation to Seoul•Spotlight talk at the Global AI & Digital Summit•Direct engagement with government, private-sector and development leaders
+
+PAGE 27
+27
+Challenge 5:AI Atlas for Rare DiseasesHelp accelerate the path toward treatment for the 5,000+ monogenic rare diseases that remain fragmented across research silos.Build an evidence-backed AI knowledge graph that connects diseases, genes, symptoms, studies and patient groups, and turns those connections into actionable next steps for patients and researchers.
+Sponsored by
+×
+OpenAI
+
+PAGE 28
+28
+https://tinyurl.com/7-HN-Discord
+Join our Discord Channel for questions and announcements:General question: Ask our bot in FAQ /FAQ queryHub updates: Click on your hub in #pick-your-hubPics: Send your best pictures and quotes in here #pictures-and-quotes
+First things first: Join our Discord
+USE OUR FAQ BOT with /FAQ
+
+PAGE 29
+Sponsored and presented by
+MIT Sloan AI Club

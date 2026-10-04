@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-10-04T08:11:26.126190+00:00",
+  "created_by": "ChatGPT / Codex",
+  "version": "afyanote-v0.4.17",
+  "status": "local_package_only",
+  "published": false,
+  "clinical_validation": false,
+  "physical_phone": false,
+  "app_source_hashes": {
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "index.html": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "app.js": "8526bb0299351c697fc7a613f613f1c10f51aed7792038f2147a07b161efae46",
+    "sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "files": {
+    "app/app.js": {
+      "bytes": 62209,
+      "sha256": "8526bb0299351c697fc7a613f613f1c10f51aed7792038f2147a07b161efae46"
+    },
+    "app/build_info.json": {
+      "bytes": 241,
+      "sha256": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f"
+    },
+    "app/classify.js": {
+      "bytes": 3409,
+      "sha256": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a"
+    },
+    "app/dictionary.json": {
+      "bytes": 1629,
+      "sha256": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b"
+    },
+    "app/facilities.json": {
+      "bytes": 1680,
+      "sha256": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce"
+    },
+    "app/i18n.js": {
+      "bytes": 22553,
+      "sha256": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266"
+    },
+    "app/icon-192.png": {
+      "bytes": 1158,
+      "sha256": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362"
+    },
+    "app/icon-512.png": {
+      "bytes": 3552,
+      "sha256": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84"
+    },
+    "app/icon.svg": {
+      "bytes": 380,
+      "sha256": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7"
+    },
+    "app/index.html": {
+      "bytes": 21853,
+      "sha256": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b"
+    },
+    "app/manifest.webmanifest": {
+      "bytes": 538,
+      "sha256": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311"
+    },
+    "app/model.json": {
+      "bytes": 249284,
+      "sha256": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659"
+    },
+    "app/rules.js": {
+      "bytes": 22031,
+      "sha256": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba"
+    },
+    "app/sw.js": {
+      "bytes": 1864,
+      "sha256": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b"
+    },
+    "app/vendor/qrcode.js": {
+      "bytes": 56694,
+      "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+    },
+    "README.md": {
+      "bytes": 22007,
+      "sha256": "34a618172210d7bdec92b1bf09aceb8993f77be468b245c6267a433818ad2609"
+    },
+    "LICENSE": {
+      "bytes": 1078,
+      "sha256": "4a6ca73c4789ab747e83eb1995f3d5636311a016de4fbacedaa2ac9629fdac00"
+    },
+    "docs/model_card.md": {
+      "bytes": 3907,
+      "sha256": "671ac71134fff3fb39eda6140e527dc42b6f4b86c7c6b23568c41b1afea9ea5c"
+    },
+    "EVIDENCE/browser_report.json": {
+      "bytes": 21994,
+      "sha256": "0d94197975e445696d7fb04c393332dcb847c1d1b4600a6149764d1c31c3892a"
+    },
+    "EVIDENCE/deep_report.json": {
+      "bytes": 10370,
+      "sha256": "97f4e38d10cec4f9337500b703b13d2aa15579d4d4bd0b6569ac42425cf6dfd1"
+    },
+    "EVIDENCE/capture_manifest.json": {
+      "bytes": 4388,
+      "sha256": "0aba8c179ee4374d0c3207a4d7086abf1eb91487417116d083d266d711bdc417"
+    },
+    "SOURCE_NOTICE.md": {
+      "bytes": 1550,
+      "sha256": "e0fdb8fa7c1c3a0e23ddd33d6a5bc5650058f9d3295d2d3f9b766ddc6fe8bd92"
+    }
+  },
+  "zip": {
+    "path": "afyanote-demo.zip",
+    "bytes": 151179,
+    "sha256": "2f994c0a3cf21b3bd407ac574c5ee633e98aa38c0c763e0c1b903d7dcdad5c16"
+  },
+  "verification": {
+    "entries": 23,
+    "all_source_bytes_match": true,
+    "crc_ok": true,
+    "no_unplanned_files": true
+  }
+}

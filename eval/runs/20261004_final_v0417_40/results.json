@@ -1,0 +1,4199 @@
+{
+  "manifest": {
+    "schema": "afyanote.benchmark-run/1",
+    "created_at": "2026-10-04T07:41:50.279Z",
+    "created_by": "ChatGPT / Codex",
+    "runner_version": "T33-1",
+    "mode": "regression",
+    "benchmark": "independent",
+    "title": "Known 40-note second-author regression",
+    "app_version": "afyanote-v0.4.17",
+    "source_hashes": {
+      "eval/independent_notes.jsonl": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+      "app/sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+      "app/rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+      "app/classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+      "app/model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+      "data/dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+      "app/dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+      "eval/independent.mjs": "e10f7280ef53606254b693c4fbdda8d183a3fe0e0caf5aecab748cb1e3596163",
+      "eval/benchmark_lib.mjs": "444a4020af05312b5f3ffd6dade7db48200c7e92373e9eced2dbfb6372141508"
+    },
+    "test_sha256": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+    "gold_labels_sha256": "927d8a7b098bbfae70caf2685d2322a483e9f4404333430e803d655de7ae604d",
+    "notes": 40,
+    "synthetic": true,
+    "clinical_review": false,
+    "native_swahili_review": false,
+    "previously_seen": true,
+    "known_repairs": [
+      "Decimal age after initial second-author test",
+      "T31 witness/person and orphan context; see preserved results",
+      "Later rule repairs recorded in matching rule review and source hash"
+    ],
+    "parameters_tuned_on_40": false,
+    "model_training_performed": false,
+    "interpretation": "Rerun on already-known synthetic notes after disclosed repairs; not independent field validation.",
+    "metric_definitions": {
+      "suggested_only_f1": "Label-only micro F1; suggested candidates; all gold terms in recall denominator; no status correctness implied.",
+      "term_recall": "All found labels, including unclear.",
+      "status_accuracy": "Correct normalized status / found gold labels; missing terms excluded.",
+      "status_mismatches": "All wrong found statuses including conflict/other_person; wrong_stated is only the narrow subset.",
+      "exact_notes": "All candidate labels and normalized statuses match; excludes age, duration and semantic source validation.",
+      "extras": "Both suggested-only and including unclear reported separately.",
+      "age": "Only scored when gold_age explicitly annotated."
+    }
+  },
+  "results": {
+    "model": {
+      "totals": {
+        "notes": 40,
+        "gold_terms": 63,
+        "found_terms": 58,
+        "correct_status": 58,
+        "status_mismatches": 0,
+        "wrong_stated": 0,
+        "extra_suggested": 1,
+        "extra_including_unclear": 1,
+        "found_unclear": 2,
+        "suggested_tp": 56,
+        "suggested_fp": 1,
+        "exact_notes": 35,
+        "annotated_ages": 0,
+        "correct_ages": 0,
+        "annotated_durations": 0,
+        "correct_durations": 0
+      },
+      "term_recall_including_unclear": 0.9206349206349206,
+      "status_accuracy_of_found": 1,
+      "suggested_only": {
+        "tp": 56,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.9824561403508771,
+        "recall": 0.8888888888888888,
+        "f1": 0.9333333333333333
+      },
+      "status_confusion_on_found": {
+        "stated": {
+          "stated": 36
+        },
+        "denied": {
+          "denied": 10
+        },
+        "other_person": {
+          "other_person": 6
+        },
+        "past": {
+          "past": 6
+        }
+      },
+      "age": {
+        "annotated": 0,
+        "correct": 0,
+        "accuracy": null,
+        "observed_statuses": {
+          "missing": 35,
+          "unclear": 5
+        },
+        "caveat": "No gold age annotations: observed age states are not accuracy."
+      },
+      "duration": {
+        "annotated": 0,
+        "correct": 0,
+        "accuracy": null
+      },
+      "by_language": {
+        "sw": {
+          "notes": 15,
+          "gold": 22,
+          "found": 22,
+          "status_correct": 22,
+          "extras": 0
+        },
+        "en": {
+          "notes": 15,
+          "gold": 25,
+          "found": 21,
+          "status_correct": 21,
+          "extras": 1
+        },
+        "mixed": {
+          "notes": 10,
+          "gold": 16,
+          "found": 15,
+          "status_correct": 15,
+          "extras": 0
+        }
+      },
+      "details": [
+        {
+          "id": "codex-independent-01",
+          "language": "sw",
+          "text": "Mtoto ana joto kali mwilini tangu asubuhi.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9462589809733707,
+              "passage": 0,
+              "evidence": "Mtoto ana joto kali mwilini tangu asubuhi",
+              "start": 0,
+              "end": 41,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-02",
+          "language": "sw",
+          "text": "Mtoto hana homa lakini anakohoa wakati wa kulala.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "denied"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9960959016004728,
+              "passage": 0,
+              "evidence": "Mtoto hana homa",
+              "start": 0,
+              "end": 15,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hana"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 0.9774746507484974,
+              "passage": 1,
+              "evidence": "anakohoa wakati wa kulala",
+              "start": 23,
+              "end": 48,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-03",
+          "language": "sw",
+          "text": "Mtoto ametapika mara mbili baada ya kula.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 0.9283009362307516,
+              "passage": 0,
+              "evidence": "Mtoto ametapika mara mbili baada ya kula",
+              "start": 0,
+              "end": 40,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-04",
+          "language": "sw",
+          "text": "Baba anakohoa. Mtoto ana maumivu ya tumbo.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "other_person"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 0.996171642397176,
+              "passage": 0,
+              "evidence": "Baba anakohoa",
+              "start": 0,
+              "end": 13,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: baba"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "baba",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "pain",
+              "score": 0.9982622301001043,
+              "passage": 1,
+              "evidence": "Mtoto ana maumivu ya tumbo",
+              "start": 15,
+              "end": 41,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-05",
+          "language": "sw",
+          "text": "Mtoto hajaharisha leo. Ana homa kidogo.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "denied"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 0.9741628577591057,
+              "passage": 0,
+              "evidence": "Mtoto hajaharisha leo",
+              "start": 0,
+              "end": 21,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hajaharisha"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 0.997519686765678,
+              "passage": 1,
+              "evidence": "Ana homa kidogo",
+              "start": 23,
+              "end": 38,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-06",
+          "language": "sw",
+          "text": "Mtoto alikuwa na homa mwezi uliopita. Leo ana kikohozi.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "past"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9624337157272868,
+              "passage": 1,
+              "evidence": "homa mwezi uliopita",
+              "start": 17,
+              "end": 36,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: mwezi uliopita"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 0.9985788046091181,
+              "passage": 2,
+              "evidence": "Leo ana kikohozi",
+              "start": 38,
+              "end": 54,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-07",
+          "language": "sw",
+          "text": "Umri 4 umeandikwa bila kipimo. Mtoto anahara mara nyingi.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 0.6125002212284825,
+              "passage": 1,
+              "evidence": "Mtoto anahara mara nyingi",
+              "start": 31,
+              "end": 56,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "number without unit",
+            "raw": "umri 4"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-08",
+          "language": "sw",
+          "text": "Mtoto hawezi kunyonya wala kunywa.",
+          "gold": [
+            {
+              "label": "ds_cannot_drink",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_cannot_drink",
+              "score": 0.9968110839407991,
+              "passage": 0,
+              "evidence": "Mtoto hawezi kunyonya",
+              "start": 0,
+              "end": 21,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-09",
+          "language": "sw",
+          "text": "Mtoto hana kikohozi. Anakunywa maji kama kawaida.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "denied"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 0.9959028175038509,
+              "passage": 0,
+              "evidence": "Mtoto hana kikohozi",
+              "start": 0,
+              "end": 19,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hana"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-10",
+          "language": "sw",
+          "text": "Jirani ana homa. Mtoto anatapika kila kitu anachopewa.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "other_person"
+            },
+            {
+              "label": "ds_vomits_everything",
+              "assertion": "stated"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9946075387155865,
+              "passage": 0,
+              "evidence": "Jirani ana homa",
+              "start": 0,
+              "end": 15,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: jirani"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "jirani",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "vomiting",
+              "score": 0.998234954395399,
+              "passage": 1,
+              "evidence": "Mtoto anatapika kila kitu anachopewa",
+              "start": 17,
+              "end": 53,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "ds_vomits_everything",
+              "score": 0.9949366953728308,
+              "passage": 1,
+              "evidence": "Mtoto anatapika kila kitu anachopewa",
+              "start": 17,
+              "end": 53,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-11",
+          "language": "sw",
+          "text": "Mtoto alipata degedege mbele ya mama leo.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_convulsions",
+              "score": 0.9203241683425522,
+              "passage": 0,
+              "evidence": "Mtoto alipata degedege mbele ya mama leo",
+              "start": 0,
+              "end": 40,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [
+                "companion: mama"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [
+                  "companion: mama"
+                ],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-12",
+          "language": "sw",
+          "text": "Mtoto hatapiki. Ana udhaifu unaotajwa kwenye dokezo.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "denied"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 0.9814890170294919,
+              "passage": 0,
+              "evidence": "Mtoto hatapiki",
+              "start": 0,
+              "end": 14,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hatapiki"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "weakness",
+              "score": 0.9030978379365318,
+              "passage": 1,
+              "evidence": "Ana udhaifu unaotajwa kwenye dokezo",
+              "start": 16,
+              "end": 51,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-13",
+          "language": "sw",
+          "text": "Mtoto aliharisha wiki iliyopita. Leo ana maumivu tumboni.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "past"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 0.8312589678189408,
+              "passage": 0,
+              "evidence": "Mtoto aliharisha wiki iliyopita",
+              "start": 0,
+              "end": 31,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: wiki iliyopita"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "pain",
+              "score": 0.9954300492416509,
+              "passage": 1,
+              "evidence": "Leo ana maumivu tumboni",
+              "start": 33,
+              "end": 56,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-14",
+          "language": "sw",
+          "text": "Mama ana miaka 29. Mtoto ana miaka mitatu na homa.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9999612016932476,
+              "passage": 2,
+              "evidence": "homa",
+              "start": 45,
+              "end": 49,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "more than one age in the note",
+            "raw": "miaka 29 | miaka mitatu"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-15",
+          "language": "sw",
+          "text": "Ziara imeandikwa saa nne. Namba ya nyumba imebadilishwa.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-16",
+          "language": "en",
+          "text": "The child feels feverish and keeps coughing after waking.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.6461922217697388,
+              "passage": 0,
+              "evidence": "The child feels feverish",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 0.9875631824305636,
+              "passage": 1,
+              "evidence": "keeps coughing after waking",
+              "start": 29,
+              "end": 56,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-17",
+          "language": "en",
+          "text": "The child denies stomach pain. She threw up after breakfast.",
+          "gold": [
+            {
+              "label": "pain",
+              "assertion": "denied"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 0.9721663191956211,
+              "passage": 0,
+              "evidence": "The child denies stomach pain",
+              "start": 0,
+              "end": 29,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: denies"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "vomiting",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-18",
+          "language": "en",
+          "text": "The mother has diarrhoea. The child's complaint is coughing.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "other_person"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 0.9592692293161867,
+              "passage": 0,
+              "evidence": "The mother has diarrhoea",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: mother"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "mother",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 0.9010141567849905,
+              "passage": 1,
+              "evidence": "The child's complaint is coughing",
+              "start": 26,
+              "end": 59,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-19",
+          "language": "en",
+          "text": "The child had convulsions last month. The visit today records a fever.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "past"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_convulsions",
+              "score": 0.8693629593204187,
+              "passage": 0,
+              "evidence": "The child had convulsions last month",
+              "start": 0,
+              "end": 36,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last month"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 0.8469543607821076,
+              "passage": 1,
+              "evidence": "The visit today records a fever",
+              "start": 38,
+              "end": 69,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-20",
+          "language": "en",
+          "text": "No vomiting is reported for the child. Her stools are watery and frequent.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "denied"
+            },
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 0.9550192899041506,
+              "passage": 0,
+              "evidence": "No vomiting is reported for the child",
+              "start": 0,
+              "end": 37,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-21",
+          "language": "en",
+          "text": "Mother is 31 years old. The child is 18 months old and has a cough.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 0.9922209214416008,
+              "passage": 2,
+              "evidence": "has a cough",
+              "start": 55,
+              "end": 66,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "more than one age in the note",
+            "raw": "31 years old | 18 months old"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-22",
+          "language": "en",
+          "text": "The child is 2.5 years old and has a fever.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9994042511146581,
+              "passage": 2,
+              "evidence": "has a fever",
+              "start": 31,
+              "end": 42,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "decimal age, enter it yourself",
+            "raw": "2.5 years old"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-23",
+          "language": "en",
+          "text": "The child has no cough. A painful stomach is the only complaint recorded.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "denied"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 0.9045373725427829,
+              "passage": 0,
+              "evidence": "The child has no cough",
+              "start": 0,
+              "end": 22,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "pain",
+              "score": 0.4884856320237827,
+              "passage": 1,
+              "evidence": "A painful stomach is the only complaint recorded",
+              "start": 24,
+              "end": 72,
+              "field": "unclear",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-24",
+          "language": "en",
+          "text": "The neighbour feels weak. The child is vomiting after every sip.",
+          "gold": [
+            {
+              "label": "weakness",
+              "assertion": "other_person"
+            },
+            {
+              "label": "ds_vomits_everything",
+              "assertion": "stated"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "weakness",
+              "score": 0.8458464884693885,
+              "passage": 0,
+              "evidence": "The neighbour feels weak",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: neighbour"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "neighbour",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "vomiting",
+              "score": 0.971740700459706,
+              "passage": 1,
+              "evidence": "The child is vomiting after every sip",
+              "start": 26,
+              "end": 63,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "ds_vomits_everything",
+              "score": 0.40535793294564954,
+              "passage": 1,
+              "evidence": "The child is vomiting after every sip",
+              "start": 26,
+              "end": 63,
+              "field": "unclear",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-25",
+          "language": "en",
+          "text": "The child is unconscious and does not respond when called.",
+          "gold": [
+            {
+              "label": "ds_lethargic",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_lethargic",
+              "score": 0.8987545558747725,
+              "passage": 0,
+              "evidence": "The child is unconscious",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-26",
+          "language": "en",
+          "text": "There is no fever in the child's note. The child cannot swallow any drink.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "denied"
+            },
+            {
+              "label": "ds_cannot_drink",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.8147890290741531,
+              "passage": 0,
+              "evidence": "There is no fever in the child's note",
+              "start": 0,
+              "end": 37,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "ds_cannot_drink",
+              "score": 0.8078014977727601,
+              "passage": 1,
+              "evidence": "The child cannot swallow any drink",
+              "start": 39,
+              "end": 73,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-27",
+          "language": "en",
+          "text": "The child had tummy pain last year. Today the worker records weakness.",
+          "gold": [
+            {
+              "label": "pain",
+              "assertion": "past"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 0.9767192986414487,
+              "passage": 0,
+              "evidence": "The child had tummy pain last year",
+              "start": 0,
+              "end": 34,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last year"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "weakness",
+              "score": 0.7244950253951066,
+              "passage": 1,
+              "evidence": "Today the worker records weakness",
+              "start": 36,
+              "end": 69,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-28",
+          "language": "en",
+          "text": "Age: 7, unit omitted. The child has loose stools.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 0.6606722038836522,
+              "passage": 1,
+              "evidence": "unit omitted",
+              "start": 8,
+              "end": 20,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "number without unit",
+            "raw": "age: 7"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            },
+            {
+              "kind": "extra_term",
+              "label": "vomiting",
+              "field": "suggested",
+              "actual": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-29",
+          "language": "en",
+          "text": "The child had a fit during this visit and is now very weak.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "stated"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "weakness",
+              "score": 0.9977248540422126,
+              "passage": 1,
+              "evidence": "is now very weak",
+              "start": 42,
+              "end": 58,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "ds_convulsions",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-30",
+          "language": "en",
+          "text": "The visit number is on the paper. The worker arranged transport to the next meeting.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-31",
+          "language": "mixed",
+          "text": "Mtoto has a cough tangu jana. Ana homa pia.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "stated"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 0.8577559671431456,
+              "passage": 0,
+              "evidence": "Mtoto has a cough tangu jana",
+              "start": 0,
+              "end": 28,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": {
+                "days": 1,
+                "raw": "tangu jana"
+              },
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 0.997252878548369,
+              "passage": 1,
+              "evidence": "Ana homa pia",
+              "start": 30,
+              "end": 42,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-32",
+          "language": "mixed",
+          "text": "No diarrhoea for the child. Mtoto anatapika baada ya kula.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "denied"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 0.9776984085466092,
+              "passage": 0,
+              "evidence": "No diarrhoea for the child",
+              "start": 0,
+              "end": 26,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "vomiting",
+              "score": 0.9923107241766939,
+              "passage": 1,
+              "evidence": "Mtoto anatapika baada ya kula",
+              "start": 28,
+              "end": 57,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-33",
+          "language": "mixed",
+          "text": "Mama has stomach pain. Mtoto ana kikohozi kikavu.",
+          "gold": [
+            {
+              "label": "pain",
+              "assertion": "other_person"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 0.9816242427116797,
+              "passage": 0,
+              "evidence": "Mama has stomach pain",
+              "start": 0,
+              "end": 21,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: mama"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "mama",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 0.9960205978015473,
+              "passage": 1,
+              "evidence": "Mtoto ana kikohozi kikavu",
+              "start": 23,
+              "end": 48,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-34",
+          "language": "mixed",
+          "text": "Mtoto had vomiting last week. Leo ana homa.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "past"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 0.9352900856395344,
+              "passage": 0,
+              "evidence": "Mtoto had vomiting last week",
+              "start": 0,
+              "end": 28,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last week"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 0.9961554988291267,
+              "passage": 1,
+              "evidence": "Leo ana homa",
+              "start": 30,
+              "end": 42,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-35",
+          "language": "mixed",
+          "text": "Child hajitambui. Hawezi kunywa maji.",
+          "gold": [
+            {
+              "label": "ds_lethargic",
+              "assertion": "stated"
+            },
+            {
+              "label": "ds_cannot_drink",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_lethargic",
+              "score": 0.9746978729211419,
+              "passage": 0,
+              "evidence": "Child hajitambui",
+              "start": 0,
+              "end": 16,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "ds_cannot_drink",
+              "score": 0.941596814857741,
+              "passage": 1,
+              "evidence": "Hawezi kunywa maji",
+              "start": 18,
+              "end": 36,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-36",
+          "language": "mixed",
+          "text": "Mtoto hana homa. Watery stools are recorded for this child.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "denied"
+            },
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 0.9960959016004728,
+              "passage": 0,
+              "evidence": "Mtoto hana homa",
+              "start": 0,
+              "end": 15,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hana"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-37",
+          "language": "mixed",
+          "text": "Baba had convulsions today. The child ana udhaifu.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "other_person"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_convulsions",
+              "score": 0.932022047583431,
+              "passage": 0,
+              "evidence": "Baba had convulsions today",
+              "start": 0,
+              "end": 26,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: baba"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "baba",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "weakness",
+              "score": 0.8861789613147465,
+              "passage": 1,
+              "evidence": "The child ana udhaifu",
+              "start": 28,
+              "end": 49,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-38",
+          "language": "mixed",
+          "text": "Mtoto had a cough last month. Now ana maumivu tumboni.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "past"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 0.9032929385156989,
+              "passage": 0,
+              "evidence": "Mtoto had a cough last month",
+              "start": 0,
+              "end": 28,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last month"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "pain",
+              "score": 0.9958780029350264,
+              "passage": 1,
+              "evidence": "Now ana maumivu tumboni",
+              "start": 30,
+              "end": 53,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-39",
+          "language": "mixed",
+          "text": "CHP ameandika namba ya ziara. The next team meeting is on Monday.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-40",
+          "language": "mixed",
+          "text": "The notebook is full. Mfanyakazi anahitaji kalamu mpya kwa ziara.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        }
+      ]
+    },
+    "keyword_list": {
+      "totals": {
+        "notes": 40,
+        "gold_terms": 63,
+        "found_terms": 46,
+        "correct_status": 46,
+        "status_mismatches": 0,
+        "wrong_stated": 0,
+        "extra_suggested": 0,
+        "extra_including_unclear": 0,
+        "found_unclear": 0,
+        "suggested_tp": 46,
+        "suggested_fp": 0,
+        "exact_notes": 24,
+        "annotated_ages": 0,
+        "correct_ages": 0,
+        "annotated_durations": 0,
+        "correct_durations": 0
+      },
+      "term_recall_including_unclear": 0.7301587301587301,
+      "status_accuracy_of_found": 1,
+      "suggested_only": {
+        "tp": 46,
+        "fp": 0,
+        "fn": 17,
+        "precision": 1,
+        "recall": 0.7301587301587301,
+        "f1": 0.8440366972477064
+      },
+      "status_confusion_on_found": {
+        "denied": {
+          "denied": 8
+        },
+        "stated": {
+          "stated": 27
+        },
+        "other_person": {
+          "other_person": 6
+        },
+        "past": {
+          "past": 5
+        }
+      },
+      "age": {
+        "annotated": 0,
+        "correct": 0,
+        "accuracy": null,
+        "observed_statuses": {
+          "missing": 35,
+          "unclear": 5
+        },
+        "caveat": "No gold age annotations: observed age states are not accuracy."
+      },
+      "duration": {
+        "annotated": 0,
+        "correct": 0,
+        "accuracy": null
+      },
+      "by_language": {
+        "sw": {
+          "notes": 15,
+          "gold": 22,
+          "found": 16,
+          "status_correct": 16,
+          "extras": 0
+        },
+        "en": {
+          "notes": 15,
+          "gold": 25,
+          "found": 16,
+          "status_correct": 16,
+          "extras": 0
+        },
+        "mixed": {
+          "notes": 10,
+          "gold": 16,
+          "found": 14,
+          "status_correct": 14,
+          "extras": 0
+        }
+      },
+      "details": [
+        {
+          "id": "codex-independent-01",
+          "language": "sw",
+          "text": "Mtoto ana joto kali mwilini tangu asubuhi.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "fever",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-02",
+          "language": "sw",
+          "text": "Mtoto hana homa lakini anakohoa wakati wa kulala.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "denied"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto hana homa",
+              "start": 0,
+              "end": 15,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hana"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 1,
+              "evidence": "anakohoa wakati wa kulala",
+              "start": 23,
+              "end": 48,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-03",
+          "language": "sw",
+          "text": "Mtoto ametapika mara mbili baada ya kula.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto ametapika mara mbili baada ya kula",
+              "start": 0,
+              "end": 40,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-04",
+          "language": "sw",
+          "text": "Baba anakohoa. Mtoto ana maumivu ya tumbo.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "other_person"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Baba anakohoa",
+              "start": 0,
+              "end": 13,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: baba"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "baba",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "pain",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Mtoto ana maumivu ya tumbo",
+              "start": 15,
+              "end": 41,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-05",
+          "language": "sw",
+          "text": "Mtoto hajaharisha leo. Ana homa kidogo.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "denied"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Ana homa kidogo",
+              "start": 23,
+              "end": 38,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "denied"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-06",
+          "language": "sw",
+          "text": "Mtoto alikuwa na homa mwezi uliopita. Leo ana kikohozi.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "past"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 1,
+              "evidence": "homa mwezi uliopita",
+              "start": 17,
+              "end": 36,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: mwezi uliopita"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 2,
+              "evidence": "Leo ana kikohozi",
+              "start": 38,
+              "end": 54,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-07",
+          "language": "sw",
+          "text": "Umri 4 umeandikwa bila kipimo. Mtoto anahara mara nyingi.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [],
+          "age": {
+            "status": "unclear",
+            "reason": "number without unit",
+            "raw": "umri 4"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-08",
+          "language": "sw",
+          "text": "Mtoto hawezi kunyonya wala kunywa.",
+          "gold": [
+            {
+              "label": "ds_cannot_drink",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_cannot_drink",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto hawezi kunyonya",
+              "start": 0,
+              "end": 21,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-09",
+          "language": "sw",
+          "text": "Mtoto hana kikohozi. Anakunywa maji kama kawaida.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "denied"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto hana kikohozi",
+              "start": 0,
+              "end": 19,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hana"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-10",
+          "language": "sw",
+          "text": "Jirani ana homa. Mtoto anatapika kila kitu anachopewa.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "other_person"
+            },
+            {
+              "label": "ds_vomits_everything",
+              "assertion": "stated"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Jirani ana homa",
+              "start": 0,
+              "end": 15,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: jirani"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "jirani",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "vomiting",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Mtoto anatapika kila kitu anachopewa",
+              "start": 17,
+              "end": 53,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "ds_vomits_everything",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Mtoto anatapika kila kitu anachopewa",
+              "start": 17,
+              "end": 53,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-11",
+          "language": "sw",
+          "text": "Mtoto alipata degedege mbele ya mama leo.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_convulsions",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto alipata degedege mbele ya mama leo",
+              "start": 0,
+              "end": 40,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [
+                "companion: mama"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [
+                  "companion: mama"
+                ],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-12",
+          "language": "sw",
+          "text": "Mtoto hatapiki. Ana udhaifu unaotajwa kwenye dokezo.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "denied"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "vomiting",
+              "expected": "denied"
+            },
+            {
+              "kind": "missing_term",
+              "label": "weakness",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-13",
+          "language": "sw",
+          "text": "Mtoto aliharisha wiki iliyopita. Leo ana maumivu tumboni.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "past"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Leo ana maumivu tumboni",
+              "start": 33,
+              "end": 56,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "past"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-14",
+          "language": "sw",
+          "text": "Mama ana miaka 29. Mtoto ana miaka mitatu na homa.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 2,
+              "evidence": "homa",
+              "start": 45,
+              "end": 49,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "more than one age in the note",
+            "raw": "miaka 29 | miaka mitatu"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-15",
+          "language": "sw",
+          "text": "Ziara imeandikwa saa nne. Namba ya nyumba imebadilishwa.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-16",
+          "language": "en",
+          "text": "The child feels feverish and keeps coughing after waking.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 1,
+              "evidence": "keeps coughing after waking",
+              "start": 29,
+              "end": 56,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "fever",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-17",
+          "language": "en",
+          "text": "The child denies stomach pain. She threw up after breakfast.",
+          "gold": [
+            {
+              "label": "pain",
+              "assertion": "denied"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The child denies stomach pain",
+              "start": 0,
+              "end": 29,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: denies"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "vomiting",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-18",
+          "language": "en",
+          "text": "The mother has diarrhoea. The child's complaint is coughing.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "other_person"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The mother has diarrhoea",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: mother"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "mother",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 1,
+              "evidence": "The child's complaint is coughing",
+              "start": 26,
+              "end": 59,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-19",
+          "language": "en",
+          "text": "The child had convulsions last month. The visit today records a fever.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "past"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_convulsions",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The child had convulsions last month",
+              "start": 0,
+              "end": 36,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last month"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 1,
+              "evidence": "The visit today records a fever",
+              "start": 38,
+              "end": 69,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-20",
+          "language": "en",
+          "text": "No vomiting is reported for the child. Her stools are watery and frequent.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "denied"
+            },
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 1,
+              "passage": 0,
+              "evidence": "No vomiting is reported for the child",
+              "start": 0,
+              "end": 37,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-21",
+          "language": "en",
+          "text": "Mother is 31 years old. The child is 18 months old and has a cough.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 2,
+              "evidence": "has a cough",
+              "start": 55,
+              "end": 66,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "more than one age in the note",
+            "raw": "31 years old | 18 months old"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-22",
+          "language": "en",
+          "text": "The child is 2.5 years old and has a fever.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 2,
+              "evidence": "has a fever",
+              "start": 31,
+              "end": 42,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "unclear",
+            "reason": "decimal age, enter it yourself",
+            "raw": "2.5 years old"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-23",
+          "language": "en",
+          "text": "The child has no cough. A painful stomach is the only complaint recorded.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "denied"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The child has no cough",
+              "start": 0,
+              "end": 22,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "pain",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-24",
+          "language": "en",
+          "text": "The neighbour feels weak. The child is vomiting after every sip.",
+          "gold": [
+            {
+              "label": "weakness",
+              "assertion": "other_person"
+            },
+            {
+              "label": "ds_vomits_everything",
+              "assertion": "stated"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "weakness",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The neighbour feels weak",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: neighbour"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "neighbour",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "vomiting",
+              "score": 1,
+              "passage": 1,
+              "evidence": "The child is vomiting after every sip",
+              "start": 26,
+              "end": 63,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "ds_vomits_everything",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-25",
+          "language": "en",
+          "text": "The child is unconscious and does not respond when called.",
+          "gold": [
+            {
+              "label": "ds_lethargic",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_lethargic",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The child is unconscious",
+              "start": 0,
+              "end": 24,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-26",
+          "language": "en",
+          "text": "There is no fever in the child's note. The child cannot swallow any drink.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "denied"
+            },
+            {
+              "label": "ds_cannot_drink",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 0,
+              "evidence": "There is no fever in the child's note",
+              "start": 0,
+              "end": 37,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "ds_cannot_drink",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-27",
+          "language": "en",
+          "text": "The child had tummy pain last year. Today the worker records weakness.",
+          "gold": [
+            {
+              "label": "pain",
+              "assertion": "past"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 1,
+              "passage": 0,
+              "evidence": "The child had tummy pain last year",
+              "start": 0,
+              "end": 34,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last year"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "weakness",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-28",
+          "language": "en",
+          "text": "Age: 7, unit omitted. The child has loose stools.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [],
+          "age": {
+            "status": "unclear",
+            "reason": "number without unit",
+            "raw": "age: 7"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-29",
+          "language": "en",
+          "text": "The child had a fit during this visit and is now very weak.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "stated"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "weakness",
+              "score": 1,
+              "passage": 1,
+              "evidence": "is now very weak",
+              "start": 42,
+              "end": 58,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "ds_convulsions",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-30",
+          "language": "en",
+          "text": "The visit number is on the paper. The worker arranged transport to the next meeting.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-31",
+          "language": "mixed",
+          "text": "Mtoto has a cough tangu jana. Ana homa pia.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "stated"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto has a cough tangu jana",
+              "start": 0,
+              "end": 28,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": {
+                "days": 1,
+                "raw": "tangu jana"
+              },
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Ana homa pia",
+              "start": 30,
+              "end": 42,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-32",
+          "language": "mixed",
+          "text": "No diarrhoea for the child. Mtoto anatapika baada ya kula.",
+          "gold": [
+            {
+              "label": "diarrhoea",
+              "assertion": "denied"
+            },
+            {
+              "label": "vomiting",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "diarrhoea",
+              "score": 1,
+              "passage": 0,
+              "evidence": "No diarrhoea for the child",
+              "start": 0,
+              "end": 26,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: no"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "vomiting",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Mtoto anatapika baada ya kula",
+              "start": 28,
+              "end": 57,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-33",
+          "language": "mixed",
+          "text": "Mama has stomach pain. Mtoto ana kikohozi kikavu.",
+          "gold": [
+            {
+              "label": "pain",
+              "assertion": "other_person"
+            },
+            {
+              "label": "cough",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "pain",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mama has stomach pain",
+              "start": 0,
+              "end": 21,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: mama"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "mama",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Mtoto ana kikohozi kikavu",
+              "start": 23,
+              "end": 48,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-34",
+          "language": "mixed",
+          "text": "Mtoto had vomiting last week. Leo ana homa.",
+          "gold": [
+            {
+              "label": "vomiting",
+              "assertion": "past"
+            },
+            {
+              "label": "fever",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "vomiting",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto had vomiting last week",
+              "start": 0,
+              "end": 28,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last week"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Leo ana homa",
+              "start": 30,
+              "end": 42,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-35",
+          "language": "mixed",
+          "text": "Child hajitambui. Hawezi kunywa maji.",
+          "gold": [
+            {
+              "label": "ds_lethargic",
+              "assertion": "stated"
+            },
+            {
+              "label": "ds_cannot_drink",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_lethargic",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Child hajitambui",
+              "start": 0,
+              "end": 16,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "child",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "ds_cannot_drink",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Hawezi kunywa maji",
+              "start": 18,
+              "end": 36,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-36",
+          "language": "mixed",
+          "text": "Mtoto hana homa. Watery stools are recorded for this child.",
+          "gold": [
+            {
+              "label": "fever",
+              "assertion": "denied"
+            },
+            {
+              "label": "diarrhoea",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "fever",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto hana homa",
+              "start": 0,
+              "end": 15,
+              "field": "suggested",
+              "assertion": "denied",
+              "cues": [
+                "negation: hana"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": true,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "diarrhoea",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-37",
+          "language": "mixed",
+          "text": "Baba had convulsions today. The child ana udhaifu.",
+          "gold": [
+            {
+              "label": "ds_convulsions",
+              "assertion": "other_person"
+            },
+            {
+              "label": "weakness",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "ds_convulsions",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Baba had convulsions today",
+              "start": 0,
+              "end": 26,
+              "field": "suggested",
+              "assertion": "other_person",
+              "cues": [
+                "person: baba"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "other",
+                "subject_cue": "baba",
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": [
+            {
+              "kind": "missing_term",
+              "label": "weakness",
+              "expected": "stated"
+            }
+          ]
+        },
+        {
+          "id": "codex-independent-38",
+          "language": "mixed",
+          "text": "Mtoto had a cough last month. Now ana maumivu tumboni.",
+          "gold": [
+            {
+              "label": "cough",
+              "assertion": "past"
+            },
+            {
+              "label": "pain",
+              "assertion": "stated"
+            }
+          ],
+          "candidates": [
+            {
+              "label": "cough",
+              "score": 1,
+              "passage": 0,
+              "evidence": "Mtoto had a cough last month",
+              "start": 0,
+              "end": 28,
+              "field": "suggested",
+              "assertion": "past",
+              "cues": [
+                "time: last month"
+              ],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": "mtoto",
+                "negated": false,
+                "past": true,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            },
+            {
+              "label": "pain",
+              "score": 1,
+              "passage": 1,
+              "evidence": "Now ana maumivu tumboni",
+              "start": 30,
+              "end": 53,
+              "field": "suggested",
+              "assertion": "stated",
+              "cues": [],
+              "duration": null,
+              "context": {
+                "subject": "patient",
+                "subject_cue": null,
+                "negated": false,
+                "past": false,
+                "report_negated": false,
+                "role_cues": [],
+                "reason": null
+              }
+            }
+          ],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-39",
+          "language": "mixed",
+          "text": "CHP ameandika namba ya ziara. The next team meeting is on Monday.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        },
+        {
+          "id": "codex-independent-40",
+          "language": "mixed",
+          "text": "The notebook is full. Mfanyakazi anahitaji kalamu mpya kwa ziara.",
+          "gold": [],
+          "candidates": [],
+          "age": {
+            "status": "missing"
+          },
+          "errors": []
+        }
+      ]
+    }
+  }
+}

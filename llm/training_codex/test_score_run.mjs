@@ -1,0 +1,22 @@
+import assert from 'node:assert/strict';import {score} from './score_run.mjs';
+const item={term:'fever',status:'stated',evidence:'Child has fever for 3 days',duration_days:3};
+const data=[{id:'one',language:'en',text:item.evidence,target:{items:[item]}},{id:'empty',language:'en',text:'Visited the farm',target:{items:[]}}];
+const answers=[{id:'one',raw:JSON.stringify({items:[item]}),ms:0},{id:'empty',raw:'{"items":[]}',ms:0}];
+let m=score(answers,data).metrics;assert.equal(m.term_status_duration_exact_notes,2);assert.equal(m.correct_durations,1);assert.equal(m.median_ms,0);
+assert.equal(score([],data).metrics.term_status_exact_notes,0);
+assert.equal(score(answers.slice(0,1),data).metrics.missing_notes,1);
+assert.throws(()=>score([...answers,answers[0]],data),/Duplicate/);
+assert.throws(()=>score([{id:'no',raw:'{}'}],data),/Unknown/);
+assert.equal(score([{...answers[0],error:'timeout'},answers[1]],data).metrics.found_terms,0);
+assert.equal(score([{id:'one',raw:JSON.stringify({items:[{...item,duration_days:null}]})},answers[1]],data).metrics.term_status_duration_exact_notes,1);
+assert.equal(score([{id:'one',raw:JSON.stringify({items:[{...item,status:'other_person',duration_days:null}]})},answers[1]],data).metrics.stated_false_positive_terms,0);
+assert.equal(score([{id:'one',raw:'hello'},answers[1]],data).metrics.structurally_valid_notes,1);
+assert.equal(score([{id:'one',raw:JSON.stringify({items:[{...item,evidence:'invented quote'}]})},answers[1]],data).metrics.found_terms,0);
+console.log('10 scorer contract scenarios passed');
+const wrongSourceData=[{...data[0],text:'Child has fever. Mother has cough',target:{items:[{...item,evidence:'Child has fever',duration_days:null}]}},data[1]];
+const wrongSourceAnswers=[{id:'one',raw:JSON.stringify({items:[{...item,evidence:'Mother has cough',duration_days:null}]})},answers[1]];
+m=score(wrongSourceAnswers,wrongSourceData).metrics;assert.equal(m.term_status_duration_exact_notes,2);assert.equal(m.term_status_duration_source_exact_notes,1);assert.equal(m.matching_quote_to_gold_for_found_terms,0);
+console.log('Additional wrong-source scenario passed (11 total)');
+
+assert.equal(score([{...answers[0],selection_error:'Invalid ID'},answers[1]],data).metrics.found_terms,0);
+console.log('Invalid-selector fallback scenario passed (12 total)');

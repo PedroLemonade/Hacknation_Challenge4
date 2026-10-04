@@ -1,0 +1,26 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "meaning": "Byte-identical copies of immutable base/adapter captures, not new measurements",
+  "copies": [
+    {
+      "source": "llm/outputs/20261004_selection_40/base/base__independent.meta.json",
+      "copy": "base__independent.meta.json",
+      "sha256": "8c0267aab317ac3c27381950032e465a36f513b030f1359c153cd2d141b628de"
+    },
+    {
+      "source": "llm/outputs/20261004_selection_40/base/base__independent.jsonl",
+      "copy": "base__independent.jsonl",
+      "sha256": "df7be38f1c97077ba2762cebc10e42a798e6cd44c1055e8706f9af73005437cf"
+    },
+    {
+      "source": "llm/outputs/20261004_selection_40/adapter/saved_adapter__independent.meta.json",
+      "copy": "saved_adapter__independent.meta.json",
+      "sha256": "93f7aec91858cb3dabc9381e0b1908691f6ad464ad01356a81576771f15e4132"
+    },
+    {
+      "source": "llm/outputs/20261004_selection_40/adapter/saved_adapter__independent.jsonl",
+      "copy": "saved_adapter__independent.jsonl",
+      "sha256": "2dcb33a856318a0cf8ecda0ecac68a82213e34996ed9705ec7436feb909dcd5c"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "checks_observed_in_this_session": {
+    "sft_unit": 12,
+    "selection_unit": 13,
+    "scorer_scenarios": 12,
+    "local_tokenization_and_loss": 8
+  },
+  "qualified_review": false,
+  "source_hashes": {
+    "llm/export_sft.py": "4d37b2a3e444fbda56dab63aef34e139179d45aec86f298c18b31e8b5a89ae6d",
+    "llm/training_codex/test_sft.py": "1fabd1ed7332cb12516ae8fe9a4cb50a990c6a68773d5844f34aab131a43755e",
+    "llm/training_codex/test_selection.py": "7050a490ef212ac3b22c8194b1fecf0f291d1d65839924ff9d27a4f2253a3658",
+    "llm/training_codex/test_score_run.mjs": "a6b1996b50e46b007aef237072d2a39b14716b22c6fe6015e57ad505f3ec3671",
+    "llm/training_codex/test_tokenization.py": "14044da922afc2eebf3e051844aa6d854a512f5bc9155457023d08b31c76e1af",
+    "llm/training_codex/completion_loss.py": "51fd3c1ebd67a84241391c185e0f2a45ea18bdd08c0dfd885cd604e21e3f8820",
+    "llm/training_codex/selection.py": "033244c232a7e3341d862e8c5457a2bcc2d69a83f21bc1a1ec3b20a6c9b2fd81",
+    "llm/training_codex/score_run.mjs": "b80b07d65f20d4cf7220cda61793878519716dcba5dbd624970fe1e29ba5f1ad",
+    "llm/training_codex/run_mlx.py": "9aaeaeb698697d1a48b31964d8b33aa4849c7cd7a6c63bbd46c10f0a53dd153b"
+  },
+  "total": 45
+}

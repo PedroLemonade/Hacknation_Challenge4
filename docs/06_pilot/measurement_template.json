@@ -1,0 +1,37 @@
+{
+  "schema": "afyanote.usability-observation/0.1",
+  "state": "planned_empty_template",
+  "participant_pseudonym": null,
+  "reviewer": null,
+  "device_model": null,
+  "os_version": null,
+  "browser_version": null,
+  "language": null,
+  "case_id": null,
+  "case_variant": null,
+  "condition": null,
+  "order": null,
+  "timestamps": {
+    "reading_started": null,
+    "input_completed": null,
+    "suggestions_visible": null,
+    "review_completed": null,
+    "handover_completed": null
+  },
+  "outcomes": {
+    "missing_required_fields": null,
+    "wrong_assertions": null,
+    "wrong_person": null,
+    "false_suggestions_confirmed": null,
+    "unnecessary_rejections": null,
+    "status_corrections": null,
+    "review_choices": null,
+    "help_events": null,
+    "aborted": null,
+    "offline_success": null,
+    "source_traceability": null
+  },
+  "events": [],
+  "observations": null,
+  "clinical_effectiveness_measured": false
+}

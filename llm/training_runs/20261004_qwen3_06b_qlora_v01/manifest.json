@@ -1,0 +1,95 @@
+{
+  "schema_version": "afyanote.qlora-run/0.1",
+  "started_at": "2026-10-04T02:58:33.428439+00:00",
+  "created_by": "ChatGPT / Codex",
+  "data_origin": "Claude lexicon; rebuilt family generator by ChatGPT / Codex",
+  "base_repo": "Qwen/Qwen3-0.6B",
+  "base_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "base_manifest_sha256": "c0cc389f40450ad963adf0e82b5fc154ced109a681aa7e84cfdaaa8175100304",
+  "data_manifest_sha256": "e1a666ca5e69a90307675d1a85fe026d1b7e5e1248f8072e191945b788a83424",
+  "dataset_file_hashes": {
+    "dev.annotations.jsonl": "0ccb53df728cea3bcb3d503b2b532f98fc90527f7526bb699ca3c0cf42ab0e06",
+    "dev.jsonl": "0443798f4cf25a795cc7c6891d0e339876665d8f401c2d1fcea8df5d72688b61",
+    "train.annotations.jsonl": "bbe0bb9b84675de940459e648609da165f26e8ff8a6e7182bf88740ab8f0ab52",
+    "train.jsonl": "8ef8d15b369937cb04e4f548347d5c5eaad8147583adb08ac513a3e0ba41dfac",
+    "valid.jsonl": "0443798f4cf25a795cc7c6891d0e339876665d8f401c2d1fcea8df5d72688b61"
+  },
+  "runner_sha256": "9aaeaeb698697d1a48b31964d8b33aa4849c7cd7a6c63bbd46c10f0a53dd153b",
+  "guard_sha256": "9d477804ea5a6199fd5124cff5656232b95bdd2c47b89fb1dd9386546b1314bc",
+  "seed": 7070,
+  "offline_mode": true,
+  "trust_remote_code": false,
+  "trackers": null,
+  "machine": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "device": {
+      "device_name": "Apple M2",
+      "max_recommended_working_set_size": 5726633984,
+      "memory_size": 8589934592,
+      "architecture": "applegpu_g14g",
+      "max_buffer_length": 4294967296,
+      "resource_limit": 499000
+    }
+  },
+  "versions": {
+    "mlx": "0.32.3",
+    "mlx-lm": "0.31.2",
+    "transformers": "5.18.0",
+    "huggingface-hub": "1.33.0",
+    "numpy": "2.5.3"
+  },
+  "tokenization": {
+    "enable_thinking": false,
+    "loss_mask": "completion plus EOS only; exact prefix token offset",
+    "max_seq_length": 576,
+    "max_observed_length": 573,
+    "truncated_rows": 0,
+    "prompt_token_min": 364,
+    "prompt_token_max": 422,
+    "target_token_max": 158
+  },
+  "evaluation": {
+    "file": "frozen_eval.jsonl",
+    "sha256": "1d3ab5895b9b9849660c8084b6ad8ba9ae33ae61d3653235294ff208db600f0a",
+    "count": 48,
+    "selection": "seeded greedy coverage from synthetic dev; frozen before training, not independent test",
+    "max_tokens": 512,
+    "temperature": 0,
+    "prompt": "original system + note; no fewshot, no JSON constrained decoding; thinking disabled"
+  },
+  "iterations_requested": 400,
+  "batch_size": 1,
+  "full_epoch": false,
+  "limitations": [
+    "Synthetic, no qualified review",
+    "A development run, not a released health model",
+    "Mac MLX allocator peak is not process/phone RAM",
+    "No browser integration or Ollama-compatible export"
+  ],
+  "completed_at": "2026-10-04T03:06:01.967597+00:00",
+  "status": "completed",
+  "iterations_completed": 400,
+  "trainable_parameters": 2162688,
+  "training_seconds": 392.93649258400546,
+  "peak_mlx_allocator_gb_through_training": 1.274215212,
+  "captures": {
+    "base": {
+      "path": "base_answers.jsonl",
+      "sha256": "530ad1f32865527c5ac378a639615f770c132755b922efd947876f2a4d0b38bc",
+      "answers": 48,
+      "total_seconds": 31.197279125000932
+    },
+    "adapter": {
+      "path": "adapter_answers.jsonl",
+      "sha256": "f2a93ace808168df8ba402621b07ec200968b309fc046e41389d5477a445f6fd",
+      "answers": 48,
+      "total_seconds": 21.701463582998258
+    }
+  },
+  "adapter": {
+    "path": "adapter/adapters.safetensors",
+    "sha256": "af6ec69b0d967ff269fcebc95391cb45b86ffa99b7956e373fc929059b031aae",
+    "bytes": 8668615
+  },
+  "metrics_sha256": "d9a301fffb53127fea70c38dc72552c117351334e6af4328098ce04814c2f6cf"
+}

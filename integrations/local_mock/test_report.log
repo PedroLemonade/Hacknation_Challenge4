@@ -1,0 +1,21 @@
+test_age_unit (__main__.Contracts.test_age_unit) ... ok
+test_consent (__main__.Contracts.test_consent) ... ok
+test_denied_duration (__main__.Contracts.test_denied_duration) ... ok
+test_duplicate_json_keys (__main__.Contracts.test_duplicate_json_keys) ... ok
+test_duplicate_term (__main__.Contracts.test_duplicate_term) ... ok
+test_edit_audit (__main__.Contracts.test_edit_audit) ... ok
+test_extra_root (__main__.Contracts.test_extra_root) ... ok
+test_group_polarity (__main__.Contracts.test_group_polarity) ... ok
+test_idempotence (__main__.Contracts.test_idempotence) ... ok
+test_non_fictional (__main__.Contracts.test_non_fictional) ... ok
+test_pending (__main__.Contracts.test_pending) ... ok
+test_real_unicode (__main__.Contracts.test_real_unicode) ... ok
+test_source_immutable (__main__.Contracts.test_source_immutable) ... ok
+test_span (__main__.Contracts.test_span) ... ok
+test_valid_open_fields (__main__.Contracts.test_valid_open_fields) ... ok
+test_wrong_schema (__main__.Contracts.test_wrong_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.005s
+
+OK

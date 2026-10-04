@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.env
+.venv/
+.cache/
+llm/base_models/**/model*.safetensors
+llm/training_runs/**/*.safetensors
+
+# Local model snapshots and runtimes stay on the computer (large, own licences). Manifests live in llm/training_runs.
+llm/base_models/
+llm/local_runtime/

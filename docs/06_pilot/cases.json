@@ -1,0 +1,50 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "synthetic": true,
+  "clinical_review": false,
+  "native_review": false,
+  "cases": [
+    {
+      "id": "U01",
+      "focus": "Plain finding",
+      "original_note": "Child has cough for two days. No fever.",
+      "moderator_only_observation": "Keep documented cough and absence separate; all suggestions reviewed.",
+      "gold_approved": false
+    },
+    {
+      "id": "U02",
+      "focus": "Person and witness",
+      "original_note": "Child has fever in front of mother.",
+      "moderator_only_observation": "Finding refers to child; mother is witness.",
+      "gold_approved": false
+    },
+    {
+      "id": "U03",
+      "focus": "Combined dimensions",
+      "original_note": "Mother has no fever. Child has cough.",
+      "moderator_only_observation": "Other person plus denial must remain visibly unresolved before choice.",
+      "gold_approved": false
+    },
+    {
+      "id": "U04",
+      "focus": "Contradiction",
+      "original_note": "Child has fever. Later note: no fever.",
+      "moderator_only_observation": "Do not silently choose one statement.",
+      "gold_approved": false
+    },
+    {
+      "id": "U05",
+      "focus": "Source duration",
+      "original_note": "Mtoto ana kikohozi siku mbili bila homa.",
+      "moderator_only_observation": "Check language meaning; duration attached to cough; native review required.",
+      "gold_approved": false
+    },
+    {
+      "id": "U06",
+      "focus": "Conditional ambiguity",
+      "original_note": "Child cannot drink without vomiting.",
+      "moderator_only_observation": "Reviewer must recognize uncertainty, not mechanically deny vomiting.",
+      "gold_approved": false
+    }
+  ]
+}

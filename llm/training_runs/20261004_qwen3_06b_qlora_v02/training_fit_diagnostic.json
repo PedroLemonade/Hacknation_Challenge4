@@ -1,0 +1,471 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "purpose": "Training fit only, no held-out claim",
+  "run_manifest_sha256": "00c599bd724d2eb3504ae4ecfdbb1ba51ffdfb892b6f0985fd26df87c84fe8fe",
+  "rows": [
+    {
+      "training_row": 0,
+      "note": "mtoto wake kuhara kwa siku tatu. nyumba ina maji safi",
+      "target": "{\"items\":[{\"term\":\"diarrhoea\",\"status\":\"stated\",\"evidence\":\"mtoto wake kuhara kwa siku tatu\",\"duration_days\":3}]}",
+      "raw": "{\"items\":[{\"term\":\"ds_cannot_drink\",\"status\":\"stated\",\"evidence\":\"mtoto wake kuhara kuhara kwa siku tatu\",\"duration_days\":5},{\"term\":\"ds_cannot_drink\",\"status\":\"stated\",\"evidence\":\"mtoto wake kwa siku tatu\",\"duration_days\":null}]}",
+      "completion_tokens": 37,
+      "teacher_forced_mean_ce_without_padding": 0.23046875,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.999956488609314
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998534917831421
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.874666154384613
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9995800852775574
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998281002044678
+        },
+        {
+          "position": 5,
+          "gold": "di",
+          "predicted": "ds",
+          "gold_probability": 0.06016403064131737
+        },
+        {
+          "position": 6,
+          "gold": "arr",
+          "predicted": "arr",
+          "gold_probability": 0.999957799911499
+        },
+        {
+          "position": 7,
+          "gold": "hoe",
+          "predicted": "hoe",
+          "gold_probability": 0.9999990463256836
+        }
+      ]
+    },
+    {
+      "training_row": 1,
+      "note": "child: no pain",
+      "target": "{\"items\":[{\"term\":\"pain\",\"status\":\"denied\",\"evidence\":\"child: no pain\",\"duration_days\":null}]}",
+      "raw": "{\"items\":[{\"term\":\"pain\",\"status\":\"stated\",\"evidence\":\"child: no pain\",\"duration_days\":null},{\"term\":\"ds_cannot_drink\",\"status\":\"stated\",\"evidence\":\"child: no pain\",\"duration_days\":null}]}",
+      "completion_tokens": 26,
+      "teacher_forced_mean_ce_without_padding": 0.1806640625,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.9999624490737915
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998257756233215
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.8985919952392578
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9993795156478882
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998250603675842
+        },
+        {
+          "position": 5,
+          "gold": "pain",
+          "predicted": "pain",
+          "gold_probability": 0.6928084492683411
+        },
+        {
+          "position": 6,
+          "gold": "\",\"",
+          "predicted": "\",\"",
+          "gold_probability": 0.99922776222229
+        },
+        {
+          "position": 7,
+          "gold": "status",
+          "predicted": "status",
+          "gold_probability": 0.9998769760131836
+        }
+      ]
+    },
+    {
+      "training_row": 2,
+      "note": "baby: stomach pain for 5 days; mtoto wake hakohoi; child vomits everything for 4 days",
+      "target": "{\"items\":[{\"term\":\"pain\",\"status\":\"stated\",\"evidence\":\"baby: stomach pain for 5 days\",\"duration_days\":5},{\"term\":\"cough\",\"status\":\"denied\",\"evidence\":\"mtoto wake hakohoi\",\"duration_days\":null},{\"term\":\"ds_vomits_everything\",\"status\":\"stated\",\"evidence\":\"child vomits everything for 4 days\",\"duration_days\":4},{\"term\":\"vomiting\",\"status\":\"stated\",\"evidence\":\"child vomits everything for 4 days\",\"duration_days\":4}]}",
+      "raw": "{\"items\":[{\"term\":\"pain\",\"status\":\"stated\",\"evidence\":\"baby: stomach pain for 5 days\",\"duration_days\":5},{\"term\":\"ds_cannot_drink\",\"status\":\"stated\",\"evidence\":\"baby: stomach pain for 4 days\",\"duration_days\":5}]}",
+      "completion_tokens": 114,
+      "teacher_forced_mean_ce_without_padding": 0.3828125,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.9999054670333862
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998657703399658
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.9422389268875122
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9993728995323181
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998866319656372
+        },
+        {
+          "position": 5,
+          "gold": "pain",
+          "predicted": "pain",
+          "gold_probability": 0.5630931258201599
+        },
+        {
+          "position": 6,
+          "gold": "\",\"",
+          "predicted": "\",\"",
+          "gold_probability": 0.998954176902771
+        },
+        {
+          "position": 7,
+          "gold": "status",
+          "predicted": "status",
+          "gold_probability": 0.9999306201934814
+        }
+      ]
+    },
+    {
+      "training_row": 3,
+      "note": "the mother convulsions",
+      "target": "{\"items\":[{\"term\":\"ds_convulsions\",\"status\":\"other_person\",\"evidence\":\"the mother convulsions\",\"duration_days\":null}]}",
+      "raw": "{\"items\":[{\"term\":\"ds_convulsions\",\"status\":\"stated\",\"evidence\":\"the mother convulsions\",\"duration_days\":null},{\"term\":\"ds_convulsions\",\"status\":\"stated\",\"evidence\":\"the mother convulsions\",\"duration_days\":null}]}",
+      "completion_tokens": 30,
+      "teacher_forced_mean_ce_without_padding": 0.099609375,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.999969482421875
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998654127120972
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.8727548718452454
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9993267059326172
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998587369918823
+        },
+        {
+          "position": 5,
+          "gold": "ds",
+          "predicted": "ds",
+          "gold_probability": 0.8156043887138367
+        },
+        {
+          "position": 6,
+          "gold": "_conv",
+          "predicted": "_conv",
+          "gold_probability": 0.6957706809043884
+        },
+        {
+          "position": 7,
+          "gold": "uls",
+          "predicted": "uls",
+          "gold_probability": 0.9999978542327881
+        }
+      ]
+    },
+    {
+      "training_row": 4,
+      "note": "father very weak",
+      "target": "{\"items\":[{\"term\":\"weakness\",\"status\":\"other_person\",\"evidence\":\"father very weak\",\"duration_days\":null}]}",
+      "raw": "{\"items\":[{\"term\":\"ds_lethargic\",\"status\":\"stated\",\"evidence\":\"father very weak\",\"duration_days\":null},{\"term\":\"weakness\",\"status\":\"stated\",\"evidence\":\"father very weak\",\"duration_days\":null}]}",
+      "completion_tokens": 26,
+      "teacher_forced_mean_ce_without_padding": 0.134765625,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.9999665021896362
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998558759689331
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.8875548243522644
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9992332458496094
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998295307159424
+        },
+        {
+          "position": 5,
+          "gold": "weak",
+          "predicted": "ds",
+          "gold_probability": 0.36620864272117615
+        },
+        {
+          "position": 6,
+          "gold": "ness",
+          "predicted": "ness",
+          "gold_probability": 0.9998512268066406
+        },
+        {
+          "position": 7,
+          "gold": "\",\"",
+          "predicted": "\",\"",
+          "gold_probability": 0.9998362064361572
+        }
+      ]
+    },
+    {
+      "training_row": 5,
+      "note": "mama: degedege. mama: anatapika",
+      "target": "{\"items\":[{\"term\":\"ds_convulsions\",\"status\":\"other_person\",\"evidence\":\"mama: degedege\",\"duration_days\":null},{\"term\":\"vomiting\",\"status\":\"other_person\",\"evidence\":\"mama: anatapika\",\"duration_days\":null}]}",
+      "raw": "{\"items\":[{\"term\":\"ds_lethargic\",\"status\":\"stated\",\"evidence\":\"mama: degedege\",\"duration_days\":null},{\"term\":\"ds_cannot_drink\",\"status\":\"stated\",\"evidence\":\"mama: anatapika\",\"duration_days\":null}]}",
+      "completion_tokens": 59,
+      "teacher_forced_mean_ce_without_padding": 0.11865234375,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.9999740123748779
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998447895050049
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.8984194397926331
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9993948936462402
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998528957366943
+        },
+        {
+          "position": 5,
+          "gold": "ds",
+          "predicted": "ds",
+          "gold_probability": 0.5724498629570007
+        },
+        {
+          "position": 6,
+          "gold": "_conv",
+          "predicted": "_le",
+          "gold_probability": 0.2684679627418518
+        },
+        {
+          "position": 7,
+          "gold": "uls",
+          "predicted": "uls",
+          "gold_probability": 0.9999897480010986
+        }
+      ]
+    },
+    {
+      "training_row": 10,
+      "note": "the child: cough; baby convulsions for 3 days; father diarrhoea; follow up visit planned",
+      "target": "{\"items\":[{\"term\":\"cough\",\"status\":\"stated\",\"evidence\":\"the child: cough\",\"duration_days\":null},{\"term\":\"ds_convulsions\",\"status\":\"stated\",\"evidence\":\"baby convulsions for 3 days\",\"duration_days\":3},{\"term\":\"diarrhoea\",\"status\":\"other_person\",\"evidence\":\"father diarrhoea\",\"duration_days\":null}]}",
+      "raw": "{\"items\":[{\"term\":\"ds_convulsions\",\"status\":\"stated\",\"evidence\":\"baby convulsions for 3 days\",\"duration_days\":3},{\"term\":\"ds_lethargic\",\"status\":\"other_person\",\"evidence\":\"baby convulsions for 3 days\",\"duration_days\":3}]}",
+      "completion_tokens": 81,
+      "teacher_forced_mean_ce_without_padding": 0.1630859375,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.9998472929000854
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998810291290283
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.9187804460525513
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.999487042427063
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.9998437166213989
+        },
+        {
+          "position": 5,
+          "gold": "c",
+          "predicted": "ds",
+          "gold_probability": 0.17980507016181946
+        },
+        {
+          "position": 6,
+          "gold": "ough",
+          "predicted": "ough",
+          "gold_probability": 0.9999997615814209
+        },
+        {
+          "position": 7,
+          "gold": "\",\"",
+          "predicted": "\",\"",
+          "gold_probability": 0.9999154806137085
+        }
+      ]
+    },
+    {
+      "training_row": 20,
+      "note": "baby: no cough. the child diarrhea",
+      "target": "{\"items\":[{\"term\":\"cough\",\"status\":\"denied\",\"evidence\":\"baby: no cough\",\"duration_days\":null},{\"term\":\"diarrhoea\",\"status\":\"stated\",\"evidence\":\"the child diarrhea\",\"duration_days\":null}]}",
+      "raw": "{\"items\":[{\"term\":\"ds_lethargic\",\"status\":\"stated\",\"evidence\":\"baby: no cough\",\"duration_days\":null},{\"term\":\"ds_lethargic\",\"status\":\"stated\",\"evidence\":\"the child diarrhea\",\"duration_days\":null}]}",
+      "completion_tokens": 51,
+      "teacher_forced_mean_ce_without_padding": 0.201171875,
+      "first_transitions": [
+        {
+          "position": 0,
+          "gold": "{\"",
+          "predicted": "{\"",
+          "gold_probability": 0.9999746084213257
+        },
+        {
+          "position": 1,
+          "gold": "items",
+          "predicted": "items",
+          "gold_probability": 0.9998206496238708
+        },
+        {
+          "position": 2,
+          "gold": "\":[{\"",
+          "predicted": "\":[{\"",
+          "gold_probability": 0.9091504812240601
+        },
+        {
+          "position": 3,
+          "gold": "term",
+          "predicted": "term",
+          "gold_probability": 0.9992619156837463
+        },
+        {
+          "position": 4,
+          "gold": "\":\"",
+          "predicted": "\":\"",
+          "gold_probability": 0.999849796295166
+        },
+        {
+          "position": 5,
+          "gold": "c",
+          "predicted": "ds",
+          "gold_probability": 0.17710541188716888
+        },
+        {
+          "position": 6,
+          "gold": "ough",
+          "predicted": "ough",
+          "gold_probability": 0.9999997615814209
+        },
+        {
+          "position": 7,
+          "gold": "\",\"",
+          "predicted": "\",\"",
+          "gold_probability": 0.9999480247497559
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T02:26:29.831Z",
+  "source_sha256": "67d4eb843e900e1514e2323ee7e109f531ee2dde3e3c53b8129e9ca4f2b606d3",
+  "passed": 13,
+  "total": 13,
+  "tests": [
+    {
+      "name": "Partial run keeps all gold terms in denominator",
+      "pass": true
+    },
+    {
+      "name": "Duplicate answer IDs abort",
+      "pass": true
+    },
+    {
+      "name": "Unknown answer IDs abort",
+      "pass": true
+    },
+    {
+      "name": "Duplicate dataset IDs abort",
+      "pass": true
+    },
+    {
+      "name": "Missing empty-gold note is not an exact match",
+      "pass": true
+    },
+    {
+      "name": "Completed empty-gold note counts only with valid JSON",
+      "pass": true
+    },
+    {
+      "name": "Invalid JSON does not become an exact empty-gold note",
+      "pass": true
+    },
+    {
+      "name": "Failed requests cannot contribute apparently valid answers",
+      "pass": true
+    },
+    {
+      "name": "Zero millisecond successful capture is recorded",
+      "pass": true
+    },
+    {
+      "name": "Other wrong statuses lower status agreement",
+      "pass": true
+    },
+    {
+      "name": "Wrong stated status is explicitly counted",
+      "pass": true
+    },
+    {
+      "name": "No extracted terms has undefined conditional accuracy",
+      "pass": true
+    },
+    {
+      "name": "Unsupported gold status aborts",
+      "pass": true
+    }
+  ]
+}

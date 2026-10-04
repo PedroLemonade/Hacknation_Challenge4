@@ -1,0 +1,16 @@
+{
+  "authored_by": "ChatGPT / Codex",
+  "seed": 7070,
+  "rows": [
+    3000,
+    300
+  ],
+  "byte_equal_reproduction": {
+    "train.jsonl": true,
+    "train.annotations.jsonl": true,
+    "dev.jsonl": true,
+    "dev.annotations.jsonl": true
+  },
+  "passed": true,
+  "timestamps_excluded": "manifest creation timestamp is intentionally not part of deterministic payload"
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AfyaNote · v0.4.11 · Claude + ChatGPT/Codex</title>
+<!-- Claude deck foundation; evidence and claim corrections by ChatGPT/Codex, 2026-10-04. Old PNG exports are historical. -->
+<style>
+/* 16:9 slides for the World Bank video. Arrow keys or click to move. Export: tools/make_media.py renders each slide to 1920x1080 PNG. */
+:root{--bg:#f3f0e7;--paper:#fffdf8;--ink:#17231c;--muted:#5b685f;--line:#dcd5c3;--green:#14532d;--green2:#1d5a3b;--soft:#e1eee3;--amber:#8a5300;--red:#9b2c1c;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#111}
+body{font-family:var(--font);color:var(--ink);display:grid;place-items:center}
+.deck{width:min(100vw,177.78vh);aspect-ratio:16/9;position:relative;overflow:hidden}
+.slide{position:absolute;inset:0;background:var(--bg);padding:5.5% 6.5%;display:none;flex-direction:column;font-size:min(2.1vw,3.7vh)}
+.slide.on{display:flex}
+.eyebrow{font:700 .62em var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+h1{font-size:2.5em;line-height:1.08;margin:.25em 0 .35em;letter-spacing:-.025em}
+h2{font-size:1.9em;line-height:1.12;margin:.2em 0 .6em;letter-spacing:-.02em}
+p{margin:0 0 .6em;line-height:1.4}
+.lead{font-size:1.15em;max-width:30em}
+.small{font-size:.72em;color:var(--muted)}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:end;font-size:.62em;color:var(--muted)}
+.brand{display:flex;gap:.5em;align-items:center;font-weight:750}
+.brand i{width:1.5em;height:1.5em;border-radius:.35em;background:var(--green);display:inline-block}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:.8em;margin:.2em 0 .8em}
+.box{background:var(--paper);border:2px solid var(--line);border-radius:.6em;padding:.55em .8em;position:relative}
+.box span{line-height:1.3}
+.box b{display:block;font-size:1.02em;margin-bottom:.2em}
+.box span{font-size:.72em;color:var(--muted)}
+.box.hl{border-color:var(--green);background:var(--soft)}
+.box:not(:last-child)::after{content:"→";position:absolute;right:-.72em;top:50%;transform:translateY(-50%);font-weight:700;color:var(--green)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:.8em;margin-bottom:.8em}
+.num span{line-height:1.3;display:block}
+.num{background:var(--green);color:#fff;border-radius:.6em;padding:.55em .9em}
+.num b{display:block;font-size:1.7em;letter-spacing:-.02em}
+.num span{font-size:.7em;color:#cfe5d6}
+.guards{display:flex;flex-wrap:wrap;gap:.4em}
+.guards span{border:2px solid var(--line);border-radius:999px;padding:.25em .7em;font-size:.72em;background:var(--paper)}
+.day{display:grid;grid-template-columns:repeat(5,1fr);gap:.6em;margin-top:.6em}
+.day div{border-top:.3em solid var(--green);padding-top:.5em}
+.day div b{display:block;font-size:.95em}
+.day div span{font-size:.7em;color:var(--muted)}
+.day div.later{border-top-style:dashed;border-color:var(--muted)}
+.quote{font-size:2.6em;font-weight:750;letter-spacing:-.03em;color:var(--green);margin:.3em 0 .4em}
+.duo{display:grid;grid-template-columns:1.1fr 1fr;gap:1.6em;align-items:start;flex-shrink:0}
+.duo .limits{grid-template-columns:1fr;font-size:.74em;gap:.35em}
+.vs{display:grid;gap:0;flex-shrink:0;border:2px solid var(--line);border-radius:.6em;overflow:hidden;background:var(--paper)}
+.vsrow{display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:.6em;padding:.32em .8em;font-size:.78em;border-top:1px solid var(--line)}
+.vsrow:first-child{border-top:0}.vsrow span{color:var(--muted)}.vsrow b:nth-of-type(1){color:var(--green)}
+.vsrow.vh{background:var(--soft);font-size:.7em}.vsrow.vh b:nth-of-type(2){color:var(--ink)}
+.limits{display:grid;grid-template-columns:1fr 1fr;gap:.5em .8em;font-size:.8em;max-width:34em}
+.limits div::before{content:"•  ";color:var(--amber);font-weight:700}
+.hero{background:linear-gradient(135deg,#123d2a,#1d5a3b);color:#f4f8f2}
+.hero .eyebrow{color:#b9dcc4}.hero .small,.hero .foot{color:#b9dcc4}
+.hero .facts{display:flex;gap:2.2em;margin-top:1.2em;font-size:.78em;color:#d7e8dc}
+.hero .facts b{display:block;font-size:1.6em;color:#fff}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<section class="slide hero on">
+  <div class="eyebrow">Hack Nation · World Bank Small AI for Development · Health</div>
+  <h1>AfyaNote</h1>
+  <p class="lead">We test whether a community health promoter can turn a short Swahili visit note into a reviewed referral draft during the household visit, while the family can answer missing questions.</p>
+  <div class="facts">
+    <div><b>Documentation burden</b>studied in 5 countries, not Kenya<br>(Siyam et al. 2021 · workflow benefit unmeasured)</div>
+    <div><b>eCHIS exists</b>national coverage reported in 2024<br>(Medic · integration need still to be established)</div>
+  </div>
+  <div class="foot"><span>Peter · Claude + ChatGPT/Codex support</span><span>Prototype · synthetic data · no diagnosis</span></div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Small AI, checkable line by line</div>
+  <h2 style='font-size:1.6em'>A tiny model proposes. The health promoter decides.</h2>
+  <div class="flow">
+    <div class="box"><b>Note</b><span>Swahili, English or mixed, typed at the door</span></div>
+    <div class="box hl"><b>Small model + rules</b><span>10 terms, evidence per passage; denied, other person, past, conflict</span></div>
+    <div class="box"><b>CHP confirms</b><span>every item, nothing accepted automatically</span></div>
+    <div class="box"><b>Referral draft</b><span>oriented on MOH 100 section A, open fields stay open</span></div>
+  </div>
+  <div class="nums">
+    <div class="num"><b>243 KiB</b><span>model file, local browser inference</span></div>
+    <div class="num"><b>0.85 vs 0.50</b><span>F1 on unseen phrasings, model vs keyword list (synthetic)</span></div>
+    <div class="num"><b>58/63 vs 46/63</b><span>terms found in 40 known synthetic notes; includes unclear proposals</span></div>
+  </div>
+  <div class="guards"><span>fixed term list</span><span>evidence for every suggestion</span><span>no generated text</span><span>no diagnosis, no urgency</span><span>export only after review and consent</span><span>no case upload by app</span></div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">Where it sits in her day</div>
+  <h2>Documented while the family is still there to answer.</h2>
+  <div class="day">
+    <div><b>Household visit</b><span>listens, asks, observes</span></div>
+    <div><b>Note at the door</b><span>short, in her own words</span></div>
+    <div><b>Review with the family</b><span>missing age or duration asked on the spot</span></div>
+    <div><b>Choose facility offline</b><span>schematic map with fictional facilities</span></div>
+    <div class="later"><b>Next: inside her app</b><span>test integration in existing app; no deployment yet</span></div>
+  </div>
+  <div class="foot"><span>Tech: static PWA · scikit learn model exported to JSON · plain JavaScript inference · service worker</span><span>440 KB static files · RAM unmeasured</span></div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow">My take on localizing AI</div>
+  <div class="quote">Small, checkable, local.</div>
+  <p class="lead">Build for the phone and the language people already have, and be honest about where the model stops.</p>
+  <div class="duo">
+  <div class="vs">
+    <div class="vsrow vh"><span>Same 40 notes</span><b>AfyaNote</b><b>Fine tuned 0.6B LLM</b></div>
+    <div class="vsrow"><span>Size</span><b>249 KB</b><b>335 MB</b></div>
+    <div class="vsrow"><span>Terms found</span><b>58 / 63</b><b>54 / 63</b></div>
+    <div class="vsrow"><span>Extra terms</span><b>1</b><b>13</b></div>
+    <div class="vsrow"><span>Context errors shown as present</span><b>0</b><b>3</b></div>
+  </div>
+  <div class="limits">
+    <div>Training data is synthetic</div>
+    <div>Not yet reviewed by Swahili speakers or clinicians</div>
+    <div>Kikuyu and other languages not supported</div>
+    <div>Facilities fictional; phone test pending</div>
+    <div>Bounded rules; negation scope still fails</div>
+    <div>No measured time or care benefit</div>
+  </div>
+  </div>
+  <div class="foot"><span>Next: language, device and workflow review with CHPs</span><span>v0.4.11 · links pending</span></div>
+</section>
+
+</div>
+<script>
+var s = document.querySelectorAll(".slide"), i = 0;
+function go(n) { s[i].classList.remove("on"); i = Math.max(0, Math.min(s.length - 1, n)); s[i].classList.add("on"); }
+document.addEventListener("keydown", function (e) { if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") go(i + 1); if (e.key === "ArrowLeft" || e.key === "PageUp") go(i - 1); });
+document.addEventListener("click", function (e) { go(e.clientX > innerWidth / 3 ? i + 1 : i - 1); });
+window.goSlide = go;
+</script>
+</body>
+</html>

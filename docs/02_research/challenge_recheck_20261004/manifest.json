@@ -1,0 +1,18 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "kind": "read-only source extraction; originals unchanged",
+  "files": [
+    {
+      "source": "03_Challenge_Unterlagen/04 World Bank x Hack-Nation - Small AI for Development.pdf",
+      "sha256": "1c60659fb2ae340e6a2598a0674011dc40921679ba6d19623db7c667d3b69b4b",
+      "pages": 20,
+      "text_output": "challenge.txt"
+    },
+    {
+      "source": "03_Challenge_Unterlagen/Kickoff.pdf",
+      "sha256": "e248fa64a600a1d3897708431a4be04688312b2bcba4dc6a5707aabbdbf6a8b0",
+      "pages": 29,
+      "text_output": "kickoff.txt"
+    }
+  ]
+}

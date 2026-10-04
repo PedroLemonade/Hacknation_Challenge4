@@ -1,0 +1,683 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "name": "Layout overflow 320 light en facilities",
+      "status": "failed",
+      "detail": [
+        {
+          "tag": "DIV",
+          "class": "",
+          "id": "",
+          "right": 382.640625,
+          "width": 382.640625
+        },
+        {
+          "tag": "HEADER",
+          "class": "topbar",
+          "id": "",
+          "right": 382.640625,
+          "width": 382.640625
+        },
+        {
+          "tag": "DIV",
+          "class": "top-right",
+          "id": "",
+          "right": 366.640625,
+          "width": 300.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "btn sm",
+          "id": "",
+          "right": 366.640625,
+          "width": 48.546875
+        },
+        {
+          "tag": "MAIN",
+          "class": "main",
+          "id": "view",
+          "right": 382.640625,
+          "width": 382.640625
+        },
+        {
+          "tag": "DIV",
+          "class": "eyebrow",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "H1",
+          "class": "",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "P",
+          "class": "help",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "DIV",
+          "class": "mapwrap",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "svg",
+          "class": {},
+          "id": "",
+          "right": 365.640625,
+          "width": 348.640625
+        },
+        {
+          "tag": "rect",
+          "class": {},
+          "id": "",
+          "right": 365.6390743255615,
+          "width": 348.63751220703125
+        },
+        {
+          "tag": "g",
+          "class": {},
+          "id": "",
+          "right": 355.9546813964844,
+          "width": 11.621246337890625
+        },
+        {
+          "tag": "path",
+          "class": {},
+          "id": "",
+          "right": 355.9546813964844,
+          "width": 11.621246337890625
+        },
+        {
+          "tag": "text",
+          "class": {},
+          "id": "",
+          "right": 354.2390441894531,
+          "width": 7.968719482421875
+        },
+        {
+          "tag": "DIV",
+          "class": "searchrow",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "SPAN",
+          "class": "count",
+          "id": "",
+          "right": 366.640625,
+          "width": 72
+        },
+        {
+          "tag": "B",
+          "class": "",
+          "id": "",
+          "right": 334.53125,
+          "width": 8.03125
+        },
+        {
+          "tag": "DIV",
+          "class": "fchips",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fchip",
+          "id": "",
+          "right": 366.640625,
+          "width": 79.15625
+        },
+        {
+          "tag": "DIV",
+          "class": "flist",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        }
+      ]
+    },
+    {
+      "name": "Layout: 320px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout overflow 320 light sw facilities",
+      "status": "failed",
+      "detail": [
+        {
+          "tag": "DIV",
+          "class": "",
+          "id": "",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "HEADER",
+          "class": "topbar",
+          "id": "",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "DIV",
+          "class": "top-right",
+          "id": "",
+          "right": 379.328125,
+          "width": 313.328125
+        },
+        {
+          "tag": "SPAN",
+          "class": "pill ok",
+          "id": "offlinePill",
+          "right": 329.515625,
+          "width": 139.21875
+        },
+        {
+          "tag": "BUTTON",
+          "class": "btn sm",
+          "id": "",
+          "right": 379.328125,
+          "width": 44.8125
+        },
+        {
+          "tag": "MAIN",
+          "class": "main",
+          "id": "view",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "DIV",
+          "class": "eyebrow",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "H1",
+          "class": "",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "P",
+          "class": "help",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "DIV",
+          "class": "mapwrap",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "svg",
+          "class": {},
+          "id": "",
+          "right": 378.328125,
+          "width": 361.328125
+        },
+        {
+          "tag": "rect",
+          "class": {},
+          "id": "",
+          "right": 378.3203125,
+          "width": 361.3125
+        },
+        {
+          "tag": "circle",
+          "class": {},
+          "id": "",
+          "right": 326.13074493408203,
+          "width": 256.933349609375
+        },
+        {
+          "tag": "text",
+          "class": {},
+          "id": "",
+          "right": 324.1955261230469,
+          "width": 30.984375
+        },
+        {
+          "tag": "g",
+          "class": {},
+          "id": "",
+          "right": 368.2838439941406,
+          "width": 12.043731689453125
+        },
+        {
+          "tag": "path",
+          "class": {},
+          "id": "",
+          "right": 368.2838439941406,
+          "width": 12.043731689453125
+        },
+        {
+          "tag": "text",
+          "class": {},
+          "id": "",
+          "right": 366.5130310058594,
+          "width": 8.265625
+        },
+        {
+          "tag": "g",
+          "class": {},
+          "id": "",
+          "right": 324.721435546875,
+          "width": 25.548675537109375
+        },
+        {
+          "tag": "rect",
+          "class": {},
+          "id": "",
+          "right": 324.721435546875,
+          "width": 25.548675537109375
+        },
+        {
+          "tag": "DIV",
+          "class": "searchrow",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        }
+      ]
+    },
+    {
+      "name": "Layout: 320px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout overflow 360 light en facilities",
+      "status": "failed",
+      "detail": [
+        {
+          "tag": "DIV",
+          "class": "",
+          "id": "",
+          "right": 382.640625,
+          "width": 382.640625
+        },
+        {
+          "tag": "HEADER",
+          "class": "topbar",
+          "id": "",
+          "right": 382.640625,
+          "width": 382.640625
+        },
+        {
+          "tag": "DIV",
+          "class": "top-right",
+          "id": "",
+          "right": 366.640625,
+          "width": 300.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "btn sm",
+          "id": "",
+          "right": 366.640625,
+          "width": 48.546875
+        },
+        {
+          "tag": "MAIN",
+          "class": "main",
+          "id": "view",
+          "right": 382.640625,
+          "width": 382.640625
+        },
+        {
+          "tag": "DIV",
+          "class": "eyebrow",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "H1",
+          "class": "",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "P",
+          "class": "help",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "DIV",
+          "class": "mapwrap",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "svg",
+          "class": {},
+          "id": "",
+          "right": 365.640625,
+          "width": 348.640625
+        },
+        {
+          "tag": "rect",
+          "class": {},
+          "id": "",
+          "right": 365.6390743255615,
+          "width": 348.63751220703125
+        },
+        {
+          "tag": "DIV",
+          "class": "searchrow",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "SPAN",
+          "class": "count",
+          "id": "",
+          "right": 366.640625,
+          "width": 72
+        },
+        {
+          "tag": "DIV",
+          "class": "fchips",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fchip",
+          "id": "",
+          "right": 366.640625,
+          "width": 79.15625
+        },
+        {
+          "tag": "DIV",
+          "class": "flist",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fitem",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fitem",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fitem",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fitem",
+          "id": "",
+          "right": 366.640625,
+          "width": 350.640625
+        }
+      ]
+    },
+    {
+      "name": "Layout: 360px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout overflow 360 light sw facilities",
+      "status": "failed",
+      "detail": [
+        {
+          "tag": "DIV",
+          "class": "",
+          "id": "",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "HEADER",
+          "class": "topbar",
+          "id": "",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "DIV",
+          "class": "top-right",
+          "id": "",
+          "right": 379.328125,
+          "width": 313.328125
+        },
+        {
+          "tag": "BUTTON",
+          "class": "btn sm",
+          "id": "",
+          "right": 379.328125,
+          "width": 44.8125
+        },
+        {
+          "tag": "MAIN",
+          "class": "main",
+          "id": "view",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "DIV",
+          "class": "eyebrow",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "H1",
+          "class": "",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "P",
+          "class": "help",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "DIV",
+          "class": "mapwrap",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "svg",
+          "class": {},
+          "id": "",
+          "right": 378.328125,
+          "width": 361.328125
+        },
+        {
+          "tag": "rect",
+          "class": {},
+          "id": "",
+          "right": 378.3203125,
+          "width": 361.3125
+        },
+        {
+          "tag": "g",
+          "class": {},
+          "id": "",
+          "right": 368.2838439941406,
+          "width": 12.043731689453125
+        },
+        {
+          "tag": "path",
+          "class": {},
+          "id": "",
+          "right": 368.2838439941406,
+          "width": 12.043731689453125
+        },
+        {
+          "tag": "text",
+          "class": {},
+          "id": "",
+          "right": 366.5130310058594,
+          "width": 8.265625
+        },
+        {
+          "tag": "DIV",
+          "class": "searchrow",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "SPAN",
+          "class": "count",
+          "id": "",
+          "right": 379.328125,
+          "width": 72
+        },
+        {
+          "tag": "DIV",
+          "class": "fchips",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fchip",
+          "id": "",
+          "right": 379.328125,
+          "width": 82.453125
+        },
+        {
+          "tag": "DIV",
+          "class": "flist",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        },
+        {
+          "tag": "BUTTON",
+          "class": "fitem",
+          "id": "",
+          "right": 379.328125,
+          "width": 363.328125
+        }
+      ]
+    },
+    {
+      "name": "Layout: 360px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 390px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout overflow 390 light sw facilities",
+      "status": "failed",
+      "detail": [
+        {
+          "tag": "DIV",
+          "class": "",
+          "id": "",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "HEADER",
+          "class": "topbar",
+          "id": "",
+          "right": 395.328125,
+          "width": 395.328125
+        },
+        {
+          "tag": "MAIN",
+          "class": "main",
+          "id": "view",
+          "right": 395.328125,
+          "width": 395.328125
+        }
+      ]
+    },
+    {
+      "name": "Layout: 390px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 768px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 768px / light / sw, three tabs",
+      "status": "passed"
+    }
+  ],
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.topbar [data-lang]')\u001b[22m\n\u001b[2m    - locator resolved to <button data-lang=\"\" type=\"button\" class=\"btn sm\" aria-label=\"English\">EN</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/eval/demo-deep.cjs:12:304",
+  "source_before": {
+    "app.js": "a60fdae41c4fa4f7d59fc6b44cc7fae19c815f1eec88e64bf87da539d680ccdc",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "cbc1bab1d716cd44d4f95b81feb57dfa9b397b68e9c5da61759f3a407df1f891",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "7ad5520024f1710e38dcab4cda99938f416599411481487bfb8e5029df9e2ef2",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "source_after": {
+    "app.js": "a60fdae41c4fa4f7d59fc6b44cc7fae19c815f1eec88e64bf87da539d680ccdc",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "cbc1bab1d716cd44d4f95b81feb57dfa9b397b68e9c5da61759f3a407df1f891",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "7ad5520024f1710e38dcab4cda99938f416599411481487bfb8e5029df9e2ef2",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  }
+}

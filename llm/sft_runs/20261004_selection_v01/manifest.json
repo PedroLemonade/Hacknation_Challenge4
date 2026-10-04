@@ -1,0 +1,28 @@
+{
+  "schema_version": "afyanote.selection-sft/0.1",
+  "authored_by": "Claude source lexicon, Codex split and passage-selection representation",
+  "representation": "passage_id",
+  "created_at": "2026-10-04T03:19:45.706626+00:00",
+  "source_manifest_sha256": "e1a666ca5e69a90307675d1a85fe026d1b7e5e1248f8072e191945b788a83424",
+  "source_audit_sha256": "c609b0c37f947088b683301cbb316b19307b6dd26e0d585a67a3966a9b330096",
+  "generator_sha256": "5c3eb76c29a0c3d072b1d029bbc84bde52bb3d53411dd460d9a6998e3dca691a",
+  "selection_sha256": "033244c232a7e3341d862e8c5457a2bcc2d69a83f21bc1a1ec3b20a6c9b2fd81",
+  "counts": {
+    "train": 3000,
+    "dev": 300
+  },
+  "all_targets_resolve_to_original_gold": true,
+  "file_hashes": {
+    "dev.annotations.jsonl": "0ccb53df728cea3bcb3d503b2b532f98fc90527f7526bb699ca3c0cf42ab0e06",
+    "train.jsonl": "6d5aba741564cdda0a5332ec3b2b97b678d314248b0cc8a2513a8c1715cac258",
+    "dev.jsonl": "b0b3c3722cc83366e5baf2e822b7303c35452c85386564afde82bdbc3bf06ff9",
+    "train.annotations.jsonl": "bbe0bb9b84675de940459e648609da165f26e8ff8a6e7182bf88740ab8f0ab52",
+    "valid.jsonl": "b0b3c3722cc83366e5baf2e822b7303c35452c85386564afde82bdbc3bf06ff9"
+  },
+  "qualified_review": false,
+  "limitations": [
+    "Known synthetic development split",
+    "Source ID binding prevents invented quotes, not wrong source choice or semantic status",
+    "Original 4-status ambiguity restrictions retained"
+  ]
+}

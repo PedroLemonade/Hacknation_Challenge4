@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-10-04T07:54:49.385Z",
+  "version": "afyanote-v0.4.17",
+  "browser": "154.0.8037.97",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fictional": true,
+  "physical_phone": false,
+  "native_swahili_review": false,
+  "network_loss": "Playwright context.setOffline(true), followed by actual page reload",
+  "voiceover": false,
+  "source_before": {
+    "app.js": "8526bb0299351c697fc7a613f613f1c10f51aed7792038f2147a07b161efae46",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "source_after": {
+    "app.js": "8526bb0299351c697fc7a613f613f1c10f51aed7792038f2147a07b161efae46",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "timeline": [
+    {
+      "at_seconds": 0.38,
+      "event": "Offline package ready in desktop Chrome"
+    },
+    {
+      "at_seconds": 3.52,
+      "event": "Actual browser network simulation: offline reload"
+    },
+    {
+      "at_seconds": 11.08,
+      "event": "Fictional Swahili note entered, English interface"
+    },
+    {
+      "at_seconds": 15.23,
+      "event": "Original evidence, review required before continuing"
+    },
+    {
+      "at_seconds": 32.6,
+      "event": "Each term and age manually confirmed in this demonstration"
+    },
+    {
+      "at_seconds": 40.07,
+      "event": "Fictional case identifier and simulated consent"
+    },
+    {
+      "at_seconds": 44.19,
+      "event": "Reviewed draft; unrecorded fields remain open"
+    },
+    {
+      "at_seconds": 50.35,
+      "event": "Local Markdown export"
+    },
+    {
+      "at_seconds": 53.48,
+      "event": "Local QR generated, no real camera compatibility test"
+    },
+    {
+      "at_seconds": 58.54,
+      "event": "New case clears in-app source and decisions"
+    },
+    {
+      "at_seconds": 61.66,
+      "event": "Contradictory fictional source needs an explicit human choice"
+    },
+    {
+      "at_seconds": 71.7,
+      "event": "Demonstration ended; no clinical decision or physical-phone test"
+    }
+  ],
+  "pageErrors": [],
+  "external_requests": 0,
+  "note_uploads": 0
+}

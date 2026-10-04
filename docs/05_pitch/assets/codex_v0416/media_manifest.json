@@ -1,0 +1,67 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T07:40:28.503871+00:00",
+  "version": "afyanote-v0.4.16",
+  "duration_seconds": 75.0,
+  "voiceover": false,
+  "physical_phone": false,
+  "visual_checks": [
+    "01_note_mobile.png",
+    "07_review_desktop.png"
+  ],
+  "mp4_bytes": 874788,
+  "files": {
+    "07_review_desktop.png": {
+      "bytes": 138336,
+      "sha256": "d6df2e81bd586cdb5f9d06153232262050e783d4c7cc05ef8607d004864af350"
+    },
+    "06_note_desktop.png": {
+      "bytes": 174594,
+      "sha256": "16632f8a82d0a3dcdafdf7f9bec1b6e23f9de8551d4ef8982cfc9703b649d449"
+    },
+    "demo_mobile.mp4": {
+      "bytes": 874788,
+      "sha256": "a94f15d90771f617d0c34aa3859f05848a874fa828418e3d0e4608ad8b3ba124"
+    },
+    "capture_manifest.json": {
+      "bytes": 4388,
+      "sha256": "bbff7bd5ba8e34cbb1185216952380106742863eb5d0807f9861be1c6a7847b7"
+    },
+    "04_qr_mobile.png": {
+      "bytes": 53388,
+      "sha256": "9d688b1739f77ec8c68bfc36e5b141e6042590501f7b3501c49cd4d64c7d4e52"
+    },
+    "fictional-video-draft.md": {
+      "bytes": 1155,
+      "sha256": "86c881c0210ad1f87b001ad55393bf456951665ebe131917740c3188b2ed175f"
+    },
+    "README.md": {
+      "bytes": 1129,
+      "sha256": "8e46f0a0b4e3b37bd814406a124d4a660d39af3b8f458cd47b82c4975b2cc486"
+    },
+    "08_handover_desktop.png": {
+      "bytes": 120416,
+      "sha256": "7edfb19e846ea7ac350ef38e19463e6783fde6b8deb11de74783861eb57d0076"
+    },
+    "demo_mobile.webm": {
+      "bytes": 2231320,
+      "sha256": "91508a59dd22d974a1581968fbbff5bfd6d42c711d0239e566d4a4f548abd81b"
+    },
+    "03_handover_mobile.png": {
+      "bytes": 59338,
+      "sha256": "99fd49b1211978515bfffa711797579f9928e9bed92e571d2c7ab0f6495b47ad"
+    },
+    "02_review_mobile.png": {
+      "bytes": 69942,
+      "sha256": "ba793f0a12350d674ae5c9404423ddb2efd70225a7d2e2e0b9891dafac2ec70f"
+    },
+    "05_conflict_mobile.png": {
+      "bytes": 69933,
+      "sha256": "a3480091d66967564501580827dca305403c8451ce56a47a738d67ffeba8f81a"
+    },
+    "01_note_mobile.png": {
+      "bytes": 100458,
+      "sha256": "92eabba8000441fc4e3408a98bea342d9c63d5726e99ce332a787bc859bf5d63"
+    }
+  }
+}

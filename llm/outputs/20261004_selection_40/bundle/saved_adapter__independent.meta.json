@@ -1,0 +1,40 @@
+{
+  "schema_version": "afyanote.mlx-capture/0.1",
+  "created_by": "ChatGPT / Codex",
+  "captured_at": "2026-10-04T03:38:30.693617+00:00",
+  "set": "independent",
+  "expected_notes": 40,
+  "captured_notes": 40,
+  "failed_notes": 0,
+  "complete": true,
+  "dataset_sha256": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+  "answer_sha256": "2dcb33a856318a0cf8ecda0ecac68a82213e34996ed9705ec7436feb909dcd5c",
+  "model_digest": "c1899de289a04d12100db370d81485cdf75e47ca:6973b8202f8b3d93210bf1f91c2a244f6c59bd31cb846b2d5a3cb02513114032",
+  "model_bytes_on_disk": 344119163,
+  "machine": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "device": {
+      "device_name": "Apple M2",
+      "max_recommended_working_set_size": 5726633984,
+      "memory_size": 8589934592,
+      "architecture": "applegpu_g14g",
+      "max_buffer_length": 4294967296,
+      "resource_limit": 499000
+    }
+  },
+  "training_manifest_sha256": "9e4313f3cf2af4c785bf1e4247a35039cde31619c4b617f901f49daf028261f8",
+  "capture_script_sha256": "a8efe0b3820dce448bfb269d38dc511ff391a35a99ffe7d370cd7d849cf3991f",
+  "settings": {
+    "temperature": 0,
+    "max_tokens": 512,
+    "enable_thinking": false,
+    "fewshot": false,
+    "constrained_decoding": false
+  },
+  "representation": "passage_id",
+  "selection_sha256": "033244c232a7e3341d862e8c5457a2bcc2d69a83f21bc1a1ec3b20a6c9b2fd81",
+  "offline_mode": true,
+  "trust_remote_code": false,
+  "saved_adapter_reloaded": true,
+  "prompt_sha256": "ec2961014b442d5975b7f7e2f25a73402f8d07c44365660cc637081d077de0cf"
+}

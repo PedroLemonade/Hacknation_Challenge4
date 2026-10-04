@@ -1,0 +1,135 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T02:10:12.618Z",
+  "module": "/Users/peter/Desktop/Challenge%204/01_Working_Demo_AfyaNote/llm/guard.mjs",
+  "source_sha256": "9d477804ea5a6199fd5124cff5656232b95bdd2c47b89fb1dd9386546b1314bc",
+  "test_sha256": "b6d07a7decb89fbfefd9763d28bbc25d3e3b9631efdb7490ecfa480c3b4ab438",
+  "passed": 31,
+  "total": 31,
+  "tests": [
+    {
+      "name": "Valid exact quote survives unchanged",
+      "pass": true
+    },
+    {
+      "name": "Case-changed quote rejected",
+      "pass": true
+    },
+    {
+      "name": "Whitespace-changed quote rejected",
+      "pass": true
+    },
+    {
+      "name": "Punctuation-changed quote rejected",
+      "pass": true
+    },
+    {
+      "name": "Quote marks cannot be silently removed",
+      "pass": true
+    },
+    {
+      "name": "Unicode quote preserved",
+      "pass": true
+    },
+    {
+      "name": "Known exact quote receives original offsets",
+      "pass": true
+    },
+    {
+      "name": "Repeated quote exposes ambiguity",
+      "pass": true
+    },
+    {
+      "name": "Evidence must be a string",
+      "pass": true
+    },
+    {
+      "name": "Evidence cannot exceed schema maximum",
+      "pass": true
+    },
+    {
+      "name": "Unknown term rejected",
+      "pass": true
+    },
+    {
+      "name": "Unknown status rejected",
+      "pass": true
+    },
+    {
+      "name": "Extra clinical text property rejected",
+      "pass": true
+    },
+    {
+      "name": "Extra root property rejected",
+      "pass": true
+    },
+    {
+      "name": "Missing required duration rejected",
+      "pass": true
+    },
+    {
+      "name": "String duration rejected",
+      "pass": true
+    },
+    {
+      "name": "Fractional duration rejected",
+      "pass": true
+    },
+    {
+      "name": "Out-of-range duration rejected",
+      "pass": true
+    },
+    {
+      "name": "Unsupported duration dropped with warning",
+      "pass": true
+    },
+    {
+      "name": "Denied term cannot retain duration",
+      "pass": true
+    },
+    {
+      "name": "Conflicting duplicate term is never first-wins",
+      "pass": true
+    },
+    {
+      "name": "Items above schema limit reject whole response",
+      "pass": true
+    },
+    {
+      "name": "Markdown JSON fence accepted explicitly",
+      "pass": true
+    },
+    {
+      "name": "Prose around JSON rejected",
+      "pass": true
+    },
+    {
+      "name": "Empty term list valid",
+      "pass": true
+    },
+    {
+      "name": "Invalid note type rejected",
+      "pass": true
+    },
+    {
+      "name": "LLM-only term requires status choice",
+      "pass": true
+    },
+    {
+      "name": "Hybrid retains both original quotes",
+      "pass": true
+    },
+    {
+      "name": "Hybrid agreement never resolves existing uncertainty",
+      "pass": true
+    },
+    {
+      "name": "Hybrid disagreement requires choice",
+      "pass": true
+    },
+    {
+      "name": "Exact unrelated quote is structurally accepted (semantic limit)",
+      "pass": true
+    }
+  ]
+}

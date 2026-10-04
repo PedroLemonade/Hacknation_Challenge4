@@ -1,0 +1,15 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "status": "passed",
+  "zip_sha256": "2f994c0a3cf21b3bd407ac574c5ee633e98aa38c0c763e0c1b903d7dcdad5c16",
+  "temporarily_unpacked": true,
+  "all_entry_hashes_match": true,
+  "all_app_files_match": true,
+  "html_asset_paths_valid": true,
+  "offline_precache_paths_valid": true,
+  "external_script_asset_references": 0,
+  "app_files": 15,
+  "precache_urls": 15,
+  "physical_phone": false,
+  "published": false
+}

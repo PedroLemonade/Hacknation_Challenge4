@@ -1,0 +1,18 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "clinical_review": false,
+  "native_review": false,
+  "original_cases_unchanged": true,
+  "issues": [
+    {
+      "ids": [
+        "T37-EN-17",
+        "T37-SW-17"
+      ],
+      "kind": "AI draft ambiguity",
+      "original_expectation": "cannot-drink stated; vomiting denied",
+      "implementation": "both require human choice",
+      "reason": "Cannot drink without vomiting is a conditional construction and does not establish literal absence of vomiting or inability to drink independently. Original pre-fix AI expectation is not reliable. Preserve disagreement; qualified review required."
+    }
+  ]
+}

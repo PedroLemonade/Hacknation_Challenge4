@@ -1,0 +1,801 @@
+id,lang,text,labels,synthetic
+passages_test_typo_0,sw,mvulana: mamuivu,pain,true
+passages_test_typo_1,en,Convulsinos,ds_convulsions,true
+passages_test_typo_2,sw,mvulana: maaumivu ya tumbo,pain,true
+passages_test_typo_3,en,the giirl cannot drink for 1 days,ds_cannot_drink,true
+passages_test_typo_4,sw,Amani: hawezzi kunyonya,ds_cannot_drink,true
+passages_test_typo_5,sw,kadi ya chanjo iko nyumbanni,,true
+passages_test_typo_6,sw,Amelegea tangu janna,ds_lethargic,true
+passages_test_typo_7,sw,tulipiga pcha ya shamba,,true
+passages_test_typo_8,en,headcahe,pain,true
+passages_test_typo_9,sw,Kikohozi siku atno,cough,true
+passages_test_typo_10,en,No diarrrhoea / unable to breastfeed,diarrhoea;ds_cannot_drink,true
+passages_test_typo_11,sw,tulipia picha ya shamba,,true
+passages_test_typo_12,mix,Unconscios,ds_lethargic,true
+passages_test_typo_13,en,the child breastfeeding wel / fits 1 days,ds_convulsions,true
+passages_test_typo_14,sw,Mtoto: amezimiia kwa siku moja,ds_lethargic,true
+passages_test_typo_15,mix,Amani: kutapika mara moja anaendesha x3 dayys,diarrhoea;vomiting,true
+passages_test_typo_16,mix,Amani: not wak,weakness,true
+passages_test_typo_17,sw,ziara ya kwaaida ya nyumbani,,true
+passages_test_typo_18,mix,letharrgic,ds_lethargic,true
+passages_test_typo_19,sw,mtoto: jotto jingi mwilini,fever,true
+passages_test_typo_20,sw,tulipiga picha ya shabma,,true
+passages_test_typo_21,en,Bay: not vomiting,vomiting,true
+passages_test_typo_22,sw,mvulaa: maumivu / ana homa,fever;pain,true
+passages_test_typo_23,mix,coughing sikku 3,cough,true
+passages_test_typo_24,en,Amani: aert x2 days,,true
+passages_test_typo_25,en,cihld unable to breastfeed,ds_cannot_drink,true
+passages_test_typo_26,en,hcild not weak,weakness,true
+passages_test_typo_27,sw,Amelegea kwa sku tano,ds_lethargic,true
+passages_test_typo_28,sw,Kichwa kinauma sku 2,pain,true
+passages_test_typo_29,sw,baba yuko kazinni,,true
+passages_test_typo_30,en,Wak,weakness,true
+passages_test_typo_31,mix,Mwilli ulikuwa unatetemeka since yesterday,ds_convulsions,true
+passages_test_typo_32,sw,Maumivu / mwili ulikuwa unatetemekka wiki moja,ds_convulsions;pain,true
+passages_test_typo_33,en,the boy: dairrhea since yesterday,diarrhoea,true
+passages_test_typo_34,sw,ana degedegge,ds_convulsions,true
+passages_test_typo_35,sw,ohma,fever,true
+passages_test_typo_36,sw,zira ya kawaida ya nyumbani,,true
+passages_test_typo_37,sw,Mtoto wa noor: si dhiafu,weakness,true
+passages_test_typo_38,mix,Mtoto wa noor aanharisha,diarrhoea,true
+passages_test_typo_39,sw,ana kkohozi,cough,true
+passages_test_typo_40,sw,Mtoto wake kifafa tnagu jana,ds_convulsions,true
+passages_test_typo_41,en,cannot rdink,ds_cannot_drink,true
+passages_test_typo_42,en,cannot dink not weak,ds_cannot_drink;weakness,true
+passages_test_typo_43,sw,mtoto: ammetapika wiki moja,vomiting,true
+passages_test_typo_44,sw,haharihi,diarrhoea,true
+passages_test_typo_45,sw,tulipiga pichha ya shamba,,true
+passages_test_typo_46,sw,anaynonya vizuri,,true
+passages_test_typo_47,en,The child: drinking well since yestrday,,true
+passages_test_typo_48,sw,mtoto wake ametapika siku ttau,vomiting,true
+passages_test_typo_49,sw,Mvulana hakua na degedege,,true
+passages_test_typo_50,sw,bei ya kahhawa imepanda,,true
+passages_test_typo_51,en,vmiting,vomiting,true
+passages_test_typo_52,sw,mtoto wakke anacheza vizuri,,true
+passages_test_typo_53,sw,mtooto wake: hawezi kunyonya,ds_cannot_drink,true
+passages_test_typo_54,en,child: rnning stomach,diarrhoea,true
+passages_test_typo_55,sw,smichana: dhaifu,weakness,true
+passages_test_typo_56,mix,baby: anatapika kila ktiu,ds_vomits_everything;vomiting,true
+passages_test_typo_57,sw,Ana deegedege,ds_convulsions,true
+passages_test_typo_58,mix,Hawezi kuamka 2 dyas,ds_lethargic,true
+passages_test_typo_59,en,The girl: not cougihng,cough,true
+passages_test_typo_60,en,does not have efver,fever,true
+passages_test_typo_61,mix,the child: unconscious 5 das,ds_lethargic,true
+passages_test_typo_62,mix,tumbo linaauma,pain,true
+passages_test_typo_63,mix,baby anatappika,vomiting,true
+passages_test_typo_64,en,The boy playing normally for 3 dyas,,true
+passages_test_typo_65,en,baaby: throwing up,vomiting,true
+passages_test_typo_66,en,no eneergy,weakness,true
+passages_test_typo_67,en,Cnanot drink since yesterday,ds_cannot_drink,true
+passages_test_typo_68,sw,Anatapikka kila anachokunywa siku tano,ds_vomits_everything;vomiting,true
+passages_test_typo_69,mix,mtoto wake kikhozi kikali,cough,true
+passages_test_typo_70,sw,anaapika kila kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_71,en,No ifts for 1 week,,true
+passages_test_typo_72,sw,bibbi hajatapika,vomiting,true
+passages_test_typo_73,sw,tulipia picha ya shamba,,true
+passages_test_typo_74,en,the grl vomiting everything 2 days,ds_vomits_everything;vomiting,true
+passages_test_typo_75,sw,Aankunywa vizuri siku 5,,true
+passages_test_typo_76,sw,Mtoto wa nooor ana degedege tangu juzi,ds_convulsions,true
+passages_test_typo_77,mix,unale to drink since yesterday,ds_cannot_drink,true
+passages_test_typo_78,mix,Amanni has fever,fever,true
+passages_test_typo_79,en,Amani: feer,fever,true
+passages_test_typo_80,mix,not bale to drink,ds_cannot_drink,true
+passages_test_typo_81,sw,hakunywa choochote kwa siku nne,ds_cannot_drink,true
+passages_test_typo_82,en,convulsiions,ds_convulsions,true
+passages_test_typo_83,en,pain for 2 daays,pain,true
+passages_test_typo_84,sw,hana nguvu / ananyonya viuri,weakness,true
+passages_test_typo_85,sw,kila anachokula anatapika wikki moja,ds_vomits_everything;vomiting,true
+passages_test_typo_86,mix,vomted,vomiting,true
+passages_test_typo_87,sw,baba yko kazini,,true
+passages_test_typo_88,sw,Amani: hawezi kunywa sku tano,ds_cannot_drink,true
+passages_test_typo_89,sw,mtoto wa oNor kichwa kinauma wiki moja,pain,true
+passages_test_typo_90,en,Amani thorws up everything,ds_vomits_everything;vomiting,true
+passages_test_typo_91,sw,tlipiga picha ya shamba,,true
+passages_test_typo_92,mix,Amechoka saa,weakness,true
+passages_test_typo_93,sw,Degeddege,ds_convulsions,true
+passages_test_typo_94,en,neighbour very wak no pain,pain;weakness,true
+passages_test_typo_95,sw,ahna nguvu siku tatu,weakness,true
+passages_test_typo_96,sw,anatapika kiila kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_97,en,talked about the cooperative emeting,,true
+passages_test_typo_98,en,throws up everything x1 dys,ds_vomits_everything;vomiting,true
+passages_test_typo_99,sw,annakohoa,cough,true
+passages_test_typo_100,en,Amani: had coonvulsions,ds_convulsions,true
+passages_test_typo_101,mix,no vomiting tangu ajna,vomiting,true
+passages_test_typo_102,en,next visit on frday,,true
+passages_test_typo_103,sw,Amani: usingizi mzito kwa siku taano,ds_lethargic,true
+passages_test_typo_104,en,no enregy + unconscious,ds_lethargic;weakness,true
+passages_test_typo_105,sw,tulipiga pcha ya shamba,,true
+passages_test_typo_106,en,canont drink,ds_cannot_drink,true
+passages_test_typo_107,sw,mtoto wa Noor: kutapika mara moja kwa siku tatu,vomiting,true
+passages_test_typo_108,sw,mvlana kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_109,en,not able to drinnk since yesterday,ds_cannot_drink,true
+passages_test_typo_110,en,vey weak,weakness,true
+passages_test_typo_111,en,vomiting everythig for 1 week,ds_vomits_everything;vomiting,true
+passages_test_typo_112,sw,mwiili ulikuwa unatetemeka,ds_convulsions,true
+passages_test_typo_113,sw,ziara ya kawaida ya nyyumbani,,true
+passages_test_typo_114,mix,the child kiffa,ds_convulsions,true
+passages_test_typo_115,mix,mvulana no vomiting wiki omja,vomiting,true
+passages_test_typo_116,mix,mvulana: vomited sku 2,vomiting,true
+passages_test_typo_117,en,baby: caannot drink,ds_cannot_drink,true
+passages_test_typo_118,en,The boy throws up everything for 1 week,ds_vomits_everything;vomiting,true
+passages_test_typo_119,mix,the child ametaapika,vomiting,true
+passages_test_typo_120,sw,bba: kukohoa sana,cough,true
+passages_test_typo_121,en,baby: no paain,pain,true
+passages_test_typo_122,mix,mvulana: si dhaaifu,weakness,true
+passages_test_typo_123,sw,dhaifu / wmili ulikuwa unatetemeka,ds_convulsions;weakness,true
+passages_test_typo_124,mix,No neergy since yesterday,weakness,true
+passages_test_typo_125,en,has fveer,fever,true
+passages_test_typo_126,sw,mtoto wa Noor: kutpaika wiki moja,vomiting,true
+passages_test_typo_127,sw,homa + anatapika kila ktu wiki moja,ds_vomits_everything;fever;vomiting,true
+passages_test_typo_128,en,neighbour: thows up everything,ds_vomits_everything;vomiting,true
+passages_test_typo_129,sw,aatapika,vomiting,true
+passages_test_typo_130,sw,Mtoto wa noor hakunywa chohote wiki moja,ds_cannot_drink,true
+passages_test_typo_131,sw,bei ya akhawa imepanda,,true
+passages_test_typo_132,mix,child: kutapika mraa moja,vomiting,true
+passages_test_typo_133,mix,no dirrhea,diarrhoea,true
+passages_test_typo_134,en,the boy vomting everything,ds_vomits_everything;vomiting,true
+passages_test_typo_135,mix,The chlid: throws up everything siku 2,ds_vomits_everything;vomiting,true
+passages_test_typo_136,en,diarrhea x5 dayys,diarrhoea,true
+passages_test_typo_137,en,The child hot body not able to driink,ds_cannot_drink;fever,true
+passages_test_typo_138,sw,baba yuko kaznii,,true
+passages_test_typo_139,mix,ana kikohzoi,cough,true
+passages_test_typo_140,mix,Hard to wkae,ds_lethargic,true
+passages_test_typo_141,en,No enegy,weakness,true
+passages_test_typo_142,sw,Mtoto: kifafa tanu jana,ds_convulsions,true
+passages_test_typo_143,mix,Amnai: weak,weakness,true
+passages_test_typo_144,sw,Mtoto wa noor: kutapika mara moja tangu jzi,vomiting,true
+passages_test_typo_145,sw,mtoto: anaharisa wiki moja,diarrhoea,true
+passages_test_typo_146,sw,kadi ya chanjo iko ynumbani,,true
+passages_test_typo_147,mix,Alipata deedege,ds_convulsions,true
+passages_test_typo_148,mix,Aman: headache,pain,true
+passages_test_typo_149,sw,Hakua na degedege,,true
+passages_test_typo_150,sw,Kikohozi kkiali,cough,true
+passages_test_typo_151,sw,Aezimia,ds_lethargic,true
+passages_test_typo_152,sw,Alipata degedegge,ds_convulsions,true
+passages_test_typo_153,en,coonvulsions,ds_convulsions,true
+passages_test_typo_154,sw,hakohoi skiu moja,cough,true
+passages_test_typo_155,sw,msichana: si dhaifu alipata deegdege siku tatu,ds_convulsions;weakness,true
+passages_test_typo_156,sw,Amani: amezimiia,ds_lethargic,true
+passages_test_typo_157,sw,kkiohozi,cough,true
+passages_test_typo_158,mix,hakuna hmoa,fever,true
+passages_test_typo_159,sw,Hajitambui wii moja,ds_lethargic,true
+passages_test_typo_160,sw,Amani: amelegea tanu juzi,ds_lethargic,true
+passages_test_typo_161,mix,child: had convulsions wiki mojja,ds_convulsions,true
+passages_test_typo_162,sw,bei ya kahawa imepandda,,true
+passages_test_typo_163,en,the boy not coughinng for 5 days,cough,true
+passages_test_typo_164,sw,Mvulana: kuhara sku 5,diarrhoea,true
+passages_test_typo_165,sw,yuko mcaho,,true
+passages_test_typo_166,sw,Amani: kikoohozi,cough,true
+passages_test_typo_167,en,talked abbout the cooperative meeting,,true
+passages_test_typo_168,sw,kaadi ya chanjo iko nyumbani,,true
+passages_test_typo_169,sw,Anatapika klia kitu siku 4,ds_vomits_everything;vomiting,true
+passages_test_typo_170,mix,Baba ahwezi kuamka,ds_lethargic,true
+passages_test_typo_171,sw,tumbo linauma siiku tano,pain,true
+passages_test_typo_172,sw,tulipiga pica ya shamba,,true
+passages_test_typo_173,mix,Hanynoyi,ds_cannot_drink,true
+passages_test_typo_174,sw,hakuwa na degeege siku 1,,true
+passages_test_typo_175,sw,bei ya kahwa imepanda,,true
+passages_test_typo_176,mix,Headache siiku 2,pain,true
+passages_test_typo_177,en,The child no energy sice yesterday,weakness,true
+passages_test_typo_178,en,the girl: vomitiing everything x1 days,ds_vomits_everything;vomiting,true
+passages_test_typo_179,mix,The girl anatapika kila kitu / very waek,ds_vomits_everything;vomiting;weakness,true
+passages_test_typo_180,sw,Ana kikhozi,cough,true
+passages_test_typo_181,en,Amani dos not have fever,fever,true
+passages_test_typo_182,mix,the grl: no fits,,true
+passages_test_typo_183,sw,Kukohoa sanna,cough,true
+passages_test_typo_184,sw,ziara ya kawaida ya nyyumbani,,true
+passages_test_typo_185,sw,tulipiga piicha ya shamba,,true
+passages_test_typo_186,sw,msichhana anatapika kila anachokunywa kwa siku tatu,ds_vomits_everything;vomiting,true
+passages_test_typo_187,mix,mvulana stomach pain / homa kali for 2 adys,fever;pain,true
+passages_test_typo_188,sw,hakunywa chocohte,ds_cannot_drink,true
+passages_test_typo_189,sw,Mttoto wake usingizi mzito,ds_lethargic,true
+passages_test_typo_190,mix,Kila anachokula anataapika / si dhaifu for 4 days,ds_vomits_everything;vomiting;weakness,true
+passages_test_typo_191,mix,no energy kila anachokula anatapikka,ds_vomits_everything;vomiting;weakness,true
+passages_test_typo_192,mix,msichana homma kali,fever,true
+passages_test_typo_193,sw,mtotto wa Noor maumivu,pain,true
+passages_test_typo_194,sw,mwili una joto wkii moja,fever,true
+passages_test_typo_195,sw,kutapika kwa isku tatu,vomiting,true
+passages_test_typo_196,sw,msihcana hana nguvu,weakness,true
+passages_test_typo_197,mix,veery weak,weakness,true
+passages_test_typo_198,sw,ameekataa kunyonya,ds_cannot_drink,true
+passages_test_typo_199,mix,maumivu ya kchwa siku mbili,pain,true
+passages_test_typo_200,mix,vmoited,vomiting,true
+passages_test_typo_201,en,no neergy,weakness,true
+passages_test_typo_202,sw,kutapiika,vomiting,true
+passages_test_typo_203,en,headache x4 dyas,pain,true
+passages_test_typo_204,mix,mtoto wa Noor: drinkiing well for 2 days,,true
+passages_test_typo_205,mix,kichwa knauma,pain,true
+passages_test_typo_206,en,the child unable to berastfeed,ds_cannot_drink,true
+passages_test_typo_207,sw,Amani: hakunywa cohchote,ds_cannot_drink,true
+passages_test_typo_208,en,Diarrrhea,diarrhoea,true
+passages_test_typo_209,sw,Joo jingi mwilini,fever,true
+passages_test_typo_210,sw,ktuapika mara moja,vomiting,true
+passages_test_typo_211,mix,Kutaika / hana nguvu siku 3,vomiting;weakness,true
+passages_test_typo_212,sw,Mtoto anaharisha tanu jana,diarrhoea,true
+passages_test_typo_213,mix,mama yaake amekataa kunyonya,ds_cannot_drink,true
+passages_test_typo_214,sw,mvulana: anatapika kila anachokunywa kwa siku mja,ds_vomits_everything;vomiting,true
+passages_test_typo_215,sw,Anahrisha,diarrhoea,true
+passages_test_typo_216,sw,Mtoto wake: hwezi kunywa,ds_cannot_drink,true
+passages_test_typo_217,en,Child: thrwos up everything since yesterday,ds_vomits_everything;vomiting,true
+passages_test_typo_218,sw,ametapika wii moja,vomiting,true
+passages_test_typo_219,sw,bei ya kahawa imepandda,,true
+passages_test_typo_220,mix,Choo cha maji wki moja,diarrhoea,true
+passages_test_typo_221,sw,mvulana ana degedeege tangu juzi,ds_convulsions,true
+passages_test_typo_222,mix,hhaarishi for 1 week,diarrhoea,true
+passages_test_typo_223,sw,hawezi kunyonya kwa siku atno,ds_cannot_drink,true
+passages_test_typo_224,sw,hawezi kunnywa,ds_cannot_drink,true
+passages_test_typo_225,sw,mischana kikohozi,cough,true
+passages_test_typo_226,mix,chid bad cough,cough,true
+passages_test_typo_227,sw,mvulana: amkeataa kunyonya,ds_cannot_drink,true
+passages_test_typo_228,sw,maumivu degedege tanngu juzi,ds_convulsions;pain,true
+passages_test_typo_229,en,child no darrhoea,diarrhoea,true
+passages_test_typo_230,en,no eergy for 3 days,weakness,true
+passages_test_typo_231,sw,haa kikohozi tangu jana,cough,true
+passages_test_typo_232,sw,mtoto kikohozi kikkali,cough,true
+passages_test_typo_233,en,breasstfeeding well,,true
+passages_test_typo_234,sw,hanna kikohozi,cough,true
+passages_test_typo_235,mix,Amani: no energgy for 2 days,weakness,true
+passages_test_typo_236,sw,abba yuko kazini,,true
+passages_test_typo_237,sw,Kila anahcokula anatapika tangu jana,ds_vomits_everything;vomiting,true
+passages_test_typo_238,mix,fiits,ds_convulsions,true
+passages_test_typo_239,sw,anaknywa vizuri,,true
+passages_test_typo_240,en,child: no enegry,weakness,true
+passages_test_typo_241,sw,msichana anaenesha kwa siku nne,diarrhoea,true
+passages_test_typo_242,sw,ziara ya kawaida ya nyuumbani,,true
+passages_test_typo_243,mix,The boy: not able to drik,ds_cannot_drink,true
+passages_test_typo_244,mix,Child: throws up everythinng 5 days,ds_vomits_everything;vomiting,true
+passages_test_typo_245,mix,Denies pain for 2 adys,pain,true
+passages_test_typo_246,en,Grandmother: abdominal pian for 2 days,pain,true
+passages_test_typo_247,en,No feevr for 1 week,fever,true
+passages_test_typo_248,sw,hajitambui kwa isku nne,ds_lethargic,true
+passages_test_typo_249,sw,Anatapika kla kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_250,sw,bei ya kahawa imepadna,,true
+passages_test_typo_251,en,the gril lethargic,ds_lethargic,true
+passages_test_typo_252,en,the girl: running stomach / harrd to wake x3 days,diarrhoea;ds_lethargic,true
+passages_test_typo_253,sw,amezmia + kuharisha,diarrhoea;ds_lethargic,true
+passages_test_typo_254,mix,unconscios,ds_lethargic,true
+passages_test_typo_255,en,dirarhea,diarrhoea,true
+passages_test_typo_256,mix,msichana: anaharisha wikki moja,diarrhoea,true
+passages_test_typo_257,en,wek,weakness,true
+passages_test_typo_258,mix,mama: very slleepy,ds_lethargic,true
+passages_test_typo_259,mix,Amani anaharihsa anatapika x2 days,diarrhoea;vomiting,true
+passages_test_typo_260,sw,bei ya kahawa iepanda,,true
+passages_test_typo_261,sw,moto hakunywa chochote tangu jana,ds_cannot_drink,true
+passages_test_typo_262,sw,tulipiga picha ya sahmba,,true
+passages_test_typo_263,en,chhild running stomach,diarrhoea,true
+passages_test_typo_264,sw,bei ya kahawa imepana,,true
+passages_test_typo_265,sw,hakohoi kwa siku atno,cough,true
+passages_test_typo_266,sw,bla homa,fever,true
+passages_test_typo_267,mix,msichana: vrey weak siku tano,weakness,true
+passages_test_typo_268,sw,Mtoto: tumbbo linauma anacheza vizuri,pain,true
+passages_test_typo_269,mix,no voomiting,vomiting,true
+passages_test_typo_270,en,Amani: not wek since yesterday,weakness,true
+passages_test_typo_271,sw,haukwa na degedege,,true
+passages_test_typo_272,sw,Hana nuvu,weakness,true
+passages_test_typo_273,sw,mvulana: alipaa degedege,ds_convulsions,true
+passages_test_typo_274,en,Chid fever,fever,true
+passages_test_typo_275,sw,haewzi kunyonya,ds_cannot_drink,true
+passages_test_typo_276,sw,Hna maumivu tangu jana,pain,true
+passages_test_typo_277,en,child: not able to drink 5 dys,ds_cannot_drink,true
+passages_test_typo_278,sw,mtoto wa Noor kila anachokula aatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_279,sw,Degeedge,ds_convulsions,true
+passages_test_typo_280,sw,Mtoto wa noor hakunywa chchote,ds_cannot_drink,true
+passages_test_typo_281,en,No fver,fever,true
+passages_test_typo_282,sw,tumbo linuama / anatapika kila anachokunywa,ds_vomits_everything;pain;vomiting,true
+passages_test_typo_283,sw,amektaa kunyonya,ds_cannot_drink,true
+passages_test_typo_284,en,child: hard to awke,ds_lethargic,true
+passages_test_typo_285,sw,msichana degedege sku 1,ds_convulsions,true
+passages_test_typo_286,mix,maumivu ya tummbo,pain,true
+passages_test_typo_287,sw,Amani kuhara tngu juzi,diarrhoea,true
+passages_test_typo_288,sw,Mvulana kutapikka mara moja siku 5,vomiting,true
+passages_test_typo_289,sw,Mtoto wake ana deegdege tangu jana,ds_convulsions,true
+passages_test_typo_290,sw,Msichana: kichwa kianuma,pain,true
+passages_test_typo_291,sw,Mama: hajitambui kwa sku tano,ds_lethargic,true
+passages_test_typo_292,sw,Amani: mauumivu ya tumbo,pain,true
+passages_test_typo_293,en,the girl: fits + ewak,ds_convulsions;weakness,true
+passages_test_typo_294,mix,Amechoka sanna,weakness,true
+passages_test_typo_295,en,Amanii: unconscious for 1 week,ds_lethargic,true
+passages_test_typo_296,en,Baby voomited,vomiting,true
+passages_test_typo_297,mix,Kila anachokla anatapika since yesterday,ds_vomits_everything;vomiting,true
+passages_test_typo_298,sw,kukohoa asna,cough,true
+passages_test_typo_299,sw,kutappika mara moja,vomiting,true
+passages_test_typo_300,sw,bibi: hakunywa chochoe,ds_cannot_drink,true
+passages_test_typo_301,en,iHgh fever,fever,true
+passages_test_typo_302,mix,diarhroea,diarrhoea,true
+passages_test_typo_303,mix,Anakohoa tangu jzi,cough,true
+passages_test_typo_304,sw,baba yuko kzini,,true
+passages_test_typo_305,mix,coguh + hanyonyi,cough;ds_cannot_drink,true
+passages_test_typo_306,mix,Mtoto wa noor degedege has fevver,ds_convulsions;fever,true
+passages_test_typo_307,sw,Hataiki wiki moja,vomiting,true
+passages_test_typo_308,sw,mamuivu,pain,true
+passages_test_typo_309,mix,mvulaana mwili una joto,fever,true
+passages_test_typo_310,sw,kiffaa,ds_convulsions,true
+passages_test_typo_311,sw,motto wa Noor kukohoa sana,cough,true
+passages_test_typo_312,sw,si hdaifu kuharisha,diarrhoea;weakness,true
+passages_test_typo_313,en,Had convulsions for 1 weeek,ds_convulsions,true
+passages_test_typo_314,mix,Mvulana: yko macho tangu juzi,,true
+passages_test_typo_315,sw,bibi anatapkia,vomiting,true
+passages_test_typo_316,en,headache snice yesterday,pain,true
+passages_test_typo_317,en,Abdominal pin,pain,true
+passages_test_typo_318,mix,Aaharisha,diarrhoea,true
+passages_test_typo_319,sw,hajitammbui,ds_lethargic,true
+passages_test_typo_320,sw,anahaisha,diarrhoea,true
+passages_test_typo_321,sw,ana kikhoozi,cough,true
+passages_test_typo_322,mix,Aetapika siku 4,vomiting,true
+passages_test_typo_323,sw,Anakkohoa,cough,true
+passages_test_typo_324,sw,baba yuko kazzini,,true
+passages_test_typo_325,sw,mama amelegea wkii moja,ds_lethargic,true
+passages_test_typo_326,en,The chhild: bad cough,cough,true
+passages_test_typo_327,sw,maumivu ya tmbo tangu jana,pain,true
+passages_test_typo_328,en,the chiild: has fever 3 days,fever,true
+passages_test_typo_329,sw,hawezi kunyonya si hdaifu,ds_cannot_drink;weakness,true
+passages_test_typo_330,sw,bei ya kahawa imeppanda,,true
+passages_test_typo_331,sw,ziara ya kawaida ya numbani,,true
+passages_test_typo_332,sw,Mvulana hana maumivu taangu jana,pain,true
+passages_test_typo_333,en,the mother: not vomitig 4 days,vomiting,true
+passages_test_typo_334,sw,si dhafiu,weakness,true
+passages_test_typo_335,sw,mvuulana: kichwa kinauma wiki moja,pain,true
+passages_test_typo_336,mix,ana kikoohzi,cough,true
+passages_test_typo_337,mix,Mtoto wa noor no enerrgy tangu jana,weakness,true
+passages_test_typo_338,sw,tulipiga picha ya shhamba,,true
+passages_test_typo_339,sw,dhafiu kwa siku nne,weakness,true
+passages_test_typo_340,mix,mtoto wake kifafa + hjitambui 1 days,ds_convulsions;ds_lethargic,true
+passages_test_typo_341,mix,Thrownig up + kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_342,en,Haard to wake,ds_lethargic,true
+passages_test_typo_343,sw,Amani hanna nguvu,weakness,true
+passages_test_typo_344,mix,stomaach pain,pain,true
+passages_test_typo_345,mix,mvulana no ocugh siku tano,cough,true
+passages_test_typo_346,mix,Dhaifu + hot obdy,fever;weakness,true
+passages_test_typo_347,sw,bbii: anakohoa kwa siku mbili,cough,true
+passages_test_typo_348,sw,kifaffa siku 3,ds_convulsions,true
+passages_test_typo_349,sw,msichana ana kikohozi tubmo haliumi,cough;pain,true
+passages_test_typo_350,en,the gil: very sleepy,ds_lethargic,true
+passages_test_typo_351,sw,hakuwa na deggedege,,true
+passages_test_typo_352,en,The girl: diarrhhea,diarrhoea,true
+passages_test_typo_353,mix,the boy anatapika killa anachokunywa,ds_vomits_everything;vomiting,true
+passages_test_typo_354,sw,Haezi kuamka tangu jana,ds_lethargic,true
+passages_test_typo_355,sw,Mnyone,weakness,true
+passages_test_typo_356,sw,mtoto wa Noor kchwa kinauma tangu juzi,pain,true
+passages_test_typo_357,sw,baba yukko kazini,,true
+passages_test_typo_358,mix,Child alert 5 das,,true
+passages_test_typo_359,sw,mtoto: si dhaifu wikki moja,weakness,true
+passages_test_typo_360,en,had covnulsions,ds_convulsions,true
+passages_test_typo_361,en,Amani: stomach pan,pain,true
+passages_test_typo_362,sw,tulipiga pciha ya shamba,,true
+passages_test_typo_363,sw,maumivu ya kichwa tangu jzi,pain,true
+passages_test_typo_364,sw,hnaa nguvu,weakness,true
+passages_test_typo_365,en,cannot rdink,ds_cannot_drink,true
+passages_test_typo_366,en,Baby: convulsoins,ds_convulsions,true
+passages_test_typo_367,mix,mvulana: anakunywa ivzuri,,true
+passages_test_typo_368,sw,anayonya vizuri siku 5,,true
+passages_test_typo_369,mix,Kichwa kiauma,pain,true
+passages_test_typo_370,sw,kuharisha usingizi mzitto,diarrhoea;ds_lethargic,true
+passages_test_typo_371,mix,coughing + dhifu,cough;weakness,true
+passages_test_typo_372,sw,haewzi kuamka,ds_lethargic,true
+passages_test_typo_373,sw,anatapika killa kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_374,sw,anaendesa,diarrhoea,true
+passages_test_typo_375,sw,Amani dhiafu tangu jana,weakness,true
+passages_test_typo_376,sw,jirani: kikohozi kikali tangu juuzi,cough,true
+passages_test_typo_377,en,diarrheoa + not able to drink,diarrhoea;ds_cannot_drink,true
+passages_test_typo_378,sw,mtoto wa Noor: anatapika kla kitu anakunywa vizuri,ds_vomits_everything;vomiting,true
+passages_test_typo_379,sw,tulipiga pihca ya shamba,,true
+passages_test_typo_380,sw,bei ya kaawa imepanda,,true
+passages_test_typo_381,en,Ftis,ds_convulsions,true
+passages_test_typo_382,sw,Mvulana: anharisha,diarrhoea,true
+passages_test_typo_383,sw,mtoto hana kikohozi isku 3,cough,true
+passages_test_typo_384,sw,Mtoto wa onor: ana degedege,ds_convulsions,true
+passages_test_typo_385,sw,Mauimvu / ana kikohozi,cough;pain,true
+passages_test_typo_386,mix,uKhara siku tatu,diarrhoea,true
+passages_test_typo_387,sw,dhaaifu / hanyonyi kwa siku moja,ds_cannot_drink;weakness,true
+passages_test_typo_388,en,The girl: fits for 1 weeek,ds_convulsions,true
+passages_test_typo_389,sw,bei ya kahawa imeapnda,,true
+passages_test_typo_390,en,Amanii: not coughing,cough,true
+passages_test_typo_391,mix,Amecoka sana throwing up,vomiting;weakness,true
+passages_test_typo_392,mix,aechoka sana for 1 week,weakness,true
+passages_test_typo_393,en,the chilld: had convulsions,ds_convulsions,true
+passages_test_typo_394,en,coughng x2 days,cough,true
+passages_test_typo_395,en,Amani high fever 3 daays,fever,true
+passages_test_typo_396,en,Thrwoing up for 1 week,vomiting,true
+passages_test_typo_397,sw,Mtoto waake hakuwa na degedege,,true
+passages_test_typo_398,sw,tMoto: hakohoi,cough,true
+passages_test_typo_399,sw,ziara ya kawaidda ya nyumbani,,true
+passages_test_typo_400,en,has fever x3 daays,fever,true
+passages_test_typo_401,en,the chiild: cough,cough,true
+passages_test_typo_402,sw,mvulana: naatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_403,sw,Dhaaifu,weakness,true
+passages_test_typo_404,en,Diarrhoea / abdminal pain,diarrhoea;pain,true
+passages_test_typo_405,mix,mtoto wa Noor ameatpika,vomiting,true
+passages_test_typo_406,en,the chidl: alert,,true
+passages_test_typo_407,mix,Amani homma,fever,true
+passages_test_typo_408,sw,mtoto wake: maumivu ya kichwa wiki mjoa,pain,true
+passages_test_typo_409,sw,Amani kila anachokula anatapia,ds_vomits_everything;vomiting,true
+passages_test_typo_410,en,Chld: coughing x1 days,cough,true
+passages_test_typo_411,mix,Choo cha majji / hot body,diarrhoea;fever,true
+passages_test_typo_412,mix,si hdaifu x4 days,weakness,true
+passages_test_typo_413,sw,Mvuana hanyonyi wiki moja,ds_cannot_drink,true
+passages_test_typo_414,mix,child diarrhoea x1 adys,diarrhoea,true
+passages_test_typo_415,sw,tulipiga picha ya shmaba,,true
+passages_test_typo_416,sw,mtoto ahna nguvu siku nne,weakness,true
+passages_test_typo_417,mix,vomits everythinng,ds_vomits_everything;vomiting,true
+passages_test_typo_418,sw,kila anachokula anatapka mwili ulikuwa unatetemeka siku tatu,ds_convulsions;ds_vomits_everything;vomiting,true
+passages_test_typo_419,sw,Anahrisha wiki moja,diarrhoea,true
+passages_test_typo_420,sw,Mtooto kichwa kinauma,pain,true
+passages_test_typo_421,sw,usingizi mzito tangu ajna,ds_lethargic,true
+passages_test_typo_422,mix,Bbii: no fits,,true
+passages_test_typo_423,mix,tumbo linauma skiu 5,pain,true
+passages_test_typo_424,mix,dhaaifu,weakness,true
+passages_test_typo_425,sw,mAani tumbo linauma,pain,true
+passages_test_typo_426,sw,ana kikoohozi,cough,true
+passages_test_typo_427,sw,Amani: hawezi kunynya siku tatu,ds_cannot_drink,true
+passages_test_typo_428,en,weak since yestreday,weakness,true
+passages_test_typo_429,en,hot body + throws up evverything,ds_vomits_everything;fever;vomiting,true
+passages_test_typo_430,sw,Amani: hawezi kuyonya,ds_cannot_drink,true
+passages_test_typo_431,en,Baby headacche for 1 week,pain,true
+passages_test_typo_432,sw,kila anacokula anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_433,sw,msichana: dhaifu wki moja,weakness,true
+passages_test_typo_434,en,father: no feer,fever,true
+passages_test_typo_435,sw,mama yake maumivu ya tumbo taangu jana,pain,true
+passages_test_typo_436,sw,usnigizi mzito,ds_lethargic,true
+passages_test_typo_437,sw,Mtoto ana kikohozi kwa siku mja,cough,true
+passages_test_typo_438,en,the boy weaak,weakness,true
+passages_test_typo_439,sw,Mvulana amekataa kunyoonya wiki moja,ds_cannot_drink,true
+passages_test_typo_440,sw,mtoto hakuna homa skiu 2,fever,true
+passages_test_typo_441,sw,ohma kali,fever,true
+passages_test_typo_442,sw,kuharsiha kwa siku tano,diarrhoea,true
+passages_test_typo_443,mix,the boy: anakunywa vizuri + throwing up tnagu jana,vomiting,true
+passages_test_typo_444,sw,anahharisha,diarrhoea,true
+passages_test_typo_445,sw,msichana: maumivu ya utmbo kwa siku nne,pain,true
+passages_test_typo_446,sw,jirani anatapika kila aachokunywa kutapika,ds_vomits_everything;vomiting,true
+passages_test_typo_447,en,child: bad cough / not vomiting for 2 dayys,cough;vomiting,true
+passages_test_typo_448,mix,Anatapika kila anachokunywa x1 dys,ds_vomits_everything;vomiting,true
+passages_test_typo_449,sw,mtoto wa Noor mwii una joto siku 2,fever,true
+passages_test_typo_450,sw,homa kalli tangu jana,fever,true
+passages_test_typo_451,en,The girl vomiting x4 adys,vomiting,true
+passages_test_typo_452,mix,anaedesha,diarrhoea,true
+passages_test_typo_453,mix,Anakohoa 4 dys,cough,true
+passages_test_typo_454,sw,alipata degdeege tangu jana,ds_convulsions,true
+passages_test_typo_455,en,chhild diarrhoea,diarrhoea,true
+passages_test_typo_456,sw,anaharisha tanu juzi,diarrhoea,true
+passages_test_typo_457,en,Babby unable to drink / vomiting,ds_cannot_drink;vomiting,true
+passages_test_typo_458,mix,Darrhea siku 3,diarrhoea,true
+passages_test_typo_459,sw,ziara ya kawadia ya nyumbani,,true
+passages_test_typo_460,sw,mtoto jotto jingi mwilini wiki moja,fever,true
+passages_test_typo_461,sw,Mtoto: anaugua homa wiki mjoa,fever,true
+passages_test_typo_462,sw,kichwa kinauuma,pain,true
+passages_test_typo_463,en,nxt visit on friday,,true
+passages_test_typo_464,sw,abba yuko kazini,,true
+passages_test_typo_465,sw,Mtoto bila hma,fever,true
+passages_test_typo_466,sw,amekataa kuyonya,ds_cannot_drink,true
+passages_test_typo_467,sw,amezimia siu tano,ds_lethargic,true
+passages_test_typo_468,mix,The booy: kuhara,diarrhoea,true
+passages_test_typo_469,sw,tumo linauma siku tano,pain,true
+passages_test_typo_470,en,the child voiting,vomiting,true
+passages_test_typo_471,en,no vomiting x2 dyas,vomiting,true
+passages_test_typo_472,en,denies pain sincce yesterday,pain,true
+passages_test_typo_473,sw,anatapiika maumivu ya kichwa tangu juzi,pain;vomiting,true
+passages_test_typo_474,mix,Mvulana: myonge,weakness,true
+passages_test_typo_475,sw,kuhraa,diarrhoea,true
+passages_test_typo_476,en,coughing for 1 wek,cough,true
+passages_test_typo_477,mix,high fever kwa siu tatu,fever,true
+passages_test_typo_478,en,Had convulsionns,ds_convulsions,true
+passages_test_typo_479,en,Amani harrd to wake since yesterday,ds_lethargic,true
+passages_test_typo_480,mix,The grl: kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_481,en,baby: no convulsions unable to breatsfeed,ds_cannot_drink,true
+passages_test_typo_482,en,The girll: running stomach,diarrhoea,true
+passages_test_typo_483,sw,bibi anakunywa vizri,,true
+passages_test_typo_484,sw,tuumbo linauma,pain,true
+passages_test_typo_485,sw,bei ya kahawa imeanda,,true
+passages_test_typo_486,sw,mtooto wake maumivu ya tumbo + anatapika kila kitu,ds_vomits_everything;pain;vomiting,true
+passages_test_typo_487,mix,Mtotto wake: hawezi kunywa for 1 week,ds_cannot_drink,true
+passages_test_typo_488,sw,ziara ya kawaidda ya nyumbani,,true
+passages_test_typo_489,mix,the boy: jtoo jingi mwilini,fever,true
+passages_test_typo_490,mix,the girl unconscious iwki moja,ds_lethargic,true
+passages_test_typo_491,sw,mtoto wa Noor: ametapika siku mili,vomiting,true
+passages_test_typo_492,en,Thrwoing up,vomiting,true
+passages_test_typo_493,sw,jirani: alipata deggedege,ds_convulsions,true
+passages_test_typo_494,en,cihld stomach pain,pain,true
+passages_test_typo_495,en,no energy since yeterday,weakness,true
+passages_test_typo_496,en,child: headachhe,pain,true
+passages_test_typo_497,mix,Mtoto wake: vomited / fits x4 adys,ds_convulsions;vomiting,true
+passages_test_typo_498,sw,Deegedege,ds_convulsions,true
+passages_test_typo_499,sw,haweezi kunywa,ds_cannot_drink,true
+passages_test_typo_500,sw,Hajitambui iwki moja,ds_lethargic,true
+passages_test_typo_501,sw,mtoto wake kukohoa saa,cough,true
+passages_test_typo_502,sw,ziara ya kwaida ya nyumbani,,true
+passages_test_typo_503,mix,eFver,fever,true
+passages_test_typo_504,en,Coough + hot body,cough;fever,true
+passages_test_typo_505,mix,no enrgy x5 days,weakness,true
+passages_test_typo_506,sw,kuharsiha,diarrhoea,true
+passages_test_typo_507,en,Vomted for 1 week,vomiting,true
+passages_test_typo_508,sw,kadi ya channjo iko nyumbani,,true
+passages_test_typo_509,mix,Kutapika marra moja,vomiting,true
+passages_test_typo_510,sw,mtoto wake khuara,diarrhoea,true
+passages_test_typo_511,mix,cnanot drink siku 1,ds_cannot_drink,true
+passages_test_typo_512,sw,tlipiga picha ya shamba,,true
+passages_test_typo_513,mix,The chlid kichwa kinauma for 1 days,pain,true
+passages_test_typo_514,sw,dhafiu anakohoa,cough;weakness,true
+passages_test_typo_515,en,hard to awke,ds_lethargic,true
+passages_test_typo_516,sw,hawzei kuamka,ds_lethargic,true
+passages_test_typo_517,sw,ziaa ya kawaida ya nyumbani,,true
+passages_test_typo_518,sw,mnyongge,weakness,true
+passages_test_typo_519,en,the chid: unconscious,ds_lethargic,true
+passages_test_typo_520,en,the child abdominal pin x5 days,pain,true
+passages_test_typo_521,sw,hana nguvu + chhoo cha maji,diarrhoea;weakness,true
+passages_test_typo_522,sw,ziraa ya kawaida ya nyumbani,,true
+passages_test_typo_523,sw,ziara ya kawada ya nyumbani,,true
+passages_test_typo_524,en,Child: unabble to breastfeed 4 days,ds_cannot_drink,true
+passages_test_typo_525,sw,ziara ya kawaida ya nyumbbani,,true
+passages_test_typo_526,sw,Msichanaa: yuko macho siku 3,,true
+passages_test_typo_527,sw,Mvluana: amekataa kunyonya,ds_cannot_drink,true
+passages_test_typo_528,sw,Mtoo wa noor yuko macho,,true
+passages_test_typo_529,mix,amechokka sana anaugua homa wiki moja,fever;weakness,true
+passages_test_typo_530,mix,uconscious for 5 days,ds_lethargic,true
+passages_test_typo_531,en,weak for 1 wek,weakness,true
+passages_test_typo_532,sw,maumivvu,pain,true
+passages_test_typo_533,sw,kadi ya chhanjo iko nyumbani,,true
+passages_test_typo_534,sw,ziara ya kawaida ya nymbani,,true
+passages_test_typo_535,sw,mma yake: anaharisha tangu jana,diarrhoea,true
+passages_test_typo_536,mix,Hana kikoohozi,cough,true
+passages_test_typo_537,en,vomiting everything 4 dayys,ds_vomits_everything;vomiting,true
+passages_test_typo_538,en,Aamni had convulsions,ds_convulsions,true
+passages_test_typo_539,sw,tulipigga picha ya shamba,,true
+passages_test_typo_540,sw,Msihcana: kikohozi kikali wiki moja,cough,true
+passages_test_typo_541,sw,mtoto: anatapika siiku 2,vomiting,true
+passages_test_typo_542,sw,Dgedege,ds_convulsions,true
+passages_test_typo_543,sw,bei ya kahawa impanda,,true
+passages_test_typo_544,sw,Dhaifu / ana degedege siu mbili,ds_convulsions;weakness,true
+passages_test_typo_545,mix,The child anaapika,vomiting,true
+passages_test_typo_546,en,the girl running stoamch 4 days,diarrhoea,true
+passages_test_typo_547,en,child denies pain sincce yesterday,pain,true
+passages_test_typo_548,sw,kadi ya chhanjo iko nyumbani,,true
+passages_test_typo_549,sw,Amani hkaohoi,cough,true
+passages_test_typo_550,mix,Heeadache,pain,true
+passages_test_typo_551,sw,mttoto wa Noor: kukohoa sana,cough,true
+passages_test_typo_552,sw,tMoto wake: tumbo linauma / anaugua homa,fever;pain,true
+passages_test_typo_553,sw,Degedege wiki mjoa,ds_convulsions,true
+passages_test_typo_554,mix,homa kali hawezi kuuamka,ds_lethargic;fever,true
+passages_test_typo_555,en,Vry sleepy,ds_lethargic,true
+passages_test_typo_556,mix,Msichana hawezi kuuamka,ds_lethargic,true
+passages_test_typo_557,sw,haokhoi,cough,true
+passages_test_typo_558,sw,kukkohoa sana tangu jana,cough,true
+passages_test_typo_559,en,no convulisons,,true
+passages_test_typo_560,en,unconscious x1 dyas,ds_lethargic,true
+passages_test_typo_561,en,fitts unable to drink since yesterday,ds_cannot_drink;ds_convulsions,true
+passages_test_typo_562,sw,Mtoto wa nor hakuwa na degedege,,true
+passages_test_typo_563,mix,The child: hnyonyi + haharishi x2 days,diarrhoea;ds_cannot_drink,true
+passages_test_typo_564,sw,moto wa Noor: hana nguvu,weakness,true
+passages_test_typo_565,sw,ziara ya kawaida ya nuymbani,,true
+passages_test_typo_566,mix,feever,fever,true
+passages_test_typo_567,sw,kdai ya chanjo iko nyumbani,,true
+passages_test_typo_568,sw,mtoto amekataa kunyonya + anatapika kila kitu kwa sikku nne,ds_cannot_drink;ds_vomits_everything;vomiting,true
+passages_test_typo_569,en,bad couh,cough,true
+passages_test_typo_570,mix,vomits everything / veery weak for 5 days,ds_vomits_everything;vomiting;weakness,true
+passages_test_typo_571,en,the child stmoach pain,pain,true
+passages_test_typo_572,en,talked abouut the cooperative meeting,,true
+passages_test_typo_573,en,Not waek,weakness,true
+passages_test_typo_574,sw,Kila anachokula anatapika tangu janna,ds_vomits_everything;vomiting,true
+passages_test_typo_575,sw,hawezi kuama,ds_lethargic,true
+passages_test_typo_576,sw,Kla anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_577,sw,mvulana kutapika + hwezi kunywa,ds_cannot_drink;vomiting,true
+passages_test_typo_578,en,bay: vomits everything,ds_vomits_everything;vomiting,true
+passages_test_typo_579,mix,ana hoa,fever,true
+passages_test_typo_580,sw,bei ya kaahwa imepanda,,true
+passages_test_typo_581,sw,abba yuko kazini,,true
+passages_test_typo_582,en,apin,pain,true
+passages_test_typo_583,sw,bei ya kahwaa imepanda,,true
+passages_test_typo_584,mix,jirani: amzimia siku nne,ds_lethargic,true
+passages_test_typo_585,en,Amani thorwing up,vomiting,true
+passages_test_typo_586,sw,tulipiga picha ya shmaba,,true
+passages_test_typo_587,mix,Haatapiki amekataa kunyonya,ds_cannot_drink;vomiting,true
+passages_test_typo_588,en,does not have fever for 4 dyas,fever,true
+passages_test_typo_589,sw,mtoto wa Noor: anatapika kila kiitu,ds_vomits_everything;vomiting,true
+passages_test_typo_590,mix,amelegea for 4 adys,ds_lethargic,true
+passages_test_typo_591,sw,tulipiga pihca ya shamba,,true
+passages_test_typo_592,en,talkd about the cooperative meeting,,true
+passages_test_typo_593,en,the girl: weak + had conuvlsions 5 days,ds_convulsions;weakness,true
+passages_test_typo_594,sw,maumiu ya kichwa siku 1,pain,true
+passages_test_typo_595,sw,maumivu / aemlegea wiki moja,ds_lethargic;pain,true
+passages_test_typo_596,sw,Amaani: kuharisha,diarrhoea,true
+passages_test_typo_597,sw,Hakuwa na degedee,,true
+passages_test_typo_598,sw,mttoo hakunywa chochote siku 3,ds_cannot_drink,true
+passages_test_typo_599,sw,Mttoo wake amechoka sana,weakness,true
+passages_test_typo_600,sw,anaendesha tngu jana,diarrhoea,true
+passages_test_typo_601,mix,Vomiting eevrything tangu jana,ds_vomits_everything;vomiting,true
+passages_test_typo_602,sw,anatapika ikla anachokunywa,ds_vomits_everything;vomiting,true
+passages_test_typo_603,sw,mtoto wa Nor hana nguvu,weakness,true
+passages_test_typo_604,en,vomits everythhing x3 days,ds_vomits_everything;vomiting,true
+passages_test_typo_605,sw,Msichana: bila hoa siku 3,fever,true
+passages_test_typo_606,en,the mother runnng stomach for 4 days,diarrhoea,true
+passages_test_typo_607,sw,Anatapika kila anachokunywa tangu jzi,ds_vomits_everything;vomiting,true
+passages_test_typo_608,en,baby: no diarhrea x1 days,diarrhoea,true
+passages_test_typo_609,mix,anaapika for 1 days,vomiting,true
+passages_test_typo_610,sw,kiikohozi tangu juzi,cough,true
+passages_test_typo_611,sw,Ussingizi mzito,ds_lethargic,true
+passages_test_typo_612,sw,tulipiga picha ya shaamba,,true
+passages_test_typo_613,en,Running stomch,diarrhoea,true
+passages_test_typo_614,sw,mtoto wa Noor: kutapika mara omja,vomiting,true
+passages_test_typo_615,mix,kuhraa,diarrhoea,true
+passages_test_typo_616,mix,hana kikohoozi,cough,true
+passages_test_typo_617,sw,maumivu ya tumo,pain,true
+passages_test_typo_618,mix,Cough / kutapika mara moja tangu jna,cough;vomiting,true
+passages_test_typo_619,sw,mvulana: hanna maumivu siku 2,pain,true
+passages_test_typo_620,sw,babba yuko kazini,,true
+passages_test_typo_621,sw,mama: ameegea,ds_lethargic,true
+passages_test_typo_622,sw,Amani: hawzi kunywa,ds_cannot_drink,true
+passages_test_typo_623,sw,Mwili ulikuwa unatetemeka skiu tatu,ds_convulsions,true
+passages_test_typo_624,mix,bby hajaharisha,diarrhoea,true
+passages_test_typo_625,en,Amanni cough for 2 days,cough,true
+passages_test_typo_626,mix,Mtoto wa noor: hakuwa na degedege + vommits everything,ds_vomits_everything;vomiting,true
+passages_test_typo_627,sw,hawezi kunnyonya siku tatu,ds_cannot_drink,true
+passages_test_typo_628,en,next ivsit on friday,,true
+passages_test_typo_629,sw,bba yuko kazini,,true
+passages_test_typo_630,sw,Amelegea tangu ajna,ds_lethargic,true
+passages_test_typo_631,sw,mvulana kila anachokla anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_632,en,talked about the cooperative meetig,,true
+passages_test_typo_633,sw,ziara ya kawiada ya nyumbani,,true
+passages_test_typo_634,sw,hmoa,fever,true
+passages_test_typo_635,mix,Can drinnk,,true
+passages_test_typo_636,en,no vomiting for 1 adys,vomiting,true
+passages_test_typo_637,mix,mulana: hanyonyi,ds_cannot_drink,true
+passages_test_typo_638,sw,Kuharisha kwa siku tao,diarrhoea,true
+passages_test_typo_639,mix,hajitambui atngu jana,ds_lethargic,true
+passages_test_typo_640,sw,kukohoa sna,cough,true
+passages_test_typo_641,sw,Mtoto wake: amelegea tangu jaana,ds_lethargic,true
+passages_test_typo_642,sw,Mvulana kuhrisha,diarrhoea,true
+passages_test_typo_643,sw,hatapki siku nne,vomiting,true
+passages_test_typo_644,en,the child hot body x1 dys,fever,true
+passages_test_typo_645,en,the child: vomiting veerything since yesterday,ds_vomits_everything;vomiting,true
+passages_test_typo_646,sw,mtto kutapika + amelegea siku 1,ds_lethargic;vomiting,true
+passages_test_typo_647,en,No diaarrhoea,diarrhoea,true
+passages_test_typo_648,sw,mnyonge tngu jana,weakness,true
+passages_test_typo_649,mix,vomits everyting,ds_vomits_everything;vomiting,true
+passages_test_typo_650,en,vomiting eerything 1 days,ds_vomits_everything;vomiting,true
+passages_test_typo_651,en,Amani vomiting everything for 1 weeek,ds_vomits_everything;vomiting,true
+passages_test_typo_652,sw,mtoto wa Noor anaharisha skiu tano,diarrhoea,true
+passages_test_typo_653,mix,mwili una jto x3 days,fever,true
+passages_test_typo_654,mix,mvulana: kkohozi kikali,cough,true
+passages_test_typo_655,sw,bei ya kaahawa imepanda,,true
+passages_test_typo_656,sw,amechoka sna,weakness,true
+passages_test_typo_657,sw,hoa,fever,true
+passages_test_typo_658,mix,mtoto: voiting everything,ds_vomits_everything;vomiting,true
+passages_test_typo_659,mix,vomiited,vomiting,true
+passages_test_typo_660,en,high fevr,fever,true
+passages_test_typo_661,sw,Ammelegea,ds_lethargic,true
+passages_test_typo_662,mix,hawwezi kunyonya diarrhea,diarrhoea;ds_cannot_drink,true
+passages_test_typo_663,sw,Mtoto wae: hakohoi,cough,true
+passages_test_typo_664,sw,anatapikka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_665,mix,hCild ana degedege,ds_convulsions,true
+passages_test_typo_666,sw,mvulana kuhara skiu 4,diarrhoea,true
+passages_test_typo_667,sw,baba yuo kazini,,true
+passages_test_typo_668,sw,kikohozi wki moja,cough,true
+passages_test_typo_669,en,talked about the coopeative meeting,,true
+passages_test_typo_670,sw,Amni ana homa tangu jana,fever,true
+passages_test_typo_671,sw,hanna maumivu,pain,true
+passages_test_typo_672,mix,the cild: anaharisha,diarrhoea,true
+passages_test_typo_673,sw,Klia anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_test_typo_674,en,next visit on friay,,true
+passages_test_typo_675,sw,edgedege tangu juzi,ds_convulsions,true
+passages_test_typo_676,sw,msichana: amezmiia / hana maumivu,ds_lethargic;pain,true
+passages_test_typo_677,sw,mtoto wa oNor: amezimia,ds_lethargic,true
+passages_test_typo_678,en,headahe,pain,true
+passages_test_typo_679,mix,Mtoto wa noor kikoohzi siku 5,cough,true
+passages_test_typo_680,mix,Amani: acnnot drink,ds_cannot_drink,true
+passages_test_typo_681,en,babby: stomach pain x3 days,pain,true
+passages_test_typo_682,sw,Msichana: kuhara / hkauwa na degedege siku moja,diarrhoea,true
+passages_test_typo_683,en,Amani unable to breastfeed + throws up evreything,ds_cannot_drink;ds_vomits_everything;vomiting,true
+passages_test_typo_684,sw,Anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_typo_685,mix,Has fever taangu jana,fever,true
+passages_test_typo_686,sw,mwili una joo,fever,true
+passages_test_typo_687,en,no diarrheea,diarrhoea,true
+passages_test_typo_688,mix,Ammani throws up everything siku moja,ds_vomits_everything;vomiting,true
+passages_test_typo_689,sw,Mnyonge sikku 2,weakness,true
+passages_test_typo_690,sw,mtotto wake kuhara,diarrhoea,true
+passages_test_typo_691,sw,bbii anaendesha,diarrhoea,true
+passages_test_typo_692,sw,tuulipiga picha ya shamba,,true
+passages_test_typo_693,sw,anatapika sku nne,vomiting,true
+passages_test_typo_694,en,Fevr for 1 week,fever,true
+passages_test_typo_695,en,Father no efver + had convulsions,ds_convulsions;fever,true
+passages_test_typo_696,mix,kichwa kinaauma,pain,true
+passages_test_typo_697,sw,baba yuko kazni,,true
+passages_test_typo_698,en,diarhoea,diarrhoea,true
+passages_test_typo_699,sw,mttoto wa Noor kuharisha siku 2,diarrhoea,true
+passages_test_typo_700,sw,abba yuko kazini,,true
+passages_test_typo_701,sw,amelegea + ana kikohozi wiki omja,cough;ds_lethargic,true
+passages_test_typo_702,mix,Msichana anaharisha skiu moja,diarrhoea,true
+passages_test_typo_703,mix,hma kali,fever,true
+passages_test_typo_704,sw,tulipiga picha ya shaba,,true
+passages_test_typo_705,mix,no diarrheoa,diarrhoea,true
+passages_test_typo_706,mix,mtoto wake: hajatapka,vomiting,true
+passages_test_typo_707,sw,myonge,weakness,true
+passages_test_typo_708,mix,mama yake: annakohoa / no diarrhea,cough;diarrhoea,true
+passages_test_typo_709,sw,ziara ya akwaida ya nyumbani,,true
+passages_test_typo_710,sw,mttoo wa Noor: ana homa,fever,true
+passages_test_typo_711,sw,ziara ya akwaida ya nyumbani,,true
+passages_test_typo_712,sw,annatapika,vomiting,true
+passages_test_typo_713,sw,hajahrisha,diarrhoea,true
+passages_test_typo_714,mix,The girl: ahkuwa na degedege,,true
+passages_test_typo_715,sw,Amelegea sikku 5,ds_lethargic,true
+passages_test_typo_716,en,abdominal pan,pain,true
+passages_test_typo_717,sw,tuulipiga picha ya shamba,,true
+passages_test_typo_718,mix,child denies apin x1 days,pain,true
+passages_test_typo_719,sw,Amaani: homa,fever,true
+passages_test_typo_720,en,The child cough for 1 wek,cough,true
+passages_test_typo_721,sw,Mtoto: tumbo haliumi wii moja,pain,true
+passages_test_typo_722,sw,ana kikohhozi hana nguvu,cough;weakness,true
+passages_test_typo_723,sw,hanyonyi sikku tatu,ds_cannot_drink,true
+passages_test_typo_724,en,the boy vomiting evertyhing,ds_vomits_everything;vomiting,true
+passages_test_typo_725,sw,Mwwili ulikuwa unatetemeka siku 2,ds_convulsions,true
+passages_test_typo_726,en,the chld vomited 1 days,vomiting,true
+passages_test_typo_727,en,oCugh since yesterday,cough,true
+passages_test_typo_728,sw,amechoka sana sikku 5,weakness,true
+passages_test_typo_729,sw,Michana hajatapika,vomiting,true
+passages_test_typo_730,mix,The child: uanble to drink,ds_cannot_drink,true
+passages_test_typo_731,en,no voimting 2 days,vomiting,true
+passages_test_typo_732,sw,jto jingi mwilini,fever,true
+passages_test_typo_733,en,net visit on friday,,true
+passages_test_typo_734,sw,msichana hajitabui,ds_lethargic,true
+passages_test_typo_735,en,the giirl pain,pain,true
+passages_test_typo_736,mix,had cnvulsions,ds_convulsions,true
+passages_test_typo_737,mix,Mtot: maumivu,pain,true
+passages_test_typo_738,sw,maumivu ya tumbbo,pain,true
+passages_test_typo_739,mix,mwili una joto 3 das,fever,true
+passages_test_typo_740,en,Not wek / coughing 4 days,cough;weakness,true
+passages_test_typo_741,en,the boy fever since yesterdy,fever,true
+passages_test_typo_742,sw,tulipiga piicha ya shamba,,true
+passages_test_typo_743,sw,Mvuana: kutapika tangu juzi,vomiting,true
+passages_test_typo_744,sw,baa yuko kazini,,true
+passages_test_typo_745,mix,weeak siku mbili,weakness,true
+passages_test_typo_746,sw,Kila naachokula anatapika tangu jana,ds_vomits_everything;vomiting,true
+passages_test_typo_747,en,the cihld: vomiting everything 2 days,ds_vomits_everything;vomiting,true
+passages_test_typo_748,sw,Msicana: hajitambui anaendesha kwa siku tatu,diarrhoea;ds_lethargic,true
+passages_test_typo_749,sw,tulipiga pihca ya shamba,,true
+passages_test_typo_750,sw,si dahifu,weakness,true
+passages_test_typo_751,sw,msicana si dhaifu,weakness,true
+passages_test_typo_752,en,not vomitiing,vomiting,true
+passages_test_typo_753,mix,feever,fever,true
+passages_test_typo_754,sw,mvulana: anatapika ikla anachokunywa kwa siku nne,ds_vomits_everything;vomiting,true
+passages_test_typo_755,mix,child no diarrhea skiu mbili,diarrhoea,true
+passages_test_typo_756,sw,zaira ya kawaida ya nyumbani,,true
+passages_test_typo_757,mix,Amani mwili una jotto,fever,true
+passages_test_typo_758,sw,mtoto wa Noor: aemzimia,ds_lethargic,true
+passages_test_typo_759,sw,Kifafa wkii moja,ds_convulsions,true
+passages_test_typo_760,mix,The girrl degedege,ds_convulsions,true
+passages_test_typo_761,sw,Mvulana: hawezi kunyonnya tangu juzi,ds_cannot_drink,true
+passages_test_typo_762,sw,mtoto: kiffa,ds_convulsions,true
+passages_test_typo_763,en,stomach pain / verry sleepy,ds_lethargic;pain,true
+passages_test_typo_764,mix,Ftaher: diarrhea kwa siku mbili,diarrhoea,true
+passages_test_typo_765,sw,ana homa / choo cha mai tangu jana,diarrhoea;fever,true
+passages_test_typo_766,mix,chld coughing,cough,true
+passages_test_typo_767,sw,Anaatpika kila kitu kutapika,ds_vomits_everything;vomiting,true
+passages_test_typo_768,mix,Msichana aatapika kila kitu tangu juzi,ds_vomits_everything;vomiting,true
+passages_test_typo_769,sw,Amekataa kunnyonya hatapiki,ds_cannot_drink;vomiting,true
+passages_test_typo_770,sw,kadi ya chanjjo iko nyumbani,,true
+passages_test_typo_771,sw,jto jingi mwilini,fever,true
+passages_test_typo_772,sw,akdi ya chanjo iko nyumbani,,true
+passages_test_typo_773,sw,ametapika sikku tano,vomiting,true
+passages_test_typo_774,sw,Amani hakohoi maumivu siku taano,cough;pain,true
+passages_test_typo_775,sw,motto wa Noor: maumivu ya tumbo,pain,true
+passages_test_typo_776,en,the girl vomiting everythhing,ds_vomits_everything;vomiting,true
+passages_test_typo_777,mix,cannot dirnk,ds_cannot_drink,true
+passages_test_typo_778,mix,Aani degedege,ds_convulsions,true
+passages_test_typo_779,en,The giirl vomiting everything,ds_vomits_everything;vomiting,true
+passages_test_typo_780,sw,tmoto wake alipata degedege siku tano,ds_convulsions,true
+passages_test_typo_781,sw,Mtoto wa noor: hawezi kuyonya tangu jana,ds_cannot_drink,true
+passages_test_typo_782,sw,msichana hakuwa na degedge,,true
+passages_test_typo_783,sw,haharshi,diarrhoea,true
+passages_test_typo_784,sw,Mtoto wke hawezi kunywa,ds_cannot_drink,true
+passages_test_typo_785,sw,kuahra,diarrhoea,true
+passages_test_typo_786,en,Baby covulsions,ds_convulsions,true
+passages_test_typo_787,sw,mvlana: hatapiki,vomiting,true
+passages_test_typo_788,en,Covulsions,ds_convulsions,true
+passages_test_typo_789,sw,mtooto amelegea / kuhara siku 1,diarrhoea;ds_lethargic,true
+passages_test_typo_790,en,hiigh fever,fever,true
+passages_test_typo_791,sw,msichana hakuwa na degedegge joto jingi mwilini siku 2,fever,true
+passages_test_typo_792,sw,usingizi mzito / anaweza kunwya wiki moja,ds_lethargic,true
+passages_test_typo_793,sw,mtot: ametapika,vomiting,true
+passages_test_typo_794,sw,bei ya kahawa imepandda,,true
+passages_test_typo_795,sw,Mtooto wake: homa kali,fever,true
+passages_test_typo_796,sw,hawezi kunyoyna,ds_cannot_drink,true
+passages_test_typo_797,sw,kukohoa sana sku 4,cough,true
+passages_test_typo_798,mix,Mtoto wa noor vomiting everrything / hana kikohozi,cough;ds_vomits_everything;vomiting,true
+passages_test_typo_799,sw,joto jingi miwlini siku tatu,fever,true

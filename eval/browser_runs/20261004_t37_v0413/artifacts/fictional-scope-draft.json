@@ -1,0 +1,83 @@
+{
+  "schema": "afyanote.referral-draft/0.3",
+  "form_reference": "Oriented on MOH 100 Community Referral Form, section A (historical template). Not an official or validated form.",
+  "status": "reviewed_by_user",
+  "created_device_time": "2026-10-04T07:15:21.171Z",
+  "referral_time": null,
+  "case_id": null,
+  "sex": null,
+  "age": null,
+  "community_health_unit": "Kiharu Demo CHU (fictional)",
+  "link_health_facility": null,
+  "community_health_promoter": "CHP Demo 014 (fictional)",
+  "main_problems": [
+    {
+      "term_en": "Cough",
+      "term_sw": "Kikohozi",
+      "label": "cough",
+      "evidence": "Child has cough for two days without fever",
+      "duration_days": 2,
+      "duration_source": "note",
+      "status": "stated",
+      "edited_by_user": false
+    }
+  ],
+  "documented_absent": [
+    {
+      "term_en": "Fever",
+      "term_sw": "Homa",
+      "label": "fever",
+      "evidence": "Child has cough for two days without fever",
+      "duration_days": null,
+      "duration_source": null,
+      "status": "denied",
+      "edited_by_user": false
+    }
+  ],
+  "mentioned_other_person_or_past": [],
+  "who_imci_general_danger_signs_confirmed": [],
+  "treatment_given": null,
+  "original_note": "Child has cough for two days without fever.",
+  "consent_recorded": true,
+  "model": {
+    "name": "afyanote-passage-classifier",
+    "version": "0.1.0",
+    "thresholds": {
+      "suggest": 0.5,
+      "unclear": 0.25,
+      "dev_precision_at_suggest": 1,
+      "dev_recall_at_suggest": 0.983
+    }
+  },
+  "review_log": [
+    {
+      "label": "fever",
+      "decision": "confirmed",
+      "selected_status": "denied",
+      "original_rule_status": "denied",
+      "edited_by_user": false,
+      "evidence": [
+        {
+          "text": "Child has cough for two days without fever",
+          "start": 0,
+          "end": 42
+        }
+      ]
+    },
+    {
+      "label": "cough",
+      "decision": "confirmed",
+      "selected_status": "stated",
+      "original_rule_status": "stated",
+      "edited_by_user": false,
+      "evidence": [
+        {
+          "text": "Child has cough for two days without fever",
+          "start": 0,
+          "end": 42
+        }
+      ]
+    }
+  ],
+  "demo_data_fictional": true
+}

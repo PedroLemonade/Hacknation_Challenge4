@@ -1,0 +1,451 @@
+{
+  "schema_version": "afyanote.sft/0.3",
+  "created_at": "2026-10-04T02:52:21.786819+00:00",
+  "authored_by": "Claude lexicon/toolkit; rebuilt by ChatGPT / Codex",
+  "seed": 7070,
+  "synthetic": true,
+  "qualified_review": false,
+  "stats": {
+    "train": {
+      "requested": 3000,
+      "rows": 3000,
+      "unique_canonical_notes": 3000,
+      "raw_attempts": 3639,
+      "duplicate_attempts_excluded": 639,
+      "language": {
+        "sw": 1341,
+        "en": 1348,
+        "mixed": 311
+      },
+      "terms": {
+        "diarrhoea": 623,
+        "pain": 555,
+        "cough": 605,
+        "ds_vomits_everything": 458,
+        "vomiting": 983,
+        "ds_convulsions": 500,
+        "weakness": 579,
+        "ds_lethargic": 479,
+        "fever": 553,
+        "ds_cannot_drink": 484
+      },
+      "statuses": {
+        "stated": 3547,
+        "denied": 708,
+        "other_person": 900,
+        "past": 664
+      },
+      "empty_targets": 338
+    },
+    "dev": {
+      "requested": 300,
+      "rows": 300,
+      "unique_canonical_notes": 300,
+      "raw_attempts": 319,
+      "duplicate_attempts_excluded": 19,
+      "language": {
+        "sw": 138,
+        "en": 138,
+        "mixed": 24
+      },
+      "terms": {
+        "cough": 55,
+        "vomiting": 89,
+        "ds_lethargic": 39,
+        "ds_convulsions": 53,
+        "ds_vomits_everything": 40,
+        "fever": 49,
+        "weakness": 48,
+        "pain": 54,
+        "diarrhoea": 59,
+        "ds_cannot_drink": 41
+      },
+      "statuses": {
+        "stated": 305,
+        "denied": 75,
+        "past": 77,
+        "other_person": 70
+      },
+      "empty_targets": 36
+    }
+  },
+  "split_definition": "Before sampling: train phrases all but last, dev last. Singleton phrases shared but all subject, template, time/duration and distractor families disjoint. Canonical notes unique across both splits.",
+  "canonicalization": "Unicode NFKC, casefold, word tokens; punctuation/whitespace ignored",
+  "shared_singleton_phrases": [
+    {
+      "cell": "en/weakness/denied",
+      "phrase": "not weak",
+      "reason": "singleton; subject/template families only held out"
+    },
+    {
+      "cell": "en/ds_convulsions/stated",
+      "phrase": "convulsions",
+      "reason": "singleton; subject/template families only held out"
+    },
+    {
+      "cell": "en/ds_convulsions/denied",
+      "phrase": "no convulsions",
+      "reason": "singleton; subject/template families only held out"
+    },
+    {
+      "cell": "en/ds_convulsions/other_person",
+      "phrase": "convulsions",
+      "reason": "singleton; subject/template families only held out"
+    },
+    {
+      "cell": "en/ds_convulsions/past",
+      "phrase": "convulsions",
+      "reason": "singleton; subject/template families only held out"
+    },
+    {
+      "cell": "sw/weakness/denied",
+      "phrase": "si dhaifu",
+      "reason": "singleton; subject/template families only held out"
+    }
+  ],
+  "unavailable_cells": [
+    "en/ds_cannot_drink/denied",
+    "en/ds_vomits_everything/denied",
+    "en/ds_lethargic/denied",
+    "sw/ds_cannot_drink/denied",
+    "sw/ds_vomits_everything/denied",
+    "sw/ds_convulsions/denied",
+    "sw/ds_lethargic/denied"
+  ],
+  "excluded_phrasings": [
+    {
+      "language": "en",
+      "term": "vomiting",
+      "status": "stated",
+      "phrase": "vomited",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "en",
+      "term": "vomiting",
+      "status": "other_person",
+      "phrase": "vomited",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "en",
+      "term": "vomiting",
+      "status": "past",
+      "phrase": "vomited",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "stated",
+      "phrase": "fits",
+      "reason": "ambiguous word"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "stated",
+      "phrase": "had convulsions",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "denied",
+      "phrase": "no fits",
+      "reason": "ambiguous word"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "other_person",
+      "phrase": "fits",
+      "reason": "ambiguous word"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "other_person",
+      "phrase": "had convulsions",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "past",
+      "phrase": "fits",
+      "reason": "ambiguous word"
+    },
+    {
+      "language": "en",
+      "term": "ds_convulsions",
+      "status": "past",
+      "phrase": "had convulsions",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "en",
+      "term": "ds_lethargic",
+      "status": "stated",
+      "phrase": "very sleepy",
+      "reason": "sleep vs danger sign"
+    },
+    {
+      "language": "en",
+      "term": "ds_lethargic",
+      "status": "other_person",
+      "phrase": "very sleepy",
+      "reason": "sleep vs danger sign"
+    },
+    {
+      "language": "en",
+      "term": "ds_lethargic",
+      "status": "past",
+      "phrase": "very sleepy",
+      "reason": "sleep vs danger sign"
+    },
+    {
+      "language": "sw",
+      "term": "vomiting",
+      "status": "stated",
+      "phrase": "ametapika",
+      "reason": "tense needs review"
+    },
+    {
+      "language": "sw",
+      "term": "vomiting",
+      "status": "other_person",
+      "phrase": "ametapika",
+      "reason": "tense needs review"
+    },
+    {
+      "language": "sw",
+      "term": "vomiting",
+      "status": "past",
+      "phrase": "ametapika",
+      "reason": "tense needs review"
+    },
+    {
+      "language": "sw",
+      "term": "weakness",
+      "status": "stated",
+      "phrase": "amechoka sana",
+      "reason": "fatigue is a broader proxy"
+    },
+    {
+      "language": "sw",
+      "term": "weakness",
+      "status": "other_person",
+      "phrase": "amechoka sana",
+      "reason": "fatigue is a broader proxy"
+    },
+    {
+      "language": "sw",
+      "term": "weakness",
+      "status": "past",
+      "phrase": "amechoka sana",
+      "reason": "fatigue is a broader proxy"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "stated",
+      "phrase": "hanyonyi",
+      "reason": "no feeding does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "stated",
+      "phrase": "amekataa kunyonya",
+      "reason": "refusal does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "stated",
+      "phrase": "hakunywa chochote",
+      "reason": "no intake does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "other_person",
+      "phrase": "hanyonyi",
+      "reason": "no feeding does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "other_person",
+      "phrase": "amekataa kunyonya",
+      "reason": "refusal does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "other_person",
+      "phrase": "hakunywa chochote",
+      "reason": "no intake does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "past",
+      "phrase": "hanyonyi",
+      "reason": "no feeding does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "past",
+      "phrase": "amekataa kunyonya",
+      "reason": "refusal does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_cannot_drink",
+      "status": "past",
+      "phrase": "hakunywa chochote",
+      "reason": "no intake does not establish inability"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "stated",
+      "phrase": "alipata degedege",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "stated",
+      "phrase": "kifafa",
+      "reason": "condition vs current event"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "stated",
+      "phrase": "mwili ulikuwa unatetemeka",
+      "reason": "past trembling is a broader proxy"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "denied",
+      "phrase": "hakuwa na degedege",
+      "reason": "past denial cannot fit one current status"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "other_person",
+      "phrase": "alipata degedege",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "other_person",
+      "phrase": "kifafa",
+      "reason": "condition vs current event"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "other_person",
+      "phrase": "mwili ulikuwa unatetemeka",
+      "reason": "past trembling is a broader proxy"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "past",
+      "phrase": "alipata degedege",
+      "reason": "intrinsic past"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "past",
+      "phrase": "kifafa",
+      "reason": "condition vs current event"
+    },
+    {
+      "language": "sw",
+      "term": "ds_convulsions",
+      "status": "past",
+      "phrase": "mwili ulikuwa unatetemeka",
+      "reason": "past trembling is a broader proxy"
+    },
+    {
+      "language": "sw",
+      "term": "ds_lethargic",
+      "status": "stated",
+      "phrase": "amezimia",
+      "reason": "fainting/tense needs review"
+    },
+    {
+      "language": "sw",
+      "term": "ds_lethargic",
+      "status": "stated",
+      "phrase": "usingizi mzito",
+      "reason": "sleep vs danger sign"
+    },
+    {
+      "language": "sw",
+      "term": "ds_lethargic",
+      "status": "other_person",
+      "phrase": "amezimia",
+      "reason": "fainting/tense needs review"
+    },
+    {
+      "language": "sw",
+      "term": "ds_lethargic",
+      "status": "other_person",
+      "phrase": "usingizi mzito",
+      "reason": "sleep vs danger sign"
+    },
+    {
+      "language": "sw",
+      "term": "ds_lethargic",
+      "status": "past",
+      "phrase": "amezimia",
+      "reason": "fainting/tense needs review"
+    },
+    {
+      "language": "sw",
+      "term": "ds_lethargic",
+      "status": "past",
+      "phrase": "usingizi mzito",
+      "reason": "sleep vs danger sign"
+    }
+  ],
+  "not_used": [
+    "LEX heldout pool",
+    "data/notes_test.jsonl",
+    "eval/independent_notes.jsonl",
+    "original llm/sft"
+  ],
+  "limitations": [
+    "Known synthetic development split, not independent field evaluation",
+    "Four statuses cannot encode overlapping person/time/negation; no such cases trained",
+    "Every clause has its own explicit subject; orphans excluded",
+    "Normal ability/alertness phrases are empty contrasts; explicit no convulsions can be denied",
+    "No Kikuyu; SW and mixed-language annotation need qualified review"
+  ],
+  "source_hashes": {
+    "llm/export_sft.py": "4d37b2a3e444fbda56dab63aef34e139179d45aec86f298c18b31e8b5a89ae6d",
+    "training/lexicon.py": "f11da1b37e8d547c9775aceded98656fdd0a01c1f404a2bbe9aaea6176bec071",
+    "llm/prompt.txt": "44734f60b47816583a2314c51efe913a9af7fb46ab7c967b238717c755d6ab3c",
+    "llm/schema.json": "268c639d0390798cc0c666d5e0d65c26bf10f9612c890247f3a4a7d4c782e19e"
+  },
+  "file_hashes": {
+    "dev.annotations.jsonl": "0ccb53df728cea3bcb3d503b2b532f98fc90527f7526bb699ca3c0cf42ab0e06",
+    "dev.jsonl": "0443798f4cf25a795cc7c6891d0e339876665d8f401c2d1fcea8df5d72688b61",
+    "train.annotations.jsonl": "bbe0bb9b84675de940459e648609da165f26e8ff8a6e7182bf88740ab8f0ab52",
+    "train.jsonl": "8ef8d15b369937cb04e4f548347d5c5eaad8147583adb08ac513a3e0ba41dfac",
+    "valid.jsonl": "0443798f4cf25a795cc7c6891d0e339876665d8f401c2d1fcea8df5d72688b61"
+  }
+}

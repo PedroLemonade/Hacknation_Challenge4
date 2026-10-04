@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-04T02:40:03.705908+00:00",
+  "original_sources_saved": 23,
+  "original_23_snapshots_changed": [],
+  "protected_files_checked": 89,
+  "protected_files_byte_unchanged": 88,
+  "expected_guide_changes": [
+    "01_Working_Demo_AfyaNote/docs/05_pitch/assets/README.md"
+  ],
+  "unplanned_protected_changes": [],
+  "additional_media_guide_recovered_and_hash_verified": true,
+  "md_links_checked": 195,
+  "missing_links": [],
+  "guard": {
+    "passed": 31,
+    "total": 31,
+    "tested_source_matches": true
+  },
+  "scorer": {
+    "passed": 13,
+    "total": 13,
+    "tested_source_matches": true
+  },
+  "cli": {
+    "passed": 8,
+    "total": 8,
+    "tested_source_matches": true
+  },
+  "mock_runner": {
+    "passed": 11,
+    "total": 11,
+    "tested_source_matches": true
+  },
+  "guard_test_source_unchanged": true,
+  "app_matches_prior_31_browser_checks": true,
+  "llm_final_report_source_hashes_match": true,
+  "slides_source_and_image_hashes_match": true,
+  "operating_instructions_identical": true
+}

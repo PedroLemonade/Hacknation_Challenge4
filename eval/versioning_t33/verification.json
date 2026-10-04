@@ -1,0 +1,14 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "checks": {
+    "missing_out_rejected": true,
+    "collision_rejected": true,
+    "collision_bytes_preserved": true,
+    "explicit_fresh_baseline": true,
+    "same_results": true,
+    "original_40_gold_and_reports_unchanged": true,
+    "old_reports_read_only": true
+  },
+  "all_pass": true,
+  "contract_checks": 13
+}

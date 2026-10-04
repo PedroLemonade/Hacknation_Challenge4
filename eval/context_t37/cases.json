@@ -1,0 +1,857 @@
+{
+  "created_at": "2026-10-04T07:08:07.305260+00:00",
+  "created_by": "ChatGPT / Codex",
+  "purpose": "Frozen before repair; AI-authored synthetic regression, not independent validation. Scope of cannot drink without vomiting is literal linguistic denial, not clinical inference.",
+  "cases": [
+    {
+      "id": "T37-EN-01",
+      "language": "en",
+      "text": "Child has cough without fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-02",
+      "language": "en",
+      "text": "Child has fever without cough.",
+      "expected": {
+        "fever": "stated",
+        "cough": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-03",
+      "language": "en",
+      "text": "Child has cough for two days without fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {
+        "cough": 2,
+        "fever": null
+      },
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-04",
+      "language": "en",
+      "text": "Child has cough for two days without fever for one week.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {
+        "cough": 2,
+        "fever": 7
+      },
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-05",
+      "language": "en",
+      "text": "Child has cough but no fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-06",
+      "language": "en",
+      "text": "Child has no fever but cough.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-07",
+      "language": "en",
+      "text": "Child has no fever and cough.",
+      "expected": {
+        "cough": "denied",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-08",
+      "language": "en",
+      "text": "Child has no fever and has cough.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-09",
+      "language": "en",
+      "text": "Child denies fever and cough.",
+      "expected": {
+        "cough": "denied",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-10",
+      "language": "en",
+      "text": "Child has neither fever nor cough.",
+      "expected": {
+        "cough": "denied",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-11",
+      "language": "en",
+      "text": "Mother has cough without fever.",
+      "expected": {
+        "cough": "other_person",
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-12",
+      "language": "en",
+      "text": "Mother has cough, child has no fever.",
+      "expected": {
+        "cough": "other_person",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-13",
+      "language": "en",
+      "text": "Mother says child has cough without fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-14",
+      "language": "en",
+      "text": "Child has cough without fever in front of mother.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-15",
+      "language": "en",
+      "text": "Last week child had cough without fever.",
+      "expected": {
+        "cough": "past",
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-16",
+      "language": "en",
+      "text": "Child has no energy without fever.",
+      "expected": {
+        "weakness": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-17",
+      "language": "en",
+      "text": "Child cannot drink without vomiting.",
+      "expected": {
+        "ds_cannot_drink": "stated",
+        "vomiting": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-18",
+      "language": "en",
+      "text": "Child has not only cough but fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "stated"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-19",
+      "language": "en",
+      "text": "Child is not without fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-20",
+      "language": "en",
+      "text": "Mother does not report that child has cough.",
+      "expected": {
+        "cough": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-21",
+      "language": "en",
+      "text": "Child has cough. No fever today.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-22",
+      "language": "en",
+      "text": "Child has fever absent and cough absent.",
+      "expected": {
+        "fever": "denied",
+        "cough": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-23",
+      "language": "en",
+      "text": "Child has cough without headache.",
+      "expected": {
+        "cough": "stated",
+        "pain": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-24",
+      "language": "en",
+      "text": "Child has cough without weakness.",
+      "expected": {
+        "cough": "stated",
+        "weakness": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-25",
+      "language": "en",
+      "text": "Child has cough without fever; mother has fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-EN-26",
+      "language": "en",
+      "text": "Child has no fever. Cough today.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-01",
+      "language": "sw",
+      "text": "Mtoto ana kikohozi bila homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-02",
+      "language": "sw",
+      "text": "Mtoto ana homa bila kikohozi.",
+      "expected": {
+        "fever": "stated",
+        "cough": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-03",
+      "language": "sw",
+      "text": "Mtoto ana kikohozi siku mbili bila homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {
+        "cough": 2,
+        "fever": null
+      },
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-04",
+      "language": "sw",
+      "text": "Mtoto ana kikohozi siku mbili bila homa siku tatu.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {
+        "cough": 2,
+        "fever": 3
+      },
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-05",
+      "language": "sw",
+      "text": "Mtoto ana kikohozi lakini hana homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-06",
+      "language": "sw",
+      "text": "Mtoto hana homa lakini ana kikohozi.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-07",
+      "language": "sw",
+      "text": "Mtoto hana homa na kikohozi.",
+      "expected": {
+        "cough": "denied",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-08",
+      "language": "sw",
+      "text": "Mtoto hana homa na ana kikohozi.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-09",
+      "language": "sw",
+      "text": "Mtoto hana homa wala kikohozi.",
+      "expected": {
+        "cough": "denied",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-10",
+      "language": "sw",
+      "text": "Mtoto hana homa wala kuhara.",
+      "expected": {
+        "fever": "denied",
+        "diarrhoea": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-11",
+      "language": "sw",
+      "text": "Mama ana kikohozi bila homa.",
+      "expected": {
+        "cough": "other_person",
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-12",
+      "language": "sw",
+      "text": "Mama ana kikohozi, mtoto hana homa.",
+      "expected": {
+        "cough": "other_person",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-13",
+      "language": "sw",
+      "text": "Mama anasema mtoto ana kikohozi bila homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-14",
+      "language": "sw",
+      "text": "Mtoto ana kikohozi bila homa mbele ya mama.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-15",
+      "language": "sw",
+      "text": "Wiki iliyopita mtoto alikuwa na kikohozi bila homa.",
+      "expected": {
+        "cough": "past",
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-16",
+      "language": "sw",
+      "text": "Mtoto hana nguvu bila homa.",
+      "expected": {
+        "weakness": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-17",
+      "language": "sw",
+      "text": "Mtoto hawezi kunywa bila kutapika.",
+      "expected": {
+        "ds_cannot_drink": "stated",
+        "vomiting": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-18",
+      "language": "sw",
+      "text": "Mtoto anakohoa hana homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-19",
+      "language": "sw",
+      "text": "Mtoto hakohoi ana homa.",
+      "expected": {
+        "cough": "denied",
+        "fever": "stated"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-20",
+      "language": "sw",
+      "text": "Mtoto hajaharisha ana kikohozi.",
+      "expected": {
+        "diarrhoea": "denied",
+        "cough": "stated"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-21",
+      "language": "sw",
+      "text": "Mtoto hatapiki ana homa.",
+      "expected": {
+        "vomiting": "denied",
+        "fever": "stated"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-22",
+      "language": "sw",
+      "text": "Mtoto ana maumivu bila homa.",
+      "expected": {
+        "pain": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-23",
+      "language": "sw",
+      "text": "Mtoto ana homa bila maumivu.",
+      "expected": {
+        "fever": "stated",
+        "pain": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-24",
+      "language": "sw",
+      "text": "Mtoto ana homa bila udhaifu.",
+      "expected": {
+        "fever": "stated",
+        "weakness": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-25",
+      "language": "sw",
+      "text": "Mtoto ana kikohozi bila homa; mama ana homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "conflict"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-SW-26",
+      "language": "sw",
+      "text": "Mtoto hana homa. Kikohozi leo.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-MIXED-01",
+      "language": "mixed",
+      "text": "Mtoto has cough bila homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-MIXED-02",
+      "language": "mixed",
+      "text": "Child ana kikohozi without fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-MIXED-03",
+      "language": "mixed",
+      "text": "Mtoto hana homa and cough.",
+      "expected": {
+        "fever": "denied",
+        "cough": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    },
+    {
+      "id": "T37-MIXED-04",
+      "language": "mixed",
+      "text": "Child has cough lakini hana homa.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "duration": {},
+      "category": "scope",
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false
+    }
+  ]
+}

@@ -1,0 +1,745 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "purpose": "Known-pattern context regression, written before implementation. Not independent validation.",
+  "export_policy": "conflict means unresolved human choice; no new export status.",
+  "cases": [
+    {
+      "id": "T31-EN-01",
+      "category": "witness",
+      "language": "en",
+      "text": "Child has fever in front of the mother.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-02"
+    },
+    {
+      "id": "T31-EN-02",
+      "category": "witness",
+      "language": "en",
+      "text": "Mother has fever in front of the child.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-01"
+    },
+    {
+      "id": "T31-EN-03",
+      "category": "accompaniment",
+      "language": "en",
+      "text": "Child has fever accompanied by the mother.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-04"
+    },
+    {
+      "id": "T31-EN-04",
+      "category": "accompaniment",
+      "language": "en",
+      "text": "Mother has fever accompanied by the child.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-03"
+    },
+    {
+      "id": "T31-EN-05",
+      "category": "accompaniment",
+      "language": "en",
+      "text": "The child with the mother has fever.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-06"
+    },
+    {
+      "id": "T31-EN-06",
+      "category": "accompaniment",
+      "language": "en",
+      "text": "The mother with the child has fever.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-05"
+    },
+    {
+      "id": "T31-EN-07",
+      "category": "reported_subject",
+      "language": "en",
+      "text": "Mother reports that the child has fever.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-08"
+    },
+    {
+      "id": "T31-EN-08",
+      "category": "reported_subject",
+      "language": "en",
+      "text": "Child reports that the mother has fever.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-07"
+    },
+    {
+      "id": "T31-EN-09",
+      "category": "ambiguous_report",
+      "language": "en",
+      "text": "Mother reports fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-10"
+    },
+    {
+      "id": "T31-EN-10",
+      "category": "ambiguous_report",
+      "language": "en",
+      "text": "Mother says she has fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-09"
+    },
+    {
+      "id": "T31-EN-11",
+      "category": "multiple_subjects",
+      "language": "en",
+      "text": "Child and mother have fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-12"
+    },
+    {
+      "id": "T31-EN-12",
+      "category": "multiple_subjects",
+      "language": "en",
+      "text": "Mother and child have fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-11"
+    },
+    {
+      "id": "T31-EN-13",
+      "category": "possessive",
+      "language": "en",
+      "text": "The mother's child has fever.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-14"
+    },
+    {
+      "id": "T31-EN-14",
+      "category": "possessive",
+      "language": "en",
+      "text": "The child's mother has fever.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-EN-13"
+    },
+    {
+      "id": "T31-EN-15",
+      "category": "same_sentence",
+      "language": "en",
+      "text": "Mother has fever and cough.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-16",
+      "category": "subject_switch",
+      "language": "en",
+      "text": "Mother has fever and the child has cough.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-17",
+      "category": "orphan_sentence",
+      "language": "en",
+      "text": "Mother has fever. Cough today.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-18",
+      "category": "explicit_continuation",
+      "language": "en",
+      "text": "Mother has fever. Also cough today.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-19",
+      "category": "patient_continuation",
+      "language": "en",
+      "text": "Child has fever. Cough today.",
+      "expected": {
+        "fever": "stated",
+        "cough": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-20",
+      "category": "negated_patient",
+      "language": "en",
+      "text": "Child has no fever with the mother.",
+      "expected": {
+        "fever": "denied"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-21",
+      "category": "negated_other",
+      "language": "en",
+      "text": "Mother has no fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-22",
+      "category": "negated_past",
+      "language": "en",
+      "text": "Child had no fever last week.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-23",
+      "category": "past_other",
+      "language": "en",
+      "text": "Mother had fever last week.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-24",
+      "category": "negated_report",
+      "language": "en",
+      "text": "Mother does not say that the child has fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-25",
+      "category": "relative_subject",
+      "language": "en",
+      "text": "Child has fever with the mother who has fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-EN-26",
+      "category": "note_default",
+      "language": "en",
+      "text": "Fever for two days.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-01",
+      "category": "witness",
+      "language": "sw",
+      "text": "Mtoto alipata degedege mbele ya mama leo.",
+      "expected": {
+        "ds_convulsions": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-02"
+    },
+    {
+      "id": "T31-SW-02",
+      "category": "witness",
+      "language": "sw",
+      "text": "Mama alipata degedege mbele ya mtoto leo.",
+      "expected": {
+        "ds_convulsions": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-01"
+    },
+    {
+      "id": "T31-SW-03",
+      "category": "witness",
+      "language": "sw",
+      "text": "Mtoto ana homa mbele ya mama.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-04"
+    },
+    {
+      "id": "T31-SW-04",
+      "category": "witness",
+      "language": "sw",
+      "text": "Mama ana homa mbele ya mtoto.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-03"
+    },
+    {
+      "id": "T31-SW-05",
+      "category": "accompaniment",
+      "language": "sw",
+      "text": "Mtoto ana homa akiwa na mama.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-06"
+    },
+    {
+      "id": "T31-SW-06",
+      "category": "accompaniment",
+      "language": "sw",
+      "text": "Mama ana homa akiwa na mtoto.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-05"
+    },
+    {
+      "id": "T31-SW-07",
+      "category": "reported_subject",
+      "language": "sw",
+      "text": "Mama anasema mtoto ana homa.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-08"
+    },
+    {
+      "id": "T31-SW-08",
+      "category": "reported_subject",
+      "language": "sw",
+      "text": "Mtoto anasema mama ana homa.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-07"
+    },
+    {
+      "id": "T31-SW-09",
+      "category": "ambiguous_report",
+      "language": "sw",
+      "text": "Mama anasema ana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-10"
+    },
+    {
+      "id": "T31-SW-10",
+      "category": "ambiguous_report",
+      "language": "sw",
+      "text": "Mama anasema yeye ana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-09"
+    },
+    {
+      "id": "T31-SW-11",
+      "category": "multiple_subjects",
+      "language": "sw",
+      "text": "Mtoto na mama wana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-12"
+    },
+    {
+      "id": "T31-SW-12",
+      "category": "multiple_subjects",
+      "language": "sw",
+      "text": "Mama na mtoto wana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-11"
+    },
+    {
+      "id": "T31-SW-13",
+      "category": "possessive",
+      "language": "sw",
+      "text": "Mtoto wa mama ana homa.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-14"
+    },
+    {
+      "id": "T31-SW-14",
+      "category": "possessive",
+      "language": "sw",
+      "text": "Mama wa mtoto ana homa.",
+      "expected": {
+        "fever": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": "T31-SW-13"
+    },
+    {
+      "id": "T31-SW-15",
+      "category": "same_sentence",
+      "language": "sw",
+      "text": "Mama ana homa na anakohoa.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-16",
+      "category": "subject_switch",
+      "language": "sw",
+      "text": "Mama ana homa na mtoto anakohoa.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-17",
+      "category": "orphan_sentence",
+      "language": "sw",
+      "text": "Mama ana homa. Anakohoa leo.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-18",
+      "category": "explicit_continuation",
+      "language": "sw",
+      "text": "Mama ana homa. Pia anakohoa leo.",
+      "expected": {
+        "fever": "other_person",
+        "cough": "other_person"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-19",
+      "category": "patient_continuation",
+      "language": "sw",
+      "text": "Mtoto ana homa. Anakohoa leo.",
+      "expected": {
+        "fever": "stated",
+        "cough": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-20",
+      "category": "negated_patient",
+      "language": "sw",
+      "text": "Mtoto hana homa akiwa na mama.",
+      "expected": {
+        "fever": "denied"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-21",
+      "category": "negated_other",
+      "language": "sw",
+      "text": "Mama hana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-22",
+      "category": "negated_past",
+      "language": "sw",
+      "text": "Mtoto hana homa wiki iliyopita.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-23",
+      "category": "past_other",
+      "language": "sw",
+      "text": "Mama alipata homa wiki iliyopita.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-24",
+      "category": "negated_report",
+      "language": "sw",
+      "text": "Mama hasemi mtoto ana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-25",
+      "category": "relative_subject",
+      "language": "sw",
+      "text": "Mtoto ana homa karibu na mama ambaye ana homa.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    },
+    {
+      "id": "T31-SW-26",
+      "category": "note_default",
+      "language": "sw",
+      "text": "Homa siku mbili.",
+      "expected": {
+        "fever": "stated"
+      },
+      "synthetic": true,
+      "gold_author": "ChatGPT / Codex",
+      "native_swahili_review": false,
+      "clinical_review": false,
+      "paired_with": null
+    }
+  ]
+}

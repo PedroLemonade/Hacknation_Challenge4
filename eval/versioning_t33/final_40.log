@@ -1,0 +1,40 @@
+{
+  "out": "eval/runs/20261004_final_v0417_40",
+  "version": "afyanote-v0.4.17",
+  "model": {
+    "notes": 40,
+    "gold_terms": 63,
+    "found_terms": 58,
+    "correct_status": 58,
+    "status_mismatches": 0,
+    "wrong_stated": 0,
+    "extra_suggested": 1,
+    "extra_including_unclear": 1,
+    "found_unclear": 2,
+    "suggested_tp": 56,
+    "suggested_fp": 1,
+    "exact_notes": 35,
+    "annotated_ages": 0,
+    "correct_ages": 0,
+    "annotated_durations": 0,
+    "correct_durations": 0
+  },
+  "keyword_list": {
+    "notes": 40,
+    "gold_terms": 63,
+    "found_terms": 46,
+    "correct_status": 46,
+    "status_mismatches": 0,
+    "wrong_stated": 0,
+    "extra_suggested": 0,
+    "extra_including_unclear": 0,
+    "found_unclear": 0,
+    "suggested_tp": 46,
+    "suggested_fp": 0,
+    "exact_notes": 24,
+    "annotated_ages": 0,
+    "correct_ages": 0,
+    "annotated_durations": 0,
+    "correct_durations": 0
+  }
+}

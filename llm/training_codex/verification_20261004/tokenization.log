@@ -1,0 +1,14 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+test_eval_subset_frozen_and_deterministic (__main__.Tests.test_eval_subset_frozen_and_deterministic) ... ok
+test_every_completion_decodes_exactly (__main__.Tests.test_every_completion_decodes_exactly) ... ok
+test_no_planned_truncation (__main__.Tests.test_no_planned_truncation) ... ok
+test_nonempty_supervision_and_eos (__main__.Tests.test_nonempty_supervision_and_eos) ... ok
+test_padding_mask_at_boundaries (__main__.Tests.test_padding_mask_at_boundaries) ... ok
+test_prompt_matches_generation (__main__.Tests.test_prompt_matches_generation) ... ok
+test_selected_eval_has_all_terms_and_statuses (__main__.Tests.test_selected_eval_has_all_terms_and_statuses) ... ok
+test_upstream_includes_first_padding_token (__main__.Tests.test_upstream_includes_first_padding_token) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.193s
+
+OK

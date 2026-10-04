@@ -1,0 +1,119 @@
+{
+  "schema_version": "afyanote.llm-evaluation/0.2",
+  "generated_at": "2026-10-04T03:41:02.081Z",
+  "authored_by": "Claude foundation + ChatGPT / Codex review",
+  "source_hashes": {
+    "guard.mjs": "9d477804ea5a6199fd5124cff5656232b95bdd2c47b89fb1dd9386546b1314bc",
+    "schema.json": "268c639d0390798cc0c666d5e0d65c26bf10f9612c890247f3a4a7d4c782e19e",
+    "prompt.txt": "44734f60b47816583a2314c51efe913a9af7fb46ab7c967b238717c755d6ab3c",
+    "fewshot.json": "cabcefd56828227beed70868bdaa7fc92038ab7edcf6b2c92f5c0e657d338430",
+    "eval_llm.mjs": "67d4eb843e900e1514e2323ee7e109f531ee2dde3e3c53b8129e9ca4f2b606d3",
+    "../app/rules.js": "0a0733a55a9dad4731898072d598180bb4e399edc0b28e91fe558a52afb88ebd",
+    "../app/model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "../app/classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a"
+  },
+  "rows": [
+    {
+      "file": "base__independent.jsonl",
+      "model": "Qwen3-0.6B INT4 base",
+      "set": "independent",
+      "expected_notes": 40,
+      "answered_notes": 40,
+      "missing_notes": 0,
+      "failed_notes": 0,
+      "gold_terms": 63,
+      "found_terms": 0,
+      "correct_status": 0,
+      "ctx": 0,
+      "extra": 0,
+      "exact_notes": 0,
+      "not_json": 40,
+      "rejected": {
+        "not_json": 40
+      },
+      "warnings": {},
+      "hybrid": {
+        "found_terms": 58,
+        "ctx": 0,
+        "extra_suggested": 1,
+        "unclear_cards": 2,
+        "recall": 0.921
+      },
+      "coverage_complete": true,
+      "complete": true,
+      "recall": 0,
+      "status_acc": null,
+      "median_ms": 738.9305830001831,
+      "answer_sha256": "df7be38f1c97077ba2762cebc10e42a798e6cd44c1055e8706f9af73005437cf",
+      "dataset_sha256": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+      "capture_provenance_verified": true,
+      "capture_complete": true,
+      "model_bytes": 335450548,
+      "ollama_loaded_size_bytes": null,
+      "model_digest": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "machine": {
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "device": {
+          "device_name": "Apple M2",
+          "max_recommended_working_set_size": 5726633984,
+          "memory_size": 8589934592,
+          "architecture": "applegpu_g14g",
+          "max_buffer_length": 4294967296,
+          "resource_limit": 499000
+        }
+      }
+    },
+    {
+      "file": "saved_adapter__independent.jsonl",
+      "model": "Qwen3-0.6B INT4 AfyaNote QLoRA 600 steps",
+      "set": "independent",
+      "expected_notes": 40,
+      "answered_notes": 40,
+      "missing_notes": 0,
+      "failed_notes": 0,
+      "gold_terms": 63,
+      "found_terms": 54,
+      "correct_status": 40,
+      "ctx": 3,
+      "extra": 13,
+      "exact_notes": 18,
+      "not_json": 1,
+      "rejected": {
+        "not_json": 1
+      },
+      "warnings": {
+        "duration_dropped": 9
+      },
+      "hybrid": {
+        "found_terms": 61,
+        "ctx": 0,
+        "extra_suggested": 1,
+        "unclear_cards": 31,
+        "recall": 0.968
+      },
+      "coverage_complete": true,
+      "complete": true,
+      "recall": 0.857,
+      "status_acc": 0.741,
+      "median_ms": 748.0748329980997,
+      "answer_sha256": "2dcb33a856318a0cf8ecda0ecac68a82213e34996ed9705ec7436feb909dcd5c",
+      "dataset_sha256": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+      "capture_provenance_verified": true,
+      "capture_complete": true,
+      "model_bytes": 344119163,
+      "ollama_loaded_size_bytes": null,
+      "model_digest": "c1899de289a04d12100db370d81485cdf75e47ca:6973b8202f8b3d93210bf1f91c2a244f6c59bd31cb846b2d5a3cb02513114032",
+      "machine": {
+        "platform": "macOS-27.0.1-arm64-arm-64bit",
+        "device": {
+          "device_name": "Apple M2",
+          "max_recommended_working_set_size": 5726633984,
+          "memory_size": 8589934592,
+          "architecture": "applegpu_g14g",
+          "max_buffer_length": 4294967296,
+          "resource_limit": 499000
+        }
+      }
+    }
+  ]
+}

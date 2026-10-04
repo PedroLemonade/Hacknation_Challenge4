@@ -1,0 +1,82 @@
+{
+ "note": "FICTIONAL demo facilities for the hackathon prototype. Names and positions are invented. Replace with the Kenya Master Health Facility List or healthsites.io (ODbL) before any real use.",
+ "origin": {
+  "name": "Kiharu Demo CHU (fictional)",
+  "lat": -0.752,
+  "lon": 37.115
+ },
+ "facilities": [
+  {
+   "id": "demo-01",
+   "name": "Demo Dispensary Mlimani",
+   "type": "dispensary",
+   "kephLevel": 2,
+   "lat": -0.74649,
+   "lon": 37.11962
+  },
+  {
+   "id": "demo-02",
+   "name": "Demo Dispensary Mto",
+   "type": "dispensary",
+   "kephLevel": 2,
+   "lat": -0.76297,
+   "lon": 37.12808
+  },
+  {
+   "id": "demo-03",
+   "name": "Demo Dispensary Sokoni",
+   "type": "dispensary",
+   "kephLevel": 2,
+   "lat": -0.76245,
+   "lon": 37.0863
+  },
+  {
+   "id": "demo-04",
+   "name": "Demo Health Centre Shamba",
+   "type": "health_centre",
+   "kephLevel": 3,
+   "lat": -0.71209,
+   "lon": 37.1257
+  },
+  {
+   "id": "demo-05",
+   "name": "Demo Health Centre Barabara",
+   "type": "health_centre",
+   "kephLevel": 3,
+   "lat": -0.8094,
+   "lon": 37.09411
+  },
+  {
+   "id": "demo-06",
+   "name": "Demo Sub County Hospital Kati",
+   "type": "hospital_l4",
+   "kephLevel": 4,
+   "lat": -0.70933,
+   "lon": 37.04109
+  },
+  {
+   "id": "demo-07",
+   "name": "Demo County Referral Hospital",
+   "type": "hospital_l5",
+   "kephLevel": 5,
+   "lat": -0.70837,
+   "lon": 37.23488
+  },
+  {
+   "id": "demo-08",
+   "name": "Demo Dispensary Kanisa",
+   "type": "dispensary",
+   "kephLevel": 2,
+   "lat": -0.75599,
+   "lon": 37.16064
+  },
+  {
+   "id": "demo-09",
+   "name": "Demo Health Centre Juu",
+   "type": "health_centre",
+   "kephLevel": 3,
+   "lat": -0.84739,
+   "lon": 37.14972
+  }
+ ]
+}

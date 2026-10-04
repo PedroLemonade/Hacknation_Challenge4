@@ -1,0 +1,1001 @@
+id,lang,text,labels,synthetic
+passages_dev_0,sw,Mvulana: hajitambui,ds_lethargic,true
+passages_dev_1,sw,nyumba ina maji safi,,true
+passages_dev_2,sw,mtoto mwili una joto,fever,true
+passages_dev_3,en,Amani no fits x1 days,,true
+passages_dev_4,mix,diarrhea,diarrhoea,true
+passages_dev_5,sw,barabara ni mbaya baada ya mua,,true
+passages_dev_6,mix,kila anachokula anatapika + not vomiting,ds_vomits_everything;vomiting,true
+passages_dev_7,sw,Kikohozi,cough,true
+passages_dev_8,mix,cough,cough,true
+passages_dev_9,mix,Msichaana: hajaharisha,diarrhoea,true
+passages_dev_10,mix,Hakuwa na degedege since yesterday,,true
+passages_dev_11,sw,Mama yake: anacheza vizuri wiki moja,,true
+passages_dev_12,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_13,en,The boy: fever since yesterday,fever,true
+passages_dev_14,mix,Choo cha maji,diarrhoea,true
+passages_dev_15,sw,Baba choo cha maji wiki moja,diarrhoea,true
+passages_dev_16,sw,familia ina shamba la mahindi,,true
+passages_dev_17,en,the girl not able to drink,ds_cannot_drink,true
+passages_dev_18,en,Amani: not vomiting / fever,fever;vomiting,true
+passages_dev_19,sw,Mtoto wa noor tumbo linauma,pain,true
+passages_dev_20,sw,mama anauza maziwa sokoni,,true
+passages_dev_21,en,no diarrhea 3 days,diarrhoea,true
+passages_dev_22,mix,Baby kifafa,ds_convulsions,true
+passages_dev_23,sw,mtoto wake: kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_dev_24,mix,Diarrhea for 1 week,diarrhoea,true
+passages_dev_25,sw,hana nguvu siku mbili,weakness,true
+passages_dev_26,sw,mtoto wa Noor: ana degedege tangu jana,ds_convulsions,true
+passages_dev_27,sw,choo cha maji,diarrhoea,true
+passages_dev_28,mix,mtoto wa Noor unconscious x3 das,ds_lethargic,true
+passages_dev_29,en,The girl: no energy,weakness,true
+passages_dev_30,mix,hawezi kunnywa,ds_cannot_drink,true
+passages_dev_31,sw,hajaharisha,diarrhoea,true
+passages_dev_32,en,convulsions sicne yesterday,ds_convulsions,true
+passages_dev_33,mix,Anatapika tangu jana,vomiting,true
+passages_dev_34,mix,the girl: no cough for 5 days,cough,true
+passages_dev_35,sw,hajatapika,vomiting,true
+passages_dev_36,sw,ana homa,fever,true
+passages_dev_37,sw,hana maumivu tangu juzi,pain,true
+passages_dev_38,en,fever x3 days,fever,true
+passages_dev_39,mix,no energy for 3 days,weakness,true
+passages_dev_40,en,coughing,cough,true
+passages_dev_41,sw,amekataa kunynya,ds_cannot_drink,true
+passages_dev_42,en,fits x2 days,ds_convulsions,true
+passages_dev_43,en,the girl alert,,true
+passages_dev_44,sw,watoto wako shuleni,,true
+passages_dev_45,mix,mtoto throwing up,vomiting,true
+passages_dev_46,sw,Msichan: kuharisha kwa siku nne,diarrhoea,true
+passages_dev_47,sw,mtoto wa Noor: kuhara kwa siku nne,diarrhoea,true
+passages_dev_48,sw,Mtoto wake amezimia wiki moja,ds_lethargic,true
+passages_dev_49,sw,mnyonge tangu jana,weakness,true
+passages_dev_50,sw,Alipata degedege / yuko macho tangu juzi,ds_convulsions,true
+passages_dev_51,sw,choo cha maji tangu juzi,diarrhoea,true
+passages_dev_52,en,headache,pain,true
+passages_dev_53,sw,joto jinggi mwilini,fever,true
+passages_dev_54,mix,Tumbo linauma for 1 week,pain,true
+passages_dev_55,sw,kutapika mara moja,vomiting,true
+passages_dev_56,en,Baby vomited for 2 days,vomiting,true
+passages_dev_57,sw,Amani: anakohoa,cough,true
+passages_dev_58,sw,mvulana: choo cha maji,diarrhoea,true
+passages_dev_59,sw,Hawezi kunyonya,ds_cannot_drink,true
+passages_dev_60,sw,mama maumivu ya tumbo siku 4,pain,true
+passages_dev_61,sw,Mama kichwa kinauma tangu juzi,pain,true
+passages_dev_62,sw,Msichana choo cha maji,diarrhoea,true
+passages_dev_63,sw,Amani maumivu / mwili una jotto,fever;pain,true
+passages_dev_64,mix,choo cha maji,diarrhoea,true
+passages_dev_65,sw,hawezi kunywa tangu jana,ds_cannot_drink,true
+passages_dev_66,mix,kikohozi kikali,cough,true
+passages_dev_67,en,headache,pain,true
+passages_dev_68,en,the child: lethargic,ds_lethargic,true
+passages_dev_69,sw,familia ina shama la mahindi,,true
+passages_dev_70,en,Bay throwing up,vomiting,true
+passages_dev_71,sw,si dhaifu siku nne,weakness,true
+passages_dev_72,mix,coughing kwa siku moja,cough,true
+passages_dev_73,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_74,mix,unconscious,ds_lethargic,true
+passages_dev_75,sw,hawezi kunywa wiki moja,ds_cannot_drink,true
+passages_dev_76,sw,amekataa kunyonya kwa siku nne,ds_cannot_drink,true
+passages_dev_77,mix,vomiting kwa siku moja,vomiting,true
+passages_dev_78,en,child: throwing up,vomiting,true
+passages_dev_79,en,the girl running sotmach,diarrhoea,true
+passages_dev_80,en,child: no vomiting for 1 week,vomiting,true
+passages_dev_81,sw,mama anauza maziwa sokoni,,true
+passages_dev_82,sw,mtoto wa Noor hajaharisha siku 4,diarrhoea,true
+passages_dev_83,mix,si dhaifu since yesterday,weakness,true
+passages_dev_84,en,the girl: very sleepy + unable to drink for 1 week,ds_cannot_drink;ds_lethargic,true
+passages_dev_85,sw,mtoto wa Noor maumivu ya tumbo,pain,true
+passages_dev_86,sw,mvulana kukohoa saana wiki moja,cough,true
+passages_dev_87,en,the road was muddy,,true
+passages_dev_88,mix,tumbo linauma,pain,true
+passages_dev_89,sw,mama anauza maziwa sokoni,,true
+passages_dev_90,mix,The child: headache + hdaifu x1 days,pain;weakness,true
+passages_dev_91,sw,msichana kikohozi tangu jana,cough,true
+passages_dev_92,sw,Anakohoa + kila anachokula anatapika tangu juzi,cough;ds_vomits_everything;vomiting,true
+passages_dev_93,mix,mtoto hot body siku 5,fever,true
+passages_dev_94,sw,mtoto wake kikohozi,cough,true
+passages_dev_95,mix,Hawezi kuamka + pain x3 days,ds_lethargic;pain,true
+passages_dev_96,en,baby cuogh,cough,true
+passages_dev_97,sw,hawezi kunywa + hajatapika kwa siku tano,ds_cannot_drink;vomiting,true
+passages_dev_98,sw,Amezimia,ds_lethargic,true
+passages_dev_99,mix,child: hakunywa chochote since yesterday,ds_cannot_drink,true
+passages_dev_100,en,vomiting everything since yesterday,ds_vomits_everything;vomiting,true
+passages_dev_101,en,has fever,fever,true
+passages_dev_102,sw,mvulana bila homa,fever,true
+passages_dev_103,sw,Mama dhaifu,weakness,true
+passages_dev_104,sw,mtoto: hajitmbui,ds_lethargic,true
+passages_dev_105,mix,the girl unable to breastfeed + lethargic siku 2,ds_cannot_drink;ds_lethargic,true
+passages_dev_106,sw,kikohozi kikali,cough,true
+passages_dev_107,mix,msichana lethargic,ds_lethargic,true
+passages_dev_108,mix,Hana kikohozi,cough,true
+passages_dev_109,en,no diarrhoea,diarrhoea,true
+passages_dev_110,sw,mtoto wa Noor: homa kali kwa siku tano,fever,true
+passages_dev_111,sw,wamepanda maharagwe,,true
+passages_dev_112,sw,mtoto mnyonge wiki moja,weakness,true
+passages_dev_113,en,no convulsions for 2 days,,true
+passages_dev_114,sw,jirani kifafa,ds_convulsions,true
+passages_dev_115,sw,Anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_116,mix,trhowing up,vomiting,true
+passages_dev_117,mix,mtoto wake: degedege,ds_convulsions,true
+passages_dev_118,sw,Maumivu ya tuumbo,pain,true
+passages_dev_119,mix,Anaendesha since yesterday,diarrhoea,true
+passages_dev_120,en,The girl: no pain since yesterday,pain,true
+passages_dev_121,sw,mwili una joto tangu juzi,fever,true
+passages_dev_122,mix,Tumbo haliumi tangu jana,pain,true
+passages_dev_123,en,no fever for 1 days,fever,true
+passages_dev_124,en,has fever for 4 adys,fever,true
+passages_dev_125,en,the road was muddy,,true
+passages_dev_126,sw,mtoto wake: tumbo haliumi,pain,true
+passages_dev_127,sw,nyumba ina maji safi,,true
+passages_dev_128,mix,The girl: no energy,weakness,true
+passages_dev_129,sw,Mwili ulikuwa unatetemeka / ana kikohozi,cough;ds_convulsions,true
+passages_dev_130,sw,mtoto wake: anakunywa vizuri wiki moja,,true
+passages_dev_131,sw,mtoto wa Noor: amechoka sana,weakness,true
+passages_dev_132,en,diarrhoea for 4 days,diarrhoea,true
+passages_dev_133,sw,Amani hawezi kunywa + hana homa siku nne,ds_cannot_drink;fever,true
+passages_dev_134,sw,msichana maumivu ya kichwa kwa siku nne,pain,true
+passages_dev_135,sw,mtoto wa Noor hakuna homa,fever,true
+passages_dev_136,mix,Hawezi kunyonya,ds_cannot_drink,true
+passages_dev_137,en,Allert,,true
+passages_dev_138,en,unale to breastfeed x1 days,ds_cannot_drink,true
+passages_dev_139,en,the boy: had convulsions,ds_convulsions,true
+passages_dev_140,sw,hawezi kuynwa,ds_cannot_drink,true
+passages_dev_141,sw,Kukohoa sana siku mbili,cough,true
+passages_dev_142,en,fits,ds_convulsions,true
+passages_dev_143,sw,mtoto wake ametapika kwa siku nne,vomiting,true
+passages_dev_144,sw,mtoto wa Noor amekataa kunyonya,ds_cannot_drink,true
+passages_dev_145,sw,nyumba ina maji safi,,true
+passages_dev_146,mix,No energy since yesterday,weakness,true
+passages_dev_147,sw,kutapika mara moja,vomiting,true
+passages_dev_148,sw,tumbo linauma,pain,true
+passages_dev_149,en,Amani: not able to drink for 1 week,ds_cannot_drink,true
+passages_dev_150,sw,Mtoto wake: anacheza vizuri tangu jaa,,true
+passages_dev_151,en,the boy: weak 1 days,weakness,true
+passages_dev_152,en,the road was muddy,,true
+passages_dev_153,en,vomits everything x5 days,ds_vomits_everything;vomiting,true
+passages_dev_154,en,vomited,vomiting,true
+passages_dev_155,en,coffee price went up,,true
+passages_dev_156,mix,Mtoto wa noor: ametapika wiki moja,vomiting,true
+passages_dev_157,en,No vomiting x1 days,vomiting,true
+passages_dev_158,en,child: not able to drink 2 days,ds_cannot_drink,true
+passages_dev_159,sw,Kutapika,vomiting,true
+passages_dev_160,en,vomits everything,ds_vomits_everything;vomiting,true
+passages_dev_161,sw,mtoto maumivu ya tumbo,pain,true
+passages_dev_162,sw,Kuhara,diarrhoea,true
+passages_dev_163,en,Leethargic x5 days,ds_lethargic,true
+passages_dev_164,mix,Anaweza kunywa anatapika,vomiting,true
+passages_dev_165,sw,mtoto wa Noor hakunwa chochote siku tatu,ds_cannot_drink,true
+passages_dev_166,sw,Amani: hana nguvu tangu jana,weakness,true
+passages_dev_167,en,The mother no diarrhea,diarrhoea,true
+passages_dev_168,sw,msichana: ana kikohozi kwa siku tano,cough,true
+passages_dev_169,sw,Mtoto wa noor: usingizi mzito,ds_lethargic,true
+passages_dev_170,sw,hana kuhara wiki moja,diarrhoea,true
+passages_dev_171,en,The boy no energgy,weakness,true
+passages_dev_172,sw,mtoto wa Noor amechoka sana,weakness,true
+passages_dev_173,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_174,en,very weak,weakness,true
+passages_dev_175,mix,Amekataa kunyonya kwa siku mbili,ds_cannot_drink,true
+passages_dev_176,sw,wamepanda maharagwe,,true
+passages_dev_177,sw,Amani: hana nguvu tangu jana,weakness,true
+passages_dev_178,en,Amani fits,ds_convulsions,true
+passages_dev_179,mix,had convulsions siku 5,ds_convulsions,true
+passages_dev_180,mix,maumivu ya kichwa,pain,true
+passages_dev_181,sw,Amni maumivu ya kichwa,pain,true
+passages_dev_182,mix,High fever,fever,true
+passages_dev_183,en,the boy no diarrhea + fits,diarrhoea;ds_convulsions,true
+passages_dev_184,en,no fits,,true
+passages_dev_185,sw,Ana homa,fever,true
+passages_dev_186,en,the child fits,ds_convulsions,true
+passages_dev_187,en,Running stomach,diarrhoea,true
+passages_dev_188,sw,Amani: usingizi mzito,ds_lethargic,true
+passages_dev_189,sw,Mtoto wa noor anakohoa,cough,true
+passages_dev_190,sw,Hana nguvu wiki moja,weakness,true
+passages_dev_191,sw,dhaifu wiki moja,weakness,true
+passages_dev_192,en,Weak x3 days,weakness,true
+passages_dev_193,en,not weak + lethargic for 1 week,ds_lethargic;weakness,true
+passages_dev_194,mix,Amani throwing up,vomiting,true
+passages_dev_195,sw,wamepanda maharagwe,,true
+passages_dev_196,sw,Msichana joto jingi mwilini,fever,true
+passages_dev_197,sw,hajatapika tangu jana,vomiting,true
+passages_dev_198,en,routine household visit,,true
+passages_dev_199,mix,the girl degedege for 4 days,ds_convulsions,true
+passages_dev_200,en,Has fver,fever,true
+passages_dev_201,en,coffee price went up,,true
+passages_dev_202,en,Amani: not weak 3 days,weakness,true
+passages_dev_203,mix,Degedege for 3 days,ds_convulsions,true
+passages_dev_204,sw,mwili una joto + anatapika kila kitu,ds_vomits_everything;fever;vomiting,true
+passages_dev_205,sw,mtoto: anatapika,vomiting,true
+passages_dev_206,sw,Joto jingi mwilini aatapika kila anachokunywa tangu juzi,ds_vomits_everything;fever;vomiting,true
+passages_dev_207,sw,Amelegea,ds_lethargic,true
+passages_dev_208,en,Amani not weak,weakness,true
+passages_dev_209,mix,Si dhaifu,weakness,true
+passages_dev_210,en,had convulsions,ds_convulsions,true
+passages_dev_211,en,diarhea 3 days,diarrhoea,true
+passages_dev_212,mix,Amani: hawezi kuamka,ds_lethargic,true
+passages_dev_213,mix,amezimia tangu jana,ds_lethargic,true
+passages_dev_214,en,very sleepy,ds_lethargic,true
+passages_dev_215,en,Diarrhea for 1 week,diarrhoea,true
+passages_dev_216,mix,mtoto wake vomits everything / had convulsions,ds_convulsions;ds_vomits_everything;vomiting,true
+passages_dev_217,sw,Mtoto ana homa,fever,true
+passages_dev_218,en,Amani weak for 2 days,weakness,true
+passages_dev_219,mix,mtoto throwing up / choo cha maji,diarrhoea;vomiting,true
+passages_dev_220,en,not able to drnik x3 days,ds_cannot_drink,true
+passages_dev_221,mix,Weak,weakness,true
+passages_dev_222,mix,cannot drink wiki moja,ds_cannot_drink,true
+passages_dev_223,sw,Mtoto wa noor si dhaifu,weakness,true
+passages_dev_224,mix,Maumivu ya kichwa for 3 days,pain,true
+passages_dev_225,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_226,sw,anaendesha wiki moja,diarrhoea,true
+passages_dev_227,mix,the child anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_228,sw,nyumba ina majji safi,,true
+passages_dev_229,sw,mtoto wake bila homa / maumivu ya kichwa,fever;pain,true
+passages_dev_230,mix,child no energy since yesterday,weakness,true
+passages_dev_231,sw,kifafa,ds_convulsions,true
+passages_dev_232,sw,mtoto kukohoa sana wiki mjoa,cough,true
+passages_dev_233,en,baby hard to wake,ds_lethargic,true
+passages_dev_234,en,no vomiting,vomiting,true
+passages_dev_235,mix,jto jingi mwilini,fever,true
+passages_dev_236,sw,Dhaifu,weakness,true
+passages_dev_237,sw,nyumba ina maji safi,,true
+passages_dev_238,en,lethargic,ds_lethargic,true
+passages_dev_239,sw,Amani: ana homa,fever,true
+passages_dev_240,en,Amani: denies pain,pain,true
+passages_dev_241,en,Weak / vomited 3 daays,vomiting;weakness,true
+passages_dev_242,en,fits,ds_convulsions,true
+passages_dev_243,sw,familia ina shamba la mahindi,,true
+passages_dev_244,en,coffee price went up,,true
+passages_dev_245,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_246,sw,mtoto wa Noor anacheza vizuri,,true
+passages_dev_247,sw,Ametapika siku mbili,vomiting,true
+passages_dev_248,sw,Hakunywa chochote kwa siku mbili,ds_cannot_drink,true
+passages_dev_249,sw,mmaa: hana maumivu kwa siku tano,pain,true
+passages_dev_250,en,running stomach,diarrhoea,true
+passages_dev_251,en,hot boddy,fever,true
+passages_dev_252,sw,Amani hajatapika tangu jana,vomiting,true
+passages_dev_253,mix,kutapika,vomiting,true
+passages_dev_254,en,Pain,pain,true
+passages_dev_255,mix,cough tangu juzi,cough,true
+passages_dev_256,sw,ana ohma siku 4,fever,true
+passages_dev_257,sw,familia ina shamba la mahindi,,true
+passages_dev_258,mix,Msichana: cough,cough,true
+passages_dev_259,mix,the gilr: amechoka sana,weakness,true
+passages_dev_260,sw,anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_261,sw,anakhoa siku 5,cough,true
+passages_dev_262,mix,neighbour no energy,weakness,true
+passages_dev_263,sw,mvulana hawezi kuamka,ds_lethargic,true
+passages_dev_264,sw,Mvulana: kutapka mara moja,vomiting,true
+passages_dev_265,sw,msichana anatapika kila kitu tangu juzi,ds_vomits_everything;vomiting,true
+passages_dev_266,sw,Kuhara,diarrhoea,true
+passages_dev_267,sw,mtoto anaendesha / hajitambui tangu juzi,diarrhoea;ds_lethargic,true
+passages_dev_268,sw,anaharisha,diarrhoea,true
+passages_dev_269,sw,mama anauza maziwa sokoni,,true
+passages_dev_270,sw,Hakuwa na degedege,,true
+passages_dev_271,en,headacche for 4 days,pain,true
+passages_dev_272,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_273,en,discussed the vaccination card,,true
+passages_dev_274,sw,Amani: anaendesha tangu ujzi,diarrhoea,true
+passages_dev_275,en,child very weak for 1 week,weakness,true
+passages_dev_276,sw,Msichana: hanyonyi kwa siku moja,ds_cannot_drink,true
+passages_dev_277,mix,Mama yake: tumbo linauma since yesterday,pain,true
+passages_dev_278,mix,Vmoited,vomiting,true
+passages_dev_279,sw,hanyonyi siku 5,ds_cannot_drink,true
+passages_dev_280,mix,The boy: hawezi kuamka 3 dayys,ds_lethargic,true
+passages_dev_281,mix,Maumivu ya tumbo,pain,true
+passages_dev_282,sw,Mtoto wa noor hakuna homa,fever,true
+passages_dev_283,en,the girl: vomiting,vomiting,true
+passages_dev_284,en,throwing up since yeesterday,vomiting,true
+passages_dev_285,en,Vomiting since yesterday,vomiting,true
+passages_dev_286,sw,mtoto wake: anatapika kila anachokunywa tangu jana,ds_vomits_everything;vomiting,true
+passages_dev_287,sw,Mtoto wa noor kifafa,ds_convulsions,true
+passages_dev_288,mix,Msichana: no fits,,true
+passages_dev_289,mix,Vomiting everything tangu jana,ds_vomits_everything;vomiting,true
+passages_dev_290,mix,Msichana: anaendesha siku tano,diarrhoea,true
+passages_dev_291,sw,mama yake: mnyonge siku nne,weakness,true
+passages_dev_292,sw,mtto amezimia,ds_lethargic,true
+passages_dev_293,sw,mtoto wa Noor: kichwa kinauma,pain,true
+passages_dev_294,en,Coughing since yesterday,cough,true
+passages_dev_295,sw,Kikohoi siku 4,cough,true
+passages_dev_296,en,Vomiting,vomiting,true
+passages_dev_297,sw,Bila homa siku 3,fever,true
+passages_dev_298,mix,amelegea for 1 week,ds_lethargic,true
+passages_dev_299,en,the girl no convulsions,,true
+passages_dev_300,sw,msichana kutapika siku 2,vomiting,true
+passages_dev_301,sw,Amani: hanyonyi siku nne,ds_cannot_drink,true
+passages_dev_302,en,the child vomited / hih fever x1 days,fever;vomiting,true
+passages_dev_303,en,mother sells milk at the market,,true
+passages_dev_304,en,vomiting,vomiting,true
+passages_dev_305,en,Amani diarrhea for 4 days,diarrhoea,true
+passages_dev_306,en,child: not able to drink since yesterday,ds_cannot_drink,true
+passages_dev_307,en,Amani unconscious since yesterday,ds_lethargic,true
+passages_dev_308,sw,anatapika siku mbili,vomiting,true
+passages_dev_309,sw,mama anauza maziwa sokoni,,true
+passages_dev_310,en,father: vomiting everything,ds_vomits_everything;vomiting,true
+passages_dev_311,mix,mvulana: can drink,,true
+passages_dev_312,sw,mtoto wake hawezi kunywa tangu juzi,ds_cannot_drink,true
+passages_dev_313,sw,kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_dev_314,en,the mother has fever,fever,true
+passages_dev_315,mix,mvulana: cnnot drink + hakohoi,cough;ds_cannot_drink,true
+passages_dev_316,mix,neighbour convulsions for 1 week,ds_convulsions,true
+passages_dev_317,mix,Amani: hajitambui + vomiting,ds_lethargic;vomiting,true
+passages_dev_318,sw,Mtoto wa noor: kikohozi siku 1,cough,true
+passages_dev_319,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_320,sw,Amani: homa kali,fever,true
+passages_dev_321,sw,Amani: ametapika kwa siku moja,vomiting,true
+passages_dev_322,sw,anacheza vizuri siku moja,,true
+passages_dev_323,en,voimting,vomiting,true
+passages_dev_324,sw,Amani hana nguvu siku 3,weakness,true
+passages_dev_325,sw,kila anachokula anatapika kwa siku tatu,ds_vomits_everything;vomiting,true
+passages_dev_326,sw,Amani: hajaharisha,diarrhoea,true
+passages_dev_327,sw,leo mvua imenyesha sana,,true
+passages_dev_328,sw,Anatapika kila anachokunywa kwa siku tatu,ds_vomits_everything;vomiting,true
+passages_dev_329,sw,dhaifu,weakness,true
+passages_dev_330,sw,kila anachokula anatapika siku tano,ds_vomits_everything;vomiting,true
+passages_dev_331,sw,mvulana hakuna homma wiki moja,fever,true
+passages_dev_332,mix,mtoto choo cha maji since yesterday,diarrhoea,true
+passages_dev_333,mix,usingizi mzito,ds_lethargic,true
+passages_dev_334,sw,leo mvua imenyesha sana,,true
+passages_dev_335,sw,mtoto wake si dhaifu,weakness,true
+passages_dev_336,sw,Amani: amekataa kunyonya,ds_cannot_drink,true
+passages_dev_337,en,follow up visit planned,,true
+passages_dev_338,sw,tulizungumza kuhusu kahawa,,true
+passages_dev_339,en,the igrl headache,pain,true
+passages_dev_340,mix,Convulsions,ds_convulsions,true
+passages_dev_341,sw,leo mvua imenyesha sana,,true
+passages_dev_342,mix,child: coughing,cough,true
+passages_dev_343,sw,Amani: mwili una joto kuhara tangu jana,diarrhoea;fever,true
+passages_dev_344,sw,mtoto wake tumbo linauma tangu jana,pain,true
+passages_dev_345,sw,joto jingi mwilini amechoka sana,fever;weakness,true
+passages_dev_346,sw,msichana usingizi mzito kwa siku nne,ds_lethargic,true
+passages_dev_347,mix,stomach pain x1 days,pain,true
+passages_dev_348,sw,tulizungumza kuhusu kahawa,,true
+passages_dev_349,sw,Amani: maumivu ya tumbo,pain,true
+passages_dev_350,sw,mtoto anaugua homa / amelegea,ds_lethargic;fever,true
+passages_dev_351,mix,Mtoto wa noor homa kali siku 3,fever,true
+passages_dev_352,en,no energy,weakness,true
+passages_dev_353,sw,Amani: homa haharishi kwa siku moja,diarrhoea;fever,true
+passages_dev_354,sw,mtoto maumivu ya kichwa wiki moja,pain,true
+passages_dev_355,mix,weak since yesterday,weakness,true
+passages_dev_356,en,child hot body abdominal pain,fever;pain,true
+passages_dev_357,mix,throws up everything 4 days,ds_vomits_everything;vomiting,true
+passages_dev_358,mix,mtoto wake hawezi kuamka for 5 days,ds_lethargic,true
+passages_dev_359,sw,mtoto wake tumbo linauma kwa siiku tatu,pain,true
+passages_dev_360,sw,mtoto wa Noor: anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_361,sw,Amani ametapika,vomiting,true
+passages_dev_362,sw,mvulana: mnyonge siku nne,weakness,true
+passages_dev_363,sw,Mwili una joto kwa siku tatu,fever,true
+passages_dev_364,sw,kikohozi kikali tangu juzi,cough,true
+passages_dev_365,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_366,mix,mvulana hajaharisha tangu juzi,diarrhoea,true
+passages_dev_367,sw,msichana hakunywa chochote tangu jana,ds_cannot_drink,true
+passages_dev_368,sw,kila anachokula anatapika tangu juzi,ds_vomits_everything;vomiting,true
+passages_dev_369,en,throws up everything,ds_vomits_everything;vomiting,true
+passages_dev_370,en,child no pain,pain,true
+passages_dev_371,mix,Mama yake: ametapika / had convulsions,ds_convulsions;vomiting,true
+passages_dev_372,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_373,en,Aamni weak diarrhoea,diarrhoea;weakness,true
+passages_dev_374,sw,Amani kutapika,vomiting,true
+passages_dev_375,sw,Kuhara,diarrhoea,true
+passages_dev_376,mix,hana kikohozi,cough,true
+passages_dev_377,mix,amezimia,ds_lethargic,true
+passages_dev_378,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_379,sw,ameziima,ds_lethargic,true
+passages_dev_380,en,folow up visit planned,,true
+passages_dev_381,sw,mtoto wa Noor: hanna kikohozi,cough,true
+passages_dev_382,mix,unable to drink,ds_cannot_drink,true
+passages_dev_383,mix,unconscious for 1 week,ds_lethargic,true
+passages_dev_384,mix,The boy hawezi kunyonya siku 1,ds_cannot_drink,true
+passages_dev_385,sw,mvulana anaharisha tangu juzi,diarrhoea,true
+passages_dev_386,sw,mtoto: hanyonyi tangu jana,ds_cannot_drink,true
+passages_dev_387,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_388,en,the child bad cough,cough,true
+passages_dev_389,sw,mtoto kutapika,vomiting,true
+passages_dev_390,mix,convulsions,ds_convulsions,true
+passages_dev_391,mix,kikohozi,cough,true
+passages_dev_392,sw,mtoto wa Noor: hakunywa chochote kwa siu mbili,ds_cannot_drink,true
+passages_dev_393,sw,Amani: anakohoa tangu jana,cough,true
+passages_dev_394,sw,Msichanaa: kikohozi,cough,true
+passages_dev_395,mix,Grandmother joto jingi mwilini for 1 week,fever,true
+passages_dev_396,sw,msichana ana homa siku 1,fever,true
+passages_dev_397,en,throwing up for 1 week,vomiting,true
+passages_dev_398,mix,has fever,fever,true
+passages_dev_399,sw,Kuharisha,diarrhoea,true
+passages_dev_400,sw,Hawezi kunywa kwa siku tano,ds_cannot_drink,true
+passages_dev_401,en,abdominal pain,pain,true
+passages_dev_402,en,the boy fits since yesterday,ds_convulsions,true
+passages_dev_403,sw,si dhaifu / anaharisha wiki moja,diarrhoea;weakness,true
+passages_dev_404,mix,Hakunywa chochote,ds_cannot_drink,true
+passages_dev_405,sw,choo cha maji,diarrhoea,true
+passages_dev_406,mix,no convulsions,,true
+passages_dev_407,mix,the boy: vomited 1 days,vomiting,true
+passages_dev_408,mix,very weak,weakness,true
+passages_dev_409,sw,ametapika,vomiting,true
+passages_dev_410,sw,Mtoto maumivu ya kichwa siku 5,pain,true
+passages_dev_411,en,Baby: has fever for 3 days,fever,true
+passages_dev_412,en,Pain x4 daays,pain,true
+passages_dev_413,sw,Amani kikohozi / hakuna homa,cough;fever,true
+passages_dev_414,sw,mtoto degedege siku 1,ds_convulsions,true
+passages_dev_415,sw,ankaohoa wiki moja,cough,true
+passages_dev_416,mix,the boy diarrhea + bad cough wiki moja,cough;diarrhoea,true
+passages_dev_417,en,follow up visit planned,,true
+passages_dev_418,en,fits 2 days,ds_convulsions,true
+passages_dev_419,en,running stomach for 3 days,diarrhoea,true
+passages_dev_420,en,The boy: had convulsions,ds_convulsions,true
+passages_dev_421,mix,amekataa kunyonya anatapika 5 days,ds_cannot_drink;vomiting,true
+passages_dev_422,en,ifts,ds_convulsions,true
+passages_dev_423,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_424,en,Baby: alert for 1 week,,true
+passages_dev_425,en,Bad cough 2 days,cough,true
+passages_dev_426,sw,mtoto ana homa,fever,true
+passages_dev_427,mix,mvulana choo cha maji,diarrhoea,true
+passages_dev_428,sw,Mtoto kikohozi kikali siku 4,cough,true
+passages_dev_429,sw,familia ina shamba la mahindi,,true
+passages_dev_430,sw,mtoto wa Noor kuharisha,diarrhoea,true
+passages_dev_431,mix,The child: vomiting everything,ds_vomits_everything;vomiting,true
+passages_dev_432,sw,barabara ni maya baada ya mvua,,true
+passages_dev_433,sw,Msichana: hawezi kunyonya,ds_cannot_drink,true
+passages_dev_434,sw,tulizungumza kuhusu kahawa,,true
+passages_dev_435,en,abdominal pain 5 days,pain,true
+passages_dev_436,mix,maumivu ya tumbo x1 days,pain,true
+passages_dev_437,sw,watoto wako shuleni,,true
+passages_dev_438,en,the girl stomach pain since yesterday,pain,true
+passages_dev_439,mix,mvulana hajitambui 5 days,ds_lethargic,true
+passages_dev_440,en,Child: convulsions fever x2 days,ds_convulsions;fever,true
+passages_dev_441,sw,anaugua homa kwa siku moja,fever,true
+passages_dev_442,sw,anaendesha siku tano,diarrhoea,true
+passages_dev_443,sw,msichana usingizi mzito siku 3,ds_lethargic,true
+passages_dev_444,sw,mtoto: anatapika tangu jana,vomiting,true
+passages_dev_445,sw,mtoto wake: mnyonge siku nne,weakness,true
+passages_dev_446,mix,Mtoto: bila homa,fever,true
+passages_dev_447,en,child: stomach pain for 1 week,pain,true
+passages_dev_448,sw,hana nguvu,weakness,true
+passages_dev_449,mix,unable to breastfeed for 1 week,ds_cannot_drink,true
+passages_dev_450,sw,mtoto hakunywa chochote tangu jana,ds_cannot_drink,true
+passages_dev_451,sw,Mtoto wa noor tumbo linauma tangu jana,pain,true
+passages_dev_452,sw,bibi kuharisha,diarrhoea,true
+passages_dev_453,mix,the boy: high fever for 4 days,fever,true
+passages_dev_454,sw,watoto wako shuleni,,true
+passages_dev_455,mix,Neighbour: very sleepy 3 days,ds_lethargic,true
+passages_dev_456,mix,kikohozi siku 3,cough,true
+passages_dev_457,sw,amezimia siku tano,ds_lethargic,true
+passages_dev_458,mix,the girl: joto jingi mwilini x4 days,fever,true
+passages_dev_459,mix,hard to wake,ds_lethargic,true
+passages_dev_460,mix,The girl: anacheza vizuri,,true
+passages_dev_461,sw,mtoto wake: anaharisha tangu jana,diarrhoea,true
+passages_dev_462,en,Amnai vomited,vomiting,true
+passages_dev_463,sw,mtoto wake: anaendesha tangu juzi,diarrhoea,true
+passages_dev_464,sw,watoto wako shuleni,,true
+passages_dev_465,sw,mnyonge,weakness,true
+passages_dev_466,sw,Hawezi kunyonya wiki moja,ds_cannot_drink,true
+passages_dev_467,sw,mama maumivu ya tumbo,pain,true
+passages_dev_468,en,baby: deos not have fever,fever,true
+passages_dev_469,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_470,mix,mtoto wa Noor kichwa kinauma kila anachokula anatapika,ds_vomits_everything;pain;vomiting,true
+passages_dev_471,en,neighbour: no diarrhea,diarrhoea,true
+passages_dev_472,mix,hanyonyi 4 days,ds_cannot_drink,true
+passages_dev_473,en,vomiting,vomiting,true
+passages_dev_474,sw,Mtoto hawezi kunywa siku tano,ds_cannot_drink,true
+passages_dev_475,sw,mtoto wa Noor: anaugua homa,fever,true
+passages_dev_476,en,baby: fits,ds_convulsions,true
+passages_dev_477,en,very weak + running stomach,diarrhoea;weakness,true
+passages_dev_478,sw,Mtoto wa noor: usingizi mzito siku tano,ds_lethargic,true
+passages_dev_479,en,Throws up everything since yesterday,ds_vomits_everything;vomiting,true
+passages_dev_480,sw,hawezi kunywa,ds_cannot_drink,true
+passages_dev_481,mix,bad cough,cough,true
+passages_dev_482,sw,hakuna homa,fever,true
+passages_dev_483,mix,mtoto wa Noor drinking well for 3 days,,true
+passages_dev_484,mix,kila anachokula anatapika tangu juzi,ds_vomits_everything;vomiting,true
+passages_dev_485,en,vomiting / convulsions,ds_convulsions;vomiting,true
+passages_dev_486,en,running stomach,diarrhoea,true
+passages_dev_487,en,no cough for 2 days,cough,true
+passages_dev_488,en,Very lseepy,ds_lethargic,true
+passages_dev_489,en,father very sleepy,ds_lethargic,true
+passages_dev_490,mix,yuko macho 5 days,,true
+passages_dev_491,mix,Weak,weakness,true
+passages_dev_492,mix,lethargic 3 days,ds_lethargic,true
+passages_dev_493,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_494,sw,Mtoto wa noor: mnyonge siku tano,weakness,true
+passages_dev_495,mix,mvulana vomiting,vomiting,true
+passages_dev_496,en,The girl: running stomach for 1 week,diarrhoea,true
+passages_dev_497,en,the boy: throws up everything for 5 days,ds_vomits_everything;vomiting,true
+passages_dev_498,sw,alipata degedege,ds_convulsions,true
+passages_dev_499,sw,Anatapika / anakohoa siku mbili,cough;vomiting,true
+passages_dev_500,sw,watoto wako shuleni,,true
+passages_dev_501,en,baby weak since yesterday,weakness,true
+passages_dev_502,en,Not weak x1 days,weakness,true
+passages_dev_503,sw,mtoto wake ametapika siku tatu,vomiting,true
+passages_dev_504,en,Baby: cannot drink,ds_cannot_drink,true
+passages_dev_505,sw,kikohozi kuarisha,cough;diarrhoea,true
+passages_dev_506,mix,throwing up tangu jana,vomiting,true
+passages_dev_507,sw,msichana maumivu,pain,true
+passages_dev_508,mix,Unable to breastfeed,ds_cannot_drink,true
+passages_dev_509,en,the child: weak,weakness,true
+passages_dev_510,sw,Amani maumivu ya tumbo siku 5,pain,true
+passages_dev_511,sw,mtoto wa Noor: kifafa siku mbili,ds_convulsions,true
+passages_dev_512,sw,familia ina shamba la mahindi,,true
+passages_dev_513,mix,lethaargic,ds_lethargic,true
+passages_dev_514,en,coffee price went up,,true
+passages_dev_515,mix,not vomitinng,vomiting,true
+passages_dev_516,en,Father: hard to wake,ds_lethargic,true
+passages_dev_517,sw,mama anauza maziwa sokoni,,true
+passages_dev_518,en,the boy: hard to wake,ds_lethargic,true
+passages_dev_519,sw,mtoto wa Noor mwili una joto taangu jana,fever,true
+passages_dev_520,sw,Mvulana: yuko macho hakuna homa tangu juzi,fever,true
+passages_dev_521,mix,Mtoto: vomited,vomiting,true
+passages_dev_522,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_523,en,children are at school,,true
+passages_dev_524,sw,Amani kuhara tangu juzi,diarrhoea,true
+passages_dev_525,en,Cough,cough,true
+passages_dev_526,mix,anaugua homa siku 5,fever,true
+passages_dev_527,mix,high fever,fever,true
+passages_dev_528,sw,Ametapika siku tatu,vomiting,true
+passages_dev_529,sw,mtoto: amezimia,ds_lethargic,true
+passages_dev_530,mix,not vomiting,vomiting,true
+passages_dev_531,mix,anatapika kila anachokunywa kwa siku tano,ds_vomits_everything;vomiting,true
+passages_dev_532,sw,mtoto wa Noor: mwili ulikuwa unatetemeka tangu juzi,ds_convulsions,true
+passages_dev_533,mix,drinknig well kwa siku tano,,true
+passages_dev_534,sw,yuko macho kifafa,ds_convulsions,true
+passages_dev_535,sw,mnyonge,weakness,true
+passages_dev_536,sw,Mtoto wa noor: amezimia siku mbili,ds_lethargic,true
+passages_dev_537,en,the girl: very weak for 4 days,weakness,true
+passages_dev_538,en,the boy hot body,fever,true
+passages_dev_539,sw,kuapika tangu juzi,vomiting,true
+passages_dev_540,en,Has fever,fever,true
+passages_dev_541,mix,the child: amelegea siku tano,ds_lethargic,true
+passages_dev_542,sw,familia ina shamba la mahindi,,true
+passages_dev_543,sw,hawezi kunyonya wiki moja,ds_cannot_drink,true
+passages_dev_544,sw,ana degedege,ds_convulsions,true
+passages_dev_545,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_546,sw,mtoto: mwili ulikuwa unatetemeka,ds_convulsions,true
+passages_dev_547,mix,mtoto wa Noor: kutapika,vomiting,true
+passages_dev_548,en,weak,weakness,true
+passages_dev_549,mix,not vomiting,vomiting,true
+passages_dev_550,sw,Amezimia,ds_lethargic,true
+passages_dev_551,mix,diarrhoea,diarrhoea,true
+passages_dev_552,en,Vomiting + has fever 4 days,fever;vomiting,true
+passages_dev_553,sw,kichwa kinauma kwa siku tano,pain,true
+passages_dev_554,en,mother sells milk at the market,,true
+passages_dev_555,mix,Amechoka sana,weakness,true
+passages_dev_556,en,Playing normally,,true
+passages_dev_557,en,no energy,weakness,true
+passages_dev_558,sw,Hajitammbui,ds_lethargic,true
+passages_dev_559,en,The boy: vomits everything x4 days,ds_vomits_everything;vomiting,true
+passages_dev_560,sw,wamepanda maharagwe,,true
+passages_dev_561,sw,maumivu ya kichwa wiki moja,pain,true
+passages_dev_562,en,unable to drink + vomiting everything x5 days,ds_cannot_drink;ds_vomits_everything;vomiting,true
+passages_dev_563,en,pain,pain,true
+passages_dev_564,mix,throwing up kwa siku mbili,vomiting,true
+passages_dev_565,en,Fever,fever,true
+passages_dev_566,en,the girl: diarrhea x1 days,diarrhoea,true
+passages_dev_567,sw,si hdaifu kwa siku mbili,weakness,true
+passages_dev_568,en,Father running stomach for 1 week,diarrhoea,true
+passages_dev_569,sw,Mtoto maumivu ya tumbo,pain,true
+passages_dev_570,sw,mtoto wake: tumbo linauma,pain,true
+passages_dev_571,mix,Anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_572,sw,msichana amechoka sana,weakness,true
+passages_dev_573,sw,msichana: hana maumivu,pain,true
+passages_dev_574,en,the road was muddy,,true
+passages_dev_575,sw,hakuwa na degedege siku nne,,true
+passages_dev_576,sw,tumbo linauma kwa siku tatu,pain,true
+passages_dev_577,sw,tulizungumza kuhusu kahawa,,true
+passages_dev_578,en,cough for 5 days,cough,true
+passages_dev_579,sw,Anaugua homa siku 3,fever,true
+passages_dev_580,mix,jirani had convvulsions / mnyonge tangu jana,ds_convulsions;weakness,true
+passages_dev_581,sw,kichwa kinauma kwa siku tatu,pain,true
+passages_dev_582,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_583,sw,maumivu ya tumbo tagnu jana,pain,true
+passages_dev_584,en,The mother: running stomach 4 adys,diarrhoea,true
+passages_dev_585,mix,the girl not weak no fever 4 days,fever;weakness,true
+passages_dev_586,en,Diarrhea,diarrhoea,true
+passages_dev_587,mix,Jirani anakohoa,cough,true
+passages_dev_588,sw,Hajitambui anatapika kila kitu siku 5,ds_lethargic;ds_vomits_everything;vomiting,true
+passages_dev_589,sw,ammekataa kunyonya,ds_cannot_drink,true
+passages_dev_590,sw,hajatapika kwa siku tano,vomiting,true
+passages_dev_591,mix,kukohoa sana,cough,true
+passages_dev_592,en,baby weak for 2 days,weakness,true
+passages_dev_593,mix,diarrhea tagnu juzi,diarrhoea,true
+passages_dev_594,sw,hawezi kuamka,ds_lethargic,true
+passages_dev_595,sw,kiffa + ana homa,ds_convulsions;fever,true
+passages_dev_596,en,neighbour throwing up x2 days,vomiting,true
+passages_dev_597,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_598,sw,mama: ana degedege,ds_convulsions,true
+passages_dev_599,en,family grows coffee and maize,,true
+passages_dev_600,en,routine household visit,,true
+passages_dev_601,mix,baby: ametapika siku 3,vomiting,true
+passages_dev_602,sw,Mvuulana mwili ulikuwa unatetemeka,ds_convulsions,true
+passages_dev_603,sw,mtoto hana nguvu,weakness,true
+passages_dev_604,mix,Amani: not able to drink x5 days,ds_cannot_drink,true
+passages_dev_605,sw,tumbo linauma siku 4,pain,true
+passages_dev_606,mix,Amani anatapika kila kitu siku 4,ds_vomits_everything;vomiting,true
+passages_dev_607,sw,familia ina shamba la mahindi,,true
+passages_dev_608,mix,The boy fits,ds_convulsions,true
+passages_dev_609,mix,alipata degedege for 1 week,ds_convulsions,true
+passages_dev_610,en,No diarrhoea,diarrhoea,true
+passages_dev_611,sw,mvulana: anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_612,en,Baby: pain x2 days,pain,true
+passages_dev_613,en,bad cough,cough,true
+passages_dev_614,mix,hawezi kunywa,ds_cannot_drink,true
+passages_dev_615,en,The girl headache,pain,true
+passages_dev_616,sw,joto jingi mwilini,fever,true
+passages_dev_617,sw,leo mvua imenyesha sana,,true
+passages_dev_618,sw,Hakunywa chochote + anakohoa tangu jana,cough;ds_cannot_drink,true
+passages_dev_619,mix,Amani: vomiting,vomiting,true
+passages_dev_620,en,not weaak,weakness,true
+passages_dev_621,en,The child: veery sleepy,ds_lethargic,true
+passages_dev_622,sw,amezimia wiki moja,ds_lethargic,true
+passages_dev_623,sw,watoto wako shuleni,,true
+passages_dev_624,sw,mtoto wa Noor: amezimia siku nne,ds_lethargic,true
+passages_dev_625,sw,Mtoto amekataa kunyonya,ds_cannot_drink,true
+passages_dev_626,en,not weak,weakness,true
+passages_dev_627,en,the child headache for 5 days,pain,true
+passages_dev_628,sw,Anacheza vizuri tangu juzi,,true
+passages_dev_629,en,child: diarrhea,diarrhoea,true
+passages_dev_630,sw,mtoto: amezimia,ds_lethargic,true
+passages_dev_631,sw,mtoto: degedege tangu juzi,ds_convulsions,true
+passages_dev_632,mix,hakunywa chochote for 1 week,ds_cannot_drink,true
+passages_dev_633,en,headache x1 days,pain,true
+passages_dev_634,en,baby: no diarreha,diarrhoea,true
+passages_dev_635,mix,Does not have fever + vomits everything siku tano,ds_vomits_everything;fever;vomiting,true
+passages_dev_636,en,no diarrhea pain,diarrhoea;pain,true
+passages_dev_637,sw,Mttoto wake amekataa kunyonya siku 3,ds_cannot_drink,true
+passages_dev_638,sw,Joto jingi mwillini,fever,true
+passages_dev_639,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_640,mix,joto jingi mwilini for 1 week,fever,true
+passages_dev_641,mix,the boy mwili una joto kwa siku tatu,fever,true
+passages_dev_642,sw,mtoto wa Noor: hawezi kuamka haa kuhara,diarrhoea;ds_lethargic,true
+passages_dev_643,sw,tumbo haliumi kwa siku nne,pain,true
+passages_dev_644,en,very weak,weakness,true
+passages_dev_645,mix,mtoto wa Noor: usingizi mzito 2 days,ds_lethargic,true
+passages_dev_646,en,children are at school,,true
+passages_dev_647,sw,Degedege,ds_convulsions,true
+passages_dev_648,en,the boy unable to breastfeed 4 days,ds_cannot_drink,true
+passages_dev_649,sw,hanyonyi wiki moja,ds_cannot_drink,true
+passages_dev_650,en,the boy alert,,true
+passages_dev_651,mix,Mvulana: not vomiting,vomiting,true
+passages_dev_652,en,does not have fever since yesterday,fever,true
+passages_dev_653,mix,Cannot drink for 4 days,ds_cannot_drink,true
+passages_dev_654,en,the boy no energy,weakness,true
+passages_dev_655,sw,watoo wako shuleni,,true
+passages_dev_656,sw,msichana: hana nguvu wiki moja,weakness,true
+passages_dev_657,en,the child no pain unable to drink,ds_cannot_drink;pain,true
+passages_dev_658,sw,Kuharisha,diarrhoea,true
+passages_dev_659,sw,dhaiu,weakness,true
+passages_dev_660,sw,mtoto wa Noor kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_dev_661,sw,Hakunywa chochote,ds_cannot_drink,true
+passages_dev_662,sw,mwili una joto,fever,true
+passages_dev_663,sw,Anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_664,mix,ana kikohozi 1 days,cough,true
+passages_dev_665,mix,Amani: not able to drink tangu juzi,ds_cannot_drink,true
+passages_dev_666,sw,hanyonyi,ds_cannot_drink,true
+passages_dev_667,en,vomiting 2 adys,vomiting,true
+passages_dev_668,sw,Kutapika mara moja kwa siku tano,vomiting,true
+passages_dev_669,sw,anatapika kila anachokunywa tangu juzi,ds_vomits_everything;vomiting,true
+passages_dev_670,sw,kukohoa sana hana nguvu,cough;weakness,true
+passages_dev_671,sw,kikohozi kikali kwa siku tano,cough,true
+passages_dev_672,mix,msichana ametapika + lethargic since yesterday,ds_lethargic;vomiting,true
+passages_dev_673,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_674,sw,Amani: usingizi mzito tangu juzi,ds_lethargic,true
+passages_dev_675,mix,tumbo haliumi,pain,true
+passages_dev_676,sw,mtoto wake mwili ulikuwa unatetemeka + amezimia wiki moja,ds_convulsions;ds_lethargic,true
+passages_dev_677,sw,mtoto wa Noor: maumivu ya kichwa siku 2,pain,true
+passages_dev_678,en,baby: very sleepy,ds_lethargic,true
+passages_dev_679,sw,Kikohozi siku 2,cough,true
+passages_dev_680,sw,tulizunguumza kuhusu kahawa,,true
+passages_dev_681,en,routine household visit,,true
+passages_dev_682,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_683,mix,mvulana vomiting everything wiki moja,ds_vomits_everything;vomiting,true
+passages_dev_684,sw,yuko macho tangu juzi,,true
+passages_dev_685,sw,hakuna homa,fever,true
+passages_dev_686,en,the girl running stomach high fever,diarrhoea;fever,true
+passages_dev_687,en,child weak vomiting,vomiting;weakness,true
+passages_dev_688,en,neighbour hard to wkae,ds_lethargic,true
+passages_dev_689,en,grandmother very sleepy / fits,ds_convulsions;ds_lethargic,true
+passages_dev_690,mix,The child: fits siku 3,ds_convulsions,true
+passages_dev_691,sw,Mvulana: hakuna homa,fever,true
+passages_dev_692,sw,kuharisha tangu juzi,diarrhoea,true
+passages_dev_693,en,Grandmother vomits everything,ds_vomits_everything;vomiting,true
+passages_dev_694,en,alert for 2 days,,true
+passages_dev_695,sw,mtoto wake: hana kikohozi,cough,true
+passages_dev_696,sw,anatapika kila kitu kwa siku tatu,ds_vomits_everything;vomiting,true
+passages_dev_697,sw,Mvulana hanyonyi siku nne,ds_cannot_drink,true
+passages_dev_698,sw,mtoto wake anaugua homa siku tatu,fever,true
+passages_dev_699,sw,msichana: amezimia wiki moja,ds_lethargic,true
+passages_dev_700,en,Vomits everything for 1 week,ds_vomits_everything;vomiting,true
+passages_dev_701,sw,anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_702,sw,Degedege,ds_convulsions,true
+passages_dev_703,sw,nyumba ina maji safi,,true
+passages_dev_704,mix,Amechoka sana,weakness,true
+passages_dev_705,en,the boy throws up everything,ds_vomits_everything;vomiting,true
+passages_dev_706,sw,Mvulana hawezi kunyonya kwa siku tatu,ds_cannot_drink,true
+passages_dev_707,sw,anatapika kila kitu si dhaifu,ds_vomits_everything;vomiting;weakness,true
+passages_dev_708,sw,bibi: ametapika,vomiting,true
+passages_dev_709,en,vomiting since yesterday,vomiting,true
+passages_dev_710,sw,Amani kila anachokula anatapika,ds_vomits_everything;vomiting,true
+passages_dev_711,sw,Amani: usingizi mzito,ds_lethargic,true
+passages_dev_712,sw,degedege,ds_convulsions,true
+passages_dev_713,en,unable to drink,ds_cannot_drink,true
+passages_dev_714,sw,mtoto wa Noor: ana kikohozi wiki moja,cough,true
+passages_dev_715,en,routine household visit,,true
+passages_dev_716,sw,mtoto wake anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_717,sw,watotto wako shuleni,,true
+passages_dev_718,mix,Aamni no convulsions,,true
+passages_dev_719,sw,Kutapika mara moja wiki moja,vomiting,true
+passages_dev_720,en,No fits for 3 days,,true
+passages_dev_721,sw,tutarudi wiki ijayo kwa ziara,,true
+passages_dev_722,sw,Moto: ana kikohozi,cough,true
+passages_dev_723,mix,hakunywa chochote siku 2,ds_cannot_drink,true
+passages_dev_724,mix,Mvulana kutapiika,vomiting,true
+passages_dev_725,en,mother sells milk at the market,,true
+passages_dev_726,mix,Msichana amezimia siku mbili,ds_lethargic,true
+passages_dev_727,en,not able to drink,ds_cannot_drink,true
+passages_dev_728,en,father: vomiting throws up everything,ds_vomits_everything;vomiting,true
+passages_dev_729,mix,The girl: abdominal pain,pain,true
+passages_dev_730,sw,Anatapika hakuwa na degedege tangu jana,vomiting,true
+passages_dev_731,en,mother sells milk at the market,,true
+passages_dev_732,sw,leo mvua imenyesha sna,,true
+passages_dev_733,sw,mtoto wake: degedege,ds_convulsions,true
+passages_dev_734,mix,vomited,vomiting,true
+passages_dev_735,mix,Mtoto very weak,weakness,true
+passages_dev_736,sw,Ana degedege,ds_convulsions,true
+passages_dev_737,mix,Anatapika kila anachokunywa for 5 days,ds_vomits_everything;vomiting,true
+passages_dev_738,en,Aman: fever,fever,true
+passages_dev_739,mix,The boy: anakohoa,cough,true
+passages_dev_740,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_741,sw,mtoto wa Noor: kikohozi tangu jana,cough,true
+passages_dev_742,mix,the bo: kukohoa sana,cough,true
+passages_dev_743,sw,hakohoi / bila homa tangu jana,cough;fever,true
+passages_dev_744,en,the boy fever + diarrhea,diarrhoea;fever,true
+passages_dev_745,en,high fever for 1 week,fever,true
+passages_dev_746,en,lethargic,ds_lethargic,true
+passages_dev_747,sw,mtoto wa Noor aatapika tangu jana,vomiting,true
+passages_dev_748,mix,Kuhara,diarrhoea,true
+passages_dev_749,mix,Vomiting stomach pain siku 1,pain;vomiting,true
+passages_dev_750,sw,Amani anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_751,en,baby hot body since yesterday,fever,true
+passages_dev_752,en,Neighbour: has fever for 1 week,fever,true
+passages_dev_753,sw,msichana anakunywa vizuri ametapika tangu jana,vomiting,true
+passages_dev_754,en,pain,pain,true
+passages_dev_755,en,children are at school,,true
+passages_dev_756,en,Amani headache,pain,true
+passages_dev_757,en,not weak,weakness,true
+passages_dev_758,sw,Anatapika kila kitu tangu juzi,ds_vomits_everything;vomiting,true
+passages_dev_759,en,Vomits everything for 4 days,ds_vomits_everything;vomiting,true
+passages_dev_760,sw,mvulana kuhara,diarrhoea,true
+passages_dev_761,sw,Hajitambui,ds_lethargic,true
+passages_dev_762,sw,hakohoi siku 4,cough,true
+passages_dev_763,sw,kutapika mraa moja,vomiting,true
+passages_dev_764,mix,tMoto: anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_765,sw,mtoto wa Noor: hana kuhara,diarrhoea,true
+passages_dev_766,mix,mtoto amechoka sana,weakness,true
+passages_dev_767,sw,Mtoto wake: hana nguvu,weakness,true
+passages_dev_768,mix,mtoto wa Noor: alert,,true
+passages_dev_769,mix,Pain,pain,true
+passages_dev_770,mix,the girl: homa kaali since yesterday,fever,true
+passages_dev_771,en,the boy: unable to breastfeed for 1 days,ds_cannot_drink,true
+passages_dev_772,en,faather: unconscious,ds_lethargic,true
+passages_dev_773,sw,Amekataa kunyonya siku 3,ds_cannot_drink,true
+passages_dev_774,en,Hot body x1 days,fever,true
+passages_dev_775,mix,Amaani: anaugua homa siku 2,fever,true
+passages_dev_776,sw,msichana kifafa,ds_convulsions,true
+passages_dev_777,sw,anatapika,vomiting,true
+passages_dev_778,sw,Mtoto: joto jingi mwilini tangu jana,fever,true
+passages_dev_779,sw,Mvulana: kichwa kinauma wiki moja,pain,true
+passages_dev_780,en,vomited,vomiting,true
+passages_dev_781,sw,jirani: hana maumivu siku nne,pain,true
+passages_dev_782,mix,baby unconscious for 5 days,ds_lethargic,true
+passages_dev_783,sw,Amani anatapika kila anachoknywa,ds_vomits_everything;vomiting,true
+passages_dev_784,mix,the girl hakuna homa,fever,true
+passages_dev_785,sw,kichwa knauma siku 2,pain,true
+passages_dev_786,sw,mtoto wa Noor anaendesha,diarrhoea,true
+passages_dev_787,mix,Amani joto jingi mwilini,fever,true
+passages_dev_788,mix,msichana has fever,fever,true
+passages_dev_789,en,follow up visit planned,,true
+passages_dev_790,sw,barabara ni mbaya baada ya mvua,,true
+passages_dev_791,en,bad cough,cough,true
+passages_dev_792,sw,kukohoa sana / kutapika mara moja wiki moja,cough;vomiting,true
+passages_dev_793,en,The boy: high fever since yesterday,fever,true
+passages_dev_794,sw,Baba amelegea,ds_lethargic,true
+passages_dev_795,en,Amani hot body,fever,true
+passages_dev_796,sw,kukohoa sna tangu jana,cough,true
+passages_dev_797,en,Cough,cough,true
+passages_dev_798,mix,the boy: headache + no convulsions,pain,true
+passages_dev_799,sw,leo mvua imenyesha sana,,true
+passages_dev_800,sw,Msichana kuharisha,diarrhoea,true
+passages_dev_801,sw,leo mvua imenyesha sana,,true
+passages_dev_802,sw,Anatapika kila anachokunywa wiki moja,ds_vomits_everything;vomiting,true
+passages_dev_803,sw,maumivu,pain,true
+passages_dev_804,sw,Kuhara,diarrhoea,true
+passages_dev_805,sw,tulizungumza kuhusu kahwa,,true
+passages_dev_806,sw,Hawezi kuamka,ds_lethargic,true
+passages_dev_807,mix,mwili ulikuwa unatetemeka,ds_convulsions,true
+passages_dev_808,en,the boy: no energy,weakness,true
+passages_dev_809,sw,hajatapika mwili una joto kwa siku moja,fever;vomiting,true
+passages_dev_810,sw,mtoto wa Noor: anatapika / tumbo haliumi,pain;vomiting,true
+passages_dev_811,sw,Ana kikohozi tangu jana,cough,true
+passages_dev_812,sw,mtoto: mwili ulikuwa unatetemeka tangu juzi,ds_convulsions,true
+passages_dev_813,sw,Amani: homa kali hawezi kunyonya,ds_cannot_drink;fever,true
+passages_dev_814,sw,bibi: amechoka sana tangu jana,weakness,true
+passages_dev_815,sw,msichana: anatapika kila anachokunywa,ds_vomits_everything;vomiting,true
+passages_dev_816,sw,mama anauza maziwa sokoni,,true
+passages_dev_817,en,convulsions,ds_convulsions,true
+passages_dev_818,sw,Mtoto wake: kichwa kinauma,pain,true
+passages_dev_819,sw,mwili ulikuwa unatetemeka,ds_convulsions,true
+passages_dev_820,mix,the girl cannot drink,ds_cannot_drink,true
+passages_dev_821,en,the child: lethargic + fever,ds_lethargic;fever,true
+passages_dev_822,en,the girl vomiting x3 days,vomiting,true
+passages_dev_823,mix,Amani: running stomach,diarrhoea,true
+passages_dev_824,mix,Mwili ulikuwa unatetemeka,ds_convulsions,true
+passages_dev_825,sw,Mtoto wa noor: hakuwa na degedege,,true
+passages_dev_826,sw,anaendesha siku moja,diarrhoea,true
+passages_dev_827,sw,nyumba ina maji safi,,true
+passages_dev_828,mix,throws up everything,ds_vomits_everything;vomiting,true
+passages_dev_829,sw,Amani amechooka sana,weakness,true
+passages_dev_830,mix,Vomiting tangu jana,vomiting,true
+passages_dev_831,en,the child had convulsions,ds_convulsions,true
+passages_dev_832,mix,Vomtiing everything,ds_vomits_everything;vomiting,true
+passages_dev_833,en,father cough,cough,true
+passages_dev_834,en,child: vomiting x2 days,vomiting,true
+passages_dev_835,en,very weak,weakness,true
+passages_dev_836,sw,leo mvua imenyesha sana,,true
+passages_dev_837,sw,mtoto wa Noor: ametapika tangu jana,vomiting,true
+passages_dev_838,sw,mama hawezi kunywa,ds_cannot_drink,true
+passages_dev_839,mix,very weak,weakness,true
+passages_dev_840,sw,mvulana: hakunywa chochote,ds_cannot_drink,true
+passages_dev_841,sw,Mtoto wake yuko macho tangu jana,,true
+passages_dev_842,sw,Mvulana tumbo linauma tangu jana,pain,true
+passages_dev_843,mix,Amani: unabe to breastfeed,ds_cannot_drink,true
+passages_dev_844,sw,mama yake: anakunywa vizuri tangu jana,,true
+passages_dev_845,sw,mtoto wkae homa kali kwa siku tano,fever,true
+passages_dev_846,en,throwing up for 1 week,vomiting,true
+passages_dev_847,mix,father: no fever for 3 days,fever,true
+passages_dev_848,mix,throwing up 2 days,vomiting,true
+passages_dev_849,en,Grandmother no fever fits,ds_convulsions;fever,true
+passages_dev_850,sw,usingizi mzito siku 4,ds_lethargic,true
+passages_dev_851,en,faimly grows coffee and maize,,true
+passages_dev_852,en,the boy no pain,pain,true
+passages_dev_853,mix,lethargic,ds_lethargic,true
+passages_dev_854,mix,jirani kila anachoula anatapika since yesterday,ds_vomits_everything;vomiting,true
+passages_dev_855,sw,mvulana: anaugua homa kuharisha,diarrhoea;fever,true
+passages_dev_856,en,child unable to drink for 3 days,ds_cannot_drink,true
+passages_dev_857,sw,anatapika kwa siku moja,vomiting,true
+passages_dev_858,en,the boy vomited,vomiting,true
+passages_dev_859,en,vomiting everything 2 dayys,ds_vomits_everything;vomiting,true
+passages_dev_860,en,running stomach for 3 days,diarrhoea,true
+passages_dev_861,mix,child: yuko macho,,true
+passages_dev_862,mix,had convulsions hana nguvu,ds_convulsions;weakness,true
+passages_dev_863,mix,the boy: amechoka sana x3 days,weakness,true
+passages_dev_864,sw,kutapika mara moja mwili ulikuwa unatetemeka,ds_convulsions;vomiting,true
+passages_dev_865,sw,Amani anatapika kila anachokunywa siku nne,ds_vomits_everything;vomiting,true
+passages_dev_866,en,the girl: had convulsions,ds_convulsions,true
+passages_dev_867,sw,Mtoto wa noor: alipata degedege,ds_convulsions,true
+passages_dev_868,sw,Usingizi mzito,ds_lethargic,true
+passages_dev_869,en,vomiting everything / no cough,cough;ds_vomits_everything;vomiting,true
+passages_dev_870,sw,Alipata degedege,ds_convulsions,true
+passages_dev_871,mix,msichana kukohoa sana,cough,true
+passages_dev_872,sw,mtoto wa Noor homa siku 2,fever,true
+passages_dev_873,en,follow up visit planned,,true
+passages_dev_874,sw,Amani bila homa,fever,true
+passages_dev_875,mix,cough x2 days,cough,true
+passages_dev_876,en,mother sells milk at the maret,,true
+passages_dev_877,en,Running stomach x2 days,diarrhoea,true
+passages_dev_878,en,Amani not coughing / no diarrhea,cough;diarrhoea,true
+passages_dev_879,en,wek,weakness,true
+passages_dev_880,sw,Mama: kichwa kinauma,pain,true
+passages_dev_881,mix,weak,weakness,true
+passages_dev_882,en,visited the husehold this morning,,true
+passages_dev_883,mix,hana maumivu,pain,true
+passages_dev_884,sw,mtoto mwili una joto tangu jui,fever,true
+passages_dev_885,sw,leo mvua imenyesha sna,,true
+passages_dev_886,sw,Kuhara,diarrhoea,true
+passages_dev_887,mix,can drink 2 days,,true
+passages_dev_888,en,no vomiting x3 days,vomiting,true
+passages_dev_889,en,Waek,weakness,true
+passages_dev_890,sw,Msichanna amechoka sana,weakness,true
+passages_dev_891,mix,hakunywa chochote,ds_cannot_drink,true
+passages_dev_892,sw,tulizungumza kuhusu kahawa,,true
+passages_dev_893,sw,Mtoto wa noor: maumivu ya kichwa,pain,true
+passages_dev_894,mix,the girl kukohoa sana,cough,true
+passages_dev_895,sw,anatapika kila anachokunywa siku moja,ds_vomits_everything;vomiting,true
+passages_dev_896,en,The child: vomits everything,ds_vomits_everything;vomiting,true
+passages_dev_897,sw,mtoto wake hana nguvu,weakness,true
+passages_dev_898,mix,Vomiting everything,ds_vomits_everything;vomiting,true
+passages_dev_899,mix,Msichana: had convulsions siku tatu,ds_convulsions,true
+passages_dev_900,sw,hakuwa na degedege siku tatu,,true
+passages_dev_901,sw,bibi ana kikohozi,cough,true
+passages_dev_902,en,Amani no cough,cough,true
+passages_dev_903,mix,Amani unable to breastfeed,ds_cannot_drink,true
+passages_dev_904,mix,the girl: running stomach,diarrhoea,true
+passages_dev_905,en,throws up everything since yesterday,ds_vomits_everything;vomiting,true
+passages_dev_906,mix,Vomits everything,ds_vomits_everything;vomiting,true
+passages_dev_907,sw,Kutapika mara moja,vomiting,true
+passages_dev_908,sw,mama: amelegea siku 5,ds_lethargic,true
+passages_dev_909,sw,choo cha maji,diarrhoea,true
+passages_dev_910,mix,alipata degedege,ds_convulsions,true
+passages_dev_911,mix,Runnnig stomach,diarrhoea,true
+passages_dev_912,sw,leo mvua imenyesha sana,,true
+passages_dev_913,sw,kutapika,vomiting,true
+passages_dev_914,sw,anaweza kunywa wiki moja,,true
+passages_dev_915,sw,mtoto wa Noor amechoka sana wiki moja,weakness,true
+passages_dev_916,sw,nimepita kwa nyumba ya jirani,,true
+passages_dev_917,mix,tumbo linauma tangu juzi,pain,true
+passages_dev_918,mix,not able to drnik siku tano,ds_cannot_drink,true
+passages_dev_919,sw,mscihana anaugua homa,fever,true
+passages_dev_920,sw,hatapiki siku 4,vomiting,true
+passages_dev_921,sw,mschana alipata degedege,ds_convulsions,true
+passages_dev_922,sw,Mvulana: kuhara wiki moja,diarrhoea,true
+passages_dev_923,en,Hot body for 1 week,fever,true
+passages_dev_924,sw,familia ina shamba la mahindi,,true
+passages_dev_925,sw,Mtoto joto jingi mwilini kwa siku mbili,fever,true
+passages_dev_926,sw,Kuhara,diarrhoea,true
+passages_dev_927,mix,Amani: anatapika,vomiting,true
+passages_dev_928,mix,Kila anachokula anatapika wiki moja,ds_vomits_everything;vomiting,true
+passages_dev_929,sw,nimeipta kwa nyumba ya jirani,,true
+passages_dev_930,en,The boy vmiting,vomiting,true
+passages_dev_931,mix,anatapika kila anachokunywa siku 2,ds_vomits_everything;vomiting,true
+passages_dev_932,sw,Mtoto: choo cha maji kwa siku nne,diarrhoea,true
+passages_dev_933,en,no diarrhea 4 dayys,diarrhoea,true
+passages_dev_934,en,The girrl playing normally for 1 week,,true
+passages_dev_935,sw,Mvulana anatapika,vomiting,true
+passages_dev_936,mix,mtoto: throws up everything anaugua homa,ds_vomits_everything;fever;vomiting,true
+passages_dev_937,sw,mama anauza maziwa sokoni,,true
+passages_dev_938,en,Amani: not coughing,cough,true
+passages_dev_939,mix,Amani: maumivu ya kichwa siku 4,pain,true
+passages_dev_940,en,children are at school,,true
+passages_dev_941,sw,Hakuna homa,fever,true
+passages_dev_942,sw,Hawezi kuamka siku 2,ds_lethargic,true
+passages_dev_943,sw,ana homa,fever,true
+passages_dev_944,sw,si dhaifu,weakness,true
+passages_dev_945,sw,maumivu ya kichwa siku tatu,pain,true
+passages_dev_946,sw,nimeipta kwa nyumba ya jirani,,true
+passages_dev_947,en,the girl no cough x2 days,cough,true
+passages_dev_948,mix,child: very weak siku 3,weakness,true
+passages_dev_949,sw,familia ina shamba la mahindi,,true
+passages_dev_950,sw,mtoto wake: usingizi mzito,ds_lethargic,true
+passages_dev_951,en,the child does not have fever x3 days,fever,true
+passages_dev_952,mix,convulsions 1 days,ds_convulsions,true
+passages_dev_953,mix,Amani: kichwa kinauma,pain,true
+passages_dev_954,mix,mtoto wa Noor hajaharisha,diarrhoea,true
+passages_dev_955,mix,had convulsions wiki moja,ds_convulsions,true
+passages_dev_956,sw,Usingizi mzito siku tano,ds_lethargic,true
+passages_dev_957,sw,baa: mnyonge,weakness,true
+passages_dev_958,mix,Mtoto ana kikohozi,cough,true
+passages_dev_959,mix,the girl si dhafiu,weakness,true
+passages_dev_960,sw,Mtoto wa noor hawezi kuamka tangu jana,ds_lethargic,true
+passages_dev_961,en,vomits everything / not able to drink,ds_cannot_drink;ds_vomits_everything;vomiting,true
+passages_dev_962,sw,homa siku 3,fever,true
+passages_dev_963,sw,hawezi kuamka wkii moja,ds_lethargic,true
+passages_dev_964,sw,mtoto: tumbo haliumi tangu jana,pain,true
+passages_dev_965,mix,jirani hana nguvu for 1 wek,weakness,true
+passages_dev_966,sw,maumivu,pain,true
+passages_dev_967,en,follow up visit planned,,true
+passages_dev_968,mix,cough siku mbili,cough,true
+passages_dev_969,mix,amezimia 2 dayys,ds_lethargic,true
+passages_dev_970,sw,kila anachokula anatapika siku 1,ds_vomits_everything;vomiting,true
+passages_dev_971,sw,Kila anachokula anatapika wiki moja,ds_vomits_everything;vomiting,true
+passages_dev_972,mix,Mnyonge,weakness,true
+passages_dev_973,sw,mvulana: hajaharisha sku tatu,diarrhoea,true
+passages_dev_974,mix,Usingizi mzito since yesterday,ds_lethargic,true
+passages_dev_975,mix,mtoto: degedege / anatapika kila kitu siku 3,ds_convulsions;ds_vomits_everything;vomiting,true
+passages_dev_976,mix,convulsions + cannot drink tangu juzi,ds_cannot_drink;ds_convulsions,true
+passages_dev_977,sw,mvulana ana degedege siku nne,ds_convulsions,true
+passages_dev_978,mix,mtoto: alipata degedege / lethargic,ds_convulsions;ds_lethargic,true
+passages_dev_979,sw,Amekataa kunyonya siku 5,ds_cannot_drink,true
+passages_dev_980,mix,mvulana amelegea + abdominal pain tangu juzi,ds_lethargic;pain,true
+passages_dev_981,sw,mvulana: anakohoa kwa siku nne,cough,true
+passages_dev_982,sw,msichana kutapika mara moja,vomiting,true
+passages_dev_983,sw,Mtoto wake hawezi kuamka skiu nne,ds_lethargic,true
+passages_dev_984,sw,amechoka saana,weakness,true
+passages_dev_985,sw,tulizungumza kuhusu kahawa,,true
+passages_dev_986,sw,hakuwa na degedege,,true
+passages_dev_987,sw,mtoto ananyonya vizuri,,true
+passages_dev_988,mix,Fits,ds_convulsions,true
+passages_dev_989,sw,Msichana homa kali kwa siku mbili,fever,true
+passages_dev_990,mix,the chilld hard to wake kwa siku mbili,ds_lethargic,true
+passages_dev_991,sw,kutapika mara moja tangu jana,vomiting,true
+passages_dev_992,sw,familia ina shamba la mahindi,,true
+passages_dev_993,mix,the boy hana maumivu,pain,true
+passages_dev_994,en,the child: vomits everything / not able to driink,ds_cannot_drink;ds_vomits_everything;vomiting,true
+passages_dev_995,sw,anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_996,en,The boy: very weak for 1 week,weakness,true
+passages_dev_997,mix,mtoto: anatapika kila kitu,ds_vomits_everything;vomiting,true
+passages_dev_998,mix,mtoto wa Noor anacheza vizuri,,true
+passages_dev_999,sw,mtoto wa Noor anakunywa vizuri tangu jana,,true

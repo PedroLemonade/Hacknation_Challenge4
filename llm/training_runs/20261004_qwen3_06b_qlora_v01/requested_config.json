@@ -1,0 +1,41 @@
+{
+  "model": "/Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/base_models/qwen3_06b_official_20261004/mlx_int4",
+  "train": true,
+  "fine_tune_type": "lora",
+  "optimizer": "adamw",
+  "optimizer_config": {
+    "adam": {},
+    "adamw": {},
+    "muon": {},
+    "sgd": {},
+    "adafactor": {}
+  },
+  "data": "/Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/sft_runs/20261004_family_v03",
+  "seed": 7070,
+  "num_layers": 12,
+  "batch_size": 1,
+  "iters": 400,
+  "val_batches": 16,
+  "learning_rate": 0.0002,
+  "steps_per_report": 10,
+  "steps_per_eval": 100,
+  "resume_adapter_file": null,
+  "adapter_path": "/Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/llm/training_runs/20261004_qwen3_06b_qlora_v01/adapter",
+  "save_every": 100,
+  "test": false,
+  "test_batches": 500,
+  "max_seq_length": 576,
+  "config": null,
+  "grad_checkpoint": true,
+  "grad_accumulation_steps": 1,
+  "clear_cache_threshold": 0,
+  "lr_schedule": null,
+  "lora_parameters": {
+    "rank": 8,
+    "dropout": 0.0,
+    "scale": 16.0
+  },
+  "mask_prompt": true,
+  "report_to": null,
+  "project_name": null
+}

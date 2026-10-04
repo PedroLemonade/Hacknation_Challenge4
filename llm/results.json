@@ -1,0 +1,51 @@
+[
+ {
+  "file": "selftest_adversarial__independent.jsonl",
+  "model": "adversarial (reference)",
+  "set": "independent",
+  "n": 40,
+  "recall": 0,
+  "status_acc": 0,
+  "ctx": 0,
+  "extra": 0,
+  "exact": 4,
+  "not_json": 8,
+  "rejected": {
+   "not_json": 8,
+   "evidence_not_in_note": 32,
+   "unknown_term": 32,
+   "bad_status": 32
+  },
+  "hybrid": {
+   "recall": 0.921,
+   "ctx": 0,
+   "extra_suggested": 1,
+   "unclear_cards": 2
+  },
+  "median_ms": null,
+  "model_bytes": null,
+  "memory_bytes": null
+ },
+ {
+  "file": "selftest_classifier__independent.jsonl",
+  "model": "afyanote-classifier (reference)",
+  "set": "independent",
+  "n": 40,
+  "recall": 0.921,
+  "status_acc": 1,
+  "ctx": 0,
+  "extra": 1,
+  "exact": 35,
+  "not_json": 0,
+  "rejected": {},
+  "hybrid": {
+   "recall": 0.921,
+   "ctx": 0,
+   "extra_suggested": 1,
+   "unclear_cards": 2
+  },
+  "median_ms": null,
+  "model_bytes": null,
+  "memory_bytes": null
+ }
+]

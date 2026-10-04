@@ -1,0 +1,801 @@
+id,lang,text,labels,synthetic
+passages_test_heldout_0,sw,anatapka,vomiting,true
+passages_test_heldout_1,mix,Mtoto not weak since yesterday,weakness,true
+passages_test_heldout_2,sw,tumbo lina uma,pain,true
+passages_test_heldout_3,en,the girl: vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_4,sw,Amani joto kali la mwili siku 1,fever,true
+passages_test_heldout_5,sw,Mtoto: anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_heldout_6,sw,mtoto wa Noor alitapika,vomiting,true
+passages_test_heldout_7,mix,cannot keep anything down anaumwa na tumbo,ds_vomits_everything;pain;vomiting,true
+passages_test_heldout_8,sw,alishikwa na degedege tangu jana,ds_convulsions,true
+passages_test_heldout_9,sw,Amelegea sana,ds_lethargic,true
+passages_test_heldout_10,mix,Mtoto: convulsing siku 5,ds_convulsions,true
+passages_test_heldout_11,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_12,en,next visit on friday,,true
+passages_test_heldout_13,sw,Mtoto wa noor anakohowa siku mbili,cough,true
+passages_test_heldout_14,sw,Mtoto wake: anaharisha maji,diarrhoea,true
+passages_test_heldout_15,sw,anaharisha maji wiki moja,diarrhoea,true
+passages_test_heldout_16,mix,anaumwa na tumbo since yesterday,pain,true
+passages_test_heldout_17,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_18,sw,mtoto anaonekana mnyonge tangu juzi,weakness,true
+passages_test_heldout_19,sw,anatapka kila kitu homma,ds_vomits_everything;fever;vomiting,true
+passages_test_heldout_20,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_21,mix,msichana seizure / not weak tangu juzi,ds_convulsions;weakness,true
+passages_test_heldout_22,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_23,sw,Kutetemeka kwa mwili kwa siku tatu,ds_convulsions,true
+passages_test_heldout_24,sw,Hawezi kunywa chochote tangu jana,ds_cannot_drink,true
+passages_test_heldout_25,mix,the child hana nguvu kabisa,weakness,true
+passages_test_heldout_26,en,next visit on friday,,true
+passages_test_heldout_27,sw,Yuko macho siku tatu,,true
+passages_test_heldout_28,sw,mtoto wa Noor: anatapka kwa siku nne,vomiting,true
+passages_test_heldout_29,en,the boy: weakness,weakness,true
+passages_test_heldout_30,mix,Grandmother anaharisha maji for 3 days,diarrhoea,true
+passages_test_heldout_31,en,Amani: no pain since yesterday,pain,true
+passages_test_heldout_32,mix,kutetemeka kwa mwili for 1 week,ds_convulsions,true
+passages_test_heldout_33,mix,The girl: no convulsions tangu juzi,,true
+passages_test_heldout_34,sw,baba yuko kazini,,true
+passages_test_heldout_35,en,talked about the cooperative meeting,,true
+passages_test_heldout_36,sw,Amani: degedge,ds_convulsions,true
+passages_test_heldout_37,en,Baby: has a bad cough for 1 week,cough,true
+passages_test_heldout_38,sw,msichana anaonekana mnyonge,weakness,true
+passages_test_heldout_39,sw,Mvulana kikohozi kavu,cough,true
+passages_test_heldout_40,sw,Mtoto wa noor: hawezi kunywa chochote,ds_cannot_drink,true
+passages_test_heldout_41,sw,tumbo lina uma,pain,true
+passages_test_heldout_42,sw,Mvulana: hajatapika,vomiting,true
+passages_test_heldout_43,sw,Mtoto wake kuendesha mara nyingi,diarrhoea,true
+passages_test_heldout_44,en,refuses to breastfeed + letargic for 4 days,ds_cannot_drink;ds_lethargic,true
+passages_test_heldout_45,mix,Amani hawezi kunywa maji,ds_cannot_drink,true
+passages_test_heldout_46,mix,Amani dry cough,cough,true
+passages_test_heldout_47,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_48,en,the child: vomits all food x5 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_49,sw,Hana nguvu kabisa / hawezi kunywa chochote,ds_cannot_drink;weakness,true
+passages_test_heldout_50,en,father: cannot keep anything down,ds_vomits_everything;vomiting,true
+passages_test_heldout_51,mix,Amani loose stools kwa siku tatu,diarrhoea,true
+passages_test_heldout_52,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_53,en,talked about the cooperative meeting,,true
+passages_test_heldout_54,en,alert,,true
+passages_test_heldout_55,sw,jirani: hana nguvu kabisa / bila homa,fever;weakness,true
+passages_test_heldout_56,en,baby: refuses to breastfeed for 1 week,ds_cannot_drink,true
+passages_test_heldout_57,en,the child: tummy ache,pain,true
+passages_test_heldout_58,sw,anaonekana mnyonge kwa siku mbili,weakness,true
+passages_test_heldout_59,sw,Anatapka,vomiting,true
+passages_test_heldout_60,sw,mama yake: ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_61,sw,kuharisha sana,diarrhoea,true
+passages_test_heldout_62,en,the boy coughs at night,cough,true
+passages_test_heldout_63,en,Amani: dry cough / vomitting for 1 days,cough;vomiting,true
+passages_test_heldout_64,sw,Amani anaonekana mnyonge wiki moja,weakness,true
+passages_test_heldout_65,sw,Mtoto wake alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_66,en,Can drink,,true
+passages_test_heldout_67,mix,has a fever tangu juzi,fever,true
+passages_test_heldout_68,sw,mtoto: hawezi kubakiza chochote tumboni + ni vigumu kumwamsha,ds_lethargic;ds_vomits_everything;vomiting,true
+passages_test_heldout_69,en,next visit on friday,,true
+passages_test_heldout_70,sw,Kila kitu anatapika / amelegea sana,ds_lethargic;ds_vomits_everything;vomiting,true
+passages_test_heldout_71,sw,mtoto wa Noor: haharishi wiki moja,diarrhoea,true
+passages_test_heldout_72,en,Has a fever,fever,true
+passages_test_heldout_73,en,the girl belly ache,pain,true
+passages_test_heldout_74,en,Amani: cannot keep anything down diarhea,diarrhoea;ds_vomits_everything;vomiting,true
+passages_test_heldout_75,mix,anaonekana mnyonge + seizure,ds_convulsions;weakness,true
+passages_test_heldout_76,sw,Tapika,vomiting,true
+passages_test_heldout_77,sw,alikohoa usiku siku 1,cough,true
+passages_test_heldout_78,en,belly ache for 1 week,pain,true
+passages_test_heldout_79,en,baby won't drink anything since yesterday,ds_cannot_drink,true
+passages_test_heldout_80,sw,Amani kila kitu anatapika siku tatu,ds_vomits_everything;vomiting,true
+passages_test_heldout_81,en,Neighbour head is paining letargic 2 days,ds_lethargic;pain,true
+passages_test_heldout_82,en,next visit on friday,,true
+passages_test_heldout_83,mix,hajaharisha,diarrhoea,true
+passages_test_heldout_84,mix,letargic,ds_lethargic,true
+passages_test_heldout_85,sw,Anakohowa kwa siku nne,cough,true
+passages_test_heldout_86,sw,Mtoto wa noor: alishikwa na degedege + kila kitu anatapika,ds_convulsions;ds_vomits_everything;vomiting,true
+passages_test_heldout_87,sw,mvulana anakohowa,cough,true
+passages_test_heldout_88,sw,si dhaifu siku nne,weakness,true
+passages_test_heldout_89,en,the child cannot keep anything down for 1 week,ds_vomits_everything;vomiting,true
+passages_test_heldout_90,mix,threw up,vomiting,true
+passages_test_heldout_91,sw,kutapika mara mbili siku mbili,vomiting,true
+passages_test_heldout_92,sw,Mama yake hawezi kubakiza chochote tumboni kikohozi kavu tangu jana,cough;ds_vomits_everything;vomiting,true
+passages_test_heldout_93,mix,kutapika mara mbili tangu jana,vomiting,true
+passages_test_heldout_94,mix,convulsing for 3 days,ds_convulsions,true
+passages_test_heldout_95,en,alert,,true
+passages_test_heldout_96,en,Not vomiting,vomiting,true
+passages_test_heldout_97,sw,homma + amelegea sana tangu jana,ds_lethargic;fever,true
+passages_test_heldout_98,en,belly ache,pain,true
+passages_test_heldout_99,en,Amani: drowsy and floppy / refuses to breastfeed,ds_cannot_drink;ds_lethargic,true
+passages_test_heldout_100,sw,mtoto: ana homa za usiku,fever,true
+passages_test_heldout_101,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_102,sw,Mtoto: ameharisha kwa siku moja,diarrhoea,true
+passages_test_heldout_103,mix,diarhea kwa siku tano,diarrhoea,true
+passages_test_heldout_104,en,vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_105,en,Tummy ache threw up,pain;vomiting,true
+passages_test_heldout_106,sw,baba yuko kazini,,true
+passages_test_heldout_107,sw,hajaharisha,diarrhoea,true
+passages_test_heldout_108,sw,Mtoto wa noor kutapika mara mbili,vomiting,true
+passages_test_heldout_109,sw,Amani: ana homa za usiku,fever,true
+passages_test_heldout_110,sw,mtoto wake ni vigumu kumwamsha kwa siku mbili,ds_lethargic,true
+passages_test_heldout_111,en,not responding since yesterday,ds_lethargic,true
+passages_test_heldout_112,sw,amelegea sana + ananyonya vizuri,ds_lethargic,true
+passages_test_heldout_113,en,vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_114,mix,no fits,,true
+passages_test_heldout_115,mix,Belly ache for 2 days,pain,true
+passages_test_heldout_116,mix,the boy head is paining since yesterday,pain,true
+passages_test_heldout_117,sw,mtoto: tapika,vomiting,true
+passages_test_heldout_118,sw,msichana: ni dhaifu sana,weakness,true
+passages_test_heldout_119,mix,hana maumivu,pain,true
+passages_test_heldout_120,sw,Msichana kutapika mara mbili tangu jana,vomiting,true
+passages_test_heldout_121,en,tummy ache,pain,true
+passages_test_heldout_122,mix,hawezi kubakiza chochote tumboni siku 3,ds_vomits_everything;vomiting,true
+passages_test_heldout_123,en,the boy: has a bad cough for 1 week,cough,true
+passages_test_heldout_124,en,Child: vomits all food for 4 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_125,en,the girl has a bad cough,cough,true
+passages_test_heldout_126,en,No cough for 1 week,cough,true
+passages_test_heldout_127,sw,Kichwa kinamuuma siku 1,pain,true
+passages_test_heldout_128,mix,mtoto wa Noor playing normally since yesterday,,true
+passages_test_heldout_129,sw,Kikohozi cha usiku kwa siku tatu,cough,true
+passages_test_heldout_130,mix,vomits has a bad cough,cough;vomiting,true
+passages_test_heldout_131,en,vomits all food x1 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_132,sw,mtoto hawezi kunywa maji,ds_cannot_drink,true
+passages_test_heldout_133,en,the child feels weak,weakness,true
+passages_test_heldout_134,sw,tumbo haliumi tangu jana,pain,true
+passages_test_heldout_135,en,neighbour: tired and weak since yesterday,weakness,true
+passages_test_heldout_136,sw,anaonekana mnyonge siku tatu,weakness,true
+passages_test_heldout_137,en,the girl vomits,vomiting,true
+passages_test_heldout_138,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_139,mix,The child: kikohozi kavu,cough,true
+passages_test_heldout_140,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_141,mix,the boy playing normally,,true
+passages_test_heldout_142,sw,mvulana hakunywa kitu siku mbili,ds_cannot_drink,true
+passages_test_heldout_143,sw,kikohozi kavu,cough,true
+passages_test_heldout_144,sw,Amani: ameharisha,diarrhoea,true
+passages_test_heldout_145,mix,Drowsy and floppy,ds_lethargic,true
+passages_test_heldout_146,en,baby belly ache,pain,true
+passages_test_heldout_147,en,No diarrhoea / head is paining for 1 week,diarrhoea;pain,true
+passages_test_heldout_148,sw,Hakuwa na degedege kwa siku nne,,true
+passages_test_heldout_149,sw,homma,fever,true
+passages_test_heldout_150,mix,mtoto wa Noor: temperature iko juu kwa siku moja,fever,true
+passages_test_heldout_151,sw,kila kitu anatapika,ds_vomits_everything;vomiting,true
+passages_test_heldout_152,en,child: weakness,weakness,true
+passages_test_heldout_153,sw,Amani anaweza kunywa wiki moja,,true
+passages_test_heldout_154,mix,kutapika mara mbili,vomiting,true
+passages_test_heldout_155,en,talked about the cooperative meeting,,true
+passages_test_heldout_156,mix,Ana homa za usiku kwa siku moja,fever,true
+passages_test_heldout_157,en,the child: no diarrhoea,diarrhoea,true
+passages_test_heldout_158,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_159,en,vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_160,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_161,en,baby: weakness since yesterday,weakness,true
+passages_test_heldout_162,sw,Mtoto wake joto kali la mwili siku 5,fever,true
+passages_test_heldout_163,sw,si dhaifu,weakness,true
+passages_test_heldout_164,mix,refuses to breastfeed for 1 week,ds_cannot_drink,true
+passages_test_heldout_165,sw,mtoto wa Noor homma / tumbo lina uma,fever;pain,true
+passages_test_heldout_166,mix,diarhea,diarrhoea,true
+passages_test_heldout_167,sw,anakohowa kwa siku nne,cough,true
+passages_test_heldout_168,sw,mtoto wa Noor kutetemeka kwa mwili,ds_convulsions,true
+passages_test_heldout_169,mix,Amani: alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_170,sw,tapika,vomiting,true
+passages_test_heldout_171,sw,Mtoto wa noor: hawezi kubakiza chochote tumboni / anaonekana mnyonge siku mbili,ds_vomits_everything;vomiting;weakness,true
+passages_test_heldout_172,en,talked about the cooperative meeting,,true
+passages_test_heldout_173,sw,mtoto wake kuendesha mara nyingi siku tano,diarrhoea,true
+passages_test_heldout_174,sw,kutapika mara mbili,vomiting,true
+passages_test_heldout_175,mix,child: anatapka,vomiting,true
+passages_test_heldout_176,mix,refuses to breastfeed,ds_cannot_drink,true
+passages_test_heldout_177,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_178,sw,Ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_179,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_180,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_181,sw,Alitapika + hajitambui kabisa,ds_lethargic;vomiting,true
+passages_test_heldout_182,mix,Mtoto hana nguvu kabisa for 5 days,weakness,true
+passages_test_heldout_183,mix,mtoto wa Noor: alitapika,vomiting,true
+passages_test_heldout_184,mix,kutetemeka kwa mwili threw up,ds_convulsions;vomiting,true
+passages_test_heldout_185,mix,Amani kutapika mara mbili tangu jana,vomiting,true
+passages_test_heldout_186,en,next visit on friday,,true
+passages_test_heldout_187,sw,Mtoto: hakohoi anaumwa na tumbo wiki moja,cough;pain,true
+passages_test_heldout_188,en,vomits all food + tummy ache for 5 days,ds_vomits_everything;pain;vomiting,true
+passages_test_heldout_189,sw,Ananyonya vizuri,,true
+passages_test_heldout_190,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_191,sw,hakuwa na degedege,,true
+passages_test_heldout_192,sw,hawezi kunywa chochote / kikohozi cha usiku siku mbili,cough;ds_cannot_drink,true
+passages_test_heldout_193,en,the boy: breastfeeding well x3 days,,true
+passages_test_heldout_194,sw,mtoto hajatapika ni vigumu kumwamsha wiki moja,ds_lethargic;vomiting,true
+passages_test_heldout_195,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_196,sw,tumbo lina uma,pain,true
+passages_test_heldout_197,en,next visit on friday,,true
+passages_test_heldout_198,mix,The girl: had a fit kila kitu anatapika for 1 week,ds_convulsions;ds_vomits_everything;vomiting,true
+passages_test_heldout_199,sw,Hajitambui kabisa tangu jana,ds_lethargic,true
+passages_test_heldout_200,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_201,sw,mtoto: alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_202,mix,mtoto alikohoa usiku siku nne,cough,true
+passages_test_heldout_203,sw,jirani: homma wiki moja,fever,true
+passages_test_heldout_204,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_205,sw,anaonekana mnyonge,weakness,true
+passages_test_heldout_206,sw,Amani kila kitu anatapika,ds_vomits_everything;vomiting,true
+passages_test_heldout_207,sw,Msichana hana maumivu + alishikwa na degedege,ds_convulsions;pain,true
+passages_test_heldout_208,en,tummy ache,pain,true
+passages_test_heldout_209,mix,kikohozi cha usiku siku mbili,cough,true
+passages_test_heldout_210,sw,degedge,ds_convulsions,true
+passages_test_heldout_211,mix,Mama yake: hakunywa kitu,ds_cannot_drink,true
+passages_test_heldout_212,sw,hana homa,fever,true
+passages_test_heldout_213,sw,mtoto wake alikohoa usiku siku 4,cough,true
+passages_test_heldout_214,sw,ni dhaifu sana siku mbili,weakness,true
+passages_test_heldout_215,sw,hana nguvu kabisa wiki moja,weakness,true
+passages_test_heldout_216,sw,mtoto alishikwa na degedege tangu juzi,ds_convulsions,true
+passages_test_heldout_217,sw,Mtoto wa noor bila homa,fever,true
+passages_test_heldout_218,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_219,mix,baby has a fever x1 days,fever,true
+passages_test_heldout_220,sw,Msichana hana nguvu kabisa,weakness,true
+passages_test_heldout_221,sw,mtoto wa Noor: anaharisha maji tangu jana,diarrhoea,true
+passages_test_heldout_222,en,Child: diarhea for 1 week,diarrhoea,true
+passages_test_heldout_223,sw,mtoto wa Noor hajitambui kabisa tangu juzi,ds_lethargic,true
+passages_test_heldout_224,sw,Mtoto wa noor anaumwa na tumbo,pain,true
+passages_test_heldout_225,sw,Ni dhaifu sana,weakness,true
+passages_test_heldout_226,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_227,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_228,sw,mvulana kutetemeka kwa mwili siku 4,ds_convulsions,true
+passages_test_heldout_229,sw,kila kitu anatapika siku tatu,ds_vomits_everything;vomiting,true
+passages_test_heldout_230,sw,msichana: amelegea sana siku 3,ds_lethargic,true
+passages_test_heldout_231,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_232,sw,kutetemeka kwa mwili + hakohoi,cough;ds_convulsions,true
+passages_test_heldout_233,sw,tapika,vomiting,true
+passages_test_heldout_234,sw,Mtoto: alikohoa usiku siku 2,cough,true
+passages_test_heldout_235,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_236,en,no fever,fever,true
+passages_test_heldout_237,en,next visit on friday,,true
+passages_test_heldout_238,sw,Amani: anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_heldout_239,mix,Amani anaumwa na tumbo siku nne,pain,true
+passages_test_heldout_240,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_241,sw,mtoto wa Noor: hajatapika kwa siku tatu,vomiting,true
+passages_test_heldout_242,sw,kutetemeka kwa mwili siku moja,ds_convulsions,true
+passages_test_heldout_243,en,next visit on friday,,true
+passages_test_heldout_244,sw,Ni dhaifu sana tangu juzi,weakness,true
+passages_test_heldout_245,mix,threw up x2 days,vomiting,true
+passages_test_heldout_246,en,vomits all food since yesterday,ds_vomits_everything;vomiting,true
+passages_test_heldout_247,en,breastfeeding well x2 days,,true
+passages_test_heldout_248,sw,degedge,ds_convulsions,true
+passages_test_heldout_249,en,Amani has a fever since yesterday,fever,true
+passages_test_heldout_250,sw,mtoto hajitambui kabisa ni dhaifu sana,ds_lethargic;weakness,true
+passages_test_heldout_251,sw,homma,fever,true
+passages_test_heldout_252,sw,ameharisha,diarrhoea,true
+passages_test_heldout_253,mix,cant drink,ds_cannot_drink,true
+passages_test_heldout_254,mix,mtoto feels weak wiki moja,weakness,true
+passages_test_heldout_255,en,threw up,vomiting,true
+passages_test_heldout_256,mix,Vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_257,en,Letargic for 4 days,ds_lethargic,true
+passages_test_heldout_258,sw,Kila kitu anatapika,ds_vomits_everything;vomiting,true
+passages_test_heldout_259,sw,hakuna homa,fever,true
+passages_test_heldout_260,sw,Tumbo lina uma / kuharisha sana,diarrhoea;pain,true
+passages_test_heldout_261,sw,mvulana: hatapiki,vomiting,true
+passages_test_heldout_262,sw,Mtoto wa noor: hawezi kubakiza chochote tumboni tangu juzi,ds_vomits_everything;vomiting,true
+passages_test_heldout_263,en,Amani convulsing,ds_convulsions,true
+passages_test_heldout_264,sw,Amani kutapika mara mbili / amelegea sana,ds_lethargic;vomiting,true
+passages_test_heldout_265,sw,mtoto: anaonekana mnyonge,weakness,true
+passages_test_heldout_266,mix,child anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_267,sw,Degedge tangu juzi,ds_convulsions,true
+passages_test_heldout_268,sw,msichana: kutetemeka kwa mwili,ds_convulsions,true
+passages_test_heldout_269,sw,mtoto kikohozi kavu,cough,true
+passages_test_heldout_270,en,Child coughs at night for 1 week,cough,true
+passages_test_heldout_271,mix,mtoto wake loose stools tangu juzi,diarrhoea,true
+passages_test_heldout_272,mix,mvulana: head is paining,pain,true
+passages_test_heldout_273,en,the girl temperature iko juu 3 days,fever,true
+passages_test_heldout_274,en,not responding,ds_lethargic,true
+passages_test_heldout_275,sw,alitapika kwa siku mbili,vomiting,true
+passages_test_heldout_276,sw,mtoto: hana maumivu tangu juzi,pain,true
+passages_test_heldout_277,mix,baby: ni vigumu kumwamsha tangu jana,ds_lethargic,true
+passages_test_heldout_278,mix,baby ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_279,sw,ameharisha wiki moja,diarrhoea,true
+passages_test_heldout_280,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_281,mix,the girl anaumwa na tumbo 2 days,pain,true
+passages_test_heldout_282,en,denies pain,pain,true
+passages_test_heldout_283,en,No vomiting,vomiting,true
+passages_test_heldout_284,mix,The girl: seizure,ds_convulsions,true
+passages_test_heldout_285,sw,ameharisha,diarrhoea,true
+passages_test_heldout_286,sw,anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_287,en,next visit on friday,,true
+passages_test_heldout_288,sw,msichana hakunywa kitu,ds_cannot_drink,true
+passages_test_heldout_289,mix,watery stool no convulsions,diarrhoea,true
+passages_test_heldout_290,sw,Hawezi kunywa chochote siku tatu,ds_cannot_drink,true
+passages_test_heldout_291,sw,Mtoto wa noor: hajatapika tangu jana,vomiting,true
+passages_test_heldout_292,mix,anakunywa vizuri for 1 days,,true
+passages_test_heldout_293,en,the child: vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_294,sw,anatapka kila kitu + anaonekana mnyonge siku mbili,ds_vomits_everything;vomiting;weakness,true
+passages_test_heldout_295,en,The boy head is paining x4 days,pain,true
+passages_test_heldout_296,sw,Hana homa,fever,true
+passages_test_heldout_297,mix,anakohowa wiki moja,cough,true
+passages_test_heldout_298,sw,Mtoto wa noor: kila kitu anatapika tangu juzi,ds_vomits_everything;vomiting,true
+passages_test_heldout_299,sw,baba yuko kazini,,true
+passages_test_heldout_300,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_301,mix,msichana: ameharisha,diarrhoea,true
+passages_test_heldout_302,sw,mvulana anaumwa na tumbo,pain,true
+passages_test_heldout_303,sw,msichana: kutapika mara mbili siku 5,vomiting,true
+passages_test_heldout_304,en,does not have fever since yesterday,fever,true
+passages_test_heldout_305,mix,vomits all food since yesterday,ds_vomits_everything;vomiting,true
+passages_test_heldout_306,mix,temperature iko juu,fever,true
+passages_test_heldout_307,sw,mvulana mwili wake una joto jingi,fever,true
+passages_test_heldout_308,mix,mtoto wake kutapika mara mbili,vomiting,true
+passages_test_heldout_309,sw,baba yuko kazini,,true
+passages_test_heldout_310,sw,Ameharisha,diarrhoea,true
+passages_test_heldout_311,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_312,sw,msichana: ni vigumu kumwamsha tangu juzi,ds_lethargic,true
+passages_test_heldout_313,sw,mvulana: alitapika kwa siku tano,vomiting,true
+passages_test_heldout_314,mix,threw up tangu juzi,vomiting,true
+passages_test_heldout_315,sw,mtoto anatapka,vomiting,true
+passages_test_heldout_316,sw,Mtoto mwili wake una joto jingi,fever,true
+passages_test_heldout_317,sw,Kikohozi kavu,cough,true
+passages_test_heldout_318,sw,Anaonekana mnyonge wiki moja,weakness,true
+passages_test_heldout_319,sw,mvulana: anatapka kwa siku tano,vomiting,true
+passages_test_heldout_320,mix,Ana homa za usiku kwa siku moja,fever,true
+passages_test_heldout_321,sw,Mvulana: si dhaifu tangu juzi,weakness,true
+passages_test_heldout_322,sw,kikohozi cha usiku,cough,true
+passages_test_heldout_323,mix,won't drink anything siku moja,ds_cannot_drink,true
+passages_test_heldout_324,sw,Mtoto wake kikohozi cha usiku,cough,true
+passages_test_heldout_325,mix,Amani: vomitting,vomiting,true
+passages_test_heldout_326,en,Amani not responding + feverish since yesterday,ds_lethargic;fever,true
+passages_test_heldout_327,sw,Kila kitu anatapika tangu jana,ds_vomits_everything;vomiting,true
+passages_test_heldout_328,sw,mtoto wa Noor tumbo lina uma,pain,true
+passages_test_heldout_329,en,does not have fever for 4 days,fever,true
+passages_test_heldout_330,sw,baba yuko kazini,,true
+passages_test_heldout_331,sw,mvulana kuharisha sana,diarrhoea,true
+passages_test_heldout_332,sw,Amani: hana nguvu kabisa tangu jana,weakness,true
+passages_test_heldout_333,mix,child weakness,weakness,true
+passages_test_heldout_334,mix,hawezi kubakiza chochote tumboni / has a fever for 1 week,ds_vomits_everything;fever;vomiting,true
+passages_test_heldout_335,mix,The mother convulsing x5 days,ds_convulsions,true
+passages_test_heldout_336,mix,Degedge,ds_convulsions,true
+passages_test_heldout_337,sw,mtoto wake: hawezi kunywa maji,ds_cannot_drink,true
+passages_test_heldout_338,sw,anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_heldout_339,mix,refuses to breastfeed for 5 days,ds_cannot_drink,true
+passages_test_heldout_340,sw,Ameharisha kwa siku tatu,diarrhoea,true
+passages_test_heldout_341,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_342,sw,mvulana: anaweza kunywa tangu juzi,,true
+passages_test_heldout_343,sw,msichana: ananyonya vizuri tangu juzi,,true
+passages_test_heldout_344,sw,Mtoto wake ameharisha kikohozi kavu,cough;diarrhoea,true
+passages_test_heldout_345,en,has a bad cough,cough,true
+passages_test_heldout_346,mix,Mtoto: anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_heldout_347,mix,convulsing,ds_convulsions,true
+passages_test_heldout_348,en,Baby: cannot keep anything down,ds_vomits_everything;vomiting,true
+passages_test_heldout_349,mix,cant drink / convulsing,ds_cannot_drink;ds_convulsions,true
+passages_test_heldout_350,mix,Amani yuko macho,,true
+passages_test_heldout_351,en,cannot keep anything down for 1 week,ds_vomits_everything;vomiting,true
+passages_test_heldout_352,sw,anaumwa na tumbo,pain,true
+passages_test_heldout_353,sw,baba yuko kazini,,true
+passages_test_heldout_354,en,had a fit,ds_convulsions,true
+passages_test_heldout_355,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_356,en,the girl no cough,cough,true
+passages_test_heldout_357,sw,kikohozi cha usiku siku 4,cough,true
+passages_test_heldout_358,sw,Amani: mwili wake una joto jingi siku 2,fever,true
+passages_test_heldout_359,en,had a fit 5 days,ds_convulsions,true
+passages_test_heldout_360,sw,joto kali la mwili + kila kitu anatapika,ds_vomits_everything;fever;vomiting,true
+passages_test_heldout_361,sw,mtoto wake: hajitambui kabisa tangu juzi,ds_lethargic,true
+passages_test_heldout_362,mix,baby weakness + hawezi kunywa maji kwa siku moja,ds_cannot_drink;weakness,true
+passages_test_heldout_363,sw,Homma tangu jana,fever,true
+passages_test_heldout_364,sw,Mtoto wake mwili wake una joto jingi,fever,true
+passages_test_heldout_365,en,child not responding,ds_lethargic,true
+passages_test_heldout_366,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_367,mix,Amani: hawezi kunywa chochote,ds_cannot_drink,true
+passages_test_heldout_368,mix,Mtoto wake hawezi kunywa chochote,ds_cannot_drink,true
+passages_test_heldout_369,sw,baba yuko kazini,,true
+passages_test_heldout_370,mix,mtoto wa Noor: drowsy and floppy,ds_lethargic,true
+passages_test_heldout_371,mix,mvulana has a fever,fever,true
+passages_test_heldout_372,sw,Mtoto hawezi kunywa maji siku nne,ds_cannot_drink,true
+passages_test_heldout_373,sw,msichana ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_374,en,baby not vomiting,vomiting,true
+passages_test_heldout_375,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_376,mix,mama yake joto kali la mwili,fever,true
+passages_test_heldout_377,en,Feverish 3 days,fever,true
+passages_test_heldout_378,en,Temperature iko juu x2 days,fever,true
+passages_test_heldout_379,en,cant drink,ds_cannot_drink,true
+passages_test_heldout_380,en,next visit on friday,,true
+passages_test_heldout_381,sw,Amani: alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_382,sw,Mvulana: anatapka kila kitu + hana maumivu,ds_vomits_everything;pain;vomiting,true
+passages_test_heldout_383,en,The girl: tired and weak not responding,ds_lethargic;weakness,true
+passages_test_heldout_384,sw,Mvulana hakuna homa,fever,true
+passages_test_heldout_385,en,Diarhea,diarrhoea,true
+passages_test_heldout_386,en,watery stool,diarrhoea,true
+passages_test_heldout_387,mix,Mtoto wake anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_388,en,talked about the cooperative meeting,,true
+passages_test_heldout_389,mix,Feels weak,weakness,true
+passages_test_heldout_390,sw,mtoto wake: amelegea sana,ds_lethargic,true
+passages_test_heldout_391,sw,tumbo lina uma / anakohowa,cough;pain,true
+passages_test_heldout_392,en,cannot keep anything down,ds_vomits_everything;vomiting,true
+passages_test_heldout_393,sw,Mtoto joto kali la mwili,fever,true
+passages_test_heldout_394,sw,Maumivu makali,pain,true
+passages_test_heldout_395,sw,anakohowa,cough,true
+passages_test_heldout_396,sw,anaumwa na tumbo kwa siku moja,pain,true
+passages_test_heldout_397,sw,ananyonya vizuri,,true
+passages_test_heldout_398,mix,The child no fits,,true
+passages_test_heldout_399,sw,mtoto alitapika tangu juzi,vomiting,true
+passages_test_heldout_400,en,has a fever for 1 week,fever,true
+passages_test_heldout_401,sw,Degedge,ds_convulsions,true
+passages_test_heldout_402,sw,mtoto: kila kitu anatapika,ds_vomits_everything;vomiting,true
+passages_test_heldout_403,sw,Amani hawezi kubakiza chochote tumboni,ds_vomits_everything;vomiting,true
+passages_test_heldout_404,sw,alitapika siku 4,vomiting,true
+passages_test_heldout_405,mix,Amani tummy ache anakohowa x4 days,cough;pain,true
+passages_test_heldout_406,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_407,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_408,sw,kutetemeka kwa mwili siku 4,ds_convulsions,true
+passages_test_heldout_409,sw,anaharisha maji tangu jana,diarrhoea,true
+passages_test_heldout_410,mix,the girl: hajaharisha,diarrhoea,true
+passages_test_heldout_411,sw,msichana anaonekana mnyonge wiki moja,weakness,true
+passages_test_heldout_412,en,watery stool for 3 days,diarrhoea,true
+passages_test_heldout_413,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_414,sw,Mtoto wa noor: hana kuhara siku 4,diarrhoea,true
+passages_test_heldout_415,en,The girl has a bad cough,cough,true
+passages_test_heldout_416,en,playing normally,,true
+passages_test_heldout_417,sw,anatapka,vomiting,true
+passages_test_heldout_418,mix,has a bad cough,cough,true
+passages_test_heldout_419,en,Amani: not responding + vomits,ds_lethargic;vomiting,true
+passages_test_heldout_420,en,the child: temperature iko juu,fever,true
+passages_test_heldout_421,en,Amani tummy ache,pain,true
+passages_test_heldout_422,sw,kikohozi cha usiku tangu juzi,cough,true
+passages_test_heldout_423,sw,anatapka siku 5,vomiting,true
+passages_test_heldout_424,sw,Amani: homma,fever,true
+passages_test_heldout_425,sw,hawezi kubakiza chochote tumboni kwa siku tano,ds_vomits_everything;vomiting,true
+passages_test_heldout_426,sw,Msichana: tumbo haliumi kwa siku mbili,pain,true
+passages_test_heldout_427,en,next visit on friday,,true
+passages_test_heldout_428,en,Had a fit,ds_convulsions,true
+passages_test_heldout_429,sw,Mtoto: anaonekana mnyonge,weakness,true
+passages_test_heldout_430,en,baby: won't drink anything 4 days,ds_cannot_drink,true
+passages_test_heldout_431,sw,Mtoto wake kuendesha mara nyingi tangu jana,diarrhoea,true
+passages_test_heldout_432,sw,Degedge,ds_convulsions,true
+passages_test_heldout_433,sw,msichana: kutetemeka kwa mwili siku 5,ds_convulsions,true
+passages_test_heldout_434,sw,Alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_435,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_436,mix,mtoto wa Noor: body is very hot,fever,true
+passages_test_heldout_437,sw,Msichana hatapiki kwa siku tatu,vomiting,true
+passages_test_heldout_438,en,can drink,,true
+passages_test_heldout_439,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_440,en,watery stool for 1 week,diarrhoea,true
+passages_test_heldout_441,sw,Mtoto wa noor kikohozi cha usiku,cough,true
+passages_test_heldout_442,sw,Mvulana alitapika,vomiting,true
+passages_test_heldout_443,mix,Dry cough 2 days,cough,true
+passages_test_heldout_444,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_445,sw,baba yuko kazini,,true
+passages_test_heldout_446,mix,kutetemeka kwa mwili x2 days,ds_convulsions,true
+passages_test_heldout_447,sw,mtoto wake alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_448,sw,Amani: hawezi kunywa maji kichwa kinamuuma,ds_cannot_drink;pain,true
+passages_test_heldout_449,sw,hajaharisha,diarrhoea,true
+passages_test_heldout_450,en,Amani refuses to breastfeed,ds_cannot_drink,true
+passages_test_heldout_451,sw,Alitapika wiki moja,vomiting,true
+passages_test_heldout_452,en,watery stool 1 days,diarrhoea,true
+passages_test_heldout_453,sw,msichana: anatapka kila kitu / anakunywa vizuri tangu jana,ds_vomits_everything;vomiting,true
+passages_test_heldout_454,sw,Amani: homma + alishikwa na degedege,ds_convulsions;fever,true
+passages_test_heldout_455,en,neighbour breastfeeding well for 1 week,,true
+passages_test_heldout_456,en,refuses to breastfeed,ds_cannot_drink,true
+passages_test_heldout_457,mix,hakunywa kitu wiki moja,ds_cannot_drink,true
+passages_test_heldout_458,en,body is very hot,fever,true
+passages_test_heldout_459,en,belly ache x1 days,pain,true
+passages_test_heldout_460,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_461,mix,Mtoto wa noor: head is paining tangu juzi,pain,true
+passages_test_heldout_462,mix,mtoto: hawezi kunywa chochote,ds_cannot_drink,true
+passages_test_heldout_463,en,refuses to breastfeed,ds_cannot_drink,true
+passages_test_heldout_464,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_465,sw,Alitapika wiki moja,vomiting,true
+passages_test_heldout_466,en,Vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_467,mix,Won't drink anything for 1 week,ds_cannot_drink,true
+passages_test_heldout_468,sw,hajitambui kabisa + hana nguvu kabisa siku mbili,ds_lethargic;weakness,true
+passages_test_heldout_469,sw,mvulana hawezi kubakiza chochote tumboni,ds_vomits_everything;vomiting,true
+passages_test_heldout_470,sw,Hatapiki,vomiting,true
+passages_test_heldout_471,en,next visit on friday,,true
+passages_test_heldout_472,sw,mtoto: ameharisha anakataa kunyonya,diarrhoea;ds_cannot_drink,true
+passages_test_heldout_473,en,Won't drink anything x4 days,ds_cannot_drink,true
+passages_test_heldout_474,en,cant drink,ds_cannot_drink,true
+passages_test_heldout_475,sw,baba: hana nguvu kabisa,weakness,true
+passages_test_heldout_476,en,coughs at night,cough,true
+passages_test_heldout_477,mix,mvulana: hawezi kubakiza chochote tumboni since yesterday,ds_vomits_everything;vomiting,true
+passages_test_heldout_478,sw,anakunywa vizuri,,true
+passages_test_heldout_479,sw,baba yuko kazini,,true
+passages_test_heldout_480,sw,hana kuhara siku moja,diarrhoea,true
+passages_test_heldout_481,en,Has a fever x5 days,fever,true
+passages_test_heldout_482,en,diarhea,diarrhoea,true
+passages_test_heldout_483,en,the boy loose stools 3 days,diarrhoea,true
+passages_test_heldout_484,sw,kuendesha mara nyingi siku moja,diarrhoea,true
+passages_test_heldout_485,mix,child alert siku nne,,true
+passages_test_heldout_486,sw,Amani mwili wake una joto jingi,fever,true
+passages_test_heldout_487,en,The mother: threw up,vomiting,true
+passages_test_heldout_488,sw,ameharisha wiki moja,diarrhoea,true
+passages_test_heldout_489,mix,mtoto wa Noor si dhaifu since yesterday,weakness,true
+passages_test_heldout_490,sw,Mvulana: hana nguvu kabisa + maumivu makali,pain;weakness,true
+passages_test_heldout_491,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_492,sw,mtoto wa Noor: anaonekana mnyonge,weakness,true
+passages_test_heldout_493,mix,Mvulana ni vigumu kumwamsha for 2 days,ds_lethargic,true
+passages_test_heldout_494,sw,Anaonekana mnyonge / kutapika mara mbili,vomiting;weakness,true
+passages_test_heldout_495,en,Amani: no convulsions,,true
+passages_test_heldout_496,sw,jirani: hakuwa na degedege siku moja,,true
+passages_test_heldout_497,en,next visit on friday,,true
+passages_test_heldout_498,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_499,en,child playing normally / tummy ache,pain,true
+passages_test_heldout_500,sw,kikohozi cha usiku,cough,true
+passages_test_heldout_501,sw,mvulana: anaumwa na tumbo siku 5,pain,true
+passages_test_heldout_502,mix,Cannot keep anything down siku 1,ds_vomits_everything;vomiting,true
+passages_test_heldout_503,mix,the girl: anaonekana mnyonge,weakness,true
+passages_test_heldout_504,en,child loose stools 4 days,diarrhoea,true
+passages_test_heldout_505,mix,mtoto wake refuses to breastfeed for 1 week,ds_cannot_drink,true
+passages_test_heldout_506,en,the boy: drowsy and floppy,ds_lethargic,true
+passages_test_heldout_507,mix,Yuko macho,,true
+passages_test_heldout_508,en,loose stools,diarrhoea,true
+passages_test_heldout_509,en,not responding,ds_lethargic,true
+passages_test_heldout_510,sw,msichana hajaharisha / anakataa kunyonya,diarrhoea;ds_cannot_drink,true
+passages_test_heldout_511,en,cannot keep anything down for 4 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_512,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_513,mix,the girl kutetemeka kwa mwili for 1 week,ds_convulsions,true
+passages_test_heldout_514,sw,anakataa kunyonya kwa siku tatu,ds_cannot_drink,true
+passages_test_heldout_515,mix,Amani: breastfeeding well for 2 days,,true
+passages_test_heldout_516,sw,tapika,vomiting,true
+passages_test_heldout_517,sw,anaonekana mnyonge,weakness,true
+passages_test_heldout_518,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_519,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_520,en,Cannot keep anything down since yesterday,ds_vomits_everything;vomiting,true
+passages_test_heldout_521,sw,Mtoto wa noor hana nguvu kabisa kwa siku moja,weakness,true
+passages_test_heldout_522,en,child: has a bad cough,cough,true
+passages_test_heldout_523,mix,mtoto alishikwa na degedege tangu jana,ds_convulsions,true
+passages_test_heldout_524,en,vomits,vomiting,true
+passages_test_heldout_525,sw,kutetemeka kwa mwili wiki moja,ds_convulsions,true
+passages_test_heldout_526,en,the child vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_527,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_528,sw,mtoto wake kuharisha sana tangu jana,diarrhoea,true
+passages_test_heldout_529,sw,mtoto wake: hatapiki,vomiting,true
+passages_test_heldout_530,sw,mtoto wake tapika wiki moja,vomiting,true
+passages_test_heldout_531,en,the girl has a fever,fever,true
+passages_test_heldout_532,mix,Mtoto wake: convulsing,ds_convulsions,true
+passages_test_heldout_533,sw,jirani anaumwa na tumbo,pain,true
+passages_test_heldout_534,sw,mtoto wa Noor: hana homa siku 5,fever,true
+passages_test_heldout_535,en,the child: has a fever,fever,true
+passages_test_heldout_536,en,the child no pain,pain,true
+passages_test_heldout_537,en,no fever,fever,true
+passages_test_heldout_538,sw,Hana kuhara tangu juzi,diarrhoea,true
+passages_test_heldout_539,sw,ameharisha,diarrhoea,true
+passages_test_heldout_540,en,drinking well x5 days,,true
+passages_test_heldout_541,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_542,mix,Amani vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_543,en,Weakness since yesterday,weakness,true
+passages_test_heldout_544,sw,hajatapika + alikohoa usiku tangu juzi,cough;vomiting,true
+passages_test_heldout_545,mix,Feels weak,weakness,true
+passages_test_heldout_546,mix,Mvulana: weakness,weakness,true
+passages_test_heldout_547,sw,mtoto: hakohoi,cough,true
+passages_test_heldout_548,mix,hawezi kubakiza chochote tumboni since yesterday,ds_vomits_everything;vomiting,true
+passages_test_heldout_549,en,The girl has a bad cough x1 days,cough,true
+passages_test_heldout_550,sw,baba yuko kazini,,true
+passages_test_heldout_551,sw,anakohowa kwa siku tatu,cough,true
+passages_test_heldout_552,mix,the child tired and weak,weakness,true
+passages_test_heldout_553,en,the girl: vomits for 3 days,vomiting,true
+passages_test_heldout_554,sw,anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_555,sw,Mtoto wa noor hajitambui kabisa,ds_lethargic,true
+passages_test_heldout_556,en,Amani tummy ache for 1 week,pain,true
+passages_test_heldout_557,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_558,sw,hawezi kubakiza chochote tumboni + anakataa kunyonya siku 2,ds_cannot_drink;ds_vomits_everything;vomiting,true
+passages_test_heldout_559,sw,Mvulana: kuendesha mara nyingi,diarrhoea,true
+passages_test_heldout_560,en,talked about the cooperative meeting,,true
+passages_test_heldout_561,sw,kutetemeka kwa mwili,ds_convulsions,true
+passages_test_heldout_562,mix,anaharisha maji,diarrhoea,true
+passages_test_heldout_563,mix,Alishikwa na degedege tangu juzi,ds_convulsions,true
+passages_test_heldout_564,sw,Mtoto haharishi / kila kitu anatapika siku 4,diarrhoea;ds_vomits_everything;vomiting,true
+passages_test_heldout_565,sw,Amani mwili wake una joto jingi siku 3,fever,true
+passages_test_heldout_566,sw,alitapika tangu juzi,vomiting,true
+passages_test_heldout_567,en,the boy temperature iko juu,fever,true
+passages_test_heldout_568,en,the boy head is paining,pain,true
+passages_test_heldout_569,en,baby has a bad cough 5 days,cough,true
+passages_test_heldout_570,en,the boy: cannot keep anything down,ds_vomits_everything;vomiting,true
+passages_test_heldout_571,sw,jirani: hawezi kunywa chochote,ds_cannot_drink,true
+passages_test_heldout_572,en,not responding,ds_lethargic,true
+passages_test_heldout_573,en,Amani: had a fit,ds_convulsions,true
+passages_test_heldout_574,sw,mtoto wake kutetemeka kwa mwili + hakunywa kitu siku 2,ds_cannot_drink;ds_convulsions,true
+passages_test_heldout_575,mix,anaharisha maji,diarrhoea,true
+passages_test_heldout_576,en,weakness,weakness,true
+passages_test_heldout_577,sw,mtoto: hakunywa kitu,ds_cannot_drink,true
+passages_test_heldout_578,en,Body is very hot / drinking well since yesterday,fever,true
+passages_test_heldout_579,en,baby: not vomiting for 5 days,vomiting,true
+passages_test_heldout_580,en,talked about the cooperative meeting,,true
+passages_test_heldout_581,sw,Mtoto: mwili wake una joto jingi,fever,true
+passages_test_heldout_582,sw,Anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_heldout_583,en,next visit on friday,,true
+passages_test_heldout_584,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_585,en,Amani vomits,vomiting,true
+passages_test_heldout_586,mix,alikohoa usiku,cough,true
+passages_test_heldout_587,mix,mvulana letargic,ds_lethargic,true
+passages_test_heldout_588,mix,Amani vomitting,vomiting,true
+passages_test_heldout_589,mix,seizure,ds_convulsions,true
+passages_test_heldout_590,sw,hawezi kunywa maji siku tano,ds_cannot_drink,true
+passages_test_heldout_591,mix,drowsy and floppy,ds_lethargic,true
+passages_test_heldout_592,sw,kikohozi kavu,cough,true
+passages_test_heldout_593,sw,hakunywa kitu,ds_cannot_drink,true
+passages_test_heldout_594,sw,ni dhaifu sana,weakness,true
+passages_test_heldout_595,sw,mtoto: hajitambui kabisa,ds_lethargic,true
+passages_test_heldout_596,sw,hakunywa kitu,ds_cannot_drink,true
+passages_test_heldout_597,en,Child diarhea,diarrhoea,true
+passages_test_heldout_598,sw,ameharisha kwa siku nne,diarrhoea,true
+passages_test_heldout_599,sw,ni dhaifu sana,weakness,true
+passages_test_heldout_600,mix,loose stools / hakunywa kitu,diarrhoea;ds_cannot_drink,true
+passages_test_heldout_601,sw,Ni dhaifu sana tangu juzi,weakness,true
+passages_test_heldout_602,sw,Mtoto wake: alishikwa na degedege tangu juzi,ds_convulsions,true
+passages_test_heldout_603,sw,mvulana anacheza vizuri,,true
+passages_test_heldout_604,en,next visit on friday,,true
+passages_test_heldout_605,sw,anatapka / hakuwa na degedege,vomiting,true
+passages_test_heldout_606,sw,anatapka kila kitu,ds_vomits_everything;vomiting,true
+passages_test_heldout_607,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_608,en,the boy: tummy ache 4 days,pain,true
+passages_test_heldout_609,sw,mtoto wa Noor hana maumivu tangu juzi,pain,true
+passages_test_heldout_610,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_611,en,the child feels weak since yesterday,weakness,true
+passages_test_heldout_612,sw,Msichana alitapika,vomiting,true
+passages_test_heldout_613,sw,kikohozi cha usiku,cough,true
+passages_test_heldout_614,sw,degedge,ds_convulsions,true
+passages_test_heldout_615,sw,mtoto: hawezi kunywa maji kwa siku moja,ds_cannot_drink,true
+passages_test_heldout_616,sw,msichana: kikohozi kavu,cough,true
+passages_test_heldout_617,mix,no cough,cough,true
+passages_test_heldout_618,sw,Mvulana degedge,ds_convulsions,true
+passages_test_heldout_619,mix,The child had a fit + anaonekana mnyonge tangu jana,ds_convulsions;weakness,true
+passages_test_heldout_620,mix,alikohoa usiku,cough,true
+passages_test_heldout_621,en,the boy dry cough x4 days,cough,true
+passages_test_heldout_622,sw,alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_623,sw,kadi ya chanjo iko nyumbani,,true
+passages_test_heldout_624,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_625,sw,Amani: ameharisha tangu jana,diarrhoea,true
+passages_test_heldout_626,sw,kikohozi cha usiku wiki moja,cough,true
+passages_test_heldout_627,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_628,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_629,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_630,en,the boy: vomitting + has a fever,fever;vomiting,true
+passages_test_heldout_631,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_632,mix,Amani kichwa kinamuuma,pain,true
+passages_test_heldout_633,sw,bibi: maumivu makali kwa siku moja,pain,true
+passages_test_heldout_634,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_635,sw,Amani: anaumwa na tumbo,pain,true
+passages_test_heldout_636,sw,Amani anatapka kila kitu anakohowa,cough;ds_vomits_everything;vomiting,true
+passages_test_heldout_637,sw,Mvulana alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_638,sw,anakohowa kwa siku moja,cough,true
+passages_test_heldout_639,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_640,en,Child cant drink + vomitting since yesterday,ds_cannot_drink;vomiting,true
+passages_test_heldout_641,en,playing normally since yesterday,,true
+passages_test_heldout_642,mix,vomits all food,ds_vomits_everything;vomiting,true
+passages_test_heldout_643,sw,hakuwa na degedege siku tano,,true
+passages_test_heldout_644,en,threw up,vomiting,true
+passages_test_heldout_645,mix,the girl: degedge + watery stool x4 days,diarrhoea;ds_convulsions,true
+passages_test_heldout_646,sw,mtoto: kuendesha mara nyingi hawezi kunywa maji kwa siku nne,diarrhoea;ds_cannot_drink,true
+passages_test_heldout_647,sw,Mtoto hakohoi wiki moja,cough,true
+passages_test_heldout_648,sw,hawezi kunywa chochote,ds_cannot_drink,true
+passages_test_heldout_649,sw,ana homa za usiku,fever,true
+passages_test_heldout_650,mix,baby hakuwa na degedege,,true
+passages_test_heldout_651,mix,mvulana: bila homa,fever,true
+passages_test_heldout_652,en,Does not have fever,fever,true
+passages_test_heldout_653,mix,the child: refuses to breastfeed,ds_cannot_drink,true
+passages_test_heldout_654,sw,anakohowa wiki moja,cough,true
+passages_test_heldout_655,sw,mvulana: hakohoi,cough,true
+passages_test_heldout_656,mix,ni vigumu kumwamsha tangu jana,ds_lethargic,true
+passages_test_heldout_657,sw,alitapika,vomiting,true
+passages_test_heldout_658,sw,mtoto anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_659,sw,tumbo haliumi,pain,true
+passages_test_heldout_660,en,Tummy ache / weakness 1 days,pain;weakness,true
+passages_test_heldout_661,sw,Tumbo lina uma,pain,true
+passages_test_heldout_662,en,not weak since yesterday,weakness,true
+passages_test_heldout_663,sw,anakohowa siku nne,cough,true
+passages_test_heldout_664,mix,Si dhaifu since yesterday,weakness,true
+passages_test_heldout_665,mix,The girl anakataa kunyonya since yesterday,ds_cannot_drink,true
+passages_test_heldout_666,en,threw up,vomiting,true
+passages_test_heldout_667,sw,tumbo lina uma,pain,true
+passages_test_heldout_668,mix,amelegea sana 1 days,ds_lethargic,true
+passages_test_heldout_669,en,Child: threw up,vomiting,true
+passages_test_heldout_670,en,head is paining,pain,true
+passages_test_heldout_671,sw,Hawezi kubakiza chochote tumboni hana nguvu kabisa,ds_vomits_everything;vomiting;weakness,true
+passages_test_heldout_672,mix,tired and weak,weakness,true
+passages_test_heldout_673,sw,msichana alishikwa na degedege kwa siku tatu,ds_convulsions,true
+passages_test_heldout_674,sw,Mtoto hana homa,fever,true
+passages_test_heldout_675,sw,mtoto wake: haharishi tangu jana,diarrhoea,true
+passages_test_heldout_676,mix,Anakataa kunyonya wiki moja,ds_cannot_drink,true
+passages_test_heldout_677,mix,Alishikwa na degedege siku 4,ds_convulsions,true
+passages_test_heldout_678,mix,Cant drink for 2 days,ds_cannot_drink,true
+passages_test_heldout_679,en,Weakness,weakness,true
+passages_test_heldout_680,en,The boy cant drink,ds_cannot_drink,true
+passages_test_heldout_681,sw,anakohowa,cough,true
+passages_test_heldout_682,sw,bei ya kahawa imepanda,,true
+passages_test_heldout_683,mix,the girl feverish,fever,true
+passages_test_heldout_684,en,baby: has a fever 3 days,fever,true
+passages_test_heldout_685,sw,mama yake hatapiki siku 2,vomiting,true
+passages_test_heldout_686,sw,anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_687,mix,Baby watery stool,diarrhoea,true
+passages_test_heldout_688,sw,baba yuko kazini,,true
+passages_test_heldout_689,sw,baba yuko kazini,,true
+passages_test_heldout_690,sw,Mtoto wa noor: kikohozi kavu,cough,true
+passages_test_heldout_691,en,the child: no pain for 5 days,pain,true
+passages_test_heldout_692,en,feverish,fever,true
+passages_test_heldout_693,sw,mtoto wake hana maumivu,pain,true
+passages_test_heldout_694,en,the boy cannot keep anything down 1 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_695,mix,Alikohoa usiku,cough,true
+passages_test_heldout_696,en,feels weak,weakness,true
+passages_test_heldout_697,en,body is very hot x1 days,fever,true
+passages_test_heldout_698,en,the girl: threw up,vomiting,true
+passages_test_heldout_699,en,the child tummy ache + feels weak,pain;weakness,true
+passages_test_heldout_700,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_701,mix,Amani: letargic,ds_lethargic,true
+passages_test_heldout_702,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_703,sw,Mtoto wa noor: anakataa kunyonya,ds_cannot_drink,true
+passages_test_heldout_704,sw,Mtoto wa noor: hawezi kubakiza chochote tumboni,ds_vomits_everything;vomiting,true
+passages_test_heldout_705,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_706,sw,Baba: kutapika mara mbili,vomiting,true
+passages_test_heldout_707,sw,hajatapika tangu jana,vomiting,true
+passages_test_heldout_708,sw,baba yuko kazini,,true
+passages_test_heldout_709,sw,mvulana alitapika,vomiting,true
+passages_test_heldout_710,en,Threw up for 5 days,vomiting,true
+passages_test_heldout_711,sw,mvulana: hawezi kubakiza chochote tumboni,ds_vomits_everything;vomiting,true
+passages_test_heldout_712,sw,anaonekana mnyonge siku tatu,weakness,true
+passages_test_heldout_713,sw,Amani: si dhaifu siku tatu,weakness,true
+passages_test_heldout_714,sw,Kila kitu anatapika,ds_vomits_everything;vomiting,true
+passages_test_heldout_715,mix,the girl ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_716,mix,the girl hakuwa na degedege,,true
+passages_test_heldout_717,sw,mtoto wake: ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_718,mix,won't drink anything,ds_cannot_drink,true
+passages_test_heldout_719,sw,mtoto wa Noor tumbo haliumi tangu juzi,pain,true
+passages_test_heldout_720,sw,tumbo lina uma / hana kikohozi kwa siku nne,cough;pain,true
+passages_test_heldout_721,en,next visit on friday,,true
+passages_test_heldout_722,mix,Threw up,vomiting,true
+passages_test_heldout_723,sw,Hakunywa kitu,ds_cannot_drink,true
+passages_test_heldout_724,mix,msichana no fever,fever,true
+passages_test_heldout_725,mix,dry cough,cough,true
+passages_test_heldout_726,mix,The girl hawezi kubakiza chochote tumboni siku 3,ds_vomits_everything;vomiting,true
+passages_test_heldout_727,en,Baby vomits since yesterday,vomiting,true
+passages_test_heldout_728,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_729,sw,mtoto wa Noor anatapka,vomiting,true
+passages_test_heldout_730,en,the girl: diarhea,diarrhoea,true
+passages_test_heldout_731,sw,ziara ya kawaida ya nyumbani,,true
+passages_test_heldout_732,sw,Amani: ana homa za usiku tangu juzi,fever,true
+passages_test_heldout_733,sw,mtoto haharishi,diarrhoea,true
+passages_test_heldout_734,sw,mtoto wa Noor: anaumwa na tumbo,pain,true
+passages_test_heldout_735,sw,Bibi ameharisha,diarrhoea,true
+passages_test_heldout_736,sw,ni vigumu kumwamsha,ds_lethargic,true
+passages_test_heldout_737,sw,kuendesha mara nyingi wiki moja,diarrhoea,true
+passages_test_heldout_738,en,grandmother: not weak,weakness,true
+passages_test_heldout_739,en,the girl: loose stools,diarrhoea,true
+passages_test_heldout_740,sw,mvulana kuendesha mara nyingi,diarrhoea,true
+passages_test_heldout_741,en,has a bad cough 3 days,cough,true
+passages_test_heldout_742,sw,Amani kuharisha sana tangu jana,diarrhoea,true
+passages_test_heldout_743,mix,Ameharisha for 1 days,diarrhoea,true
+passages_test_heldout_744,en,had a fit,ds_convulsions,true
+passages_test_heldout_745,en,talked about the cooperative meeting,,true
+passages_test_heldout_746,sw,Mama hakuna homa,fever,true
+passages_test_heldout_747,sw,Ni dhaifu sana tangu jana,weakness,true
+passages_test_heldout_748,en,Child tummy ache,pain,true
+passages_test_heldout_749,sw,msichana anatapka kila kitu siku tatu,ds_vomits_everything;vomiting,true
+passages_test_heldout_750,en,Amani vomits all food 2 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_751,sw,Amani kutapika mara mbili + ana homa za usiku tangu juzi,fever;vomiting,true
+passages_test_heldout_752,sw,hakunywa kitu + anakohowa tangu jana,cough;ds_cannot_drink,true
+passages_test_heldout_753,mix,hawezi kunywa chochote tangu jana,ds_cannot_drink,true
+passages_test_heldout_754,mix,vomits all food wiki moja,ds_vomits_everything;vomiting,true
+passages_test_heldout_755,sw,mtoto wake anakohowa siku mbili,cough,true
+passages_test_heldout_756,mix,Head is paining since yesterday,pain,true
+passages_test_heldout_757,en,Amani: not coughing,cough,true
+passages_test_heldout_758,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_759,sw,mama yake anaonekana mnyonge kwa siku tatu,weakness,true
+passages_test_heldout_760,sw,anatapka kila kitu wiki moja,ds_vomits_everything;vomiting,true
+passages_test_heldout_761,mix,mama yake weakness + anatapka kila kitu for 3 days,ds_vomits_everything;vomiting;weakness,true
+passages_test_heldout_762,mix,Mtoto wake no vomiting siku tatu,vomiting,true
+passages_test_heldout_763,mix,the girl hajatapika tangu jana,vomiting,true
+passages_test_heldout_764,sw,mvulana: homma,fever,true
+passages_test_heldout_765,en,No pain for 1 week,pain,true
+passages_test_heldout_766,sw,Mtoto wa noor: hawezi kunywa maji siku mbili,ds_cannot_drink,true
+passages_test_heldout_767,sw,mtoto wake anatapka + si dhaifu,vomiting;weakness,true
+passages_test_heldout_768,en,the child: cant drink,ds_cannot_drink,true
+passages_test_heldout_769,mix,Mvulana: si dhaifu for 1 week,weakness,true
+passages_test_heldout_770,en,feels weak,weakness,true
+passages_test_heldout_771,mix,anakohowa 2 days,cough,true
+passages_test_heldout_772,sw,Alitapika,vomiting,true
+passages_test_heldout_773,mix,Diarhea,diarrhoea,true
+passages_test_heldout_774,sw,kuendesha mara nyingi,diarrhoea,true
+passages_test_heldout_775,en,Amani loose stools for 1 week,diarrhoea,true
+passages_test_heldout_776,en,talked about the cooperative meeting,,true
+passages_test_heldout_777,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_778,mix,Amani homma + no cough,cough;fever,true
+passages_test_heldout_779,en,The boy: diarhea,diarrhoea,true
+passages_test_heldout_780,sw,msichana: anaharisha maji kwa siku tano,diarrhoea,true
+passages_test_heldout_781,sw,tulipiga picha ya shamba,,true
+passages_test_heldout_782,mix,kikohozi cha usiku,cough,true
+passages_test_heldout_783,en,head is paining for 1 week,pain,true
+passages_test_heldout_784,sw,kikohozi cha usiku,cough,true
+passages_test_heldout_785,sw,alishikwa na degedege siku tano,ds_convulsions,true
+passages_test_heldout_786,en,refuses to breastfeed,ds_cannot_drink,true
+passages_test_heldout_787,sw,anaonekana mnyonge hakunywa kitu,ds_cannot_drink;weakness,true
+passages_test_heldout_788,mix,has a bad cough,cough,true
+passages_test_heldout_789,en,body is very hot 3 days,fever,true
+passages_test_heldout_790,sw,Amani kutetemeka kwa mwili + ameharisha,diarrhoea;ds_convulsions,true
+passages_test_heldout_791,mix,anaweza kunywa,,true
+passages_test_heldout_792,sw,kutetemeka kwa mwili tangu jana,ds_convulsions,true
+passages_test_heldout_793,sw,mtoto wake: alishikwa na degedege,ds_convulsions,true
+passages_test_heldout_794,sw,anaharisha maji,diarrhoea,true
+passages_test_heldout_795,mix,feels weak since yesterday,weakness,true
+passages_test_heldout_796,mix,Maumivu makali,pain,true
+passages_test_heldout_797,sw,mvulana maumivu makali + tapika siku tatu,pain;vomiting,true
+passages_test_heldout_798,mix,Vomits all food x3 days,ds_vomits_everything;vomiting,true
+passages_test_heldout_799,mix,No fever,fever,true

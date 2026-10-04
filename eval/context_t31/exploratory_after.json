@@ -1,0 +1,144 @@
+{
+  "created_at": "2026-10-04T01:46:00.315Z",
+  "author": "ChatGPT / Codex",
+  "purpose": "Exploratory probes written after implementation; not part of the 52 pre-fix cases or an independent benchmark.",
+  "clinical_review": false,
+  "native_review": false,
+  "rules_sha256": "0a0733a55a9dad4731898072d598180bb4e399edc0b28e91fe558a52afb88ebd",
+  "model_sha256": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+  "probes": [
+    {
+      "text": "The child has cough without fever.",
+      "expected": {
+        "cough": "stated",
+        "fever": "denied"
+      },
+      "before": [
+        {
+          "label": "fever",
+          "score": 0.9476091536788978,
+          "passage": 0,
+          "evidence": "The child has cough without fever",
+          "start": 0,
+          "end": 33,
+          "field": "suggested",
+          "assertion": "denied",
+          "cues": [
+            "negation: without"
+          ],
+          "duration": null
+        },
+        {
+          "label": "cough",
+          "score": 0.5665021286099177,
+          "passage": 0,
+          "evidence": "The child has cough without fever",
+          "start": 0,
+          "end": 33,
+          "field": "suggested",
+          "assertion": "denied",
+          "cues": [
+            "negation: without"
+          ],
+          "duration": null
+        }
+      ],
+      "after": [
+        {
+          "label": "fever",
+          "score": 0.9476091536788978,
+          "passage": 0,
+          "evidence": "The child has cough without fever",
+          "start": 0,
+          "end": 33,
+          "field": "suggested",
+          "assertion": "denied",
+          "cues": [
+            "negation: without"
+          ],
+          "duration": null,
+          "context": {
+            "subject": "patient",
+            "subject_cue": "child",
+            "negated": true,
+            "past": false,
+            "report_negated": false,
+            "role_cues": [],
+            "reason": null
+          }
+        },
+        {
+          "label": "cough",
+          "score": 0.5665021286099177,
+          "passage": 0,
+          "evidence": "The child has cough without fever",
+          "start": 0,
+          "end": 33,
+          "field": "suggested",
+          "assertion": "denied",
+          "cues": [
+            "negation: without"
+          ],
+          "duration": null,
+          "context": {
+            "subject": "patient",
+            "subject_cue": "child",
+            "negated": true,
+            "past": false,
+            "report_negated": false,
+            "role_cues": [],
+            "reason": null
+          }
+        }
+      ]
+    },
+    {
+      "text": "Mother says her son has fever.",
+      "expected": {
+        "fever": "conflict"
+      },
+      "before": [
+        {
+          "label": "fever",
+          "score": 0.9714271900174665,
+          "passage": 0,
+          "evidence": "Mother says her son has fever",
+          "start": 0,
+          "end": 29,
+          "field": "suggested",
+          "assertion": "stated",
+          "cues": [],
+          "duration": null
+        }
+      ],
+      "after": [
+        {
+          "label": "fever",
+          "score": 0.9714271900174665,
+          "passage": 0,
+          "evidence": "Mother says her son has fever",
+          "start": 0,
+          "end": 29,
+          "field": "unclear",
+          "assertion": "conflict",
+          "cues": [
+            "reporter: mother",
+            "context: reported or accompanied person not explicit"
+          ],
+          "duration": null,
+          "context": {
+            "subject": "unknown",
+            "subject_cue": null,
+            "negated": false,
+            "past": false,
+            "report_negated": false,
+            "role_cues": [
+              "reporter: mother"
+            ],
+            "reason": "reported or accompanied person not explicit"
+          }
+        }
+      ]
+    }
+  ]
+}

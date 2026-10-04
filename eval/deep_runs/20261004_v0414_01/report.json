@@ -1,0 +1,39 @@
+{
+  "status": "failed",
+  "checks": [],
+  "error": "AssertionError [ERR_ASSERTION]: 320 light en facilities\n    at /Users/peter/Desktop/Challenge 4/01_Working_Demo_AfyaNote/eval/demo-deep.cjs:12:514",
+  "source_before": {
+    "app.js": "a60fdae41c4fa4f7d59fc6b44cc7fae19c815f1eec88e64bf87da539d680ccdc",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "cbc1bab1d716cd44d4f95b81feb57dfa9b397b68e9c5da61759f3a407df1f891",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "7ad5520024f1710e38dcab4cda99938f416599411481487bfb8e5029df9e2ef2",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "source_after": {
+    "app.js": "a60fdae41c4fa4f7d59fc6b44cc7fae19c815f1eec88e64bf87da539d680ccdc",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "cbc1bab1d716cd44d4f95b81feb57dfa9b397b68e9c5da61759f3a407df1f891",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "7ad5520024f1710e38dcab4cda99938f416599411481487bfb8e5029df9e2ef2",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  }
+}

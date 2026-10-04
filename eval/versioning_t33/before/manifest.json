@@ -1,0 +1,18 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T07:01:35.441300+00:00",
+  "reason": "T33 before-version; originals copied unchanged; mixed Claude/Codex historical sources",
+  "files": {
+    "eval/independent.mjs": "a23148c82a751cab02810f0e8cf739bef625501c660f61f7625c005e9d69e1aa",
+    "eval/independent_notes.jsonl": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+    "eval/independent_results.json": "17710c0ec4b878d4c0a29a855656d58909c2bc4d4aff4cfc3ab6dd8bc7233951",
+    "eval/independent_results.md": "6d708579a190a6543a5ebc42299a17b8bede506ea5d9c6f1ea261b832d254d8d",
+    "eval/results.json": "797361555f38ef0a55b691830ad4bb05f2b90e3c7c8b76d17950d32b7f08176d",
+    "eval/results.md": "edb5623af2f1d87621db4e0736e09591ff279076232ff8eb370b1b2268215e20",
+    "eval/demo-regression.cjs": "de72d4416843f0fe441e8431f89d0622da55bff0ef31055aaffab42b643d408e",
+    "eval/demo_regression_results.json": "e9b3f57de9ea584769c145f6a9d45f714422272cefb3ec4b6590cba4ef3bfb86",
+    "app/rules.js": "0a0733a55a9dad4731898072d598180bb4e399edc0b28e91fe558a52afb88ebd",
+    "app/sw.js": "6e6c67726375aa5b7038b2e6eb38a90c456b02e591bd1f763acafd8dd414f8f3",
+    "app/build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f"
+  }
+}

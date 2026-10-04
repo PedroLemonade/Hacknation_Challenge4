@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AfyaNote · Ordnerübersicht</title>
+<style>
+:root{--ink:#182b23;--muted:#56675f;--green:#075032;--line:#dcded3;--paper:#fffefa;--back:#f3f2eb}*{box-sizing:border-box}body{margin:0;background:var(--back);color:var(--ink);font:16px/1.55 system-ui,-apple-system,sans-serif}main{max-width:1140px;margin:auto;padding:32px 24px 70px}h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:10px 0 20px}h2{font-size:23px;margin:30px 0 14px}h3{font-size:18px;margin:0 0 8px}p{margin:10px 0}a{color:var(--green);text-underline-offset:3px}code{font-size:.88em;overflow-wrap:anywhere}.eyebrow{font-size:12px;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.intro{max-width:750px;color:var(--muted)}.buttons{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.button{padding:11px 16px;border:1px solid var(--green);border-radius:9px;text-decoration:none;background:var(--paper);font-weight:650}.primary{background:var(--green);color:white}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card,.box{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}.card p,.meta{font-size:14px;color:var(--muted)}.status{padding:16px 20px;border-left:4px solid var(--green);background:#e7efe7;border-radius:8px}.links{display:grid;gap:9px}.search{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}input,select{font:inherit;border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--paper);max-width:100%}input{flex:1;min-width:160px}button{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--paper);cursor:pointer}table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}th,td{text-align:left;vertical-align:top;padding:12px 8px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}th:first-child{width:48%}th:nth-child(2){width:21%}td small{display:block;color:var(--muted);font-size:12px;margin-top:4px}.tag{display:inline-block;padding:2px 7px;border-radius:5px;background:#edf0e8;font-size:11px;font-weight:650}.count{font-size:13px;color:var(--muted)}details{padding:16px 0;border-bottom:1px solid var(--line)}summary{font-weight:650;cursor:pointer}footer{margin-top:30px;font-size:13px;color:var(--muted)}@media(max-width:700px){main{padding:24px 16px 50px}.grid{grid-template-columns:1fr}.card,.box{padding:16px}th,td{padding:10px 5px}th:first-child{width:43%}th:nth-child(2){width:27%}th:last-child{width:30%}}
+td details{padding:5px 0;border:0}td details summary{font-size:11px;color:var(--muted);font-weight:500}
+</style></head>
+<body><main>
+<div class="eyebrow">Challenge 4 · gemeinsamer Arbeitsordner</div><h1>AfyaNote · Überblick</h1>
+<p class="intro">Demo, Aufgaben und aktuelle Nachweise stehen im gemeinsamen Projekt. Research hilft beim Weiterdenken. Frühere Projekte und Übertragungen sind als Archiv eingeordnet.</p>
+<nav class="buttons" aria-label="Schneller Einstieg">
+<a class="button primary" href="01_Working_Demo_AfyaNote/START_HIER.html">Projekt und Aufgaben öffnen</a>
+<a class="button" id="latestMedia" href="01_Working_Demo_AfyaNote/docs/05_pitch/assets/README.md">Demoaufnahmen und Nachweise</a>
+<a class="button" href="http://localhost:8000/" target="_blank" rel="noopener">Lokale App öffnen</a>
+<a class="button" href="00_LIES_MICH.md">Wegweiser als MD</a>
+<a class="button" href="00_HERKUNFT_CLAUDE_CHATGPT.md">Claude / ChatGPT: Herkunft als MD</a>
+</nav>
+<div class="status" id="status"></div>
+
+<h2>Wer hat was erarbeitet?</h2><div class="grid">
+<article class="card"><h3>Claude</h3><p>Grunddemo, aktuelles Modell und Training, viele UI-Funktionen, ursprüngliche Aufgaben, Pitchbausteine und optionale LLM-Werkzeuge. Auch die Dezimalaltersregel stammt von Claude.</p><a href="01_Working_Demo_AfyaNote/docs/03_plan/claude_demo_worklog.md">Claudes Arbeitsverlauf</a> · <a href="02_Research_und_Planung/von_Claude/">Claude-Research</a></article>
+<article class="card"><h3>ChatGPT / Codex</h3><p>Feasibility-Reviews, zusätzliche Testnotizen, Demo-Reparaturen und Tiefentests, Aufgabenpakete bis T55, aktuelle Browseraufnahme, Ordnerorganisation, echte lokale LLM-Trainingsversuche und vorbereiteter Sprachreview/Integrationsmock.</p><a href="01_Working_Demo_AfyaNote/docs/03_plan/codex_continuation_worklog.md">Aktueller ChatGPT/Codex-Arbeitsverlauf</a> · <a href="02_Research_und_Planung/von_Codex_ChatGPT/">ChatGPT/Codex-Research</a></article>
+</div><p class="meta"><strong>Gemeinsam:</strong> mehrere App-Dateien, Projekt-Hub und Statusdokumente. „Wer“ im BACKLOG bezeichnet die Zuständigkeit einer Aufgabe. Die Dateisuche unten zeigt die dokumentierte Herkunft der Arbeit; ungeklärte Eingaben und Originalquellen stehen separat. <a href="00_HERKUNFT_CLAUDE_CHATGPT.md">Vollständige Beitragsübersicht und Grundlagen</a>.</p>
+
+<h2>Die Ordner und ihr Zweck</h2><div class="grid">
+<article class="card"><h3>01 · Aktive Demo</h3><p>App, Modell, synthetische Daten, Prüfungen, Aufgaben und Pitch. Hier weiterarbeiten; der Aufgabenstatus steht im BACKLOG.</p><a href="01_Working_Demo_AfyaNote/00_INDEX.md">Projektverzeichnis</a> · <a href="01_Working_Demo_AfyaNote/BACKLOG.md">BACKLOG</a></article>
+<article class="card"><h3>02 · Research und Planung</h3><p>Originale Eingaben, Feasibility-Review und frühere Fachdokumente. Hilfreicher Hintergrund; ältere Annahmen sind keine aktuellen Messergebnisse.</p><a href="02_Research_und_Planung/README.md">Was hilft und was früher ist</a></article>
+<article class="card"><h3>03 · Originalunterlagen</h3><p>World-Bank-Challenge und Kickoff als unveränderte PDFs. Ausgangspunkt für Anforderungen und Bewertung.</p><a href="03_Challenge_Unterlagen/README.md">Unterlagen öffnen</a></article>
+<article class="card"><h3>90 · Historisches Archiv</h3><p>Alte Prototypen, Patches und gebündelte ZIP-/TGZ-Pakete. Für Rückblick und Wiederherstellung, getrennt von der aktiven Arbeit.</p><a href="90_Archiv/README.md">Archivverzeichnis</a> · <a href="90_Archiv/01_Sicherungen_und_Transfers/README.md">Sicherungspakete</a></article>
+</div>
+
+<h2>Die hilfreichsten Dateien</h2><div class="box links">
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/codex_continuation_review.md">Aktuell: Demo-Tiefentest, Negationsbereiche und vorbereitete Anschlussarbeit</a>
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/next_session_prompts.md">Nächste Sitzung: priorisierte kopierbare Aufgaben</a>
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/codex_llm_training_review.md">LLM: tatsächliche Trainingsläufe und gemessene Fehler</a>
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/mobile_architecture_codex.md">Wo die App und das Small-LLM auf dem Telefon laufen können</a>
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/codex_claude_review.md">Neu: Claude-Dateien geprüft, Quellen und Machbarkeit korrigiert</a>
+<a href="01_Working_Demo_AfyaNote/docs/05_pitch/assets/codex_review_v0411/README.md">Neu: vier aktualisierte Folienbilder</a>
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/codex_demo_review.md">Demo-Review: reparierte Fehler, aktuelle Nachweise und Grenzen</a>
+<a href="01_Working_Demo_AfyaNote/docs/03_plan/codex_context_review.md">T31: Personenbezug repariert, zusätzliche Prüfarbeit offengelegt</a>
+<a href="01_Working_Demo_AfyaNote/eval/README.md">Prüfungen: welche Zahl was belegt</a>
+<a href="01_Working_Demo_AfyaNote/data/README.md">Daten: Training, Entwicklung und Tests auseinanderhalten</a>
+<a href="01_Working_Demo_AfyaNote/docs/05_pitch/assets/README.md">Medien: belegte Aufnahme und weitere Bausteine</a>
+<a href="01_Working_Demo_AfyaNote/docs/05_pitch/demo_rehearsal_codex.md">Demo-Anleitung mit belegbaren Aussagen</a>
+<a href="01_Working_Demo_AfyaNote/docs/00_organisation/ordner_und_dateiregeln.md">Dateiregeln: wohin neue Inhalte gehören</a>
+</div>
+
+<h2 id="dateisuche">Dateien finden</h2><p class="meta">Name, Thema oder Ordner suchen und nach Herkunft filtern. „ChatGPT / Codex“ fasst die OpenAI-Beiträge zusammen. „Gemeinsam“ enthält Beiträge von beiden. Die Kennzeichnung gilt für die dokumentierte Dateiversion. Inhalte werden nicht hochgeladen.</p>
+<div class="search"><label for="scope" class="meta">Bereich</label><select id="scope"><option value="project">Aktives Projekt</option><option value="all">Alle katalogisierten Dateien</option><option value="research">Research und Originalinputs</option><option value="originals">Challenge-Unterlagen</option><option value="archive">Archiv und Sicherungen</option><option value="guides">Ordnung und Wegweiser</option></select><label for="originFilter" class="meta">Herkunft</label><select id="originFilter"><option value="all">Alle Herkünfte</option><option value="Claude">Claude</option><option value="ChatGPT / Codex">ChatGPT / Codex</option><option value="Gemeinsam">Gemeinsam</option><option value="Ungeklärt">Ungeklärt</option><option value="Originalquelle / Dritte">Originalquelle / Dritte</option></select><input id="search" type="search" placeholder="z.B. Swahili, Modell, Video, T31 …" aria-label="Dateien suchen"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<table><thead><tr><th>Datei</th><th>Herkunft / Einordnung</th><th>Wofür sie hilft</th></tr></thead><tbody id="files"></tbody></table>
+<button id="more" type="button" hidden>Weitere Dateien anzeigen</button>
+
+<h2>Ordnung nachvollziehen</h2><div class="box links">
+<a href="00_Ordnung_und_Inventar/ordnungsbericht.md">Ordnungsbericht und noch externe Originaldatei</a>
+<a href="00_Ordnung_und_Inventar/verschiebungen.json">Sieben Verschiebungen: alter und neuer Pfad</a>
+<a href="00_Ordnung_und_Inventar/erhaltungspruefung.json">Erhaltungsprüfung aller vorher erfassten Dateien</a>
+<a href="00_Ordnung_und_Inventar/identische_dateien.md">Identische Kopien und ihr Zweck</a>
+<a href="00_Ordnung_und_Inventar/dateiinventar.json" download>Vollständiger Dateikatalog als JSON</a>
+<a href="00_Ordnung_und_Inventar/herkunftsregeln.json">Dokumentierte Herkunftsregeln</a>
+<a href="00_Ordnung_und_Inventar/herkunftsaufnahme.json">Dateiversionen der Herkunftszuordnung</a>
+</div>
+<footer id="built"></footer>
+</main><script>
+var DATA=/*__DATA__*/null,limit=100;
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+function href(path){return path.split('/').map(encodeURIComponent).join('/');}
+function inScope(f,scope){if(scope==='all')return true;if(scope==='project')return f.path.startsWith('01_Working_Demo_AfyaNote/');if(scope==='research')return f.path.startsWith('02_Research_und_Planung/');if(scope==='originals')return f.path.startsWith('03_Challenge_Unterlagen/');if(scope==='archive')return f.path.startsWith('90_Archiv/');return f.category==='Orientierung';}
+function render(){var scope=document.getElementById('scope').value,origin=document.getElementById('originFilter').value,q=document.getElementById('search').value.toLocaleLowerCase(),found=DATA.files.filter(function(f){return inScope(f,scope)&&(origin==='all'||f.origin_group===origin)&&(f.path+' '+f.kind+' '+f.use+' '+f.category+' '+f.origin+' '+f.origin_note).toLocaleLowerCase().includes(q);});document.getElementById('files').innerHTML=found.slice(0,limit).map(function(f){return '<tr><td><a href="'+href(f.path)+'">'+esc(f.path)+'</a><small>'+f.bytes.toLocaleString('de-DE')+' Bytes</small></td><td><strong>'+esc(f.origin)+'</strong><details><summary>Grundlage</summary><small>'+esc(f.origin_note)+'</small></details><span class="tag">'+esc(f.category)+'</span><small>'+esc(f.kind)+'</small></td><td>'+esc(f.use)+'</td></tr>';}).join('');document.getElementById('count').textContent=found.length+' Treffer · '+Math.min(limit,found.length)+' angezeigt';document.getElementById('more').hidden=found.length<=limit;}
+document.getElementById('search').addEventListener('input',function(){limit=100;render();});document.getElementById('scope').addEventListener('change',function(){limit=100;render();});document.getElementById('originFilter').addEventListener('change',function(){limit=100;render();});document.getElementById('more').addEventListener('click',function(){limit+=100;render();});
+document.getElementById('status').textContent=DATA.version+' · '+(DATA.reportMatches?DATA.checks+' Browserchecks passen zum aktuellen Code.':'Die gespeicherte Browserprüfung passt nicht zum aktuellen Code; neu prüfen.')+' '+(DATA.captureMatches?'Aufnahme mit passenden Quellhashes.':'Aufnahme zeigt einen früheren Stand.')+' Bei der Ordnung am 04.10.2026: '+DATA.preserved+'/'+DATA.before+' vorherige Inhalte erhalten; '+DATA.unexpected+' ungeklärte Abweichungen. Reale Telefon- und Sprachprüfung bleiben eigene Aufgaben.';
+if(DATA.media){document.getElementById('latestMedia').href='01_Working_Demo_AfyaNote/'+DATA.media.videoPath;document.getElementById('latestMedia').textContent='Aufnahme '+DATA.media.version.replace('afyanote-','')+' ansehen'+(DATA.media.current?'':' (historisch)');}
+document.getElementById('built').textContent='Katalog erzeugt '+DATA.built+'. Finder-/Cache-/geschützte Konfigurationsordner, Symlinks und erzeugte Katalogdateien sind ausgenommen. Lokaler Dateikatalog ohne externe Skripte oder automatische Archivwiederherstellung.';
+render();
+</script></body></html>

@@ -1,0 +1,26 @@
+{
+  "authored_by": "ChatGPT / Codex",
+  "purpose": "Post-generation audit only; never used to generate/alter training data. Old tests remain known regression, not independent final evaluation.",
+  "checks": [
+    {
+      "file": "eval/independent_notes.jsonl",
+      "sha256": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+      "rows": 40,
+      "train_overlap_ids": [],
+      "dev_overlap_ids": []
+    },
+    {
+      "file": "data/notes_test.jsonl",
+      "sha256": "5a4ce9c376ddfcd1911cc57355c93fb259cc12d350c001dd18e568fa8b12cbd6",
+      "rows": 400,
+      "train_overlap_ids": [
+        "train_note_15",
+        "train_note_52",
+        "train_note_171",
+        "train_note_178",
+        "heldout_note_70"
+      ],
+      "dev_overlap_ids": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T07:01:35.441300+00:00",
+  "protected_files": 90,
+  "protected_changed": [],
+  "local_links_checked": 140,
+  "missing_links": [],
+  "runs": [
+    {
+      "run": "20261004_qwen3_06b_qlora_v01",
+      "checks": {
+        "runner_snapshot.py": true,
+        "adapter_weights": true,
+        "frozen_dataset": true,
+        "capture_base": true,
+        "capture_adapter": true,
+        "scorer_snapshot": true
+      }
+    },
+    {
+      "run": "20261004_qwen3_06b_qlora_v02",
+      "checks": {
+        "runner_snapshot.py": true,
+        "loss_snapshot.py": true,
+        "adapter_weights": true,
+        "frozen_dataset": true,
+        "capture_base": true,
+        "capture_adapter": true,
+        "scorer_snapshot": true
+      }
+    },
+    {
+      "run": "20261004_qwen3_06b_selection_v01",
+      "checks": {
+        "runner_snapshot.py": true,
+        "loss_snapshot.py": true,
+        "selection_snapshot.py": true,
+        "adapter_weights": true,
+        "frozen_dataset": true,
+        "capture_base": true,
+        "capture_adapter": true,
+        "scorer_snapshot": true
+      }
+    }
+  ],
+  "passed": true
+}

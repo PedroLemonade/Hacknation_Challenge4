@@ -1,0 +1,15 @@
+# Second-author-Test: Einordnung und Versionsgrenze
+
+Codex formulierte 40 synthetische Notizen mit 63 annotierten Begriffen ohne Einsicht in `training/lexicon.py` oder die generierten Daten. Aufteilung: 15 Swahili, 15 Englisch, 10 gemischt. Goldlabels und Formulierungen sind nicht klinisch oder muttersprachlich freigegeben.
+
+Modellparameter und Schwellen wurden nicht auf diese Fälle angepasst. Die erste Auswertung ergab bei vorgeschlagenen Begriffen micro F1 **0,933** für Modell plus Regeln gegenüber **0,844** für Wörterbuch plus Regeln. Einschließlich unklarer Kandidaten wurden 58/63 beziehungsweise 46/63 Begriffe gefunden; dieser Recall ist eine andere Kennzahl als F1. Die Statusquote 57/58 beziehungsweise 45/46 berücksichtigt nur gefundene Begriffe, nicht die ausgelassenen.
+
+In der erhaltenen Baseline sind ein zusätzlicher Vorschlag und ein falscher Personenbezug echte Fehler. „0 context errors shown as stated“ zählt ausschließlich falsch als `stated` eingeordnete Fälle; es bedeutet nicht null Kontextfehler. Der falsche Personenbezug `other_person` ist in dieser engen Kennzahl nicht enthalten.
+
+Nach Offenlegung eines Altersfehlers („2.5 years old“ → 5 Jahre) hat Claude die Altersregel repariert und einen Kontrasttest ergänzt. Dezimalalter bleibt nun `unclear` und muss manuell eingegeben werden. Die Begriffszahlen änderten sich dadurch nicht, weil Alter nicht Bestandteil der 63 Goldbegriffe ist. Die Raw-Auswertung enthält bereits diese bekannte Reparatur. Ihr `rules_sha256` beschreibt den dort tatsächlich ausgewerteten Stand. Eine erneute Prüfung dieses Altersfalls ist ein Regressionstest, kein neuer unabhängiger Erfolgsbeleg.
+
+Die Formulierung „nothing was tuned“ im frühen Bericht ist deshalb eng zu lesen: keine Anpassung von Modell/Schwellen an das Set. Sie soll keine unveränderte Regeldatei nach der späteren Reparatur behaupten. Der aktuelle Dokumentationsstand benennt diese Grenze ausdrücklich. Die erstellte Notizdatei selbst wurde nicht geändert; SHA-256: `16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3`.
+
+Für den nächsten unabhängigen Vergleich: Modell **und** Regelversion vor Erhalt neuer Notizen einfrieren, deren Hashes sichern, externen Goldreview durchführen und zuerst alle Fehler berichten. Nach Reparaturen dasselbe Set als Regression weiterführen und einen neuen, zuvor unbekannten Bestand separat prüfen. Ein zweiter KI-Autor ist keine unabhängige Feldvalidierung.
+
+**T31, v0.4.11:** ChatGPT/Codex reparierte den bekannten Kind-/Mutter-Zeugenfall auf der Claude-Regelbasis. Neue Ergebnisse stehen ausschließlich unter [context_t31/](context_t31/results.md); die ursprünglichen Notizen und schreibgeschützten Raw-Ergebnisse wurden nicht überschrieben. Unter den gefundenen Begriffen stimmen dort nun 58/58 Modellstatus und 46/46 Wörterbuchstatus; Begriffserkennung und Suggested-only-F1 bleiben gleich. Dies ist ein bekannter Regressionsgewinn auf unreviewtem Gold. Bei den 400 Generatornotizen führt die konservative Behandlung subjektloser Folgesätze zugleich zu mehr Auswahlpflicht und niedrigerer Statusübereinstimmung; [vollständige Auswirkungen](../docs/03_plan/codex_context_review.md).

@@ -1,0 +1,117 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "version": "afyanote-v0.4.16",
+  "unique_asset_bytes": 449067,
+  "sum_individual_gzip_bytes": 128166,
+  "peak_ram_measured": false,
+  "http_gzip_measured": false,
+  "browser_report_source_hashes_match": true,
+  "browser_report": "eval/browser_runs/20261004_final_v0416/browser_report.json",
+  "files": [
+    {
+      "file": "app.js",
+      "bytes": 62201,
+      "sha256": "a60fdae41c4fa4f7d59fc6b44cc7fae19c815f1eec88e64bf87da539d680ccdc",
+      "gzip_bytes": 17705,
+      "precache": true
+    },
+    {
+      "file": "build_info.json",
+      "bytes": 241,
+      "sha256": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+      "gzip_bytes": 166,
+      "precache": true
+    },
+    {
+      "file": "classify.js",
+      "bytes": 3409,
+      "sha256": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+      "gzip_bytes": 1447,
+      "precache": true
+    },
+    {
+      "file": "dictionary.json",
+      "bytes": 1629,
+      "sha256": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+      "gzip_bytes": 608,
+      "precache": true
+    },
+    {
+      "file": "facilities.json",
+      "bytes": 1680,
+      "sha256": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+      "gzip_bytes": 538,
+      "precache": true
+    },
+    {
+      "file": "i18n.js",
+      "bytes": 22553,
+      "sha256": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+      "gzip_bytes": 8204,
+      "precache": true
+    },
+    {
+      "file": "icon-192.png",
+      "bytes": 1158,
+      "sha256": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+      "gzip_bytes": 1003,
+      "precache": true
+    },
+    {
+      "file": "icon-512.png",
+      "bytes": 3552,
+      "sha256": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+      "gzip_bytes": 2257,
+      "precache": true
+    },
+    {
+      "file": "icon.svg",
+      "bytes": 380,
+      "sha256": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+      "gzip_bytes": 237,
+      "precache": true
+    },
+    {
+      "file": "index.html",
+      "bytes": 21853,
+      "sha256": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b",
+      "gzip_bytes": 6007,
+      "precache": true
+    },
+    {
+      "file": "manifest.webmanifest",
+      "bytes": 538,
+      "sha256": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+      "gzip_bytes": 299,
+      "precache": true
+    },
+    {
+      "file": "model.json",
+      "bytes": 249284,
+      "sha256": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+      "gzip_bytes": 69762,
+      "precache": true
+    },
+    {
+      "file": "rules.js",
+      "bytes": 22031,
+      "sha256": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+      "gzip_bytes": 7485,
+      "precache": true
+    },
+    {
+      "file": "sw.js",
+      "bytes": 1864,
+      "sha256": "7ff6a981c467a7a3b2deb963fbfaf877a006f63f9398cf838bd0ba9880510c83",
+      "gzip_bytes": 795,
+      "precache": false
+    },
+    {
+      "file": "vendor/qrcode.js",
+      "bytes": 56694,
+      "sha256": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780",
+      "gzip_bytes": 11653,
+      "precache": true
+    }
+  ]
+}

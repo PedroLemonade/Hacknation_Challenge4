@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-03T23:09:38.321Z",
+  "observations": {
+    "source_change": {
+      "case_id": "OLD-CASE",
+      "treatment": "OLD-FICTIONAL-TREATMENT",
+      "consent": true
+    },
+    "focus_after_rerender": "BODY",
+    "invalid_age_export": {
+      "value": null,
+      "unit": "years"
+    },
+    "dialog_focus": "BODY"
+  }
+}

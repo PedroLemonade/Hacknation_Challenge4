@@ -1,0 +1,9 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "contracts_passed": 16,
+  "output_collision_rejected": true,
+  "network_calls": 0,
+  "source_fixture_sha256": "53873e76ce4947f031654ab04523900e515ab9fc3fd04ce5cb5b7a7d9fadf99a",
+  "adapter_sha256": "ca320d19d40baee3a994c24d3684c449cb66b12e96c50a384c533fb55ced222b",
+  "clinical_validation": false
+}

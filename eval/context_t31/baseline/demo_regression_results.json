@@ -1,0 +1,836 @@
+{
+  "status": "passed",
+  "created_at": "2026-10-04T00:14:32.205Z",
+  "browser": "154.0.8037.97",
+  "checks": [
+    {
+      "name": "Local model and complete offline package",
+      "status": "passed"
+    },
+    {
+      "name": "Empty and oversized input errors",
+      "status": "passed"
+    },
+    {
+      "name": "Review gate, focus preservation and changed status needs new confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "New source clears previous case fields and consent",
+      "status": "passed"
+    },
+    {
+      "name": "Invalid age rejected by UI and handler; manual decimal accepted",
+      "status": "passed"
+    },
+    {
+      "name": "Facility dialog selection and keyboard focus wrap",
+      "status": "passed"
+    },
+    {
+      "name": "Consent guard survives re-enabled export button",
+      "status": "passed"
+    },
+    {
+      "name": "JSON: blanks, reviewed negation and exact original source offsets",
+      "status": "passed"
+    },
+    {
+      "name": "Readable Markdown contains original and review log",
+      "status": "passed"
+    },
+    {
+      "name": "Local QR generation; focus contained and restored (no camera scan test)",
+      "status": "passed"
+    },
+    {
+      "name": "Download / clipboard failures shown without false success",
+      "status": "passed"
+    },
+    {
+      "name": "320 px handover fits",
+      "status": "passed"
+    },
+    {
+      "name": "Printable draft excludes controls and retains the fictional/not-approved notice",
+      "status": "passed"
+    },
+    {
+      "name": "Note markup inert",
+      "status": "passed"
+    },
+    {
+      "name": "Metadata markup inert and Markdown fence protected",
+      "status": "passed"
+    },
+    {
+      "name": "Simulated offline reload clears case and processes a new Swahili note",
+      "status": "passed"
+    },
+    {
+      "name": "New offline tab, conflict choice and Swahili evidence preservation",
+      "status": "passed"
+    },
+    {
+      "name": "Actual browser back navigation has no previous note (reload or bfcache)",
+      "status": "passed"
+    },
+    {
+      "name": "Evicted required assets cannot produce a ready offline badge",
+      "status": "passed"
+    },
+    {
+      "name": "Explicit retry restores all evicted required assets",
+      "status": "passed",
+      "detail": "✓ Ready offline"
+    },
+    {
+      "name": "Unrelated cache preserved",
+      "status": "passed"
+    },
+    {
+      "name": "390 px note screen fits",
+      "status": "passed"
+    },
+    {
+      "name": "LLM reference comparison makes no unmeasured hardware compatibility claim",
+      "status": "passed"
+    },
+    {
+      "name": "Malformed model explicitly rejected",
+      "status": "passed"
+    },
+    {
+      "name": "Missing install asset has bounded failure and retry",
+      "status": "passed"
+    },
+    {
+      "name": "Across contexts: no external requests, note uploads, case databases, cookies or page exceptions",
+      "status": "passed"
+    },
+    {
+      "name": "App files unchanged throughout the browser run",
+      "status": "passed"
+    }
+  ],
+  "source_before": {
+    "app.js": "c693d1c298fd5c924032d6436285f43baddee5b3afa6550deb4c2e88e7881ffa",
+    "i18n.js": "13cfab051e5e7f80c11c2ce0bc507ec9dc858c6843431b17b4d3094eed7eced5",
+    "index.html": "1ef8efe601e1d873b218d93a1bedb6ab45b915b5dee1d53b7d69500349139643",
+    "sw.js": "dfef0fa4972014bc63ba45c7e59d665b99a668a545a74ed8ac74b8aed9250eaa",
+    "rules.js": "08e97cbbbfceeebbf41ca45afb21b8c7a4f36badcfc819258f9d6809cd971349",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659"
+  },
+  "source_after": {
+    "app.js": "c693d1c298fd5c924032d6436285f43baddee5b3afa6550deb4c2e88e7881ffa",
+    "i18n.js": "13cfab051e5e7f80c11c2ce0bc507ec9dc858c6843431b17b4d3094eed7eced5",
+    "index.html": "1ef8efe601e1d873b218d93a1bedb6ab45b915b5dee1d53b7d69500349139643",
+    "sw.js": "dfef0fa4972014bc63ba45c7e59d665b99a668a545a74ed8ac74b8aed9250eaa",
+    "rules.js": "08e97cbbbfceeebbf41ca45afb21b8c7a4f36badcfc819258f9d6809cd971349",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659"
+  },
+  "physical_phone": false,
+  "native_swahili_review": false,
+  "caveats": [
+    "Desktop Chrome; simulated network loss and narrow viewport.",
+    "No camera interoperability, OS restart, native speaker or WCAG conformance validation."
+  ],
+  "storage": {
+    "local": [
+      "afya_lang"
+    ],
+    "session": [],
+    "dbs": [],
+    "cookies": ""
+  },
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/sw.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/index.html",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/manifest.webmanifest",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon-192.png",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon-512.png",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/index.html",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/manifest.webmanifest",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon-192.png",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon-512.png",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/sw.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/index.html",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/app.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/classify.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/rules.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/i18n.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/model.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/facilities.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/dictionary.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/build_info.json",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/manifest.webmanifest",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon.svg",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon-192.png",
+      "body": null
+    },
+    {
+      "method": "GET",
+      "url": "http://localhost:8000/icon-512.png",
+      "body": null
+    }
+  ],
+  "pageErrors": []
+}

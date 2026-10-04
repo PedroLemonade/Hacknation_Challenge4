@@ -1,0 +1,54 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T02:15:50.037739+00:00",
+  "mock_only": true,
+  "source_sha256": "80eb7ab9e9b4c3aabbf49b32ef56730fead303eda2add6dbc126826ce158ab74",
+  "passed": 11,
+  "total": 11,
+  "tests": [
+    {
+      "name": "Reject endpoint https://example.com",
+      "pass": true
+    },
+    {
+      "name": "Reject endpoint http://example.com",
+      "pass": true
+    },
+    {
+      "name": "Reject endpoint http://localhost@evil.example",
+      "pass": true
+    },
+    {
+      "name": "Reject endpoint http://localhost/x",
+      "pass": true
+    },
+    {
+      "name": "Reject endpoint http://localhost?target=elsewhere",
+      "pass": true
+    },
+    {
+      "name": "IPv4 loopback allowed",
+      "pass": true
+    },
+    {
+      "name": "IPv6 loopback allowed",
+      "pass": true
+    },
+    {
+      "name": "Partial capture has full denominator, hashes, exact model identity and schema",
+      "pass": true
+    },
+    {
+      "name": "Existing capture is never overwritten",
+      "pass": true
+    },
+    {
+      "name": "API failures remain captured and make run incomplete",
+      "pass": true
+    },
+    {
+      "name": "HTTP redirect cannot send request outside loopback",
+      "pass": true
+    }
+  ]
+}

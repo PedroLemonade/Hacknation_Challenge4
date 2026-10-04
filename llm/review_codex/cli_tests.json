@@ -1,0 +1,41 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T02:26:30.242Z",
+  "source_sha256": "67d4eb843e900e1514e2323ee7e109f531ee2dde3e3c53b8129e9ca4f2b606d3",
+  "passed": 8,
+  "total": 8,
+  "tests": [
+    {
+      "name": "Fresh reference selftest produces a complete report",
+      "pass": true
+    },
+    {
+      "name": "Existing report refuses overwrite",
+      "pass": true
+    },
+    {
+      "name": "Duplicate IDs cannot inflate a CLI report",
+      "pass": true
+    },
+    {
+      "name": "Unknown IDs cannot silently disappear",
+      "pass": true
+    },
+    {
+      "name": "Changed dataset hash aborts",
+      "pass": true
+    },
+    {
+      "name": "Changed capture hash aborts",
+      "pass": true
+    },
+    {
+      "name": "Mixed dataset rows abort",
+      "pass": true
+    },
+    {
+      "name": "One-answer smoke run retains 40-note denominator",
+      "pass": true
+    }
+  ]
+}

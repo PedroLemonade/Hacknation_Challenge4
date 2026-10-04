@@ -1,0 +1,41 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "source_authorship": "Claude deck + ChatGPT/Codex claim correction",
+  "generated_at": "2026-10-04T02:27:35.265Z",
+  "source": "docs/05_pitch/slides.html",
+  "source_sha256": "6621f4e368b64f845ae65439bf60d03bcc63d99f9a3a4af7965d77e458b349f0",
+  "app_reference_version": "afyanote-v0.4.11",
+  "kind": "rendered slides, not an app/video/phone capture",
+  "browser": "154.0.8037.97",
+  "slides": [
+    {
+      "file": "slide_1.png",
+      "sha256": "66a7bf84ee33da9b13e24a4db5fe151b57675139b0a0fbb50d69a5a1cc72b841",
+      "width": 1920,
+      "height": 1080,
+      "clipping": []
+    },
+    {
+      "file": "slide_2.png",
+      "sha256": "4e204f6d8775092209915803da3bf0c6d81326a6b382c8f359a9625258ca8b64",
+      "width": 1920,
+      "height": 1080,
+      "clipping": []
+    },
+    {
+      "file": "slide_3.png",
+      "sha256": "123dd784e6dce9f94f0172e375e403de766d6834ff0dc98dac56e0b06ddf04af",
+      "width": 1920,
+      "height": 1080,
+      "clipping": []
+    },
+    {
+      "file": "slide_4.png",
+      "sha256": "44b53b430ac3958203443a7427716f5ef7ee6d30d65f3452ce236919ec095b43",
+      "width": 1920,
+      "height": 1080,
+      "clipping": []
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "afyanote.referral-draft/0.2",
+  "form_reference": "Oriented on MOH 100 Community Referral Form, section A (historical template). Not an official or validated form.",
+  "status": "reviewed_by_user",
+  "created_device_time": "2026-10-03T23:09:37.952Z",
+  "referral_time": null,
+  "case_id": "OLD-CASE",
+  "sex": null,
+  "age": {
+    "value": null,
+    "unit": "years"
+  },
+  "community_health_unit": "Kiharu Demo CHU (fictional)",
+  "link_health_facility": null,
+  "community_health_promoter": "CHP Demo 014 (fictional)",
+  "main_problems": [
+    {
+      "term_en": "Cough",
+      "term_sw": "Kikohozi",
+      "label": "cough",
+      "evidence": "Child has a cough",
+      "duration_days": null,
+      "status": "stated",
+      "edited_by_user": false
+    }
+  ],
+  "documented_absent": [],
+  "mentioned_other_person_or_past": [],
+  "who_imci_general_danger_signs_confirmed": [],
+  "treatment_given": "OLD-FICTIONAL-TREATMENT",
+  "original_note": "Child has a cough.",
+  "consent_recorded": true,
+  "model": {
+    "name": "afyanote-passage-classifier",
+    "version": "0.1.0",
+    "thresholds": {
+      "suggest": 0.5,
+      "unclear": 0.25,
+      "dev_precision_at_suggest": 1,
+      "dev_recall_at_suggest": 0.983
+    }
+  },
+  "demo_data_fictional": true
+}

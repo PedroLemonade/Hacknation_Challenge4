@@ -1,0 +1,45 @@
+{
+  "schema": "afyanote.benchmark-run/1",
+  "created_at": "2026-10-04T07:41:50.279Z",
+  "created_by": "ChatGPT / Codex",
+  "runner_version": "T33-1",
+  "mode": "regression",
+  "benchmark": "independent",
+  "title": "Known 40-note second-author regression",
+  "app_version": "afyanote-v0.4.17",
+  "source_hashes": {
+    "eval/independent_notes.jsonl": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+    "app/sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+    "app/rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "app/classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "app/model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "data/dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "app/dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "eval/independent.mjs": "e10f7280ef53606254b693c4fbdda8d183a3fe0e0caf5aecab748cb1e3596163",
+    "eval/benchmark_lib.mjs": "444a4020af05312b5f3ffd6dade7db48200c7e92373e9eced2dbfb6372141508"
+  },
+  "test_sha256": "16cdf0516ef9a9c710a17a3629734c6961cbec9c87cc0524f2b6ec3dd74bcde3",
+  "gold_labels_sha256": "927d8a7b098bbfae70caf2685d2322a483e9f4404333430e803d655de7ae604d",
+  "notes": 40,
+  "synthetic": true,
+  "clinical_review": false,
+  "native_swahili_review": false,
+  "previously_seen": true,
+  "known_repairs": [
+    "Decimal age after initial second-author test",
+    "T31 witness/person and orphan context; see preserved results",
+    "Later rule repairs recorded in matching rule review and source hash"
+  ],
+  "parameters_tuned_on_40": false,
+  "model_training_performed": false,
+  "interpretation": "Rerun on already-known synthetic notes after disclosed repairs; not independent field validation.",
+  "metric_definitions": {
+    "suggested_only_f1": "Label-only micro F1; suggested candidates; all gold terms in recall denominator; no status correctness implied.",
+    "term_recall": "All found labels, including unclear.",
+    "status_accuracy": "Correct normalized status / found gold labels; missing terms excluded.",
+    "status_mismatches": "All wrong found statuses including conflict/other_person; wrong_stated is only the narrow subset.",
+    "exact_notes": "All candidate labels and normalized statuses match; excludes age, duration and semantic source validation.",
+    "extras": "Both suggested-only and including unclear reported separately.",
+    "age": "Only scored when gold_age explicitly annotated."
+  }
+}

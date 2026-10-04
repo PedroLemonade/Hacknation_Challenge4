@@ -1,0 +1,11 @@
+{
+ "model_bytes": 249284,
+ "model_version": "0.1.0",
+ "date": "2026-10-03",
+ "heldout_f1_model": 0.851,
+ "heldout_f1_dictionary": 0.499,
+ "typo_f1_model": 0.953,
+ "typo_f1_dictionary": 0.624,
+ "contrast_pass": "34 / 34",
+ "synthetic": true
+}

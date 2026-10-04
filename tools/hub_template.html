@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AfyaNote Start</title>
+<style>
+/* Layout: one column. Status, timeline with checkboxes, then task packages as expandable cards with rendered Markdown and copy buttons */
+:root{
+  --bg:#f4f1e8; --paper:#fffdf7; --ink:#1d2a22; --muted:#5d6b62; --line:#ddd6c4;
+  --accent:#14532d; --accent-soft:#e3efe5; --warn:#8a5300; --warn-soft:#fbefd6; --code:#efeadc;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans",sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121815; --paper:#1a221d; --ink:#e6ece7; --muted:#9aa89f; --line:#2c3830;
+  --accent:#7fd19b; --accent-soft:#1d3325; --warn:#f0b45a; --warn-soft:#3a2a12; --code:#222b25; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121815; --paper:#1a221d; --ink:#e6ece7; --muted:#9aa89f; --line:#2c3830;
+  --accent:#7fd19b; --accent-soft:#1d3325; --warn:#f0b45a; --warn-soft:#3a2a12; --code:#222b25; color-scheme:dark}
+*{box-sizing:border-box} html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--font);padding-inline:16px;padding-block:0 60px}
+.wrap{max-width:820px;margin:0 auto;overflow-wrap:anywhere}
+code,a{overflow-wrap:anywhere}
+header{padding-block:24px 4px}
+.eyebrow{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(26px,5vw,34px);margin:4px 0 6px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0}
+.strip{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:3;padding-block:10px;border-bottom:1px solid var(--line);margin-bottom:14px;display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:space-between;font:500 14px var(--mono);font-variant-numeric:tabular-nums}
+.strip b{color:var(--warn)}
+h2{font-size:20px;margin:28px 0 10px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.box ul{margin:0;padding-left:18px;display:grid;gap:3px}
+.tl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+td.t{font:500 13px var(--mono);white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+.tid{font:600 12px var(--mono);background:var(--accent-soft);color:var(--accent);border-radius:4px;padding:1px 6px;margin-right:4px;text-decoration:none;white-space:nowrap}
+.tid.done{text-decoration:line-through;opacity:.7}
+details.task{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+details.task>summary{list-style:none;cursor:pointer;padding:12px 16px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;align-items:center}
+.sline{grid-column:2/4;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+details.task>summary::-webkit-details-marker{display:none}
+details.task.done>summary .ttl{color:var(--muted);text-decoration:line-through}
+.ttl{font-weight:600;min-width:0}
+.tool{font:500 12px var(--mono);color:var(--muted);white-space:normal;min-width:0;overflow-wrap:anywhere}
+.task input[type=checkbox]{width:20px;height:20px;accent-color:var(--accent)}
+.md{padding:0 18px 14px;border-top:1px solid var(--line);min-width:0}
+.md h1{display:none}
+.md h2{font-size:16px;margin:16px 0 6px}
+.md h3{font-size:15px;margin:12px 0 4px}
+.md p{margin:8px 0}
+.md ul,.md ol{padding-left:20px;margin:6px 0}
+.md code{font:13px var(--mono);background:var(--code);padding:1px 4px;border-radius:4px}
+.pre{position:relative;margin:10px 0}
+.pre pre{background:var(--code);border-radius:10px;padding:12px;overflow-x:auto;font:13px/1.5 var(--mono);margin:0;white-space:pre-wrap;word-wrap:break-word}
+.pre button{position:absolute;top:8px;right:8px}
+.md table{font-size:13px;margin:8px 0}
+.md blockquote{margin:8px 0;padding:6px 12px;border-left:3px solid var(--warn);background:var(--warn-soft);border-radius:0 8px 8px 0}
+button{font:500 13px var(--font);background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:6px 10px;cursor:pointer}
+button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.st{font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.st.offen{background:var(--warn-soft);color:var(--warn)}.st.erledigt{background:var(--accent-soft);color:var(--accent)}.st.optional,.st.wartet{background:var(--code);color:var(--muted)}
+.meta{font-size:13px;color:var(--muted)}
+.foot{margin-top:24px;color:var(--muted);font-size:13px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Hack Nation · Challenge 4 · Health · Solo</div>
+  <h1>AfyaNote · Start hier</h1>
+  <p class="sub">Status aus BACKLOG.md, alle Aufgabenpakete mit Prompts zum Kopieren und die wichtigsten Dokumente. Agenten lesen 00_INDEX.md und BACKLOG.md. <span id="built"></span></p>
+  <p class="meta"><strong>Claude:</strong> Grunddemo, aktuelles Modell, viele UI-/Pitchbausteine und LLM-Werkzeuge. <strong>ChatGPT / Codex:</strong> Reviews, zusätzliche Testnotizen, Demo-Reparaturen, aktuelle Aufnahme und Ordnerorganisation. Mehrere Dateien sind gemeinsam bearbeitet. <a href="docs/00_organisation/herkunft_beitragsuebersicht.md">Beiträge und Herkunft als MD</a> · <a href="../START_HIER.html#dateisuche">Dateien nach Herkunft finden</a>.</p>
+</header>
+<div class="strip"><span id="cd">Abgabe So 15:00</span><span id="prog">0 / 0 Aufgaben</span></div>
+
+<h2>Schon fertig</h2>
+<div class="box"><ul id="status"></ul></div>
+
+<section id="mediaBox" hidden>
+  <h2>Aktuelle Demoaufnahme</h2>
+  <div class="box">
+    <p id="mediaDescription"></p>
+    <video id="demoVideo" controls playsinline preload="none" style="display:block;max-width:100%;width:390px;max-height:700px;background:#f3f0e7;border-radius:12px"></video>
+    <p><a id="mediaReadme">Material und Grenzen</a> · <a id="mediaDownload" download>MP4 herunterladen</a> · <a href="http://localhost:8000/" target="_blank" rel="noopener">Lokale App öffnen</a></p>
+  </div>
+</section>
+
+<h2>Als Nächstes</h2>
+<div class="box" id="nextBox"></div>
+
+<h2>Aufgaben</h2>
+<p class="meta">„Wer“ und die Filter bezeichnen die Aufgaben-Zuständigkeit. Die Herkunft des Prompts oder der Umsetzung steht in der Beitragsübersicht und im Dateikatalog.</p>
+<label class="meta" for="taskSearch">Aufgaben suchen (ID, Titel, Zuständigkeit, Notiz)</label><input id="taskSearch" type="search" placeholder="z. B. LLM, Handy, T37" style="display:block;width:100%;margin:8px 0 12px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)"><div class="filters" id="filters"></div>
+<div id="tasks"></div>
+
+<h2>Dokumente</h2>
+<div id="docs"></div>
+
+<div class="foot"><span>Offizielle Abschlüsse kommen aus BACKLOG.md. Eigene Häkchen gelten nur in diesem Browser und ersetzen keinen Nachweis.</span><button id="reset" type="button">Häkchen zurücksetzen</button></div>
+</div>
+<script>
+var DATA = /*__DATA__*/null;
+var KEY = "afyanote-hub-v2", state = {};
+try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+function docLink(href, sourcePath) {
+  try {
+    var url = new URL(href.replace(/&amp;/g,"&"), new URL(sourcePath || "START_HIER.html",location.href));
+    if (!/^(https?:|file:)$/.test(url.protocol)) return null;
+    if(url.protocol==="file:" && url.href.indexOf(new URL("../",location.href).href)!==0)return null;
+    return url.href.replace(/"/g,"%22").replace(/&/g,"&amp;");
+  }catch(e){return null;}
+}
+function inline(s, sourcePath) {
+  s = esc(s);
+  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(_,label,href) { var url=docLink(href,sourcePath); return url ? '<a href="'+url+'" target="_blank" rel="noopener">'+label+'</a>' : label; });
+
+  return s;
+}
+function md(src, sourcePath) {
+  var lines = src.replace(/\r/g, "").split("\n"), out = [], i = 0;
+  while (i < lines.length) {
+    var l = lines[i];
+    if (/^```/.test(l)) {
+      var buf = []; i++;
+      while (i < lines.length && !/^```/.test(lines[i])) { buf.push(lines[i]); i++; }
+      i++;
+      out.push('<div class="pre"><button type="button" class="cp">Kopieren</button><pre>' + esc(buf.join("\n")) + "</pre></div>");
+      continue;
+    }
+    var h = l.match(/^(#{1,3})\s+(.*)/);
+    if (h) { out.push("<h" + h[1].length + ">" + inline(h[2],sourcePath) + "</h" + h[1].length + ">"); i++; continue; }
+    if (/^\|/.test(l)) {
+      var rows = [];
+      while (i < lines.length && /^\|/.test(lines[i])) { rows.push(lines[i]); i++; }
+      var cells = function (r) { return r.replace(/^\||\|$/g, "").split("|").map(function (c) { return c.trim(); }); };
+      var t = "<div class='tl'><table><thead><tr>" + cells(rows[0]).map(function (c) { return "<th>" + inline(c,sourcePath) + "</th>"; }).join("") + "</tr></thead><tbody>";
+      rows.slice(2).forEach(function (r) { t += "<tr>" + cells(r).map(function (c) { return "<td>" + inline(c,sourcePath) + "</td>"; }).join("") + "</tr>"; });
+      out.push(t + "</tbody></table></div>"); continue;
+    }
+    if (/^\s*([-*]|\d+\.)\s+/.test(l)) {
+      var ordered = /^\s*\d+\./.test(l), items = [];
+      while (i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i])) { items.push(lines[i].replace(/^\s*([-*]|\d+\.)\s+/, "")); i++; }
+      out.push((ordered ? "<ol>" : "<ul>") + items.map(function (x) {
+        var cb = x.match(/^\[( |x)\]\s+(.*)/);
+        return "<li>" + (cb ? "☐ " + inline(cb[2],sourcePath) : inline(x,sourcePath)) + "</li>";
+      }).join("") + (ordered ? "</ol>" : "</ul>"));
+      continue;
+    }
+    if (/^>\s?/.test(l)) {
+      var q = [];
+      while (i < lines.length && /^>\s?/.test(lines[i])) { q.push(lines[i].replace(/^>\s?/, "")); i++; }
+      out.push("<blockquote>" + inline(q.join(" "),sourcePath) + "</blockquote>"); continue;
+    }
+    if (!l.trim()) { i++; continue; }
+    var p = [lines[i]]; i++; // always consume at least one line
+    while (i < lines.length && lines[i].trim() && !/^(```|#{1,3}\s|\||>|\s*([-*]|\d+\.)\s)/.test(lines[i])) { p.push(lines[i]); i++; }
+    out.push("<p>" + inline(p.join(" "),sourcePath) + "</p>");
+  }
+  return out.join("");
+}
+
+document.getElementById("status").innerHTML = DATA.status.map(function (s) { return "<li>✓ " + esc(s) + "</li>"; }).join("");
+document.getElementById("built").textContent = "Erzeugt " + DATA.built + ".";
+if (DATA.media && /^[A-Za-z0-9_./-]+\.mp4$/.test(DATA.media.videoPath) && DATA.media.videoPath.indexOf("..") === -1) {
+  var mediaFolder = DATA.media.videoPath.slice(0, DATA.media.videoPath.lastIndexOf("/") + 1);
+  document.getElementById("mediaBox").hidden = false;
+  document.getElementById("mediaDescription").textContent = DATA.media.version + " · " + (DATA.media.duration_seconds || "ca. 75") + " Sekunden ohne Ton · fiktive Daten · Desktop-Browser mit simuliertem Netzausfall. " + (DATA.media.current ? "Alle App-Quellhashes entsprechen der aktuellen Aufnahme." : "App wurde seit der Aufnahme geändert; Clip zeigt einen früheren Stand.");
+  document.getElementById("demoVideo").src = DATA.media.videoPath;
+  document.getElementById("demoVideo").poster = mediaFolder + "01_note_mobile.png";
+  document.getElementById("mediaReadme").href = mediaFolder + "README.md";
+  document.getElementById("mediaDownload").href = DATA.media.videoPath;
+}
+var FILTERS = [["alle", "Alle"], ["offen", "Offen"], ["peter", "Peter"], ["codex", "Codex"], ["claude", "Claude"], ["chatgpt", "ChatGPT"], ["erledigt", "Erledigt"]];
+var filter = "offen", search = "";
+function matches(r) {
+  var w = r.who.toLowerCase();
+  if (search && [r.id,r.title,r.who,r.note].join(" ").toLowerCase().indexOf(search) < 0) return false;
+  if (filter === "alle") return true;
+  if (filter === "offen") return r.status === "offen" || r.status === "wartet";
+  if (filter === "erledigt") return r.status === "erledigt" || !!state[r.id];
+  return w.indexOf(filter) >= 0;
+}
+function renderTasks() {
+  document.getElementById("filters").innerHTML = FILTERS.map(function (f) { return "<button type='button' data-f='" + f[0] + "' aria-pressed='" + (filter === f[0]) + "'>" + f[1] + "</button>"; }).join("");
+  document.getElementById("tasks").innerHTML = DATA.rows.filter(matches).map(function (r) {
+    var body = r.md ? md(r.md,r.path) : "<p class='meta'>Beleg: <code>" + esc(r.path) + "</code></p>";
+    var fileLink = /^[A-Za-z0-9_./-]+\.md$/.test(r.path) && r.path.indexOf("..") === -1 ? " · <a href='" + r.path + "' download>MD-Datei herunterladen</a>" : "";
+    return "<details class='task' id='" + r.id + "'><summary><input type='checkbox' data-t='" + r.id + "' aria-label='" + (r.status === "erledigt" ? "Im Backlog abgeschlossen" : "Persönliches Häkchen, ändert den Backlog nicht") + "'" + (r.status === "erledigt" ? " disabled" : "") + "><span class='ttl'>" + esc(r.id + " · " + r.title) + "</span><span class='tool'>" + esc(r.who) + "</span>" +
+      "<span class='sline'><span class='st " + esc(r.status) + "'>" + esc(r.status) + "</span><span class='meta'>" + esc(r.when) + "</span>" + (r.note ? "<span class='meta'>· " + esc(r.note) + "</span>" : "") + "</span></summary><div class='md'>" + body +
+      "<p class='meta'>Datei: <code>" + esc(r.path) + "</code>" + fileLink + "</p></div></details>";
+  }).join("") || "<p class='meta'>Nichts in diesem Filter.</p>";
+  var next = DATA.rows.filter(function (r) { return r.status === "offen" && !state[r.id]; }).slice(0, 3);
+  document.getElementById("nextBox").innerHTML = next.length ? "<ul>" + next.map(function (r) { return "<li><a class='tid' href='#" + r.id + "' data-tl='" + r.id + "'>" + r.id + "</a> " + esc(r.title) + " <span class='meta'>· " + esc(r.who) + " · " + esc(r.when) + "</span></li>"; }).join("") + "</ul>" : "<p>Alle offenen Aufgaben sind persönlich markiert. Der offizielle Backlog bleibt maßgeblich.</p>";
+  update();
+}
+document.getElementById("docs").innerHTML = DATA.docs.map(function (d) {
+  var fileLink = /^[A-Za-z0-9_./-]+\.md$/.test(d.path) && d.path.indexOf("..") === -1 ? "<p><a href='" + d.path + "' download>MD-Datei herunterladen</a></p>" : "";
+  return "<details class='task'><summary><span></span><span class='ttl'>" + esc(d.title) + "</span><span class='tool'>" + esc(d.path) + "</span></summary><div class='md'>" + md(d.md,d.path) + fileLink + "</div></details>";
+}).join("");
+function update() {
+  var n = 0, done = 0;
+  document.querySelectorAll("input[data-t]").forEach(function (b) {
+    var id = b.getAttribute("data-t"), official = DATA.rows.find(function(r){return r.id===id;}).status === "erledigt"; b.checked = official || !!state[id]; n++; if (b.checked) done++;
+    b.closest("details").classList.toggle("done", b.checked);
+  });
+  document.querySelectorAll("[data-tl]").forEach(function (a) { a.classList.toggle("done", !!state[a.getAttribute("data-tl")]); });
+  document.getElementById("prog").textContent = DATA.rows.filter(function (r) { return r.status === "erledigt"; }).length + " / " + DATA.rows.length + " im Backlog abgeschlossen";
+}
+document.addEventListener("click", function (e) {
+  if (e.target.matches("input[data-t]")) { e.stopPropagation(); }
+  if (e.target.classList.contains("cp")) {
+    var txt = e.target.nextElementSibling.textContent, b = e.target;
+    var ok = function () { b.textContent = "Kopiert ✓"; setTimeout(function () { b.textContent = "Kopieren"; }, 1500); };
+    if (navigator.clipboard) navigator.clipboard.writeText(txt).then(ok, function () { sel(b.nextElementSibling); }); else sel(b.nextElementSibling);
+  }
+  if (e.target.matches("a[data-tl]")) { var id = e.target.getAttribute("data-tl"); if (!document.getElementById(id)) { filter = "alle"; renderTasks(); } var d = document.getElementById(id); if (d) { d.open = true; d.scrollIntoView(); } e.preventDefault(); }
+  if (e.target.matches("button[data-f]")) { filter = e.target.getAttribute("data-f"); renderTasks(); }
+});
+function sel(el) { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+document.addEventListener("change", function (e) { if (e.target.matches("input[data-t]")) { state[e.target.getAttribute("data-t")] = e.target.checked; save(); renderTasks(); } });
+document.getElementById("taskSearch").addEventListener("input",function(e){search=e.target.value.trim().toLowerCase();renderTasks();});
+var rb = document.getElementById("reset"), armed = false;
+rb.addEventListener("click", function () {
+  if (!armed) { armed = true; rb.textContent = "Wirklich zurücksetzen?"; setTimeout(function () { armed = false; rb.textContent = "Häkchen zurücksetzen"; }, 4000); return; }
+  state = {}; save(); renderTasks(); armed = false; rb.textContent = "Häkchen zurücksetzen";
+});
+renderTasks();
+var DL = Date.UTC(2026, 9, 4, 13, 0, 0);
+function tick() { var ms = DL - Date.now(), el = document.getElementById("cd"); if (ms <= 0) { el.textContent = "Abgabe vorbei"; return; }
+  el.innerHTML = "Noch <b>" + Math.floor(ms / 3600000) + " h " + String(Math.floor(ms % 3600000 / 60000)).padStart(2, "0") + " min</b> bis So 15:00"; }
+tick(); setInterval(tick, 30000);
+</script>
+</body>
+</html>

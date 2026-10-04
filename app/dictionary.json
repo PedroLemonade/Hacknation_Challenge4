@@ -1,0 +1,103 @@
+{
+ "fever": [
+  "ana homa",
+  "anaugua homa",
+  "fever",
+  "has fever",
+  "high fever",
+  "homa",
+  "homa kali",
+  "hot body",
+  "joto jingi mwilini",
+  "mwili una joto"
+ ],
+ "cough": [
+  "ana kikohozi",
+  "anakohoa",
+  "bad cough",
+  "cough",
+  "coughing",
+  "kikohozi",
+  "kikohozi kikali",
+  "kukohoa sana"
+ ],
+ "diarrhoea": [
+  "anaendesha",
+  "anaharisha",
+  "choo cha maji",
+  "diarrhea",
+  "diarrhoea",
+  "kuhara",
+  "kuharisha",
+  "running stomach"
+ ],
+ "vomiting": [
+  "ametapika",
+  "anatapika",
+  "kutapika",
+  "kutapika mara moja",
+  "throwing up",
+  "vomited",
+  "vomiting"
+ ],
+ "pain": [
+  "abdominal pain",
+  "headache",
+  "kichwa kinauma",
+  "maumivu",
+  "maumivu ya kichwa",
+  "maumivu ya tumbo",
+  "pain",
+  "stomach pain",
+  "tumbo linauma"
+ ],
+ "weakness": [
+  "amechoka sana",
+  "dhaifu",
+  "hana nguvu",
+  "mnyonge",
+  "no energy",
+  "very weak",
+  "weak"
+ ],
+ "ds_cannot_drink": [
+  "amekataa kunyonya",
+  "cannot drink",
+  "hakunywa chochote",
+  "hanyonyi",
+  "hawezi kunyonya",
+  "hawezi kunywa",
+  "not able to drink",
+  "unable to breastfeed",
+  "unable to drink"
+ ],
+ "ds_vomits_everything": [
+  "anatapika kila anachokunywa",
+  "anatapika kila kitu",
+  "kila anachokula anatapika",
+  "throws up everything",
+  "vomiting everything",
+  "vomits everything"
+ ],
+ "ds_convulsions": [
+  "alipata degedege",
+  "ana degedege",
+  "convulsions",
+  "degedege",
+  "fits",
+  "had convulsions",
+  "kifafa",
+  "mwili ulikuwa unatetemeka"
+ ],
+ "ds_lethargic": [
+  "amelegea",
+  "amezimia",
+  "hajitambui",
+  "hard to wake",
+  "hawezi kuamka",
+  "lethargic",
+  "unconscious",
+  "usingizi mzito",
+  "very sleepy"
+ ]
+}

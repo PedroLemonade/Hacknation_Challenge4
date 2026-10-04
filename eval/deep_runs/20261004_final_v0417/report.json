@@ -1,0 +1,367 @@
+{
+  "created_at": "2026-10-04T07:42:03.326Z",
+  "created_by": "ChatGPT / Codex",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Layout: 320px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 320px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 360px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 360px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 390px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 390px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 768px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 768px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 1280px / light / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 1280px / light / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 320px / dark / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 320px / dark / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 360px / dark / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 360px / dark / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 390px / dark / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 390px / dark / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 768px / dark / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 768px / dark / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 1280px / dark / en, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Layout: 1280px / dark / sw, three tabs",
+      "status": "passed"
+    },
+    {
+      "name": "Literal markup in fictional note is escaped, no injected image/handler",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard cannot confirm unresolved context; explicit selection permits confirmation",
+      "status": "passed"
+    },
+    {
+      "name": "Fractional manually asked duration is not silently exported as a valid day count",
+      "status": "passed"
+    },
+    {
+      "name": "Asked duration and original source survive language change, distinct source marker",
+      "status": "passed"
+    },
+    {
+      "name": "UTF-16 offsets remain exact with emoji preceding findings",
+      "status": "passed"
+    },
+    {
+      "name": "Visibility handler applies/removes veil under synthetic event",
+      "status": "passed"
+    },
+    {
+      "name": "New scope rules execute after actual offline reload; old case is cleared",
+      "status": "passed"
+    },
+    {
+      "name": "Storage blocked and service worker unavailable: review still works, no ready-offline claim",
+      "status": "passed"
+    },
+    {
+      "name": "App unchanged, no exceptions or external/note upload requests in measured main context",
+      "status": "passed"
+    }
+  ],
+  "browser": "154.0.8037.97",
+  "source_before": {
+    "app.js": "8526bb0299351c697fc7a613f613f1c10f51aed7792038f2147a07b161efae46",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "source_after": {
+    "app.js": "8526bb0299351c697fc7a613f613f1c10f51aed7792038f2147a07b161efae46",
+    "build_info.json": "06942480c28233a8faa8a152f67733a61988ce532b95be3ff2fffac7f741a84f",
+    "classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "dictionary.json": "27bf69c9a8cd619dc4cda43fe068f2e1d880c2e4bc8c3c8b6a48e0420c02d83b",
+    "facilities.json": "cef2b7210dc894b59f2a6616215ca8e7b652ab9ad57c8ae9f9a10d225ba522ce",
+    "i18n.js": "b345276d54e5e4b40b40208a510d524ba9ef01f36516b527ab3a7faba764e266",
+    "icon-192.png": "aa1b6d40868e8b118d7eac0a4951bace60099f8533884c3ee97e5786107e3362",
+    "icon-512.png": "465c31f2179df524fa25d72970af9aadee857ed42e27571b47fc2f9cba34db84",
+    "icon.svg": "e3f5b0de25835b926902a0e27cbb382889042392c3a444b8d1d8266d57319ed7",
+    "index.html": "168f495e242c0bde2b029e2d95f34ca444a9e0a87fb440567e30fa6c6dd4112b",
+    "manifest.webmanifest": "9ce0e486e654b71da360bbe694b4d9fd4566c4f27a9abdadaa601a022a91a311",
+    "model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "sw.js": "38ce85b16de91b7b98277b889dfd191d9df2b959bca557db1bdeefdd2dbdfa7b",
+    "vendor/qrcode.js": "18ae399f81182bc9de916e9c77b195df20cc58d6f2d55a62b085a299f1bf1780"
+  },
+  "physical_phone": false,
+  "requests": [
+    {
+      "url": "http://localhost:8000/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/i18n.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/classify.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/rules.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/app.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/model.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/facilities.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/build_info.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/dictionary.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/sw.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/index.html",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/app.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/classify.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/rules.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/i18n.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/model.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/facilities.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/dictionary.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/build_info.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/manifest.webmanifest",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon-192.png",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon-512.png",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/vendor/qrcode.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/i18n.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/classify.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/rules.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/app.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/model.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/facilities.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/build_info.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/dictionary.json",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://localhost:8000/icon.svg",
+      "method": "GET",
+      "body": null
+    }
+  ],
+  "page_errors": [],
+  "caveats": [
+    "Desktop Chrome only; widths/dark mode are layout tests.",
+    "Synthetic document.hidden event is not a native background transition.",
+    "No phone RAM, battery, Safari engine, installation or camera interoperability measured."
+  ]
+}

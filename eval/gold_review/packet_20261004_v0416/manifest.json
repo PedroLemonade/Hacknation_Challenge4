@@ -1,0 +1,46 @@
+{
+  "created_by": "ChatGPT / Codex",
+  "created_at": "2026-10-04T07:28:13.957420+00:00",
+  "schema": "afyanote.review-packet/1",
+  "notes": 120,
+  "new_note_texts_outside_context_cases": 117,
+  "shared_context_case_ids": [
+    "GR26-01-1",
+    "GR26-02-1",
+    "GR26-03-1"
+  ],
+  "underlying_families": 30,
+  "variants_per_family": 4,
+  "language_counts": {
+    "en": 40,
+    "sw": 40,
+    "mixed": 40
+  },
+  "synthetic": true,
+  "clinical_review": false,
+  "native_review": false,
+  "predictions_run": false,
+  "training_allowed": false,
+  "canonical_overlap_checked": {
+    "known_40": 0,
+    "known_400": 0,
+    "sft_train_3000": 0
+  },
+  "limitations": [
+    "Written after known rule repairs by same AI author; not blind external case acquisition. Shared T31/T37 notes explicitly listed.",
+    "Four context-frame variants per family are correlated; count families in resampling.",
+    "AI draft has focal items only, intentionally incomplete; never score model from it.",
+    "Human reviewers must improve naturalness/meaning and all evidence dimensions."
+  ],
+  "frozen_code": {
+    "app/rules.js": "c46f8ae33431e6db7e15ab2cc3acb63cb77d0a47329f2fc86f4dccc979f615ba",
+    "app/model.json": "fdc100ac4dbad796bf9a4994835838c0dbd1adbae14ccf576cf0b2d0f7e28659",
+    "app/classify.js": "ef5169bf256c7bf3f5e33844330babd5dae9a5b07c073f02db565fd6cfef587a",
+    "app/sw.js": "7ff6a981c467a7a3b2deb963fbfaf877a006f63f9398cf838bd0ba9880510c83"
+  },
+  "files": {
+    "reviewer_A.jsonl": "386addeebe16b49ff84fe63fba4548ebf17e9f351a59d48c4272e5408a5c5dd4",
+    "reviewer_B.jsonl": "386addeebe16b49ff84fe63fba4548ebf17e9f351a59d48c4272e5408a5c5dd4",
+    "ai_focal_draft_NOT_GOLD.jsonl": "3d43cfd5a89a7fd592a9f79ae8fb4c0c1c40d28334006805add09a379b66f4da"
+  }
+}

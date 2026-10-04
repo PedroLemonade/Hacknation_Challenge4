@@ -1,0 +1,5 @@
+[
+ {"note": "Mtoto ana kikohozi siku tatu. Hana homa.", "out": {"items": [{"term": "cough", "status": "stated", "evidence": "Mtoto ana kikohozi siku tatu", "duration_days": 3}, {"term": "fever", "status": "denied", "evidence": "Hana homa", "duration_days": null}]}},
+ {"note": "Baby vomits everything since yesterday. Mother has a headache.", "out": {"items": [{"term": "ds_vomits_everything", "status": "stated", "evidence": "Baby vomits everything since yesterday", "duration_days": 1}, {"term": "vomiting", "status": "stated", "evidence": "Baby vomits everything since yesterday", "duration_days": 1}, {"term": "pain", "status": "other_person", "evidence": "Mother has a headache", "duration_days": null}]}},
+ {"note": "Tulizungumza kuhusu shamba na mvua.", "out": {"items": []}}
+]
