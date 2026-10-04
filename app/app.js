@@ -212,7 +212,7 @@
   function standalone() { return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true; }
   function viewHome() {
     var q = state.homeQuery.trim().toLowerCase();
-    var h = "<section class='dash'><div class='eyebrow'>AfyaNote · " + esc(t("tagline")) + "</div><h1>" + esc(t("home_title")) + "</h1>";
+    var h = "<section class='dash'><h1>" + esc(t("home_title")) + "</h1>";
     h += "<p class='dash-sub'>" + esc(t("home_sub")) + " <button class='ibtn' type='button' data-info='problem' aria-label='" + esc(t("home_why")) + "'>i</button></p>";
     h += "<div class='flow3'>" + [["✍️", "flow_1"], ["✅", "flow_2"], ["📄", "flow_3"]].map(function (x, i) { return "<div class='f3'><span class='f3n'>" + (i + 1) + "</span><span class='f3i' aria-hidden='true'>" + x[0] + "</span><b>" + esc(t(x[1])) + "</b><span>" + esc(t(x[1] + "_d")) + "</span></div>"; }).join("<span class='f3a' aria-hidden='true'>→</span>") + "</div>";
     h += "<div class='dash-facts'><span>✓ " + esc(t("home_f1")) + "</span><span>🔒 " + esc(t("home_f2")) + "</span><span>👤 " + esc(t("home_f3")) + "</span></div></section>";
@@ -632,7 +632,7 @@
     var a = "";
     if (state.tab === "visit") {
       if (state.step === 0) a = "<button class='btn primary' type='button' id='goAnalyse'>" + esc(t("analyse")) + " →</button>";
-      else if (state.step === 1) a = "<button class='btn' type='button' id='back'>" + esc(t("back")) + "</button><button class='btn primary' type='button' id='next'" + (allReviewed() ? "" : " disabled") + ">" + esc(t("next")) + " →</button>";
+      else if (state.step === 1) { var rcx = reviewCount(), left = rcx.total - rcx.done; a = "<button class='btn' type='button' id='back'>" + esc(t("back")) + "</button><button class='btn primary' type='button' id='next'" + (allReviewed() ? "" : " disabled") + ">" + (left > 0 ? left + " " + esc(t("left_word")) : esc(t("next")) + " →") + "</button>"; }
       else if (state.step === 2) a = "<button class='btn' type='button' id='back'>" + esc(t("back")) + "</button><button class='btn primary' type='button' id='next'" + (validAge() ? "" : " disabled") + ">" + esc(t("next")) + " →</button>";
       else a = "<button class='btn' type='button' id='back'>" + esc(t("back")) + "</button><button class='btn' type='button' id='newCase'>↺ " + esc(t("new_case")) + "</button>";
     }
