@@ -459,8 +459,12 @@
 
   function viewHandover() {
     var d = draft(), o = function (v) { return v ? esc(v) : "<span class='openv'>" + esc(t("open")) + "</span>"; };
-    var h = stepper() + "<p class='help'>" + esc(t("handover_sub")) + "</p>";
-    h += "<p class='notice info'>" + esc(t("fictional_handover")) + "</p>";
+    var h = stepper();
+    var ready = d.status !== "draft";
+    h += "<section class='readycard" + (ready ? "" : " notready") + "'><div class='rc-top'><span class='rc-ic'>" + (ready ? "✓" : "…") + "</span><div><b>" + esc(ready ? t("ready_t") : t("need_review")) + "</b><span>" + esc(t("handover_sub")) + "</span></div></div>";
+    h += "<div class='rc-sum'><span>👤 " + esc(d.age ? d.age.value + " " + t(d.age.unit) : t("open")) + "</span><span>🩺 " + d.main_problems.length + " " + esc(t("rc_terms")) + "</span><span>📍 " + esc(d.link_health_facility ? d.link_health_facility.name.replace(/^Demo /, "") : t("open")) + "</span></div>";
+    h += ("<div class='exportmain'><button class='btn primary big' type='button' id='printBtn'" + (d.status === "draft" ? " disabled" : "") + ">📄 " + esc(t("create_pdf")) + "</button><button class='btn big' type='button' id='qrBtn'" + (d.status === "draft" ? " disabled" : "") + ">▦ " + esc(t("show_qr")) + "</button></div>" + "<details class='more'><summary>" + esc(t("more_export")) + "</summary><div class='row' style='margin-top:10px'><button class='btn' type='button' id='copyBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("copy_text")) + "</button><button class='btn' type='button' id='jsonBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_json")) + "</button><button class='btn' type='button' id='mdBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_md")) + "</button></div></details>") + "</section>";
+    h += "<h2 class='prevh'>" + esc(t("preview_t")) + "</h2>";
     h += "<div class='form'><div class='form-h'><strong>MOH 100 · A</strong><span class='badge " + (d.status === "draft" ? "b-unc" : "b-sug") + "'>" + esc(d.status === "draft" ? t("status_draft") : t("status_reviewed")) + "</span></div><dl>";
     var rows = [
       [t("created"), o(state.created ? stamp(state.created) : "")],
@@ -481,9 +485,7 @@
     rows.push([t("comments"), com.join("<br>")], [t("chp"), o(d.community_health_promoter)]);
     rows.forEach(function (r) { h += "<dt>" + esc(r[0]) + "</dt><dd>" + r[1] + "</dd>"; });
     h += "</dl></div>";
-    if (d.status === "draft") h += "<div class='notice warn'>" + esc(t("need_review")) + "</div>";
-    h += "<div class='exportmain'><button class='btn primary big' type='button' id='printBtn'" + (d.status === "draft" ? " disabled" : "") + ">📄 " + esc(t("create_pdf")) + "</button><button class='btn big' type='button' id='qrBtn'" + (d.status === "draft" ? " disabled" : "") + ">▦ " + esc(t("show_qr")) + "</button></div>";
-    h += "<details class='more'><summary>" + esc(t("more_export")) + "</summary><div class='row' style='margin-top:10px'><button class='btn' type='button' id='copyBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("copy_text")) + "</button><button class='btn' type='button' id='jsonBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_json")) + "</button><button class='btn' type='button' id='mdBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_md")) + "</button></div></details>";
+    h += "<p class='meta'>" + esc(t("fictional_handover")) + "</p>";
     h += "<p class='meta'>" + esc(t("export_note")) + "</p>";
     h += "<p id='exportStatus' class='meta' role='status' aria-atomic='true'></p>";
     return h;
