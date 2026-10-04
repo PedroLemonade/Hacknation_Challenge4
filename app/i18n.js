@@ -193,6 +193,6 @@
   Object.assign(root.AFYA_I18N.en, {"your_unit": "Your unit", "pick_banner": "Tap a facility on the map or in the list, then tap “Use as link facility”.", "tile_facilities_l": "See health facilities around your community health unit by straight line distance, search and filter by type. These facilities are fictional demo data."});
   Object.assign(root.AFYA_I18N.sw, {"your_unit": "Kitengo chako", "pick_banner": "Gusa kituo kwenye ramani au orodha, kisha gusa “Tumia kama kituo kinachohusika”."});
 
-  Object.assign(root.AFYA_I18N.en, {"ready_t": "Referral ready", "left_word": "left to check", "rc_terms": "confirmed findings", "preview_t": "Preview · MOH 100 section A"});
-  Object.assign(root.AFYA_I18N.sw, {"ready_t": "Rufaa iko tayari", "left_word": "zimebaki kukagua", "rc_terms": "matokeo yaliyothibitishwa", "preview_t": "Muhtasari · MOH 100 sehemu A"});
+  Object.assign(root.AFYA_I18N.en, {"ready_t": "Referral ready", "analyse": "Check my note", "left_word": "left to check", "rc_terms": "confirmed findings", "preview_t": "Preview · MOH 100 section A"});
+  Object.assign(root.AFYA_I18N.sw, {"ready_t": "Rufaa iko tayari", "analyse": "Kagua kumbukumbu yangu", "left_word": "zimebaki kukagua", "rc_terms": "matokeo yaliyothibitishwa", "preview_t": "Muhtasari · MOH 100 sehemu A"});
 })(typeof self !== "undefined" ? self : globalThis);

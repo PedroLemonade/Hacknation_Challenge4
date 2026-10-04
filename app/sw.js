@@ -1,5 +1,5 @@
 /* Fixed local assets only. Bump VERSION after changing any app asset. */
-const VERSION = "afyanote-v0.5.9";
+const VERSION = "afyanote-v0.5.10";
 const CACHE = VERSION + ":" + self.registration.scope;
 const FILES = ["./", "index.html", "app.js", "classify.js", "rules.js", "i18n.js", "model.json",
   "facilities.json", "dictionary.json", "vendor/qrcode.js", "build_info.json", "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png"];
