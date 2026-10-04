@@ -529,6 +529,7 @@
     var h = "";
     if (state.returnToVisit) h += "<div class='stephead'><button type='button' class='backbtn' id='facBack' aria-label='" + esc(t("back")) + "'>←</button><div><div class='stepof'>" + esc(t("step_word")) + " 3 " + esc(t("of_word")) + " 4</div><div class='steptitle'>" + esc(t("pick_facility")) + "</div></div></div><div class='notice info'>👆 " + esc(t("pick_banner")) + "</div>";
     h += "<div class='eyebrow'>" + esc(fac.origin.name) + "</div><h1>" + esc(t("fac_title")) + " <button class='ibtn' type='button' data-info='facilities' aria-label='" + esc(t("home_why")) + "'>i</button></h1>";
+    if (!state.returnToVisit) h += "<div class='mapwhy'>" + [["📏", "mw_1"], ["🏥", "mw_2"], ["✅", "mw_3"]].map(function (x) { return "<span><i>" + x[0] + "</i>" + esc(t(x[1])) + "</span>"; }).join("") + "</div>";
     h += "<div class='mapwrap'>" + mapSvg(list) + "<div class='legend'><span><i class='lg u'></i>" + esc(t("your_unit")) + "</span><span><i class='lg d'></i>" + esc(t("fac_dispensary")) + "</span><span><i class='lg c'></i>" + esc(t("fac_health_centre")) + "</span><span><i class='lg h'></i>" + esc(t("fac_hospital")) + "</span></div></div>";
     h += "<div class='searchrow'><input id='facQuery' type='search' placeholder='" + esc(t("fac_search")) + "' value='" + esc(state.facQuery) + "' aria-label='" + esc(t("fac_search")) + "'><kbd class='slash' aria-hidden='true'>/</kbd><span class='count' aria-live='polite'><b>" + list.length + "</b> / " + fac.list.length + "</span></div>";
     h += "<div class='fchips' role='group'>" + ["all", "dispensary", "health_centre", "hospital"].map(function (k) { return "<button class='fchip' type='button' data-ff='" + k + "' aria-pressed='" + (state.facFilter === k) + "'>" + esc(t("fac_" + k)) + "</button>"; }).join("") + "</div>";
@@ -537,13 +538,21 @@
     }).join("") + "</div>";
     return h;
   }
+  // Typical service package and hours per KEPH level (illustrative demo data, not facility specific).
+  var KEPH = {
+    2: { svc: ["svc_opd", "svc_imm", "svc_mrdt", "svc_fp"], hours: "hrs_day" },
+    3: { svc: ["svc_opd", "svc_imm", "svc_lab", "svc_mat"], hours: "hrs_long" },
+    4: { svc: ["svc_opd", "svc_lab", "svc_inp", "svc_xray", "svc_theatre"], hours: "hrs_24" },
+    5: { svc: ["svc_opd", "svc_lab", "svc_inp", "svc_spec", "svc_emerg"], hours: "hrs_24" }
+  };
   function sheetHtml() {
     var x = facById(state.sheet); if (!x) return "";
     var isSel = state.fields.facilityId === x.id;
     return "<div class='sheet-bg' data-close='1'></div><div class='sheet' role='dialog' aria-modal='true' aria-label='" + esc(x.name) + "'><div class='grab'></div>" +
       "<div class='eyebrow'>" + esc(t("type_" + x.type)) + " · " + esc(t("level")) + " " + x.kephLevel + "</div><h1>" + esc(x.name) + "</h1>" +
       "<div class='stats' style='grid-template-columns:repeat(2,1fr)'>" + stat(x.km.toFixed(1) + " km", t("straight")) + stat(walk(x.km), t("walk") + " 4 km/h") + "</div>" +
-      "<p class='meta'>" + esc(t("fac_note")) + "</p><div class='decide'>" +
+      "<div class='svc'><div class='svch'>🕘 " + esc(t((KEPH[x.kephLevel] || KEPH[2]).hours)) + "</div>" + (KEPH[x.kephLevel] || KEPH[2]).svc.map(function (k) { return "<span>" + esc(t(k)) + "</span>"; }).join("") + "</div>" +
+      "<p class='meta'>" + esc(t("svc_note")) + "</p><div class='decide'>" +
       "<button class='btn " + (isSel ? "ok" : "primary") + "' type='button' id='useFac' data-id='" + x.id + "'>" + (isSel ? "✓ " + esc(t("used_facility")) : esc(t("use_facility"))) + "</button><button class='btn' type='button' data-close='1'>" + esc(t("close")) + "</button></div></div>";
   }
 
