@@ -381,22 +381,28 @@
   function viewComplete() {
     var f = state.fields, ag = state.analysis.age, agePre = ag.status === "suggested" && state.ageDecision === "confirmed";
     var h = stepper();
+    var sel = facById(f.facilityId);
+    h += "<section class='grp'><div class='grph'>👤 " + esc(t("grp_patient")) + "</div>";
     h += field("caseId", t("case_id"), "<input id='f_caseId' data-f='caseId' value='" + esc(f.caseId) + "' placeholder='KE-DEMO-001' autocomplete='off'>");
     h += field("sex", t("sex"), "<select id='f_sex' data-f='sex'><option value=''>…</option>" + [["female", "sex_f"], ["male", "sex_m"], ["not_recorded", "sex_x"]].map(function (o) { return "<option value='" + o[0] + "'" + (f.sex === o[0] ? " selected" : "") + ">" + esc(t(o[1])) + "</option>"; }).join("") + "</select>");
     var av = f.ageValue, au = f.ageUnit;
     h += "<div class='two'>" + field("ageValue", t("age_value") + (agePre ? " · " + t("age_from_note") : ""), "<input id='f_ageValue' data-f='ageValue' inputmode='numeric' value='" + esc(av) + "'>") +
       field("ageUnit", t("age_unit"), "<select id='f_ageUnit' data-f='ageUnit'><option value='years'" + (au === "years" ? " selected" : "") + ">" + esc(t("years")) + "</option><option value='months'" + (au === "months" ? " selected" : "") + ">" + esc(t("months")) + "</option></select>") + "</div>";
+    h += "</section>";
+    h += "<section class='grp'><div class='grph'>📍 " + esc(t("grp_referto")) + "</div>";
+    h += "<button type='button' class='facpick" + (sel ? " chosen" : "") + "' id='pickFac'><span class='fpi'>" + (sel ? "✓" : "📍") + "</span><span><b>" + esc(sel ? sel.name : t("pick_facility")) + "</b><small>" + esc(sel ? facLabel(sel) : t("pick_facility_d")) + "</small></span><span class='tgo'>→</span></button>";
+    h += "<input id='f_facility' type='hidden' value='" + esc(sel ? facLabel(sel) : "") + "'>";
+    h += "</section>";
+    h += "<details class='more'" + (f.referralTime || f.treatment ? " open" : "") + "><summary>" + esc(t("grp_optional")) + "</summary>";
     h += field("referralTime", t("referral_time"), "<input id='f_referralTime' type='datetime-local' data-f='referralTime' value='" + esc(f.referralTime) + "'>");
     h += field("treatment", t("treatment"), "<input id='f_treatment' data-f='treatment' value='" + esc(f.treatment) + "' placeholder='" + esc(t("treatment_ph")) + "'>");
-    var sel = facById(f.facilityId);
-    h += "<fieldset><legend>" + esc(t("profile")) + "</legend>" + field("chu", t("chu"), "<input id='f_chu' data-f='chu' value='" + esc(f.chu) + "'>");
-    h += "<div class='inline'>" + field("facility", t("facility"), "<input id='f_facility' readonly value='" + esc(sel ? facLabel(sel) : "") + "' placeholder='…'>") + "<button class='btn sm' type='button' id='pickFac' style='min-height:48px'>📍 " + esc(t("pick_facility")) + "</button></div>";
-    h += field("chp", t("chp"), "<input id='f_chp' data-f='chp' value='" + esc(f.chp) + "'>") + "</fieldset>";
-    h += "<label class='check'><input type='checkbox' id='consent'" + (state.consent ? " checked" : "") + "><span>" + esc(t("consent")) + "</span></label>";
+    h += "</details>";
+    h += "<details class='more'><summary>" + esc(t("profile")) + " · " + esc(f.chp) + "</summary>" + field("chu", t("chu"), "<input id='f_chu' data-f='chu' value='" + esc(f.chu) + "'>") + field("chp", t("chp"), "<input id='f_chp' data-f='chp' value='" + esc(f.chp) + "'>") + "</details>";
+    h += "<section class='grp consentg'><label class='check'><input type='checkbox' id='consent'" + (state.consent ? " checked" : "") + "><span>" + esc(t("consent")) + "</span></label><p class='meta' style='margin:6px 0 0'>" + esc(t("consent_demo")) + "</p></section>";
     if (!validAge()) h += "<div class='notice err' id='ageError' role='alert'>" + esc(t("err_age")) + "</div>";
-    h += "<p class='meta'>" + esc(t("consent_demo")) + "</p>";
     return h;
   }
+
 
   function draft() {
     var f = state.fields, a = state.analysis, dec = state.decisions, groups = { stated: [], denied: [], other: [] };
@@ -488,33 +494,40 @@
     var W = 360, H = 300, cx = W / 2, cy = H / 2;
     var maxKm = Math.max.apply(null, fac.list.map(function (x) { return x.km; }).concat([2]));
     var rings = [2, 5, 10, 15].filter(function (r) { return r <= maxKm + 1; });
-    var outer = rings[rings.length - 1], s = 128 / outer;
-    var g = "<svg viewBox='0 0 " + W + " " + H + "' role='group' aria-label='" + esc(t("fac_title")) + "'><rect class='map-bg' width='" + W + "' height='" + H + "'/>";
-    rings.forEach(function (r) { g += "<circle class='ringc' cx='" + cx + "' cy='" + cy + "' r='" + (r * s).toFixed(1) + "'/><text class='ringt' x='" + (cx + r * s * 0.72 + 3).toFixed(1) + "' y='" + (cy + r * s * 0.72 + 12).toFixed(1) + "'>" + r + " km</text>"; });
+    var outer = rings[rings.length - 1];
+    // square root scale: close facilities spread out, far ones stay on the map
+    var R = function (km) { return 132 * Math.sqrt(Math.max(km, 0) / outer); };
+    var P = function (x) { var k = x.km || Math.sqrt(x.dx * x.dx + x.dy * x.dy) || 1, r = R(k); return [cx + x.dx / k * r, cy - x.dy / k * r]; };
+    var g = "<svg viewBox='0 0 " + W + " " + H + "' role='group' aria-label='" + esc(t("fac_title")) + "'><defs><radialGradient id='mg' cx='50%' cy='50%' r='65%'><stop offset='0' stop-color='var(--paper)'/><stop offset='1' stop-color='var(--soft)'/></radialGradient></defs><rect width='" + W + "' height='" + H + "' fill='url(#mg)'/>";
+    rings.forEach(function (r) { g += "<circle class='ringc' cx='" + cx + "' cy='" + cy + "' r='" + R(r).toFixed(1) + "'/><text class='ringt' x='" + (cx + R(r) * 0.72 + 3).toFixed(1) + "' y='" + (cy + R(r) * 0.72 + 12).toFixed(1) + "'>" + r + " km</text>"; });
     g += "<g aria-hidden='true'><path d='M" + (W - 22) + " 30 l6 -14 l6 14 l-6 -4z' fill='var(--muted)'/><text class='ringt' x='" + (W - 20) + "' y='44'>N</text></g>";
-    g += "<g><rect x='" + (cx - 9) + "' y='" + (cy - 9) + "' width='18' height='18' rx='4' fill='var(--ink)'/><path d='M" + (cx - 5) + " " + (cy + 1) + " L" + cx + " " + (cy - 4) + " L" + (cx + 5) + " " + (cy + 1) + " V" + (cy + 5) + " H" + (cx - 5) + "z' fill='var(--paper)'/></g>";
+    g += "<g><rect x='" + (cx - 9) + "' y='" + (cy - 9) + "' width='18' height='18' rx='4' fill='var(--ink)'/><path d='M" + (cx - 5) + " " + (cy + 1) + " L" + cx + " " + (cy - 4) + " L" + (cx + 5) + " " + (cy + 1) + " V" + (cy + 5) + " H" + (cx - 5) + "z' fill='var(--paper)'/><text class='unitl' x='" + cx + "' y='" + (cy + 22) + "' text-anchor='middle'>" + esc(t("your_unit")) + "</text></g>";
     var shown = {}; list.forEach(function (x) { shown[x.id] = true; });
     fac.list.forEach(function (x) {
-      var lx = cx + x.dx * s, ly = cy - x.dy * s, on = state.fields.facilityId === x.id;
+      var pp = P(x), lx = pp[0], ly = pp[1], on = state.fields.facilityId === x.id;
       if (shown[x.id]) g += "<line class='link" + (on ? " on" : "") + "' x1='" + cx + "' y1='" + cy + "' x2='" + lx.toFixed(1) + "' y2='" + ly.toFixed(1) + "'/>";
+      if (on) g += "<text class='kmlab' x='" + ((cx + lx) / 2).toFixed(1) + "' y='" + ((cy + ly) / 2 - 5).toFixed(1) + "' text-anchor='middle'>" + x.km.toFixed(1) + " km</text>";
     });
     fac.list.forEach(function (x) {
-      var px = cx + x.dx * s, py = cy - x.dy * s, sel = state.fields.facilityId === x.id;
+      var pq = P(x), px = +pq[0].toFixed(1), py = +pq[1].toFixed(1), sel = state.fields.facilityId === x.id;
       var color = x.group === "hospital" ? "var(--red)" : x.group === "health_centre" ? "var(--blue)" : "var(--green)";
       var shape = x.group === "hospital" ? "<rect class='dot' x='" + (px - 9) + "' y='" + (py - 9) + "' width='18' height='18' transform='rotate(45 " + px + " " + py + ")' fill='" + color + "'/>"
         : x.group === "health_centre" ? "<rect class='dot' x='" + (px - 9) + "' y='" + (py - 9) + "' width='18' height='18' rx='3' fill='" + color + "'/>"
         : "<circle class='dot' cx='" + px + "' cy='" + py + "' r='10' fill='" + color + "'/>";
       g += "<g class='pin" + (sel ? " sel" : "") + "' data-fac='" + x.id + "' tabindex='0' role='button' aria-label='" + esc(x.name) + "' opacity='" + (shown[x.id] ? 1 : 0.25) + "'>" +
         (sel ? "<circle class='halo' cx='" + px + "' cy='" + py + "' r='16'/>" : "") + shape +
-        "<text x='" + px + "' y='" + (py + 4) + "' text-anchor='middle' style='fill:#fff;stroke:none;font-size:10px'>" + x.n + "</text></g>";
+        "<text x='" + px + "' y='" + (py + 4) + "' text-anchor='middle' style='fill:#fff;stroke:none;font-size:10px'>" + x.n + "</text>" +
+        (sel ? "<text class='sellab' x='" + px + "' y='" + (py - 18) + "' text-anchor='middle'>" + esc(x.name.replace(/^Demo /, "")) + "</text>" : "") + "</g>";
     });
     return g + "</svg>";
   }
   function viewFacilities() {
     if (!fac) return "<h1>" + esc(t("fac_title")) + "</h1><div class='notice err'>facilities.json missing</div>";
     var list = filteredFac();
-    var h = "<div class='eyebrow'>" + esc(fac.origin.name) + "</div><h1>" + esc(t("fac_title")) + "</h1><p class='help'>" + esc(t("fac_note")) + "</p>";
-    h += "<div class='mapwrap'>" + mapSvg(list) + "</div>";
+    var h = "";
+    if (state.returnToVisit) h += "<div class='stephead'><button type='button' class='backbtn' id='facBack' aria-label='" + esc(t("back")) + "'>←</button><div><div class='stepof'>" + esc(t("step_word")) + " 3 " + esc(t("of_word")) + " 4</div><div class='steptitle'>" + esc(t("pick_facility")) + "</div></div></div><div class='notice info'>👆 " + esc(t("pick_banner")) + "</div>";
+    h += "<div class='eyebrow'>" + esc(fac.origin.name) + "</div><h1>" + esc(t("fac_title")) + " <button class='ibtn' type='button' data-info='facilities' aria-label='" + esc(t("home_why")) + "'>i</button></h1>";
+    h += "<div class='mapwrap'>" + mapSvg(list) + "<div class='legend'><span><i class='lg u'></i>" + esc(t("your_unit")) + "</span><span><i class='lg d'></i>" + esc(t("fac_dispensary")) + "</span><span><i class='lg c'></i>" + esc(t("fac_health_centre")) + "</span><span><i class='lg h'></i>" + esc(t("fac_hospital")) + "</span></div></div>";
     h += "<div class='searchrow'><input id='facQuery' type='search' placeholder='" + esc(t("fac_search")) + "' value='" + esc(state.facQuery) + "' aria-label='" + esc(t("fac_search")) + "'><kbd class='slash' aria-hidden='true'>/</kbd><span class='count' aria-live='polite'><b>" + list.length + "</b> / " + fac.list.length + "</span></div>";
     h += "<div class='fchips' role='group'>" + ["all", "dispensary", "health_centre", "hospital"].map(function (k) { return "<button class='fchip' type='button' data-ff='" + k + "' aria-pressed='" + (state.facFilter === k) + "'>" + esc(t("fac_" + k)) + "</button>"; }).join("") + "</div>";
     h += "<div class='flist'>" + list.map(function (x) {
@@ -745,6 +758,7 @@
     switch (el.id) {
       case "goAnalyse": analyse(); if (!state.error) focusView(); break;
       case "back": state.step = Math.max(0, state.step - 1); render(); focusView(); break;
+      case "facBack": state.returnToVisit = false; state.tab = "visit"; render(); window.scrollTo(0, 0); break;
       case "stepBack": if (state.step === 0) state.tab = "home"; else state.step--; render(); focusView(); window.scrollTo(0, 0); break;
       case "next": if ((state.step === 1 && !allReviewed()) || (state.step === 2 && !validAge())) return; state.step++; render(); focusView(); window.scrollTo(0, 0); break;
       case "ageOk": state.ageDecision = state.ageDecision === "confirmed" ? "pending" : "confirmed";
