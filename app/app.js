@@ -104,7 +104,12 @@
       .then(checkOffline).catch(function () { offlineState = "no"; paintOffline(); renderStatsOnly(); });
   }
   window.addEventListener("online", paintOffline); window.addEventListener("offline", paintOffline);
-  if ("serviceWorker" in navigator) navigator.serviceWorker.addEventListener("controllerchange", checkOffline);
+  // A new version took over: reload once so the user sees it (only when no case is open).
+  var hadController = "serviceWorker" in navigator && !!navigator.serviceWorker.controller, reloading = false;
+  if ("serviceWorker" in navigator) navigator.serviceWorker.addEventListener("controllerchange", function () {
+    checkOffline();
+    if (hadController && !reloading && !state.analysis && !state.note) { reloading = true; location.reload(); }
+  });
   prepareOffline();
 
   // ---------- facilities ----------
@@ -180,8 +185,9 @@
 
   // ---------- views: visit ----------
   function stepper() {
-    var s = "<div class='stepper' aria-hidden='true'>" + [0, 1, 2, 3].map(function (i) { return "<div class='" + (i < state.step ? "done" : i === state.step ? "on" : "") + "'></div>"; }).join("") + "</div>";
-    return s + "<div class='steplabel'>" + (state.step + 1) + " / 4 · " + esc(t("steps")[state.step]) + "</div>";
+    var s = "<div class='stephead'><button type='button' class='backbtn' id='stepBack' aria-label='" + esc(t("back")) + "'>←</button><div><div class='stepof'>" + esc(t("step_word")) + " " + (state.step + 1) + " " + esc(t("of_word")) + " 4</div><h1 class='steptitle'>" + esc(t("steps")[state.step]) + "</h1></div></div>";
+    s += "<div class='stepper' aria-hidden='true'>" + [0, 1, 2, 3].map(function (i) { return "<div class='" + (i < state.step ? "done" : i === state.step ? "on" : "") + "'></div>"; }).join("") + "</div>";
+    return s + "<p class='stephint'>" + esc(t("step_hint_" + (state.step + 1))) + "</p>";
   }
 
   function stats() {
@@ -241,7 +247,7 @@
 
   function viewNote() {
     var h = stepper();
-    h += "<section class='hero'><div class='eyebrow'>" + esc(t("hero_eyebrow")) + "</div><h1>" + esc(t("hero_title")) + " <button class='ibtn light' type='button' data-info='note' aria-label='" + esc(t("home_why")) + "'>i</button></h1><p>" + esc(t("hero_body")) + "</p>";
+    h += "<section class='hero'><h2 class='herot'>" + esc(t("hero_title")) + " <button class='ibtn light' type='button' data-info='note' aria-label='" + esc(t("home_why")) + "'>i</button></h2>";
     h += "<label class='sr' for='note' style='position:absolute;left:-9999px'>" + esc(t("note_label")) + "</label>";
     h += "<textarea id='note' maxlength='" + (R.MAX_LEN + 50) + "' placeholder='Mtoto ana homa siku tatu…'>" + esc(state.note) + "</textarea>";
     h += "<div class='row' style='justify-content:space-between;margin-top:6px'><span class='meta' id='count'>" + state.note.length + " / " + R.MAX_LEN + " " + esc(t("chars")) + "</span><span class='meta'>" + esc(t("examples")) + "</span></div>";
@@ -329,7 +335,7 @@
   function viewReview() {
     var a = state.analysis, hn = highlighted(), rc = reviewCount();
     var cur = curLabel();
-    var h = stepper() + "<div class='rv'><div class='rv-side'><h1>" + esc(t("review_title")) + "</h1><p class='help'>" + esc(t("review_help")) + "</p>";
+    var h = stepper() + "<div class='rv'><div class='rv-side'>";
     if (state.ms != null) h += "<p class='meta' style='margin:-8px 0 12px'>⚡ " + esc(t("analysed_in")) + " " + (state.ms < 1 ? "&lt; 1" : Math.round(state.ms)) + " ms · " + esc(t("no_network")) + "</p>";
     h += "<div class='progress'><div class='bar'><i style='width:" + (rc.total ? rc.done / rc.total * 100 : 100) + "%'></i></div><span>" + rc.done + " / " + rc.total + " " + esc(t("checked")) + "</span></div>";
     h += "<div class='orig'>" + hn.html + "</div>";
@@ -340,14 +346,13 @@
       var d = state.decisions[c.label];
       h += "<article class='card " + (d.decision === "confirmed" ? "confirmed" : d.decision === "rejected" ? "rejected" : "") + (state.kb && cur === c.label ? " cur" : "") + "' data-card='" + c.label + "' data-passage='" + c.passage + "'>";
       h += "<div class='card-top'><span class='term'>" + esc(termName(c.label)) + "<small>" + esc(termOther(c.label)) + "</small></span>";
-      h += "<span class='badge " + (c.field === "suggested" ? "b-sug" : "b-unc") + "'>" + esc(c.field === "suggested" ? t("suggested") : t("unclear")) + "</span>";
-      if (info(c.label).danger) h += "<span class='badge b-who'>WHO IMCI</span>";
-      h += "<span class='score' title='model score'>" + c.score.toFixed(2) + "</span></div>";
+      if (c.field !== "suggested") h += "<span class='badge b-unc'>" + esc(t("unclear")) + "</span>";
+      if (info(c.label).danger) h += "<span class='badge b-who' title='WHO IMCI general danger sign'>⚠ " + esc(t("danger_short")) + "</span>";
+      h += "</div>";
       h += "<div class='quote'>“" + markWhy(c.evidence, c.why) + "”" + (c.others ? c.others.map(function (o) { return "<br>+ “" + esc(o.evidence) + "” · " + esc(t("st_" + o.assertion)); }).join("") : "") + "</div>";
-      if (c.why && c.why.length) h += "<div class='meta'>" + esc(t("why_words")) + ": " + c.why.map(function (w) { return "<b>" + esc(w.text.replace(/[.,;:!?]+$/, "")) + "</b>"; }).join(", ") + "</div>";
       if (c.duration) h += "<div class='meta'>" + esc(t("duration")) + ": " + esc(daysTxt(c.duration.days)) + " · “" + esc(c.duration.raw) + "”</div>";
       else if (d.dur && d.assertion === "stated") h += "<div class='meta'>" + esc(t("duration")) + ": " + esc(daysTxt(+d.dur)) + " · " + esc(t("dur_asked")) + "</div>";
-      h += "<div class='seg' role='radiogroup' aria-label='Status'>";
+      h += "<div class='seg small' role='radiogroup' aria-label='Status'><span class='seglabel'>" + esc(t("status_word")) + "</span>";
       if (!d.assertion) h += "<span class='badge b-unc' style='align-self:center'>" + esc(t("st_conflict")) + "</span>";
       ASSERTIONS.forEach(function (s) {
         h += "<label><input type='radio' name='as_" + c.label + "' value='" + s + "' data-as='" + c.label + "'" + (d.assertion === s ? " checked" : "") + "><span>" + esc(t("st_" + s)) + "</span></label>";
@@ -374,7 +379,7 @@
   function field(id, label, control) { return "<div class='field'><label for='f_" + id + "'>" + esc(label) + "</label>" + control + "</div>"; }
   function viewComplete() {
     var f = state.fields, ag = state.analysis.age, agePre = ag.status === "suggested" && state.ageDecision === "confirmed";
-    var h = stepper() + "<h1>" + esc(t("complete_title")) + "</h1>";
+    var h = stepper();
     h += field("caseId", t("case_id"), "<input id='f_caseId' data-f='caseId' value='" + esc(f.caseId) + "' placeholder='KE-DEMO-001' autocomplete='off'>");
     h += field("sex", t("sex"), "<select id='f_sex' data-f='sex'><option value=''>…</option>" + [["female", "sex_f"], ["male", "sex_m"], ["not_recorded", "sex_x"]].map(function (o) { return "<option value='" + o[0] + "'" + (f.sex === o[0] ? " selected" : "") + ">" + esc(t(o[1])) + "</option>"; }).join("") + "</select>");
     var av = f.ageValue, au = f.ageUnit;
@@ -447,7 +452,7 @@
 
   function viewHandover() {
     var d = draft(), o = function (v) { return v ? esc(v) : "<span class='openv'>" + esc(t("open")) + "</span>"; };
-    var h = stepper() + "<h1>" + esc(t("handover_title")) + "</h1><p class='help'>" + esc(t("handover_sub")) + "</p>";
+    var h = stepper() + "<p class='help'>" + esc(t("handover_sub")) + "</p>";
     h += "<p class='notice info'>" + esc(t("fictional_handover")) + "</p>";
     h += "<div class='form'><div class='form-h'><strong>MOH 100 · A</strong><span class='badge " + (d.status === "draft" ? "b-unc" : "b-sug") + "'>" + esc(d.status === "draft" ? t("status_draft") : t("status_reviewed")) + "</span></div><dl>";
     var rows = [
@@ -623,7 +628,8 @@
     });
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i")); });
-    document.querySelectorAll("[data-lang]").forEach(function (el) { el.textContent = lang === "en" ? "SW" : "EN"; el.setAttribute("aria-label", t("lang")); });
+    document.querySelectorAll("[data-lang]").forEach(function (el) { el.innerHTML = "<span" + (lang === "en" ? " class='on'" : "") + ">English</span><span" + (lang === "sw" ? " class='on'" : "") + ">Kiswahili</span>"; el.setAttribute("aria-label", lang === "en" ? "Switch to Kiswahili" : "Badilisha kwa English"); });
+    syncHistory();
     var v = state.tab === "home" ? viewHome() : state.tab === "facilities" ? viewFacilities() : state.tab === "about" ? viewAbout() : [viewNote, viewReview, viewComplete, viewHandover][state.step]();
     $("view").innerHTML = v;
     $("view").classList.toggle("wide", state.tab === "visit" && state.step === 1);
@@ -639,6 +645,30 @@
       var target = document.querySelector(selector); if (target) target.focus({ preventScroll: true });
     }
   }
+  // Browser back/forward: every tab and visit step has its own history entry.
+  var applyingHistory = false;
+  function route() { return state.tab === "visit" ? "#visit-" + (state.step + 1) : "#" + state.tab; }
+  function syncHistory() {
+    if (applyingHistory) return;
+    var r = route();
+    if (location.hash !== r) { if (!location.hash) history.replaceState(null, "", r); else history.pushState(null, "", r); }
+  }
+  function applyRoute() {
+    var h = (location.hash || "#home").slice(1), m = /^visit-(\d)$/.exec(h);
+    state.info = null; state.sheet = null; state.qr = false;
+    if (m) {
+      var want = Math.min(3, Math.max(0, +m[1] - 1));
+      if (!state.analysis) want = 0;
+      else if (want >= 2 && !allReviewed()) want = 1;
+      else if (want === 3 && !(validAge() && state.consent)) want = 2;
+      state.tab = "visit"; state.step = want;
+    } else if (["home", "facilities", "about"].indexOf(h) >= 0) state.tab = h;
+    else state.tab = "home";
+    applyingHistory = true; render(); applyingHistory = false;
+    if (location.hash !== route()) history.replaceState(null, "", route());
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("popstate", applyRoute);
   function focusView() { var heading = $("view").querySelector("h1"); if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); } }
 
   // ---------- events ----------
@@ -711,6 +741,7 @@
     switch (el.id) {
       case "goAnalyse": analyse(); if (!state.error) focusView(); break;
       case "back": state.step = Math.max(0, state.step - 1); render(); focusView(); break;
+      case "stepBack": if (state.step === 0) state.tab = "home"; else state.step--; render(); focusView(); window.scrollTo(0, 0); break;
       case "next": if ((state.step === 1 && !allReviewed()) || (state.step === 2 && !validAge())) return; state.step++; render(); focusView(); window.scrollTo(0, 0); break;
       case "ageOk": state.ageDecision = state.ageDecision === "confirmed" ? "pending" : "confirmed";
         if (state.ageDecision === "confirmed") { state.fields.ageValue = String(state.analysis.age.value); state.fields.ageUnit = state.analysis.age.unit; state.ageFromNote = true; }
