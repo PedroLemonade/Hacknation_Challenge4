@@ -3,7 +3,7 @@
 **Offline visit note to referral draft for community health promoters.**
 Hack Nation 7th Global AI Hackathon · Challenge 4 World Bank "Small AI for Development" · Health track.
 
-**Live demo:** _link follows_ · **Repo:** https://github.com/PedroLemonade/Hacknation_Challenge4 · Install on a phone: open the live link, then "Add to Home Screen"; after the first load it works offline.
+**Live demo:** https://afyanote.vercel.app/ · **Repo:** https://github.com/PedroLemonade/Hacknation_Challenge4 · Install on a phone: open the live link, then "Add to Home Screen"; after the first load it works offline.
 
 > Prototype. Synthetic data only. Does not diagnose, does not set urgency, not approved for clinical use. All people and notes in this repo are fictional.
 
