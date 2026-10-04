@@ -19,7 +19,7 @@ AfyaNote is a hackathon prototype for community health promoters in Kenya. A 243
 
 | Item | Real link / status |
 |---|---|
-| Public GitHub | **OPEN — replace with verified public URL** |
+| Public GitHub | https://github.com/PedroLemonade/Hacknation_Challenge4 (public, CI green on push 52a7de8) |
 | Live HTTPS demo | **OPEN — replace with verified URL** |
 | World Bank / Hack Nation demo video | **OPEN — 2–5 minutes per World Bank brief** |
 | Tech video | **OPEN** |
