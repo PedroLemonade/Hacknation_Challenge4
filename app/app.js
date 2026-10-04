@@ -204,7 +204,7 @@
     { k: "visit", ic: "📝", kw: "note visit new start kumbukumbu ziara" },
     { k: "example", ic: "💡", kw: "example demo try mfano" },
     { k: "facilities", ic: "📍", kw: "map facility clinic hospital referral ramani kituo" },
-    { k: "how", ic: "ⓘ", kw: "how works model offline small ai about" },
+    { k: "how", ic: "🧠", kw: "how works model offline small ai about llm" },
     { k: "install", ic: "⬇", kw: "install app download home screen offline sakinisha" }
   ];
   var installEvt = null;
@@ -214,6 +214,7 @@
     var q = state.homeQuery.trim().toLowerCase();
     var h = "<section class='dash'><div class='eyebrow'>AfyaNote · " + esc(t("tagline")) + "</div><h1>" + esc(t("home_title")) + "</h1>";
     h += "<p class='dash-sub'>" + esc(t("home_sub")) + " <button class='ibtn' type='button' data-info='problem' aria-label='" + esc(t("home_why")) + "'>i</button></p>";
+    h += "<div class='flow3'>" + [["✍️", "flow_1"], ["✅", "flow_2"], ["📄", "flow_3"]].map(function (x, i) { return "<div class='f3'><span class='f3n'>" + (i + 1) + "</span><span class='f3i' aria-hidden='true'>" + x[0] + "</span><b>" + esc(t(x[1])) + "</b><span>" + esc(t(x[1] + "_d")) + "</span></div>"; }).join("<span class='f3a' aria-hidden='true'>→</span>") + "</div>";
     h += "<div class='dash-facts'><span>✓ " + esc(t("home_f1")) + "</span><span>🔒 " + esc(t("home_f2")) + "</span><span>👤 " + esc(t("home_f3")) + "</span></div></section>";
     h += "<div class='searchrow'><input id='homeQuery' type='search' placeholder='" + esc(t("home_search")) + "' value='" + esc(state.homeQuery) + "' aria-label='" + esc(t("home_search")) + "'></div>";
     var tiles = TILES.filter(function (x) { if (x.k === "install" && standalone()) return false; return !q || (t("tile_" + x.k) + " " + t("tile_" + x.k + "_d") + " " + x.kw).toLowerCase().indexOf(q) >= 0; });
@@ -574,7 +575,10 @@
   }
   function viewAbout() {
     var m = model, b = buildInfo;
-    var h = "<div class='eyebrow'>" + esc(t("tab_about")) + "</div><h1>" + esc(t("how_title")) + "</h1>";
+    var h = "<div class='eyebrow'>" + esc(t("tab_about")) + "</div><h1>" + esc(t("sa_title")) + "</h1>";
+    h += "<div class='sa'><div class='sacard ok'><div class='eyebrow'>" + esc(t("sa_in")) + "</div><b>" + esc(t("sa_in_t")) + "</b><p>" + esc(t("sa_in_d")) + "</p></div>";
+    h += "<div class='sacard'><div class='eyebrow'>" + esc(t("sa_out")) + "</div><b>" + esc(t("sa_out_t")) + "</b><p>" + esc(t("sa_out_d")) + "</p></div></div>";
+    h += "<h2>" + esc(t("how_title")) + "</h2>";
     h += "<div class='pipe'>" + [["1", t("pipe_1"), t("pipe_1s")], ["2", t("pipe_2"), t("pipe_2s")], ["3", t("pipe_3"), t("pipe_3s")], ["4", t("pipe_4"), t("pipe_4s")]].map(function (x, i) {
       return "<div class='pstep" + (i === 1 ? " hl" : "") + "'><span class='pn'>" + x[0] + "</span><div><b>" + esc(x[1]) + "</b><span>" + esc(x[2]) + "</span></div></div>";
     }).join("") + "</div>";
