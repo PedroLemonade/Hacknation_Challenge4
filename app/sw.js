@@ -1,5 +1,5 @@
 /* Fixed local assets only. Bump VERSION after changing any app asset. */
-const VERSION = "afyanote-v0.5.7";
+const VERSION = "afyanote-v0.5.8";
 const CACHE = VERSION + ":" + self.registration.scope;
 const FILES = ["./", "index.html", "app.js", "classify.js", "rules.js", "i18n.js", "model.json",
   "facilities.json", "dictionary.json", "vendor/qrcode.js", "build_info.json", "manifest.webmanifest", "icon.svg", "icon-192.png", "icon-512.png"];
@@ -22,9 +22,14 @@ self.addEventListener("message", event => {
   }));
 });
 self.addEventListener("fetch", event => {
-  if (event.request.method !== "GET" || !URLS.includes(event.request.url)) return;
+  if (event.request.method !== "GET") return;
+  // Ignore #fragments and ?queries (the app routes with #home, #visit-2 ...); page navigations always get the app shell.
+  const u = new URL(event.request.url); u.hash = ""; u.search = "";
+  const isNav = event.request.mode === "navigate" && u.origin === self.location.origin;
+  const key = isNav ? URLS[0] : u.href;
+  if (!URLS.includes(key)) return;
   event.respondWith(caches.open(CACHE).then(async cache => {
-    const hit = await cache.match(event.request); if (hit) return hit;
+    const hit = await cache.match(key); if (hit) return hit;
     const response = await fetch(event.request);
     if (response.ok) await cache.put(event.request, response.clone());
     return response;

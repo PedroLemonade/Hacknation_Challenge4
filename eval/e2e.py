@@ -19,10 +19,11 @@ with sync_playwright() as p:
     page.on("pageerror", lambda e: errors.append(str(e)))
     page.goto(URL); page.wait_for_timeout(2500)
     page.screenshot(path=f"{SHOTS}/01_start.png")
-    check("Ready offline" in page.inner_text("#offlinePill"), "offline pill not ready")
+    check("Ready offline" in page.evaluate("document.getElementById('offlinePill').textContent"), "offline pill not ready")
+    check(page.query_selector("[data-tile='visit']") is not None, "home dashboard missing")
     check(page.evaluate("document.documentElement.scrollWidth") <= 390, "horizontal scroll on phone")
 
-    page.click("[data-ex='0']"); page.click("#goAnalyse"); page.wait_for_timeout(300)
+    page.click("[data-tile='example']"); page.click("[data-exgo='0']"); page.click("#goAnalyse"); page.wait_for_timeout(300)
     page.screenshot(path=f"{SHOTS}/02_review.png", full_page=True)
     labels = [c.get_attribute("data-ok") for c in page.query_selector_all("[data-ok]")]
     print("candidates:", labels)
@@ -66,7 +67,7 @@ with sync_playwright() as p:
     ctx.set_offline(True)
     page.on("request", lambda r: offline_requests.append(r.url))
     page.reload(); page.wait_for_timeout(1500)
-    page.click("[data-ex='3']"); page.click("#goAnalyse"); page.wait_for_timeout(300)
+    page.click("[data-tile='example']"); page.click("[data-exgo='3']"); page.click("#goAnalyse"); page.wait_for_timeout(300)
     page.screenshot(path=f"{SHOTS}/08_offline_hardcase.png", full_page=True)
     check(page.query_selector("[data-ok='fever']").is_disabled(), "conflict fever can be confirmed without choice")
     page.click("#tabbar [data-tab='facilities']"); page.wait_for_timeout(200)
@@ -85,7 +86,7 @@ with sync_playwright() as p:
 
     desk = b.new_page(viewport={"width": 1280, "height": 820})
     desk.goto(URL); desk.wait_for_timeout(1200)
-    desk.click("[data-ex='1']"); desk.click("#goAnalyse"); desk.wait_for_timeout(300)
+    desk.click("[data-tile='example']"); desk.click("[data-exgo='1']"); desk.click("#goAnalyse"); desk.wait_for_timeout(300)
     desk.screenshot(path=f"{SHOTS}/11_desktop_review.png")
     b.close()
 
