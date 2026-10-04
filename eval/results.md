@@ -97,3 +97,7 @@ Model + rules: 34 / 34 pass. Dictionary + rules: 31 / 34 pass.
 * No clinical validation or native-language review. Synthetic data only.
 
 T31 report is historical: source hashes differ. Current follow-up evidence is versioned under eval/context_t37/runs; do not overwrite historical T31 results.
+
+Browser regression for v0.4.17 (before the v0.5 home dashboard): 39/39 checks passed on 2026-10-04T07:42:00.659Z, Chrome 154.0.8037.97. All app file hashes matched at that version. Desktop simulation, no physical phone/native review. [Source](browser_runs/20261004_final_v0417/browser_report.json).
+
+Static-file manifest for v0.4.17: 449075 unique asset bytes including service worker; 128169 bytes as a sum of individually compressed files. Not measured HTTP transfer or RAM. [Source](asset_runs/20261004_v0417/assets.json).
