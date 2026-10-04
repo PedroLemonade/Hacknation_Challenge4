@@ -14,6 +14,7 @@
   function stamp(d) { var z = function (n) { return (n < 10 ? "0" : "") + n; }; return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate()) + " " + z(d.getHours()) + ":" + z(d.getMinutes()); }
   var ASSERTIONS = ["stated", "denied", "other_person", "past"];
   var ICON = {
+    home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg>',
     visit: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6v3H9z"/><path d="M15 5h3v16H6V5h3"/><path d="M9 12h6M9 16h4"/></svg>',
     facilities: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><path d="M12 7v5M9.5 9.5h5"/></svg>',
     about: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>'
@@ -25,7 +26,7 @@
   if (lang !== "en" && lang !== "sw") lang = "en";
 
   function fresh() {
-    return { tab: "visit", step: 0, note: "", analysis: null, decisions: {}, ageDecision: null, error: null,
+    return { tab: "home", info: null, homeQuery: "", step: 0, note: "", analysis: null, decisions: {}, ageDecision: null, error: null,
       fields: { caseId: "", sex: "", ageValue: "", ageUnit: "years", referralTime: "", treatment: "", chu: PROFILE.chu, chp: PROFILE.chp, facilityId: "" },
       consent: false, created: null, ageFromNote: false, facFilter: "all", facQuery: "", sheet: null, qr: false, ms: null,
       cmp: "Kikohozi kavu, homma kidogo na ameharisha" };
@@ -192,9 +193,55 @@
   function stat(v, l) { return "<div class='stat'><b>" + esc(v) + "</b><span>" + esc(l) + "</span></div>"; }
   function renderStatsOnly() { var s = $("stats"); if (s) s.outerHTML = stats(); }
 
+  // ---------- home dashboard ----------
+  var TILES = [
+    { k: "visit", ic: "📝", kw: "note visit new start kumbukumbu ziara" },
+    { k: "example", ic: "💡", kw: "example demo try mfano" },
+    { k: "facilities", ic: "📍", kw: "map facility clinic hospital referral ramani kituo" },
+    { k: "how", ic: "ⓘ", kw: "how works model offline small ai about" },
+    { k: "install", ic: "⬇", kw: "install app download home screen offline sakinisha" }
+  ];
+  var installEvt = null;
+  window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installEvt = e; });
+  function standalone() { return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true; }
+  function viewHome() {
+    var q = state.homeQuery.trim().toLowerCase();
+    var h = "<section class='dash'><div class='eyebrow'>AfyaNote · " + esc(t("tagline")) + "</div><h1>" + esc(t("home_title")) + "</h1>";
+    h += "<p class='dash-sub'>" + esc(t("home_sub")) + " <button class='ibtn' type='button' data-info='problem' aria-label='" + esc(t("home_why")) + "'>i</button></p>";
+    h += "<div class='dash-facts'><span>✓ " + esc(t("home_f1")) + "</span><span>🔒 " + esc(t("home_f2")) + "</span><span>👤 " + esc(t("home_f3")) + "</span></div></section>";
+    h += "<div class='searchrow'><input id='homeQuery' type='search' placeholder='" + esc(t("home_search")) + "' value='" + esc(state.homeQuery) + "' aria-label='" + esc(t("home_search")) + "'></div>";
+    var tiles = TILES.filter(function (x) { if (x.k === "install" && standalone()) return false; return !q || (t("tile_" + x.k) + " " + t("tile_" + x.k + "_d") + " " + x.kw).toLowerCase().indexOf(q) >= 0; });
+    h += "<div class='tiles'>" + tiles.map(function (x, i) {
+      return "<button type='button' class='tile" + (i === 0 && !q ? " main" : "") + "' data-tile='" + x.k + "'><span class='tic' aria-hidden='true'>" + x.ic + "</span><b>" + esc(t("tile_" + x.k)) + "</b><span>" + esc(t("tile_" + x.k + "_d")) + "</span><span class='tgo' aria-hidden='true'>→</span></button>";
+    }).join("") + "</div>";
+    if (!tiles.length) h += "<p class='meta'>" + esc(t("nothing_found")) + "</p>";
+    return h;
+  }
+  function infoSheet() {
+    var k = state.info, body = "", btns = "";
+    var close = "<button class='btn' type='button' data-closeinfo='1'>" + esc(t("close")) + "</button>";
+    if (k === "problem") {
+      body = "<h1>" + esc(t("home_why")) + "</h1>" + ["p", "a", "r"].map(function (x) { return "<div class='ib'><div class='eyebrow'>" + esc(t("why_" + x)) + "</div><p>" + esc(t("why_" + x + "_d")) + "</p></div>"; }).join("");
+      btns = "<button class='btn primary' type='button' data-go='visit'>" + esc(t("tile_visit")) + " →</button>" + close;
+    } else if (k === "note") {
+      body = "<h1>" + esc(t("hero_title")) + "</h1><p class='meta'>🔒 " + esc(t("privacy")) + "</p><ol class='steps4'>" + [1, 2, 3, 4].map(function (n) { return "<li><span class='sn'>" + esc(t("step_word")) + " " + n + "</span><span>" + esc(t("step4_" + n)) + "</span></li>"; }).join("") + "</ol>" + stats();
+      btns = close;
+    } else if (k === "example") {
+      body = "<div class='eyebrow'>" + esc(t("examples")) + "</div><h1>" + esc(t("tile_example")) + "</h1><p class='meta'>" + esc(t("tile_example_l")) + "</p><div class='exlist'>" + EXAMPLES.map(function (e, i) { return "<button type='button' class='exitem' data-exgo='" + i + "'><b>" + esc(t(e.label)) + "</b><span>" + esc(e.text) + "</span></button>"; }).join("") + "</div>";
+      btns = close;
+    } else if (k === "install") {
+      body = "<div class='eyebrow'>PWA</div><h1>" + esc(t("tile_install")) + "</h1><p>" + esc(t("install_l")) + "</p>" + (installEvt ? "" : "<ol class='steps4'><li><span class='sn'>Android</span><span>" + esc(t("install_android")) + "</span></li><li><span class='sn'>iPhone</span><span>" + esc(t("install_ios")) + "</span></li></ol>");
+      btns = (installEvt ? "<button class='btn primary' type='button' id='installBtn'>⬇ " + esc(t("tile_install")) + "</button>" : "") + close;
+    } else {
+      body = "<div class='eyebrow'>" + esc(t("tile_" + k + "_d")) + "</div><h1>" + esc(t("tile_" + k)) + "</h1><p>" + esc(t("tile_" + k + "_l")) + "</p>";
+      btns = "<button class='btn primary' type='button' data-go='" + k + "'>" + esc(t("open_btn")) + " →</button>" + close;
+    }
+    return "<div class='sheet-bg' data-closeinfo='1'></div><div class='sheet' role='dialog' aria-modal='true' aria-label='" + esc(t("tile_" + k) || k) + "'><div class='grab'></div>" + body + "<div class='decide'>" + btns + "</div></div>";
+  }
+
   function viewNote() {
     var h = stepper();
-    h += "<section class='hero'><div class='eyebrow'>" + esc(t("hero_eyebrow")) + "</div><h1>" + esc(t("hero_title")) + "</h1><p>" + esc(t("hero_body")) + "</p>";
+    h += "<section class='hero'><div class='eyebrow'>" + esc(t("hero_eyebrow")) + "</div><h1>" + esc(t("hero_title")) + " <button class='ibtn light' type='button' data-info='note' aria-label='" + esc(t("home_why")) + "'>i</button></h1><p>" + esc(t("hero_body")) + "</p>";
     h += "<label class='sr' for='note' style='position:absolute;left:-9999px'>" + esc(t("note_label")) + "</label>";
     h += "<textarea id='note' maxlength='" + (R.MAX_LEN + 50) + "' placeholder='Mtoto ana homa siku tatu…'>" + esc(state.note) + "</textarea>";
     h += "<div class='row' style='justify-content:space-between;margin-top:6px'><span class='meta' id='count'>" + state.note.length + " / " + R.MAX_LEN + " " + esc(t("chars")) + "</span><span class='meta'>" + esc(t("examples")) + "</span></div>";
@@ -203,9 +250,6 @@
     if (state.error) h += "<div class='notice err' role='alert'>" + esc(state.error) + "</div>";
     if (loaded && !model) h += "<div class='notice err' role='alert'>" + esc(t("err_model")) + "</div>";
     h += "<button class='btn sm' type='button' id='retryResources' hidden>" + esc(t("retry_resources")) + "</button>";
-    h += stats();
-    h += "<div class='notice info'>🔒 " + esc(t("privacy")) + "</div>";
-    h += "<ol class='steps4'>" + [1, 2, 3, 4].map(function (n) { return "<li><span class='sn'>" + esc(t("step_word")) + " " + n + "</span><span>" + esc(t("step4_" + n)) + "</span></li>"; }).join("") + "</ol>";
     return h;
   }
 
@@ -426,7 +470,8 @@
     rows.forEach(function (r) { h += "<dt>" + esc(r[0]) + "</dt><dd>" + r[1] + "</dd>"; });
     h += "</dl></div>";
     if (d.status === "draft") h += "<div class='notice warn'>" + esc(t("need_review")) + "</div>";
-    h += "<div class='row' style='margin-top:12px'><button class='btn primary' type='button' id='qrBtn'" + (d.status === "draft" ? " disabled" : "") + ">▦ " + esc(t("show_qr")) + "</button><button class='btn' type='button' id='copyBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("copy_text")) + "</button><button class='btn' type='button' id='jsonBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_json")) + "</button><button class='btn' type='button' id='mdBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_md")) + "</button><button class='btn' type='button' id='printBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("print")) + "</button></div>";
+    h += "<div class='exportmain'><button class='btn primary big' type='button' id='printBtn'" + (d.status === "draft" ? " disabled" : "") + ">📄 " + esc(t("create_pdf")) + "</button><button class='btn big' type='button' id='qrBtn'" + (d.status === "draft" ? " disabled" : "") + ">▦ " + esc(t("show_qr")) + "</button></div>";
+    h += "<details class='more'><summary>" + esc(t("more_export")) + "</summary><div class='row' style='margin-top:10px'><button class='btn' type='button' id='copyBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("copy_text")) + "</button><button class='btn' type='button' id='jsonBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_json")) + "</button><button class='btn' type='button' id='mdBtn'" + (d.status === "draft" ? " disabled" : "") + ">" + esc(t("export_md")) + "</button></div></details>";
     h += "<p class='meta'>" + esc(t("export_note")) + "</p>";
     h += "<p id='exportStatus' class='meta' role='status' aria-atomic='true'></p>";
     return h;
@@ -443,6 +488,10 @@
     g += "<g aria-hidden='true'><path d='M" + (W - 22) + " 30 l6 -14 l6 14 l-6 -4z' fill='var(--muted)'/><text class='ringt' x='" + (W - 20) + "' y='44'>N</text></g>";
     g += "<g><rect x='" + (cx - 9) + "' y='" + (cy - 9) + "' width='18' height='18' rx='4' fill='var(--ink)'/><path d='M" + (cx - 5) + " " + (cy + 1) + " L" + cx + " " + (cy - 4) + " L" + (cx + 5) + " " + (cy + 1) + " V" + (cy + 5) + " H" + (cx - 5) + "z' fill='var(--paper)'/></g>";
     var shown = {}; list.forEach(function (x) { shown[x.id] = true; });
+    fac.list.forEach(function (x) {
+      var lx = cx + x.dx * s, ly = cy - x.dy * s, on = state.fields.facilityId === x.id;
+      if (shown[x.id]) g += "<line class='link" + (on ? " on" : "") + "' x1='" + cx + "' y1='" + cy + "' x2='" + lx.toFixed(1) + "' y2='" + ly.toFixed(1) + "'/>";
+    });
     fac.list.forEach(function (x) {
       var px = cx + x.dx * s, py = cy - x.dy * s, sel = state.fields.facilityId === x.id;
       var color = x.group === "hospital" ? "var(--red)" : x.group === "health_centre" ? "var(--blue)" : "var(--green)";
@@ -545,7 +594,7 @@
 
   // ---------- chrome ----------
   function renderNav() {
-    var tabs = [["visit", t("tab_visit")], ["facilities", t("tab_facilities")], ["about", t("tab_about")]];
+    var tabs = [["home", t("tab_home")], ["visit", t("tab_visit")], ["facilities", t("tab_facilities")], ["about", t("tab_about")]];
     var btn = function (k, l) { return "<button type='button' data-tab='" + k + "'" + (state.tab === k ? " aria-current='page'" : "") + ">" + ICON[k] + "<span>" + esc(l) + "</span></button>"; };
     $("tabbar").innerHTML = tabs.map(function (x) { return btn(x[0], x[1]); }).join("");
     $("sideNav").innerHTML = tabs.map(function (x) { return btn(x[0], x[1]); }).join("");
@@ -575,10 +624,10 @@
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i")); });
     document.querySelectorAll("[data-lang]").forEach(function (el) { el.textContent = lang === "en" ? "SW" : "EN"; el.setAttribute("aria-label", t("lang")); });
-    var v = state.tab === "facilities" ? viewFacilities() : state.tab === "about" ? viewAbout() : [viewNote, viewReview, viewComplete, viewHandover][state.step]();
+    var v = state.tab === "home" ? viewHome() : state.tab === "facilities" ? viewFacilities() : state.tab === "about" ? viewAbout() : [viewNote, viewReview, viewComplete, viewHandover][state.step]();
     $("view").innerHTML = v;
     $("view").classList.toggle("wide", state.tab === "visit" && state.step === 1);
-    $("sheetRoot").innerHTML = state.qr ? qrSheet() : state.sheet ? sheetHtml() : "";
+    $("sheetRoot").innerHTML = state.info ? infoSheet() : state.qr ? qrSheet() : state.sheet ? sheetHtml() : "";
     renderNav(); renderActions(); paintOffline();
     document.querySelectorAll("[data-newcase]").forEach(function (button) { button.textContent = t("new_case"); button.hidden = !state.note && state.step === 0; });
     var dialog = document.querySelector("#sheetRoot [role=dialog]");
@@ -597,6 +646,7 @@
     var el = e.target;
     if (el.id === "note") { replaceNote(el.value); $("count").textContent = state.note.length + " / " + R.MAX_LEN + " " + t("chars"); document.querySelectorAll("[data-newcase]").forEach(function (b) { b.hidden = !state.note; }); renderNav(); updateLive(); }
     else if (el.dataset && el.dataset.dur) state.decisions[el.dataset.dur].dur = el.value;
+    else if (el.id === "homeQuery") { state.homeQuery = el.value; var hp = el.selectionStart; render(); var hq = $("homeQuery"); hq.focus(); hq.setSelectionRange(hp, hp); }
     else if (el.id === "cmpInput") { state.cmp = el.value; var p2 = el.selectionStart; render(); var ci = $("cmpInput"); ci.focus(); ci.setSelectionRange(p2, p2); }
     else if (el.id === "facQuery") { state.facQuery = el.value; var pos = el.selectionStart; render(); var q = $("facQuery"); q.focus(); q.setSelectionRange(pos, pos); }
     else if (el.dataset && el.dataset.f) {
@@ -620,6 +670,7 @@
       else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     }
     if ((e.key === "Enter" || e.key === " ") && e.target.matches && e.target.matches("g.pin")) { e.preventDefault(); state.sheet = e.target.getAttribute("data-fac"); render(); }
+    if (e.key === "Escape" && state.info) { state.info = null; render(); return; }
     if (e.key === "Escape" && (state.sheet || state.qr)) { var wasQr = state.qr, oldSheet = state.sheet; state.sheet = null; state.qr = false; render();
       var returnControl = wasQr ? $("qrBtn") : document.querySelector("button[data-fac='" + oldSheet + "']"); if (returnControl) returnControl.focus(); return; }
     var tag = (document.activeElement && document.activeElement.tagName) || "";
@@ -641,6 +692,12 @@
     if (pin) { state.sheet = pin.getAttribute("data-fac"); render(); return; }
     var el = e.target.closest && e.target.closest("button,[data-close]"); if (!el) return;
     var ds = el.dataset;
+    if (ds.closeinfo) { state.info = null; render(); return; }
+    if (ds.info) { state.info = ds.info; render(); return; }
+    if (ds.tile) { state.info = ds.tile; render(); return; }
+    if (ds.exgo !== undefined) { replaceNote(EXAMPLES[+ds.exgo].text); state.info = null; state.tab = "visit"; state.step = 0; render(); window.scrollTo(0, 0); return; }
+    if (ds.go) { var go = ds.go; state.info = null; state.tab = go === "how" ? "about" : go === "facilities" ? "facilities" : "visit"; if (go === "visit") state.step = state.analysis ? state.step : 0; render(); window.scrollTo(0, 0); focusView(); return; }
+    if (el.id === "installBtn" && installEvt) { installEvt.prompt(); installEvt.userChoice.then(function () { installEvt = null; state.info = null; render(); }); return; }
     if (ds.close) { var closedSheet = state.sheet; state.sheet = null; render(); var item = document.querySelector("button[data-fac='" + closedSheet + "']"); if (item) item.focus(); return; }
     if (ds.closeqr) { state.qr = false; render(); if ($("qrBtn")) $("qrBtn").focus(); return; }
     if (ds.cmpex !== undefined) { state.cmp = CMP_EXAMPLES[+ds.cmpex]; render(); return; }
